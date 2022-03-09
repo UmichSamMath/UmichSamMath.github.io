@@ -1,0 +1,166 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    background-color: #edede9;
+  }
+  
+  div, a, p {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+  }
+
+  iframe {
+      height: 75vh;
+      width: 100%;
+  }
+
+  .container{
+      margin: 0% 12.5% 0% 12.5%;
+  }
+
+  .navbar{
+      background-color: #00274C;
+      display: inline-block;
+      position: relative;
+  }
+
+  .navbar a img {
+      width: 8%;
+      height: auto;
+      float: left;
+      padding: 10px;
+  }
+
+  .navbar p {
+      font-size: 50px;
+      color: #0075A0;
+      margin: 0px;
+      padding: 0px;
+      
+  }
+
+  .links {
+      display: inline-block;
+      position: absolute;
+      bottom: 0px; 
+      right: 0px;
+      margin-right: 20px;
+  }
+
+  .links a, .links p {
+    font-size: large;
+    color: #FFCB05;
+    margin: 10px;
+  }
+
+  .links a:hover, .links p:hover {
+      color: #BA9500;
+  }
+
+  .resources {
+      display: inline-block;
+      position: relative;
+  }
+
+  .dropdown {
+    display: none;
+    position: absolute;
+    background-color: #00274C;
+    width: 300px;
+  }
+  .dropdown a {
+      display: block;
+  }
+
+  .resources:hover .dropdown {
+    display: block;
+    z-index: 1;
+}
+
+.upcoming {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: flex-start;
+    align-content: space-between;
+    margin: 0% 0% 5% 0%;
+}
+
+.event {
+    margin: 10px;
+    display: block;
+}
+
+.event p {
+    display: inline-block;
+}
+
+.when {
+    display: inline-block;
+}
+
+.when p {
+    display: block;
+}
+
+.section-title {
+    font-size: xx-large;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: space-between;
+    text-align: center;
+    margin: 0% 0% 5% 0%;
+}
+
+.profile {
+    width: 30%;
+    margin: 5% 0% 0% 0%;
+}
+
+.profile img{
+    width: 50%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid black;
+    text-align: left;
+    padding: 8px;
+    width: 25%;
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}
+
+td a {
+    color: black;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+
+.text a, .text p{
+    display: block;
+    color: black;
+}
+
+.text a:hover {
+    text-decoration: underline;
+}

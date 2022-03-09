@@ -45,7 +45,7 @@ function renderCompanies(){
     }
 }
 
-function boldPosition(){
+function boldHeadings(){
     $(".profile").each(function(){
         let text = $(this).find("p");
         $(text[0]).css("font-weight", "bold");

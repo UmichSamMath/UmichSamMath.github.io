@@ -21,6 +21,7 @@ body {
       background-image: url(../images/background.JPG);
       background-repeat:no-repeat;
       background-size: cover;
+      opacity: 0.3;
   }
 
   .navbar{

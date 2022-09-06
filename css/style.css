@@ -18,10 +18,6 @@ body {
 
   .container{
       margin: 0% 12.5% 10% 12.5%;
-      background-image: url('images/background.JPG');
-    background-repeat: no-repeat;
-    background-position: center; 
-    position: relative;
   }
 
   .navbar{

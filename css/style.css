@@ -18,6 +18,7 @@ body {
 
   .container{
       margin: 0% 12.5% 10% 12.5%;
+      background: color url('images/background.JPG') others;
   }
 
   .navbar{

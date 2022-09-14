@@ -26,6 +26,11 @@ body {
       background-color: #edede9;
   }
 
+embed {
+  width: 100%;
+  height: 100%;
+}
+
   .navbar{
       background-color: #00274C;
       display: inline-block;

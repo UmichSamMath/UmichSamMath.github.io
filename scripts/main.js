@@ -57,8 +57,8 @@ let companies = [
       "FIELD1": "AAA Life Insurance",
       "FIELD2": "Life",
       "FIELD3": "Livonia, MI",
-      "FIELD4": "Breana Morton-Holt",
-      "FIELD5": "bmorton-holt@aaalife.com"
+      "FIELD4": "Kevin Claxton",
+      "FIELD5": "KClaxton@aaalife.com"
     },
     {
       "FIELD1": "Accident Fund Insurance",
@@ -71,8 +71,8 @@ let companies = [
       "FIELD1": "Aetna",
       "FIELD2": "Health",
       "FIELD3": "Chicago, IL",
-      "FIELD4": "Nabil Ahmed",
-      "FIELD5": "nabilah@umich.edu"
+      "FIELD4": "Brad Pineless",
+      "FIELD5": "PinelessB@aetna.com"
     },
     {
       "FIELD1": "AIG",
@@ -109,13 +109,13 @@ let companies = [
       "FIELD4": "David Binder",
       "FIELD5": "dbinder@amfam.com"
     },
-    {
-      "FIELD1": "Anthem, Inc",
-      "FIELD2": "Health",
-      "FIELD3": "Indianapolis, IN",
-      "FIELD4": "Helen Hong",
-      "FIELD5": "Helen.Hong@anthem.com"
-    },
+    //{
+      //"FIELD1": "Anthem, Inc",
+      //"FIELD2": "Health",
+      //"FIELD3": "Indianapolis, IN",
+      //"FIELD4": "Helen Hong",
+      //"FIELD5": "Helen.Hong@anthem.com"
+    //},
     {
       "FIELD1": "AON",
       "FIELD2": "Consulting (L/H)",
@@ -134,15 +134,15 @@ let companies = [
       "FIELD1": "BCBS of IL, MT, NM. OK, and TX",
       "FIELD2": "Health",
       "FIELD3": "Richardson, TX",
-      "FIELD4": "Kelsey Cunningham",
-      "FIELD5": "Kelsey_Cunningham@bcbsil.com"
+      "FIELD4": "Caitlin Hutchison",
+      "FIELD5": "Caitlin_Hutchison@bcbsil.com"
     },
     {
       "FIELD1": "BCBSM",
       "FIELD2": "Health",
       "FIELD3": "Detroit, MI",
-      "FIELD4": "Ryan Kaput",
-      "FIELD5": "rkaput@bcbsm.com"
+      "FIELD4": "Tom Whiting",
+      "FIELD5": "TWhiting@bcbsm.com"
     },
     {
       "FIELD1": "Bright Health Group",
@@ -176,23 +176,23 @@ let companies = [
       "FIELD1": "Cigna",
       "FIELD2": "Health",
       "FIELD3": "Bloomfield, CT",
-      "FIELD4": "Molly (Xinshan) Li",
-      "FIELD5": "Xinshan.Li@cigna.com"
+      "FIELD4": "Jacob Hall",
+      "FIELD5": "Jacob.Hall@cigna.com"
     },
     {
       "FIELD1": "CNA ",
       "FIELD2": "P&C",
       "FIELD3": "Chicago, IL",
-      "FIELD4": "Bryce Peterson",
-      "FIELD5": "Bryce.Peterson@cna.com"
-    },
-    {
-      "FIELD1": "CNO Financial Group",
-      "FIELD2": "Multi-line Insurance",
-      "FIELD3": "Rehoboth Beach, DE",
       "FIELD4": "Paul Chappus",
-      "FIELD5": "P.Chappus@Banklife.com"
+      "FIELD5": "Paul.Chappus@cna.com"
     },
+    //{
+      //"FIELD1": "CNO Financial Group",
+      //"FIELD2": "Multi-line Insurance",
+      //"FIELD3": "Rehoboth Beach, DE",
+      //"FIELD4": "Paul Chappus",
+      //"FIELD5": "P.Chappus@Banklife.com"
+    //},
     {
       "FIELD1": "CUNA Mutual Group",
       "FIELD2": "Multi-line Insurance",
@@ -218,8 +218,8 @@ let companies = [
       "FIELD1": "Deloitte",
       "FIELD2": "Consulting",
       "FIELD3": "Detroit, MI",
-      "FIELD4": "Max Weide",
-      "FIELD5": "maweide@deloitte.com"
+      "FIELD4": "Laura Hamilton",
+      "FIELD5": "lauhamilton@deloitte.com"
     },
     {
       "FIELD1": "DW Simpson",
@@ -260,8 +260,8 @@ let companies = [
       "FIELD1": "Fidelity Investments",
       "FIELD2": "Investment",
       "FIELD3": "Boston, MA",
-      "FIELD4": "Halley Lizotte",
-      "FIELD5": "Halley.Lizotte@fmr.com"
+      "FIELD4": "Vincent Lee",
+      "FIELD5": "Vincent.Lee@fmr.com"
     },
     {
       "FIELD1": "Frankenmuth Insurance",
@@ -302,8 +302,8 @@ let companies = [
       "FIELD1": "Humana",
       "FIELD2": "Health",
       "FIELD3": "Louisville, KY",
-      "FIELD4": "Matt Parker",
-      "FIELD5": "mparker7@humana.com"
+      "FIELD4": "Ed Doxen",
+      "FIELD5": "EDoxen@humana.com"
     },
     {
       "FIELD1": "Jackson National Life Insurance Co",
@@ -316,15 +316,15 @@ let companies = [
       "FIELD1": "KPMG",
       "FIELD2": "Consulting",
       "FIELD3": "Chicago, IL",
-      "FIELD4": "Emma Andersen",
-      "FIELD5": "emmaandersen@kpmg.com"
+      "FIELD4": "Yessica Hernandez",
+      "FIELD5": "yessicahernandez@kpmg.com"
     },
     {
       "FIELD1": "Liberty Mutual",
       "FIELD2": "P&C",
       "FIELD3": "Boston, MA",
-      "FIELD4": "Lauren Fitzgibbon",
-      "FIELD5": "lauren.fitzgibbon@libertymutual.com"
+      "FIELD4": "Mark Cappaert",
+      "FIELD5": "mark.cappaert@libertymutual.com"
     },
     {
       "FIELD1": "Lockton",
@@ -355,11 +355,18 @@ let companies = [
       "FIELD5": "angela.rossi@mercer.com"
     },
     {
-      "FIELD1": "Milliman (Health, FRM)",
+      "FIELD1": "Milliman Health",
       "FIELD2": "Health Consulting",
       "FIELD3": "Chicago, IL",
-      "FIELD4": "Peter Fielek",
-      "FIELD5": "Peter.Fielek@milliman.com"
+      "FIELD4": "Allen Cheng",
+      "FIELD5": "allen.chen@milliman.com"
+    },
+    {
+      "FIELD1": "Milliman FRM",
+      "FIELD2": "Health Consulting",
+      "FIELD3": "Chicago, IL",
+      "FIELD4": "Mandie Molina",
+      "FIELD5": "mandie.molina@milliman.com"
     },
     {
       "FIELD1": "Munich Reinsruance of America",
@@ -372,22 +379,22 @@ let companies = [
       "FIELD1": "Mutual of Omaha",
       "FIELD2": "Life",
       "FIELD3": "Omaha, NE",
-      "FIELD4": "J'Anna Francois-Lee",
-      "FIELD5": "JAnna.Francois-Lee@mutualofomaha.com"
+      "FIELD4": "Kailyn Melsha",
+      "FIELD5": "Kailyn.Melsha@mutualofomaha.com"
     },
     {
       "FIELD1": "Nationwide Financial",
       "FIELD2": "P&C",
       "FIELD3": "Colombus, OH",
-      "FIELD4": "Michael Harrison",
-      "FIELD5": "harrm16@nationwide.com"
+      "FIELD4": "Tyler Blinn",
+      "FIELD5": "blinnt2@nationwide.com"
     },
     {
       "FIELD1": "Northwestern Mutual",
       "FIELD2": "",
       "FIELD3": "Milwaukee, WI",
-      "FIELD4": "Nicholas Mueller",
-      "FIELD5": "nicholasmueller@northwesternmutual.com"
+      "FIELD4": "Daniel Groth",
+      "FIELD5": "danielgroth@northwesternmutual.com"
     },
     {
       "FIELD1": "NY Life",
@@ -421,8 +428,8 @@ let companies = [
       "FIELD1": "PwC",
       "FIELD2": "Consulting",
       "FIELD3": "New York, NY",
-      "FIELD4": "Derek Skoog",
-      "FIELD5": "derek.g.skoog@pwc.com"
+      "FIELD4": "Allison Muer",
+      "FIELD5": "allison.a.muer@pwc.com"
     },
     {
       "FIELD1": "Quicken Loans",
@@ -456,8 +463,8 @@ let companies = [
       "FIELD1": "State Farm",
       "FIELD2": "P&C",
       "FIELD3": "Bloomington, IL",
-      "FIELD4": "Lynn Battice",
-      "FIELD5": "lynn.battice.cn27@statefarm.com"
+      "FIELD4": "Lynn Barnes",
+      "FIELD5": "lynn.barnes.cn27@statefarm.com"
     },
     {
       "FIELD1": "Stout",
@@ -512,8 +519,8 @@ let companies = [
       "FIELD1": "Wakely Consulting Group",
       "FIELD2": "Consulting",
       "FIELD3": "Tampa, FL",
-      "FIELD4": "Julie Nebeker",
-      "FIELD5": "recruiting@wakely.com"
+      "FIELD4": "Mark Koransky",
+      "FIELD5": "mark.koransky@wakely.com"
     },
     {
       "FIELD1": "Westfield Insurance",
@@ -526,8 +533,8 @@ let companies = [
       "FIELD1": "Willis Towers Watson",
       "FIELD2": "Consulting",
       "FIELD3": "Detroit, MI",
-      "FIELD4": "Abraham Torralba",
-      "FIELD5": "Abraham.Torralba@willistowerswatson.com"
+      "FIELD4": "Tara Wozniak",
+      "FIELD5": "tara.wozniak@willistowerswatson.com"
     },
     {
       "FIELD1": "Zurich",

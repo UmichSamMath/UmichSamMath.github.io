@@ -10,8 +10,8 @@
    "AAA Life Insurance": "Aetna",
    "Life": "Health",
    "Livonia, MI": "Chicago, IL",
-   "Breana Morton-Holt": "Nabil Ahmed",
-   "bmorton-holt@aaalife.com": "nabilah@umich.edu"
+   "Breana Morton-Holt": "Brad Pineless",
+   "bmorton-holt@aaalife.com": "PinelessB@aetna.com"
  },
  {
    "AAA Life Insurance": "AIG",
@@ -48,13 +48,13 @@
    "Breana Morton-Holt": "David Binder",
    "bmorton-holt@aaalife.com": "dbinder@amfam.com"
  },
- {
-   "AAA Life Insurance": "Anthem, Inc",
-   "Life": "Health",
-   "Livonia, MI": "Indianapolis, IN",
-   "Breana Morton-Holt": "Helen Hong",
-   "bmorton-holt@aaalife.com": "Helen.Hong@anthem.com"
- },
+ //{
+   //"AAA Life Insurance": "Anthem, Inc",
+   //"Life": "Health",
+   //"Livonia, MI": "Indianapolis, IN",
+   //"Breana Morton-Holt": "Helen Hong",
+   //"bmorton-holt@aaalife.com": "Helen.Hong@anthem.com"
+ //},
  {
    "AAA Life Insurance": "AON",
    "Life": "Consulting (L/H)",
@@ -73,15 +73,15 @@
    "AAA Life Insurance": "BCBS of IL, MT, NM. OK, and TX",
    "Life": "Health",
    "Livonia, MI": "Richardson, TX",
-   "Breana Morton-Holt": "Kelsey Cunningham",
-   "bmorton-holt@aaalife.com": "Kelsey_Cunningham@bcbsil.com"
+   "Breana Morton-Holt": "Caitlin Hutchison",
+   "bmorton-holt@aaalife.com": "Caitlin_Hutchison@bcbsil.com"
  },
  {
    "AAA Life Insurance": "BCBSM",
    "Life": "Health",
    "Livonia, MI": "Detroit, MI",
-   "Breana Morton-Holt": "Ryan Kaput",
-   "bmorton-holt@aaalife.com": "rkaput@bcbsm.com"
+   "Breana Morton-Holt": "Tom Whiting",
+   "bmorton-holt@aaalife.com": "TWhiting@bcbsm.com"
  },
  {
    "AAA Life Insurance": "Bright Health Group",
@@ -115,23 +115,23 @@
    "AAA Life Insurance": "Cigna",
    "Life": "Health",
    "Livonia, MI": "Bloomfield, CT",
-   "Breana Morton-Holt": "Molly (Xinshan) Li",
-   "bmorton-holt@aaalife.com": "Xinshan.Li@cigna.com"
+   "Breana Morton-Holt": "Jacob Hall",
+   "bmorton-holt@aaalife.com": "Jacob.Hall@cigna.com"
  },
  {
    "AAA Life Insurance": "CNA ",
    "Life": "P&C",
    "Livonia, MI": "Chicago, IL",
-   "Breana Morton-Holt": "Bryce Peterson",
-   "bmorton-holt@aaalife.com": "Bryce.Peterson@cna.com"
- },
- {
-   "AAA Life Insurance": "CNO Financial Group",
-   "Life": "Multi-line Insurance",
-   "Livonia, MI": "Rehoboth Beach, DE",
    "Breana Morton-Holt": "Paul Chappus",
-   "bmorton-holt@aaalife.com": "P.Chappus@Banklife.com"
+   "bmorton-holt@aaalife.com": "Paul.Chappus@cna.com"
  },
+ //{
+   //"AAA Life Insurance": "CNO Financial Group",
+   //"Life": "Multi-line Insurance",
+   //"Livonia, MI": "Rehoboth Beach, DE",
+   //"Breana Morton-Holt": "Paul Chappus",
+   //"bmorton-holt@aaalife.com": "P.Chappus@Banklife.com"
+ //},
  {
    "AAA Life Insurance": "CUNA Mutual Group",
    "Life": "Multi-line Insurance",
@@ -157,8 +157,8 @@
    "AAA Life Insurance": "Deloitte",
    "Life": "Consulting",
    "Livonia, MI": "Detroit, MI",
-   "Breana Morton-Holt": "Max Weide",
-   "bmorton-holt@aaalife.com": "maweide@deloitte.com"
+   "Breana Morton-Holt": "Laura Hamilton",
+   "bmorton-holt@aaalife.com": "lauhamilton@deloitte.com"
  },
  {
    "AAA Life Insurance": "DW Simpson",
@@ -199,8 +199,8 @@
    "AAA Life Insurance": "Fidelity Investments",
    "Life": "Investment",
    "Livonia, MI": "Boston, MA",
-   "Breana Morton-Holt": "Halley Lizotte",
-   "bmorton-holt@aaalife.com": "Halley.Lizotte@fmr.com"
+   "Breana Morton-Holt": "Vincent Lee",
+   "bmorton-holt@aaalife.com": "Vincent.Lee@fmr.com"
  },
  {
    "AAA Life Insurance": "Frankenmuth Insurance",
@@ -241,8 +241,8 @@
    "AAA Life Insurance": "Humana",
    "Life": "Health",
    "Livonia, MI": "Louisville, KY",
-   "Breana Morton-Holt": "Matt Parker",
-   "bmorton-holt@aaalife.com": "mparker7@humana.com"
+   "Breana Morton-Holt": "Ed Doxen",
+   "bmorton-holt@aaalife.com": "EDoxen@humana.com"
  },
  {
    "AAA Life Insurance": "Jackson National Life Insurance Co",
@@ -255,15 +255,15 @@
    "AAA Life Insurance": "KPMG",
    "Life": "Consulting",
    "Livonia, MI": "Chicago, IL",
-   "Breana Morton-Holt": "Emma Andersen",
-   "bmorton-holt@aaalife.com": "emmaandersen@kpmg.com"
+   "Breana Morton-Holt": "Yessica Hernandez",
+   "bmorton-holt@aaalife.com": "yessicahernandez@kpmg.com"
  },
  {
    "AAA Life Insurance": "Liberty Mutual",
    "Life": "P&C",
    "Livonia, MI": "Boston, MA",
-   "Breana Morton-Holt": "Lauren Fitzgibbon",
-   "bmorton-holt@aaalife.com": "lauren.fitzgibbon@libertymutual.com"
+   "Breana Morton-Holt": "Mark Cappaert",
+   "bmorton-holt@aaalife.com": "mark.cappaert@libertymutual.com"
  },
  {
    "AAA Life Insurance": "Lockton",
@@ -294,11 +294,18 @@
    "bmorton-holt@aaalife.com": "angela.rossi@mercer.com"
  },
  {
-   "AAA Life Insurance": "Milliman (Health, FRM)",
+   "AAA Life Insurance": "Milliman Health",
    "Life": "Health Consulting",
    "Livonia, MI": "Chicago, IL",
-   "Breana Morton-Holt": "Peter Fielek",
-   "bmorton-holt@aaalife.com": "Peter.Fielek@milliman.com"
+   "Breana Morton-Holt": "Allen Cheng",
+   "bmorton-holt@aaalife.com": "allen.chen@milliman.com"
+ },
+ {
+   "AAA Life Insurance": "Milliman FRM",
+   "Life": "Health Consulting",
+   "Livonia, MI": "Chicago, IL",
+   "Breana Morton-Holt": "Mandie Molina",
+   "bmorton-holt@aaalife.com": "mandie.molina@milliman.com"
  },
  {
    "AAA Life Insurance": "Munich Reinsruance of America",
@@ -311,22 +318,22 @@
    "AAA Life Insurance": "Mutual of Omaha",
    "Life": "Life",
    "Livonia, MI": "Omaha, NE",
-   "Breana Morton-Holt": "J'Anna Francois-Lee",
-   "bmorton-holt@aaalife.com": "JAnna.Francois-Lee@mutualofomaha.com"
+   "Breana Morton-Holt": "Kailyn Melsha",
+   "bmorton-holt@aaalife.com": "Kailyn.Melsha@mutualofomaha.com"
  },
  {
    "AAA Life Insurance": "Nationwide Financial",
    "Life": "P&C",
    "Livonia, MI": "Colombus, OH",
-   "Breana Morton-Holt": "Michael Harrison",
-   "bmorton-holt@aaalife.com": "harrm16@nationwide.com"
+   "Breana Morton-Holt": "Tyler Blinn",
+   "bmorton-holt@aaalife.com": "blinnt2@nationwide.com"
  },
  {
    "AAA Life Insurance": "Northwestern Mutual",
    "Life": "",
    "Livonia, MI": "Milwaukee, WI",
-   "Breana Morton-Holt": "Nicholas Mueller",
-   "bmorton-holt@aaalife.com": "nicholasmueller@northwesternmutual.com"
+   "Breana Morton-Holt": "Daniel Groth",
+   "bmorton-holt@aaalife.com": "danielgroth@northwesternmutual.com"
  },
  {
    "AAA Life Insurance": "NY Life",
@@ -360,8 +367,8 @@
    "AAA Life Insurance": "PwC",
    "Life": "Consulting",
    "Livonia, MI": "New York, NY",
-   "Breana Morton-Holt": "Derek Skoog",
-   "bmorton-holt@aaalife.com": "derek.g.skoog@pwc.com"
+   "Breana Morton-Holt": "Allison Muer",
+   "bmorton-holt@aaalife.com": "allison.a.muer@pwc.com"
  },
  {
    "AAA Life Insurance": "Quicken Loans",
@@ -395,8 +402,8 @@
    "AAA Life Insurance": "State Farm",
    "Life": "P&C",
    "Livonia, MI": "Bloomington, IL",
-   "Breana Morton-Holt": "Lynn Battice",
-   "bmorton-holt@aaalife.com": "lynn.battice.cn27@statefarm.com"
+   "Breana Morton-Holt": "Lynn Barnes",
+   "bmorton-holt@aaalife.com": "lynn.barnes.cn27@statefarm.com"
  },
  {
    "AAA Life Insurance": "Stout",
@@ -451,8 +458,8 @@
    "AAA Life Insurance": "Wakely Consulting Group",
    "Life": "Consulting",
    "Livonia, MI": "Tampa, FL",
-   "Breana Morton-Holt": "Julie Nebeker",
-   "bmorton-holt@aaalife.com": "recruiting@wakely.com"
+   "Breana Morton-Holt": "Mark Koransky",
+   "bmorton-holt@aaalife.com": "mark.koransky@wakely.com"
  },
  {
    "AAA Life Insurance": "Westfield Insurance",
@@ -465,8 +472,8 @@
    "AAA Life Insurance": "Willis Towers Watson",
    "Life": "Consulting",
    "Livonia, MI": "Detroit, MI",
-   "Breana Morton-Holt": "Abraham Torralba",
-   "bmorton-holt@aaalife.com": "Abraham.Torralba@willistowerswatson.com"
+   "Breana Morton-Holt": "Tara Wozniak",
+   "bmorton-holt@aaalife.com": "tara.wozniak@willistowerswatson.com"
  },
  {
    "AAA Life Insurance": "Zurich",

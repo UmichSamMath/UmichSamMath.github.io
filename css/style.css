@@ -148,18 +148,10 @@ embed {
     margin: 5% 0% 0% 0%;
 }
 
-.profileimg {
-    background-size: cover;
-    background-position: center;
-    aspect-ratio: 1/1;
-    width: 50%;
-}
-
-
-/* .profile img{
+.profile img{
     width: 50%;
     height: auto;
-} */
+}
 
 table {
     border-collapse: collapse;

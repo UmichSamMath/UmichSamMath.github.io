@@ -2,11 +2,11 @@ body {
     font-family: 'PT Sans', sans-serif;
     margin: 0px;
     padding: 0px;
-    background-image: url(../images/background.JPG);
+    /* background-image: url(../images/background.JPG);
       background-repeat:no-repeat;
       background-size: cover;
       background-color: rgba(255,255,255,0.3);
-    background-blend-mode: lighten;
+    background-blend-mode: lighten; */
      
   }
 
@@ -32,7 +32,7 @@ body {
   }
 
   .container{
-      margin: 0% 12.5% 10% 12.5%;
+      /* margin: 0% 12.5% 10% 12.5%; */
       background-color: #edede9;
   }
 
@@ -136,7 +136,7 @@ embed {
 .flexbox {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-start;
     align-content: space-between;
     text-align: center;
@@ -146,12 +146,15 @@ embed {
 .profile {
     width: 30%;
     margin: 5% 0% 0% 0%;
+    font-size: 20px;
 }
 
 .profile img{
     width: 50%;
     height: auto;
     border: 10px solid #e8c527;
+    filter: drop-shadow(13px 10px 4px black);
+    margin-bottom: 20px;
 }
 
 .blue img{

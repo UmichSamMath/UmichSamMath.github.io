@@ -151,8 +151,11 @@ embed {
 .profile img{
     width: 50%;
     height: auto;
-    border: 5px solid yellow;
+    border: 10px solid yellow;
 }
+
+.blue img{
+    border: 10px solid blue;
 
 table {
     border-collapse: collapse;

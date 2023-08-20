@@ -1,113 +1,318 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SAM Website</title>
-    <meta name="viewport" content="width=devide-width,initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <script src='scripts/jquery.min.js'></script>
+<html lang="en">
+
+<head>
+  <title>Student Actuaries at Michigan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="/favicon.ico">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+  <script src='scripts/jquery.min.js' type="text/javascript"></script>
   <script src='scripts/main.js'></script>
-  </head>
-  <body>
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo-only.png"></a>
-        <p id="title">Student Actuaries at Michigan</p>
-        <div class="links">
-            <a href="calendar.html">Calendar</a>
-            <div class="resources">
-                <p> Resources</p>
-                <div class="dropdown">
-                    <a href="course.html">Course Planning</a>
-                    <a href="workshop.html">Workshops</a>
-                    <a href="exam.html">Exam Resources</a>
-                </div>
-            </div>
-            <a href="scholarship.html">Scholarships</a>
-            <a href="mentor.html">Mentorship</a>
-            <a href="companies.html">Companies</a>
-            <a href="contact.html">Contact</a>
-        </div>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="navbar-title">
+      <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
+      <p class="title">Student Actuaries at Michigan</p>
     </div>
-    <div class="container">
-        <div class="imgbox">
-          <img class="center-fit" src="images/CareerFairSAMBoard.jpeg">
+    <div class="links">
+      <a href="calendar.html">Calendar</a>
+      <a href="new.html">New Members</a>
+      <div class="resources">
+        <p>Resources</p>
+        <div class="dropdown">
+          <a href="course.html">Course Resources</a>
+          <a href="workshop.html">Workshops</a>
+          <a href="exam.html">Exam Resources</a>
         </div>
-        <h1 class="section-title">Club Overview</h1>
-        <div class="imgbox">
-          <img class="center-fit" src="images/overview.png">
+      </div>
+      <a href="scholarship.html">Scholarships</a>
+      <a href="mentor.html">Mentorship</a>
+      <a href="companies.html">Companies</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="parent">
+      <p class="big-title" class="fade-in">Welcome<br>to<br>SAM!</p>
+      <img class="imgbox" id = "dynCycle" src="" alt="SAM Cycle">
+      <script src="scripts/cycle.js"></script>
+    </div>
+    <div class="info-blurb">
+      <div class="info-item" style="margin-right: 65px; margin-left: 10px;">
+        <p style="font-size: 20px; font-style: italic;">Are you interested in <b>business, computer science, consulting,
+            data science, economics, mathematics, and/or statistics</b>? Student Actuaries at Michigan is an
+          organization for undergraduates and graduates interested in pursuing careers in the actuarial industry and
+          other related fields. <br><br>We have built a collaborative, welcoming community of like-minded students
+          focused on helping each other to leverage our strengths to further develop our skills and make an impact. Our
+          resources and connections support the professional development of our members through <b>recruiting events,
+            networking workshops, exam support, mentorship, and more</b>! We can't wait to see you at our next event!
+        </p>
+      </div>
+      <div class="info-item" style="width: 35%;">
+        <ul>
+          <li>Advisor: Roger Natarajan (<a href="mailto: rogernat@umich.edu">rogernat@umich.edu</a>)</li>
+          <li>President: Madison Morelli (<a href="mailto: madimo@umich.edu">madimo@umich.edu</a>)</li>
+          <li>SAM Board: (<a href="mailto: samboardum@umich.edu">samboardum@umich.edu</a>)</li>
+        </ul>
+        <div class="social"><a href="https://www.instagram.com/umich_sam/" target="_blank"><img
+              src="images/Instagram.png" alt="Instagram logo"></a>umich_sam</div>
+        <div class="social"><a href="https://www.facebook.com/groups/SAMUM/" target="_blank""><img
+              src="images/Facebook.png" alt="Facebook logo"></a>Student Actuaries at Michigan</div>
+        <div class="social"><a href="https://www.linkedin.com/groups/2486220" target="_blank"><img
+              src="images/LinkedIn.png" alt="LinkedIn logo"></a>University of Michigan Actuaries</div>
+      </div>
+    </div>
+    <div class="section">
+      <h1>Upcoming Events!</h1>
+      <div class="event-container">
+        
+        <div class="item">
+          <p class="event-title">Resume Workshop 1</p>
+          <p>Tuesday, August 29, 7 - 8pm</p>
+          <p>Location To Be Determined</p>
+          <button type="button" class="collapsible">See More!</button>
+          <div class="hidden-text">
+            <p>More information coming soon!</p>
+          </div>
         </div>
-        <h1 class="section-title">Upcoming Events</h1>
-        <div class="upcoming">
-            <div class="event">
-                <p>Tue</p>
-                <p>March 14</p>
-                <p>Location:East Hall 1360 6:00-7:00PM</p>
-                <p>Pensions Professor Talk</p>
-            </div>
-            <div class="event">
-                <p>Thurs</p>
-                <p>March 16</p>
-                <p>Location:TBD 7:00PM</p>
-                <p>Painting, Movie, and Trivia! (mentorship)</p>
-            </div>
+
+        <div class="item">
+          <p class="event-title">Festifall</p>
+          <p>Wednesday, August 30, 6 - 8:30pm</p>
+          <p>The Diag</p>
+          <button type="button" class="collapsible">See More!</button>
+          <div class="hidden-text">
+            <p>More information coming soon!</p>
+          </div>
         </div>
-      <h1 class="section-title">Important Links</h1>
-            <div class="text">
-                <p>Resources including exam P practice materials and information</p>
-                <ul>
-                    <li><a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank">Exam P Details</a></li>
-                    <li><a href="http://q44929.questionwritertracker.com/PGMFJY3G/" target="_blank">MSU Actuarial Online Exam P</a></li>
-                    <li><a href="https://web2.uwindsor.ca/math/hlynka/actuarialPwebsites.html" target="_blank">University of Windsor Exam P Resources</a></li>
-                    <li><a href="https://www.youtube.com/@mancinellismathlab7451/videos" target="_blank">Mancinelli's Math Lab Practice Problems</a></li>
-              </ul>
-            </div>
-      <!--<h1 class="section-title">Actuarial Career Fair</h1>
-        <p> Join us for the 2022-23 annual Actuarial Career Expo.</p>
-      <br>
-          <a href="https://forms.gle/8zGUSwX79NRWsso47">Submit your resume here!</a>
-      <br>
-      <br>
-      <a href="https://app.joinhandshake.com/career_fairs/33512/employers_list">Link To the Handshake Page</a>
-      <br>
-      <embed src="images/roadmap.pdf">
-      <br>
-        <div class="Paragraph">
-          <h2>What to Expect at the Fair</h2>
-          <br>
-          <p>The Fair includes internship and/or full-time opportunities. 20+ organizations are coming to see you! The Fair is a first step. You will leave with more information about organizations' opportunities, application process and a plan for next steps. You won’t leave the Fair with a job/internship offer.
-          </p>
-          <br>
-        </div>
-      <div class="Paragraph">
-          <h2>Registration</h2>
-          <br>
-          <p>Registration is on-site the day of the event.  Bring your student ID. Non UM-Ann Arbor students are welcome to attend.  
-          </p>
-          <br>
-        </div>
-      <div class="Paragraph">
-          <h2>What to Wear</h2>
-          <br>
-          <p>Fair dress is business professional or business casual. This means: Dress slacks and shirt/tie, skirt and blouse, dress or a business suit. Need help building your professional dress closet? Plan to visit the University Career Center Clothes Closet
-          </p>
-          <br>
-        </div>
-      <div class="Paragraph">
-          <h2>What to Bring</h2>
-          <br>Copies of your resume…plus a few extra for organizations you weren’t planning to meet. A folder for carrying your resumes and any informational materials from organizations. No need for a cover letter
-          </p>
-          <br>
-        </div>-->
-        <!-- <h1 class="section-title">Additional Info</h1>
-        <div class="text">
-            <ul>
-                <li><a href="https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&id=6708cd2257&e=c883f426aa" target="_blank">Mentorship Double Date Pairings</a></li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSeoc8KzooOvwm2ZRztU7ibwfg20plJY0O3-EcN71esSoF60Pg/viewform" target="_blank">Send us ideas for a T-shirt design!</a></li>
+        
+        <script src="scripts/buttons.js"></script>
+      </div>
+    </div>
+
+    <div class="section blue-back">
+      <h1>Fall Mass Meeting Information</h1>
+      <p style="text-align:center; color: red;">Fall Mass Meeting info will eventually go here.</p>
+    </div>
+
+    <div class="section">
+      <h1>Quick Links</h1>
+      <div class=event-container>
+        <div class="item-links">
+          <p class="event-title" style="text-align: center;">University of Michigan Links</p>
+            <ul style="padding-left: 40px;">
+              <li>Actuarial Math Declaration Form</li>
+              <li><a href="https://lsa.umich.edu/content/dam/math-assets/advising-forms/Actuarial.2023.1.16.pdf"
+                  target="_blank">Actuarial Math Course Requirements</a></li>
+              <li>Course Planning Info</li>
+              <li><a
+                  href="https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&id=95a6838a3f&e=0404e5f259"
+                  target="_blank">Exam Reimbursement Form</a></li>
+              <li>Blank CEIL Template</li>
+              <li><a href="https://www.lsa.umich.edu/cg/" target="_blank">LSA Course Guide</a></li>
             </ul>
-        </div> -->
+        </div>
+        <div class="item-links">
+          <p class=event-title style="text-align: center;">Actuarial Societies Links</p>
+          <ul style="padding-left: 40px;">
+            <li><a href="https://www.soa.org/education/exam-req/registration/edu-registration/" target="_blank">SOA
+                Website</a></li>
+            <li><a href="https://www.soa.org/education/exam-req/exam-day-info/exam-schedules/" target="_blank">Upcoming
+                SOA Exams</a></li>
+            <li><a href="https://www.prometric.com/soa" target="_blank">Prometric Testing Center Registration (For SOA
+                Exams)</a></li>
+            <li><a href="https://www.casact.org/" target="_blank">CAS Website</a></li>
+            <li><a href="https://www.casact.org/exams-admissions/pearson-vue/exam-registration" target="_blank">Upcoming
+                CAS Exams</a></li>
+            <li><a href="https://home.pearsonvue.com/cas" target="_blank">Pearson VUE Testing Center Registration (For
+                CAS Exams)</a></li>
+          </ul>
+        </div>
+      </div>
     </div>
-  </body>
+
+    <div class="section blue-back">
+      <h1>Interested in Joining?</h1>
+      <div style = "width: 75%; margin:auto;">  
+        <h2>Please fill out <a class = "h2-link" href="https://forms.gle/wjehfsURTbkPAMDG7" target="_blank">this form</a> to be added to our email list.         </h2>
+          <p>Paying dues is required to receive exam reinbursements, get a SAM t-shirt, and participate in other SAM events! If you have not yet paid annual dues, please send <b>$35</b> via Venmo @UmichSAM or drop off a check or cash in a sealed envelope to Professor Natarajan's office at East Hall 2855. For both methods, please include your full first name, last name, uniqname, and UMID number.</p>
+      </div>
+    </div>
+
+    <div class = "section" style="margin-bottom: 50px;">
+      
+      <h1>Congratulations!</h1>
+       
+      <div class = "section-content">
+        <p id = "congrats-title">Congratulations to:<br></p>
+        
+        
+        <div id = "congrats" style="margin-left: 37%; margin-bottom: 30px; text-align: left;">
+          
+        </div>
+        <script src="scripts/congrats.js"></script>
+
+        <p>Want to be celebrated? Fill out <a href="https://forms.gle/oiiPCLXvM5dbYCVv7" target="_blank">this survey</a> to let the SAM club know of your recent accomplishments! We will announce the club's accomplishments (job acceptances, internships, exam passings, etc.) on the website, and we would love to announce yours!</p>
+      </div>
+    </div>
+
+ <p>Google Calendar API Quickstart</p>
+
+    <!--Add buttons to initiate auth sequence and sign out-->
+    <button id="authorize_button" onclick="handleAuthClick()">Authorize</button>
+    <button id="signout_button" onclick="handleSignoutClick()">Sign Out</button>
+
+    <pre id="content" style="white-space: pre-wrap;"></pre>
+
+    <script type="text/javascript">
+      /* exported gapiLoaded */
+      /* exported gisLoaded */
+      /* exported handleAuthClick */
+      /* exported handleSignoutClick */
+
+      // TODO(developer): Set to client ID and API key from the Developer Console
+      const CLIENT_ID = '162219993558-37f3a2cdhgnrrrkfcmt62r67sn8m8n68.apps.googleusercontent.com';
+      const API_KEY = 'AIzaSyD3loe4y-LxykV9Ew7wQNKXx-kY6ntRwP8';
+
+      // Discovery doc URL for APIs used by the quickstart
+      const DISCOVERY_DOC = 'https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest';
+
+      // Authorization scopes required by the API; multiple scopes can be
+      // included, separated by spaces.
+      const SCOPES = 'https://www.googleapis.com/auth/calendar.readonly';
+
+      let tokenClient;
+      let gapiInited = false;
+      let gisInited = false;
+
+      document.getElementById('authorize_button').style.visibility = 'hidden';
+      document.getElementById('signout_button').style.visibility = 'hidden';
+
+      /**
+       * Callback after api.js is loaded.
+       */
+      function gapiLoaded() {
+        gapi.load('client', initializeGapiClient);
+      }
+
+      /**
+       * Callback after the API client is loaded. Loads the
+       * discovery doc to initialize the API.
+       */
+      async function initializeGapiClient() {
+        await gapi.client.init({
+          apiKey: API_KEY,
+          discoveryDocs: [DISCOVERY_DOC],
+        });
+        gapiInited = true;
+        maybeEnableButtons();
+      }
+
+      /**
+       * Callback after Google Identity Services are loaded.
+       */
+      function gisLoaded() {
+        tokenClient = google.accounts.oauth2.initTokenClient({
+          client_id: CLIENT_ID,
+          scope: SCOPES,
+          callback: '', // defined later
+        });
+        gisInited = true;
+        maybeEnableButtons();
+      }
+
+      /**
+       * Enables user interaction after all libraries are loaded.
+       */
+      function maybeEnableButtons() {
+        if (gapiInited && gisInited) {
+          document.getElementById('authorize_button').style.visibility = 'visible';
+        }
+      }
+
+      /**
+       *  Sign in the user upon button click.
+       */
+      function handleAuthClick() {
+        tokenClient.callback = async (resp) => {
+          if (resp.error !== undefined) {
+            throw (resp);
+          }
+          document.getElementById('signout_button').style.visibility = 'visible';
+          document.getElementById('authorize_button').innerText = 'Refresh';
+          await listUpcomingEvents();
+        };
+
+        if (gapi.client.getToken() === null) {
+          // Prompt the user to select a Google Account and ask for consent to share their data
+          // when establishing a new session.
+          tokenClient.requestAccessToken({prompt: 'consent'});
+        } else {
+          // Skip display of account chooser and consent dialog for an existing session.
+          tokenClient.requestAccessToken({prompt: ''});
+        }
+      }
+
+      /**
+       *  Sign out the user upon button click.
+       */
+      function handleSignoutClick() {
+        const token = gapi.client.getToken();
+        if (token !== null) {
+          google.accounts.oauth2.revoke(token.access_token);
+          gapi.client.setToken('');
+          document.getElementById('content').innerText = '';
+          document.getElementById('authorize_button').innerText = 'Authorize';
+          document.getElementById('signout_button').style.visibility = 'hidden';
+        }
+      }
+
+      /**
+       * Print the summary and start datetime/date of the next ten events in
+       * the authorized user's calendar. If no events are found an
+       * appropriate message is printed.
+       */
+      async function listUpcomingEvents() {
+        let response;
+        try {
+          const request = {
+            'calendarId': 'primary',
+            'timeMin': (new Date()).toISOString(),
+            'showDeleted': false,
+            'singleEvents': true,
+            'maxResults': 10,
+            'orderBy': 'startTime',
+          };
+          response = await gapi.client.calendar.events.list(request);
+        } catch (err) {
+          document.getElementById('content').innerText = err.message;
+          return;
+        }
+
+        const events = response.result.items;
+        if (!events || events.length == 0) {
+          document.getElementById('content').innerText = 'No events found.';
+          return;
+        }
+        // Flatten to string to display
+        const output = events.reduce(
+            (str, event) => `${str}${event.summary} (${event.start.dateTime || event.start.date})\n`,
+            'Events:\n');
+        document.getElementById('content').innerText = output;
+      }
+    </script>
+    <script async defer src="https://apis.google.com/js/api.js" onload="gapiLoaded()"></script>
+    <script async defer src="https://accounts.google.com/gsi/client" onload="gisLoaded()"></script>
+    
+  </div>
+</body>
+
 </html>

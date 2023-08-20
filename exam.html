@@ -1,145 +1,248 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SAM Website</title>
-    <meta name="viewport" content="width=devide-width,initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <script src='scripts/jquery.min.js'></script>
+<html lang="en">
+
+<head>
+  <title>Student Actuaries at Michigan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+  <script src='scripts/jquery.min.js'></script>
   <script src='scripts/main.js'></script>
-  </head>
-  <body>
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo-only.png"></a>
-        <p id="title">Student Actuaries at Michigan</p>
-        <div class="links">
-            <a href="calendar.html">Calendar</a>
-            <div class="resources">
-                <p> Resources</p>
-                <div class="dropdown">
-                    <a href="course.html">Course Planning</a>
-                    <a href="workshop.html">Workshops</a>
-                    <a href="exam.html">Exam Resources</a>
-                </div>
-            </div>
-            <a href="scholarship.html">Scholarships</a>
-            <a href="mentor.html">Mentorship</a>
-            <a href="companies.html">Companies</a>
-            <a href="contact.html">Contact</a>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
+    <p class="title">Student Actuaries at Michigan</p>
+    <div class="links">
+      <a href="calendar.html">Calendar</a>
+      <a href="new.html">New Members</a>
+      <div class="resources">
+        <p> Resources</p>
+        <div class="dropdown">
+          <a href="course.html">Course Resources</a>
+          <a href="workshop.html">Workshops</a>
+          <a href="exam.html">Exam Resources</a>
         </div>
+      </div>
+      <a href="scholarship.html">Scholarships</a>
+      <a href="mentor.html">Mentorship</a>
+      <a href="companies.html">Companies</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div class="container">
-        <h1 class="section-title">Exam Dates</h1>
+  </div> 
+  <div class = "section">
+    <h1>Exam Resources</h1>
+    <p style="margin-top: 20px; text-align:center;">For any questions regarding exams, please contact Ross Neuman, Actuarial Exam Chair (<a href = "mailto: roneuman@umich.edu">roneuman@umich.edu</a>).</p>
+  </div>
+  
+  <div class="section">
+    <h1 class="section-title">Exam Dates</h1>
+    <table>
+      <tr>
+        <th>Exam</th>
+        <th>CBT Dates</th>
+        <th>Registration Deadline</th>
+      </tr>
+      <tr>
+        <td><a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank">Exam P, Probability</a>
+        </td>
+        <td>September 13 - 24, 2023</td>
+        <td><b>August 15, 2023</b></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>November 10 - 21, 2023</td>
+        <td>October 10, 2023</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>January 11 - 22, 2024</td>
+        <td>December 12, 2023</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>March 11 - 22, 2024</td>
+        <td>February 13, 2024</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>May 10 - 21, 2024</td>
+        <td>April 9, 2024</td>
+      </tr>
+      <tr>
+        <td><a href="https://www.soa.org/education/exam-req/edu-exam-fm-detail/" target="_blank">Exam FM, Financial
+            Mathematics</a></td>
+        <td>October 3 - 14, 2023</td>
+        <td><b>September 5, 2023</b></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>December 1 - 12, 2023</td>
+        <td>October 31, 2023</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>February 8 - 19, 2024</td>
+        <td>January 9, 2024</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>April 2 - 13, 2024</td>
+        <td>March 5, 2024</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>June 10 - 21, 2024</td>
+        <td>May 7, 2024</td>
+      </tr>
+      
+      
+    </table>
+
+    <div class=event-container>
+        <div class="society-exams soa">
+          <div class = "header">
+            <img src = "/images/SOA Logo.png">SOA Exams</img>
+          </div>
+          
+          <table>
+            <tr>
+              <th>Exam</th>
+              <th>CBT Dates</th>
+              <th>Registration Deadline</th>
+            </tr>
+
+            <tr>
+              <td><a href="https://www.soa.org/education/exam-req/edu-exam-pa-detail/" target="_blank">Exam PA, Predictive Analytics</a></td>
+              <td>October 17 - 20, 2023</td>
+              <td>September 12, 2023</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>April 16 - 19, 2024</td>
+              <td>March 12, 2024</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>October 15 - 18, 2024</td>
+              <td>September 10, 2024</td>
+            </tr>
+
+            <tr>
+              <td><a href="https://www.soa.org/education/exam-req/edu-exam-srm-detail/" target="_blank">Exam SRM, Statistics for Risk Modeling</a></td>
+              <td>January 3 - 9, 2024</td>
+              <td>December 5, 2023</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>May 23 - 29, 2024</td>
+              <td>April 25, 2024</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>September 3 - 9, 2024</td>
+              <td>August 6, 2024</td>
+            </tr>
+
+            <tr>
+              <td><a href="https://www.soa.org/education/exam-req/edu-exam-fam/" target="_blank">Exam FAM, Fundamentals of Actuarial Mathematics</a></td>
+              <td>November 22 - 28, 2023</td>
+              <td>October 24, 2023</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>March 1 - 7, 2024</td>
+              <td>January 30, 2024</td>
+            </tr>
+
+            <tr>
+              <td></td>
+              <td>July 10 - 16, 2024</td>
+              <td>June 11, 2024</td>
+            </tr>
+            
+          </table>
+          <p>The final administration of FAM(L) and FAM(S) will be July 10 - 16, 2024. The registration deadline is June 11, 2024.</p>
+          </div>
+      
+        <div class="society-exams cas">
+          <div class = "header">
+            <img src = "/images/CAS Logo.png">CAS Exams</img>
+          </div>
             <table>
-                <tr>
-                    <th>Exam</th>
-                    <th>CBT Dates</th>
-                    <th>Paper/Pencil Dates</th>
-                    <th>Registration Deadline</th>
-                </tr>
-                <tr>
-                    <td><a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank">Exam P, Probability</a></td>
-                    <td>March 9-20, 2023</td>
-                    <td>Not Administered</td>
-                    <td>February 7, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>May 12-23, 2023</td>
-                    <td>May 12, 2023</td>
-                    <td>April 11, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>July 14-25, 2023</td>
-                    <td>Not Administered</td>
-                    <td>June 13, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>September 13-24, 2023</td>
-                    <td>September 13, 2023</td>
-                    <td>August 15, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>November 10-21, 2023</td>
-                    <td>Not Administered</td>
-                    <td>October 10, 2023</td>
-                </tr>
-                <tr>
-                    <td><a href="https://www.soa.org/education/exam-req/edu-exam-fm-detail/" target="_blank">Exam FM, Financial Mathematics</a></td>
-                    <td>April 1-12, 2023</td>
-                    <td>Not Administered</td>
-                    <td>February 28, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Aug. 3-14, 2022</td>
-                    <td>None</td>
-                    <td>July 5, 2022</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>June 9-20, 2023</td>
-                    <td>June 9, 2023</td>
-                    <td>May 9, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>August 9-20, 2023</td>
-                    <td>Not Administered</td>
-                    <td>July 11, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>October 3-14, 2023</td>
-                    <td>October 3, 2023</td>
-                    <td>September 5, 2023</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>December 1-12, 2023</td>
-                    <td>Not Administered</td>
-                    <td>October 31, 2023</td>
-                </tr>
-<!--                 <tr>
-                    <td><a href="https://www.soa.org/education/exam-req/edu-exam-ifm-detail/" target="_blank">Exam IFM, Investment and Financial Markets</a></td>
-                    <td>Mar. 1-7, 2022</td>
-                    <td>Mar. 1, 2022</td>
-                    <td>Feb. 1, 2022</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>July 6-12, 2022</td>
-                    <td>July 6</td>
-                    <td>June 7, 2022</td>
-                </tr>
-                <tr>
-                    <td></td>
-                    <td>Nov. 23-29, 2022</td>
-                    <td>Nov. 23, 2022</td>
-                    <td>Oct. 25, 2022</td>
-                </tr> -->
-            </table>
-            <h1 class="section-title">Exam Registration Info</h1>
-            <div class="text">
-                <p>To register for an exam, click into the desired link in the table. Then select which exam date you would like to sit in. Use the following links for unlisted exams.</p>
-                <ul>
-                    <li><a href="https://www.soa.org/education/exam-req/edu-exam-fam/" target="_blank">Exam FAM, Fundamentals of Actuarial Mathematics</a></li>
-                    <li><a href="https://www.soa.org/education/exam-req/edu-exam-srm-detail/" target="_blank">Exam SRM, Statistics for Risk Modeling</a></li>
-                    <li><a href="https://www.soa.org/education/exam-req/edu-exam-pa-detail/" target="_blank">Exam PA, Predictive Analytics</a></li>
-                </ul>
-                <p>Once registered through SOA, you should recieve an additional email to register for a specific date with prometric.</p>
-            </div>
-            <h1 class="section-title">Exam Reimbursement</h1>
-            <div class="text">
-                <p>Congrats on passing your exam! If you are a current member of the club and have declared Actuarial Math as your major, fill out the form linked below for reimbursement for your exam.</p>
-                <ul><li><a href="https://forms.gle/Bo3Nosr8ewqrUUV87" target="_blank">Exam Reimbursement Form</a></li></ul>
-            </div>
+            <tr>
+              <th>Exam</th>
+              <th>CBT Dates</th>
+              <th>Registration Deadline</th>
+            </tr>
+
+            <tr>
+              <td><a href="https://www.casact.org/exam/exam-mas-i-modern-actuarial-statistics-i" target="_blank">Exam MAS-I, Modern Actuarial Statistics-I</a></td>
+              <td>October 30 - November 6, 2023</td>
+              <td>October 2</td>
+            </tr>
+
+              <td><a href="https://www.casact.org/exam/exam-mas-ii-modern-actuarial-statistics-ii" target="_blank">Exam MAS-II, Modern Actuarial Statistics-II</a></td>
+              <td>October 30 - November 6, 2023</td>
+              <td>October 2</td>
+            </tr>
+
+            <tr>
+              <td><a href="https://www.casact.org/exam/exam-5-basic-ratemaking-and-est-claim-liabilities" target="_blank">Exam 5, Basic Ratemaking and Est Claim Liabilities</a></td>
+              <td>October 23 - 30, 2023</td>
+              <td>October 2</td>
+            </tr>
+
+            <tr>
+              <td><a href="https://www.casact.org/exam/exam-6u-regulation-and-financial-reporting-us" target="_blank">Exam 6U, Regulation and Financial Reporting (US)</a></td>
+              <td>October 23 - 30, 2023</td>
+              <td>October 2</td>
+            </tr>
+              
+          </table>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+
+  <div class = "section blue-back">
+    <h1>Exam Prep Checklist</h1>
+    <p>New to the exam-taking process? Check out this comprehensive <a href ="/Resources/Exam Prep Checklist.pdf" target = "_blank">exam prep checklist</a>, especially for SOA exams!</p>
+  </div>
+  
+  <div class="section">
+    <h1>Exam Reimbursement</h1>
+    <div class = "section-content">
+      <p>Congrats on passing your exam! If you are a dues-paying member of SAM and have declared Actuarial Math as your major, please fill out this <a href ="https://forms.gle/Bo3Nosr8ewqrUUV87" target="_blank"> reimbursement form</a> for reimbursement of your exam. Note that you will need your receipt and test result/confirmation letter. You do NOT need to wait for official results if you have confirmation of your UNOFFICIAL/PRELIMINARY passing.</p>
+    </div>
+  </div>
+
+  <div class = "section blue-back">
+    <h1>Exam Manual Checkout</h1>
+    <p style="color:red;">Exam manual checkout info will eventually go here when the process is finalized.</p>
+  </div>
+    
+  <div class = "section" style="margin-bottom: 50px;">
+    <h1>Coaching Actuaries Discounts</h1>
+    <div style="width:75%; margin: auto;">
+      <p>For <a href = "https://www.coachingactuaries.com/" target="_blank" class="p-link">Coaching Actuaries</a> discount codes, contact the SAM President, Madison Morelli (<a href="mailto: madimo@umich.edu">madimo@umich.edu</a>).
+        <br><br>
+      Coaching Actuaries can help you take your exam prep to the next level, and help you save time and study efficiently, so be sure to check them out!       </p>
+    </div>
+  </div>
+    
+  </div>
+</body>
+
 </html>

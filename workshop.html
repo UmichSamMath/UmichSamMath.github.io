@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>SAM Website</title>
-    <meta name="viewport" content="width=devide-width,initial-scale=1">
+    <title>Student Actuaries at Michigan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    
     <script src='scripts/jquery.min.js'></script>
   <script src='scripts/main.js'></script>
   </head>
   <body>
     <div class="navbar">
-        <a href="index.html"><img src="images/logo-only.png"></a>
-        <p id="title">Student Actuaries at Michigan</p>
+        <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
+        <p class="title">Student Actuaries at Michigan</p>
         <div class="links">
             <a href="calendar.html">Calendar</a>
+            <a href="new.html">New Members</a>
             <div class="resources">
                 <p> Resources</p>
                 <div class="dropdown">
-                    <a href="course.html">Course Planning</a>
+                    <a href="course.html">Course Resources</a>
                     <a href="workshop.html">Workshops</a>
                     <a href="exam.html">Exam Resources</a>
                 </div>
@@ -31,49 +34,35 @@
             <a href="contact.html">Contact</a>
         </div>
     </div>
-    <div class="container">
-        <h1 class="section-title">Mass Meeting</h1>
-        <div class="text">
-            <p>Learn more about our club and the actuarial field in the details of our mass meeting!</p>
-            <ul>
-                <li><a href="https://docs.google.com/presentation/d/13xU07XUfON-DpfZiAgNE_M3DbToG1lRx/edit?usp=sharing&ouid=116928202421867991819&rtpof=true&sd=true" target="_blank">Fall 2021 Mass Meeting Slides</a></li>
-                <li><a href="https://docs.google.com/presentation/d/16O7slCeblel75gP64BKAKNX24MUG0Qbt/edit?usp=sharing&ouid=116928202421867991819&rtpof=true&sd=true" target="_blank">Winter 2022 Mass Meeting Slides</a></li>
-                <li><a href="https://docs.google.com/presentation/d/1MxnG88Wmpz3nBTmH8SN4hcDlXB4RGIMK/edit?usp=sharing&ouid=115552460719584670719&rtpof=true&sd=true" target="_blank">Fall 2022 Mass Meeting Slides</a></li>
-              
-            </ul>
+    
+    <div class="section">
+        <h1>Mass Meeting</h1>
+        <div class="section-content">
+            <p>Learn more about our club and the actuarial field in the details of our mass meeting!</p> 
         </div>
-        <h1 class="section-title">Actuarial Career Tracks Workshop</h1>
-        <div class="text">
-            <p>Still deciding on which actuarial track to pursue? Look into each one in these slides!</p>
-            <ul><li><a href="https://docs.google.com/presentation/d/1_O3Xr9HqgZcQzRs_fX7CfG1m3WdbWIlVbhHB3oELiIc/edit?usp=sharing" target="_blank">Link to Career Tracks Slides</a></li></ul>
-        </div>
-        <h1 class="section-title">Resume Workshop</h1>
-        <div class="text">
+    </div>
+
+    <div class = "section blue-back">
+        <h1>Resume Workshop</h1>
+        <div class="section-content">
             <p>Learn how to construct an effective and sound resume with these examples linked!</p>
-            <ul>
-                <li><a href="https://docs.google.com/presentation/d/192-ggQNmTYzKPvN3UJgyQWWcPdgfvh9wPo62Y3O_bKs/edit?usp=sharing" target="_blank">Link to the presentation slides</a></li>
+            <br>
+            <ul class="bullet-list" style="width: 250px; color:red">
+                <li><a href="https://docs.google.com/presentation/d/192-ggQNmTYzKPvN3UJgyQWWcPdgfvh9wPo62Y3O_bKs/edit?usp=sharing" target="_blank">Resume Workshop slides</a></li>
                 <li><a href="workshops/freshman-resume.docx" download>Freshman example resume</a></li>
                 <li><a href="workshops/sophomore-resume.docx" download>Sophomore example resume</a></li>
                 <li><a href="workshops/junior-resume.docx" download>Junior example resume</a></li>
                 <li><a href="workshops/senior-resume.docx" download>Senior example resume</a></li>
-
-            </ul>
-        </div>
-        <h1 class="section-title">Excel Workshop</h1>
-        <div class="text">
-            <p>In the Excel Basics Workshop, we covered basic functions such as index, matching, pivot tables, and vlookup. These are valuable skills for an actuary and can be learned through the video recording.</p>
-            <ul>
-                <li><a href="https://drive.google.com/file/d/1XYx5SHYY_9tOUsPL_7JpL13jKiIWrt27/view?usp=sharing" target="_blank">Watch the 2021 Recording Here</a></li>
-                <li><a href="workshops/excel-workshop.zip" download>Download practice problems and solutions here</a></li>
-            </ul>
-        </div>
-        <h1 class="section-title">SQL Workshop</h1>
-        <div class="text">
-            <p>Linked below are starter files and solutions from our SQL Workshop</p>
-            <ul>
-                <li><a href="workshops/sql-workshop.zip" download>Download practice problems and solutions here</a></li>
             </ul>
         </div>
     </div>
+
+    <div class="section" style="margin-bottom: 50px;">
+        <h1>Course Planning Workshop</h1>
+        <div class="section-content">
+            <p style="color:red;">Course planning blurb goes here.</p> 
+        </div>
+    </div>
+
   </body>
 </html>

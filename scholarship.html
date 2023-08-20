@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>SAM Website</title>
-    <meta name="viewport" content="width=devide-width,initial-scale=1">
+    <title>Student Actuaries at Michigan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+    
     <script src='scripts/jquery.min.js'></script>
   <script src='scripts/main.js'></script>
   </head>
   <body>
     <div class="navbar">
-        <a href="index.html"><img src="images/logo-only.png"></a>
-        <p id="title">Student Actuaries at Michigan</p>
+        <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
+        <p class="title">Student Actuaries at Michigan</p>
         <div class="links">
             <a href="calendar.html">Calendar</a>
+            <a href="new.html">New Members</a>
             <div class="resources">
                 <p> Resources</p>
                 <div class="dropdown">
-                    <a href="course.html">Course Planning</a>
+                    <a href="course.html">Course Resources</a>
                     <a href="workshop.html">Workshops</a>
                     <a href="exam.html">Exam Resources</a>
                 </div>
@@ -31,89 +34,132 @@
             <a href="contact.html">Contact</a>
         </div>
     </div>
-    <div class="container">
-      <h1 class = "org-title">University of Michigan Scholarships<h1/>
-        <p></p>
-        <h1 class="section-title">M.S. Keeler Department of Mathematics Merit Scholarships</h1>
-        <div class="text">
-            <ul>
-                <li>Fall Deadline: Mar 31</li>
-                <li><a href="https://forms.gle/9fM2biGZhNe14tuq6" target="_blank">Link</a></li>
-            </ul>
+    <div class="section">
+      <h1>University of Michigan Scholarships</h1>
+        <div class = scholarship-parent>
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>M.S. Keeler Department of Mathematics Merit Scholarships</h2>
+                <p>Deadline: </p>
+                <p><a href="https://forms.gle/9fM2biGZhNe14tuq6" target="_blank">Apply here!</a></p>
+          </div>
+          
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>Margaret S Huntington Prize in Actuarial Outreach</h2>
+            <p>Deadline:</p>
+            <p><a href="https://forms.gle/Jfyri3BJaQVi5hWv6" target="_blank">Apply here!</a></p>
+          </div>
+          
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>Virginia McCulloh Scholarship</h2>
+            <p>Deadline:</p>
+            <p><a href="https://forms.gle/GKUgwFZsB87Qw42A9" target="_blank">Apply here!</a></p>
+          </div>
+          
+          <div class = "scholarships">
+            <h2 class = event-title>Dept of Mathematics Emergency Scholarship</h2>
+            <p><b>Deadline:</b> None, on a rolling basis</p>
+            <p><b>Requirements:</b></p>
+              <ul>
+                <li>Current UM undergrad majoring in mathematics</li>
+                <li>Enrolled in the current term for 12+ credits</li>
+                <li>Have 4 or less terms left to complete your math degree</li>
+                <li>Have experienced an emergency situation which has impacted your financial stability</li>
+                <li>Demonstrate substantial financial need</li>
+              </ul>
+            <form>
+              <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSf-uy6s6Y3XzdewpuVJa3wvN3HSbIqzm06hxBHNRwad5_RpDQ/viewform" formtarget="_blank">Apply here!                    </button>
+            </form>
+          </div>
         </div>
-        <h1 class="section-title">Margaret S Huntington Prize in Actuarial Outreach</h1>
-        <div class="text">
-            <ul>
-                <li>Fall Deadline: Mar 15</li>
-                <li><a href="https://forms.gle/Jfyri3BJaQVi5hWv6" target="_blank">Link</a></li>
-            </ul>
+    </div>
+
+    <div class="section blue-back" style="margin-bottom: 50px;">
+        <h1>Additional Scholarships</h1>
+      
+        <div class = scholarship-parent>
+
+          <div class = "scholarships">
+            <h2 class = event-title>SAGAA Scholarship & Internship Application for LGBTQ+ Actuarial Students</h2>
+            <p><b>Deadline:</b> Friday, September 15, 2023 @ 11PM</p>
+            <p><b>Requirements:</b></p>
+              <ul>
+                <li>Identify as LGBTQ+</li>
+                <li>Full-time undergrad or grad student</li>
+                <li>Plan on pursuing the actuarial profession</li>
+                <li>GPA is 3.00 or higher</li>
+              </ul>
+            <form>
+              <button type="submit" formaction = "https://theactuarialfoundation.submittable.com/submit/250643/sagaa-2023-scholarship-internship-application-for-lgbtq-actuarial-students" formtarget="_blank">Apply here!</button>
+            </form>
+          </div>
+          
+          <div class = "scholarships">
+            <h2 class = event-title>DW Simpson Actuarial Science Scholorship</h2>
+            <p><b>Deadline:</b> Tuesday, October 31st, 2023</p>
+            <p><b>Requirements:</b></p>
+              <ul>
+                <li>Entering senior year of undergrad study in actuarial science</li>
+                <li>Maintained a GPA of 3.2 or higher in their major and an overall GPA of 3.0 or better</li>
+                <li>Passed at least 1 actuarial examination</li>
+                <li>Eligible to work in the US full time for any employer without requiring employer sponsorship</li>
+              </ul>
+            <form>
+              <button type="submit" formaction = "https://www.dwsimpson.com/about/scholarship-application/" formtarget="_blank">Apply here!</button>
+            </form>
+          </div>
+
+          <div class = "scholarships">
+            <h2 class = event-title>Spencer Educational Foundation Undergrad Scholarship</h2>
+            <p><b>Deadline:</b> Wednesday, January 31, 2024</p>
+            <p><b>Requirements:</b></p>
+              <ul>
+                <li>Seeking a career in Risk Management, Insurance, and/or Actuarial Science</li>
+                <li>Enrolled at an accredited college/university for at least one full academic year (two semesters)</li>
+                <li>Preferred: Majoring/minoring in Risk Management/Insurance or a related field of study (e.g., actuarial science)</li>
+                <li>Preferred: Relevant work/internship experience and leadership skills</li>
+              </ul>
+            <form>
+              <button type="submit" formaction = "https://www.spencered.org/scholarships" formtarget="_blank">Apply here!</button>
+            </form>
+          </div>
+          
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>CAS Trust Scholarship</h2>
+            <p>Deadline:</p>
+            <p><a href="https://www.casact.org/trustscholarship" target="_blank">Apply here!</a></p>
+          </div>
+          
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>Actuary of Tomorrow - Stuart A. Robertson Scholarship</h2>
+            <p>Deadline:</p>
+            <p><a href="https://theactuarialfoundation.submittable.com/submit" target="_blank">Apply here!</a></p>
+          </div>
+          
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>The Ezra Penland Actuarial Scholarship</h2>
+            <p>Deadline:</p>
+            <p><a href="https://www.ezrapenland.com/scholarships/" target="_blank">Apply here!</a></p>
+          </div>
+          
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>Curtis E. Huntington Memorial Scholarship</h2>
+            <p>Deadline:</p>
+            <p><a href="https://www.actuarialfoundation.org/scholarships/huntington-memorial-scholarship/" target="_blank">Apply here!</a></p>
+          </div>
+
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>Hickman Scholars Program</h2>
+            <p>Deadline:</p>
+            <p><a href="https://www.soa.org/education/resources/academic-initiatives/soa-doc-stipend/" target="_blank">Apply here!</a></p>
+          </div>
+            
+          <div class = "scholarships hidden-text">
+            <h2 class = event-title>Midwestern Actuarial Forum (MAF) Scholarship</h2>
+            <p>Deadline:</p>
+            <p><a href="https://www.casact.org/article/apply-2022-midwestern-actuarial-forum-maf-scholarship" target="_blank">Apply here!</a></p>
+          </div>
         </div>
-        <h1 class="section-title">Virginia McCulloh Scholarship</h1>
-        <div class="text">
-            <ul>
-                <li>Fall Deadline: Mar 31</li>
-                <li><a href="https://forms.gle/GKUgwFZsB87Qw42A9" target="_blank">Link</a></li>
-            </ul>
-        </div>
-        <h1 class="section-title">Mathematics Emergency Scholarship</h1>
-        <div class="text">
-            <ul>
-                <li>Fall Deadline: NA</li>
-                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSf-uy6s6Y3XzdewpuVJa3wvN3HSbIqzm06hxBHNRwad5_RpDQ/viewform" target="_blank">Link</a></li>
-            </ul>
-        </div>
-      <h1 class = "org-title">Additional Scholarships<h1/>
-        <p></p>
-      <h1 class="section-title">DW Simpson Actuarial Science Scholorship</h1>
-      <div class="text">
-          <ul>
-              <li>Fall Deadline: Apr 30</li>
-              <li>Spring Deadline: Oct 31</li>
-              <li><a href="https://www.dwsimpson.com/about/scholarship-application/" target="_blank">Link</a></li>
-          </ul>
-      </div>
-      <h1 class="section-title">CAS Trust Scholarship</h1>
-      <div class="text">
-          <ul>
-              <li>Deadline: Jan 31</li>
-              <li><a href="https://www.casact.org/trustscholarship" target="_blank">Link</a></li>
-          </ul>
-      </div>
-      <h1 class="section-title">Actuary of Tomorrow - Stuart A. Robertson Scholarship</h1>
-      <div class="text">
-          <ul>
-              <li>Deadline: Jun 1</li>
-              <li><a href="https://theactuarialfoundation.submittable.com/submit" target="_blank">Link</a></li>
-          </ul>
-      </div>
-      <h1 class="section-title">The Ezra Penland Actuarial Scholarship</h1>
-      <div class="text">
-          <ul>
-              <li>Fall Deadline: Nov 1</li>
-              <li><a href="https://www.ezrapenland.com/scholarships/" target="_blank">Link</a></li>
-          </ul>
-      </div>
-      <h1 class="section-title">Curtis E. Huntington Memorial Scholarship</h1>
-      <div class="text">
-          <ul>
-              <li>Fall Deadline: Mar 31</li>
-              <li><a href="https://www.actuarialfoundation.org/scholarships/huntington-memorial-scholarship/" target="_blank">Link</a></li>
-          </ul>
-      </div>
-      <h1 class="section-title">Hickman Scholars Program</h1>
-      <div class="text">
-          <ul>
-              <li>Fall Deadline: Feb 15</li>
-              <li><a href="https://www.soa.org/education/resources/academic-initiatives/soa-doc-stipend/" target="_blank">Link</a></li>
-          </ul>
-      </div>
-      <h1 class="section-title">Midwestern Actuarial Forum (MAF) Scholarship</h1>
-      <div class="text">
-          <ul>
-              <li>Fall Deadline: Feb 15</li>
-              <li><a href="https://www.casact.org/article/apply-2022-midwestern-actuarial-forum-maf-scholarship" target="_blank">Link</a></li>
-          </ul>
-      </div>
+    </div>
     </div>
   </body>
 </html>

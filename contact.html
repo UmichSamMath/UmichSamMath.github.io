@@ -1,140 +1,290 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>SAM Website</title>
-    <meta name="viewport" content="width=devide-width,initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
-    <script src='scripts/jquery.min.js'></script>
+<html lang="en">
+
+<head>
+  <title>Student Actuaries at Michigan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  
+  <script src='scripts/jquery.min.js'></script>
   <script src='scripts/main.js'></script>
-  </head>
-  <body>
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo-only.png"></a>
-        <p id="title">Student Actuaries at Michigan</p>
-        <div class="links">
-            <a href="calendar.html">Calendar</a>
-            <div class="resources">
-                <p> Resources</p>
-                <div class="dropdown">
-                    <a href="course.html">Course Planning</a>
-                    <a href="workshop.html">Workshops</a>
-                    <a href="exam.html">Exam Resources</a>
-                </div>
-            </div>
-            <a href="scholarship.html">Scholarships</a>
-            <a href="mentor.html">Mentorship</a>
-            <a href="companies.html">Companies</a>
-            <a href="contact.html">Contact</a>
+</head>
+
+<body>
+  <div class="navbar">
+    <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
+    <p class="title">Student Actuaries at Michigan</p>
+    <div class="links">
+      <a href="calendar.html">Calendar</a>
+      <a href="new.html">New Members</a>
+      <div class="resources">
+        <p> Resources</p>
+        <div class="dropdown">
+          <a href="course.html">Course Resources</a>
+          <a href="workshop.html">Workshops</a>
+          <a href="exam.html">Exam Resources</a>
         </div>
+      </div>
+      <a href="scholarship.html">Scholarships</a>
+      <a href="mentor.html">Mentorship</a>
+      <a href="companies.html">Companies</a>
+      <a href="contact.html">Contact</a>
     </div>
-    <div class="container">
-        <h1 class="section-title">Board Members</h1>
-        <div class="flexbox">
-            <div class="profile">
-                <img src="images/professor.jpg">
-                <p>Advisor</p>
-                <p>Roger Natarajan</p>
-                <a href = "mailto: rogernat@umich.edu">rogernat@umich.edu</a>
+  </div>
+  <div class="section" style="margin-bottom: 50px;">
+    <h1>Board Members</h1>
+    
+    <div class="flexbox">
+      
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/professor.jpg">
+              </div>
+            <div class = "flip-card-back">
             </div>
-            <div class="profile blue">
-                <img src="images/madison.jpg">
-                <p>President</p>
-                <p>Madison Morelli</p>
-                <a href = "mailto: madimo@umich.edu">madimo@umich.edu</a>
-            </div>
-            <div class="profile">
-                <img src="images/Gabe_temp.jpg">
-                <p>Vice President</p>
-                <p>Gabe Weber</p>
-                <a href = "mailto: gabeweb@umich.edu">gabeweb@umich.edu</a>
-            </div>
-            <div class="profile blue">
-                <img src="images/max.jpg">
-                <p>Career Chair</p>
-                <p>Max Roman</p>
-                <a href = "mailto: maroman@umich.edu">maroman@umich.edu</a>
-            </div>
-            <div class="profile">
-                <img src="images/Sawyer.jpg">
-                <p>Career Chair</p>
-                <p>Sawyer Gustafson</p>
-                <a href = "mailto: sgustafsg@umich.edu">sgustafsg@umich.edu</a>
-            </div>
-            <div class="profile blue">
-                <img src="images/Hannah.jpeg">
-                <p>Secretary</p>
-                <p>Hannah Rowe</p>
-                <a href = "mailto: harowe@umich.edu">harowe@umich.edu</a>
-            </div>
-          
-            <div class="profile">
-                <img src="images/Justin.png">
-                <p>Outreach Chair</p>
-                <p>Justin Berghorst</p>
-                <a href = "mailto: justbe@umich.edu">justbe@umich.edu</a>
-            </div>
-          
-            <div class="profile blue">
-                <img src="images/ross.jpeg">
-                <p>Exam Chair</p>
-                <p>Ross Neuman</p>
-                <a href = "mailto: roneuman@umich.edu">roneuman@umich.edu</a>
-            </div>
-          
-             <div class="profile">
-                <img src="images/Trent.jpeg">
-                <p>Treasurer</p>
-                <p>Trent Cappaert</p>
-                <a href = "mailto: trentcap@umich.edu">trentcap@umich.edu</a>
-            </div>
-          
-            <div class="profile blue">
-                <img src="images/Kapil.jpg">
-                <p>International Student Liaison</p>
-                <p>Kapil Pownikar</p>
-                <a href = "mailto: kapilp@umich.edu">kapilp@umich.edu</a>
-            </div>
-          
-            <div class="profile">
-                <img src="images/Katherine.jpg">
-                <p>Webmaster</p>
-                <p>Katherine Bednarz</p>
-                <a href = "mailto: bednarzk@umich.edu">bednarzk@umich.edu</a>
-            </div>
-          
-            <div class="profile blue">
-                <img src="images/Sajni.JPG">
-                <p>Underclassman Ambassador</p>
-                <p>Sajni Patel</p>
-                <a href = "mailto: sajni@umich.edu">sajni@umich.edu</a>
-            </div>
-          
-            <div class="profile">
-                <img src="images/Anika_temp.PNG">
-                <p>Social Chair</p>
-                <p>Anika Palkhiwalan</p>
-                <a href = "mailto: apalkhiw@umich.edu">apalkhiw@umich.edu</a>
-            </div>
-            
-            <div class="profile blue">
-                <img src="images/Scott.JPG">
-                <p>IM Sports Chair</p>
-                <p>Scott Rolf</p>
-                <a href = "mailto: serol@umich.edu">serol@umich.edu</a>
-            </div>
-          
-            <div class="profile">
-                <img src="images/hunter.jpg">
-                <p>CAS Ambassador</p>
-                <p>Hunter Stanek</p>
-                <a href = "mailto: hstanek@umich.edu">hstanek@umich.edu</a>
-            </div>
+          </div>
+        </div>
+        
+          <p>Advisor</p>
+          <p>Roger Natarajan</p>
+          <a href = "mailto: rogernat@umich.edu">rogernat@umich.edu</a>
+
+      </div>
      
+      <div class="profile blue">
+        
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Madison.jpg">
+            </div>
+            <div class = "flip-card-back blue-card">
+            </div>
+          </div>
         </div>
+        
+        <p>President</p>
+        <p>Madison Morelli</p>
+        <a href="mailto: madimo@umich.edu">madimo@umich.edu</a>
+      </div>
+      
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Gabe.jpg">
+            </div>
+            <div class = "flip-card-back">
+            </div>
+          </div>
+        </div>
+        
+        <p>Vice President</p>
+        <p>Gabe Weber</p>
+        <a href="mailto: gabeweb@umich.edu">gabeweb@umich.edu</a>
+      </div>
+      
+      <div class="profile blue">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/max.jpg">
+              </div>
+            <div class = "flip-card-back blue-card">
+            </div>
+          </div>
+        </div>
+        
+        <p>Career Chair</p>
+        <p>Max Roman</p>
+        <a href="mailto: maroman@umich.edu">maroman@umich.edu</a>
+      </div>
+      
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Sawyer.jpg">
+              </div>
+            <div class = "flip-card-back">
+            </div>
+          </div>
+        </div>
+        
+        <p>Career Chair</p>
+        <p>Sawyer Gustafson</p>
+        <a href="mailto: sgustafs@umich.edu">sgustafs@umich.edu</a>
+      </div>
+      
+      <div class="profile blue">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Hannah.jpeg">
+              </div>
+            <div class = "flip-card-back blue-card">
+            </div>
+          </div>
+        </div>
+        
+        <p>Secretary</p>
+        <p>Hannah Rowe</p>
+        <a href="mailto: harowe@umich.edu">harowe@umich.edu</a>
+      </div>
+
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Justin.png">
+              </div>
+            <div class = "flip-card-back">
+            </div>
+          </div>
+        </div>
+        
+        <p>Outreach Chair</p>
+        <p>Justin Berghorst</p>
+        <a href="mailto: justbe@umich.edu">justbe@umich.edu</a>
+      </div>
+
+      <div class="profile blue">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/ross.jpeg">
+              </div>
+            <div class = "flip-card-back blue-card">
+            </div>
+          </div>
+        </div>
+        
+        <p>Exam Chair</p>
+        <p>Ross Neuman</p>
+        <a href="mailto: roneuman@umich.edu">roneuman@umich.edu</a>
+      </div>
+
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Trent.jpeg">
+              </div>
+            <div class = "flip-card-back">
+            </div>
+          </div>
+        </div>
+        
+        <p>Treasurer</p>
+        <p>Trent Cappaert</p>
+        <a href="mailto: trentcap@umich.edu">trentcap@umich.edu</a>
+      </div>
+
+      <div class="profile blue">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Kapil.jpg">
+              </div>
+            <div class = "flip-card-back blue-card">
+            </div>
+          </div>
+        </div>
+        
+        <p>International Student Liaison</p>
+        <p>Kapil Pownikar</p>
+        <a href="mailto: kapilp@umich.edu">kapilp@umich.edu</a>
+      </div>
+
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Katherine.jpg">
+              </div>
+            <div class = "flip-card-back">
+            </div>
+          </div>
+        </div>
+        
+        <p>Webmaster</p>
+        <p>Katherine Bednarz</p>
+        <a href="mailto: bednarzk@umich.edu">bednarzk@umich.edu</a>
+      </div>
+
+      <div class="profile blue">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Sajni.JPG">
+              </div>
+            <div class = "flip-card-back blue-card">
+            </div>
+          </div>
+        </div>
+        
+        <p>Underclassman Ambassador</p>
+        <p>Sajni Patel</p>
+        <a href="mailto: sajni@umich.edu">sajni@umich.edu</a>
+      </div>
+
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Anika.jpg">
+              </div>
+            <div class = "flip-card-back">
+            </div>
+          </div>
+        </div>
+        
+        <p>Social Chair</p>
+        <p>Anika Palkhiwala</p>
+        <a href="mailto: apalkhiw@umich.edu">apalkhiw@umich.edu</a>
+      </div>
+
+      <div class="profile blue">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Scott.JPG">
+              </div>
+            <div class = "flip-card-back blue-card">
+            </div>
+          </div>
+        </div>
+        
+        <p>IM Sports Chair</p>
+        <p>Scott Rolf</p>
+        <a href="mailto: serolf@umich.edu">serolf@umich.edu</a>
+      </div>
+
+      <div class="profile">
+        <div class = "flip-card">
+          <div class = "flip-card-inner">
+            <div class = "flip-card-front">
+              <img src="images/Board Headshots/Hunter.JPG">
+              </div>
+            <div class = "flip-card-back">
+            </div>
+          </div>
+        </div>
+        
+        <p>CAS Ambassador</p>
+        <p>Hunter Stanek</p>
+        <a href="mailto: hstanek@umich.edu">hstanek@umich.edu</a>
+      </div>
+
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

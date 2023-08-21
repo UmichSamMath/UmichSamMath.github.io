@@ -44,10 +44,10 @@ p {
 
 .big-title {
   float: left;
-  font-size: 6vw;
+  font-size: 75px;
   font-weight: 1000;
   width: 500px;
-  max-width: 60%;
+  max-width: 90%;
   text-align: center;
   animation: fadeIn 4s;
   -webkit-animation: fadeIn 4s;
@@ -64,7 +64,7 @@ p {
 
 .parent p {
   color: #FFCB05;
-  text-shadow: 4px 4px black;
+  text-shadow: 5px 5px black;
 }
 
 .info-blurb {
@@ -170,6 +170,7 @@ p {
   border-radius: 20px;
   height: auto;
   width: 350px;
+  max-width: 80%;
   border-style: solid;
   /* border-color: #e43f6f; */
   border-width: 5px;
@@ -183,6 +184,7 @@ p {
   border-radius: 20px;
   height: auto;
   width: 550px;
+  max-width: 90%;
   border-style: solid;
   border-color: black;
   border-width: 5px;
@@ -207,7 +209,8 @@ p {
   cursor: pointer;
   margin-top: 25px;
   margin-bottom: 10px;
-  width: 25%;
+  width: 100px;
+  height: 25px;
   border: none;
   text-align: center;
   outline: none;
@@ -273,7 +276,7 @@ p {
 
 .imgbox {
   width: 500px;
-  max-width: 70%;
+  max-width: 90%;
   padding-left: 25px;
   padding-right: 25px;
 }
@@ -328,7 +331,7 @@ embed {
 
 .links a,
 .links p {
-  font-size: 1.5vw;
+  font-size: 20px;
   color: #FFCB05;
   margin: 10px;
 }
@@ -444,15 +447,13 @@ td a {
 
 .text a:hover {
   text-decoration: underline;
-<<<<<<< HEAD
-=======
 }
 
 .scholarships {
   background-color: #0075A0;
   border-radius: 20px;
   height: auto;
-  width: 45%;
+  width: 600px;
   border-style: solid;
   border-color: black;
   border-width: 5px;
@@ -460,6 +461,7 @@ td a {
   padding-top: 15px;
   margin-bottom: 40px;
   color: white;
+  max-width: 90%;
 }
 
 .scholarship-parent {
@@ -647,6 +649,7 @@ table {
 .bullet-list {
   text-align:left; 
   margin: auto;
+  max-width: 95%;
 }
 
 form {
@@ -707,266 +710,3 @@ form {
   max-width: 50px;
   margin-bottom: 30px;
   cursor: pointer;
->>>>>>> a2bd8dd1fba099251a21fe297b4f041a7426fca5
-}
-
-.scholarships {
-  background-color: #0075A0;
-  border-radius: 20px;
-  height: auto;
-  width: 45%;
-  border-style: solid;
-  border-color: black;
-  border-width: 5px;
-  text-align: center;
-  padding-top: 15px;
-  margin-bottom: 40px;
-  color: white;
-}
-
-.scholarship-parent {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.scholarships p {
-  font-size: 18px;
-  margin-bottom: 10px;
-}
-
-.scholarships h2 {
-  margin: 0;
-}
-
-.scholarships a {
-  color: white;
-}
-
-.scholarships a:hover {
-  color: #cfcfcf;
-}
-
-
-.mentorship-text {
-  width: 80%;
-  margin: 0% 10% 0% 10%;
-}
-
-.mentorship-text a {
-  color: #0000ee;
-}
-
-.mentorship-text a:hover {
-  color: #0000ee;
-}
-
-.groupme {
-  background-color: #FFCB05;
-  border-color: #dfbc30;
-  border-radius: 20px;
-  height: auto;
-  width: 85%;
-  border-style: solid;
-  /* border-color: #e43f6f; */
-  border-width: 5px;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
-  justify-content:left;
-  flex-wrap: wrap;  
-  margin: auto;
-}
-
-.groupme img {
-  width: 150px;
-  border-radius: 20px;
-  margin: 5px 15px 5px 15px;
-  border: 4px solid black;
-  padding: 4px;
-  background-color: #0075A0;
-}
-
-.groupme img:hover {
-  filter: drop-shadow(4px 4px 2px black);
-}
-
-.highlight {
-  background-color: #fffcbf;
-  padding: 4px 8px;
-  border-radius: 8px;
-}
-
-input {
-  width: 80%;
-  height: 20px;
-}
-
-.search-bar {
-  text-align: center;
-  margin-bottom: 50px;
-}
-
-.company {
-  border: 3px solid #8cbecf;
-  margin: 10px;
-  border-radius: 8px;
-  padding: 10px;
-  width: 350px;
-  text-align: center;
-  background-color: #d6f5ff;
-  height: auto;
-}
-
-.company-parent {
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap: wrap;
-}
-
-.company img {
-  height: 40px;
-  margin: auto;
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-.company p {
-  padding: 0;
-}
-
-.company-title {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-
-table {
-  margin: auto;
-  margin-bottom: 50px;
-}
-
-.society-exams {
-  border-radius: 20px;
-  height: auto;
-  width: 45%;
-  border-style: solid;
-  border-width: 5px;
-  text-align: left;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin-bottom: 20px;
-  color: white;
-  min-width: 600px;
-  
-}
-
-.soa {
-  background-color: #a8bad0;
-  border-color: #1c4379;
-  color: black;
-}
-
-.cas {
-  background-color: #0071bc;
-  border-color: #003b7a;
-}
-
-.header img {
-  width: 50px;
-  height: auto;
-  vertical-align: middle;
-  margin-right: 10px;
-}
-
-.header {
-  margin: auto;
-  width: 200px;
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 30px;
-}
-
-.society-exams table {
-  width: 95%;
-  margin: auto;
-  margin-bottom: 30px;
-}
-
-.society-exams p {
-  margin: 0 25px;
-}
-
-.cas table {
-  color: black;
-}
-
-.bullet-list {
-  text-align:left; 
-  margin: auto;
-}
-
-form {
-  margin-bottom: 20px;
-}
-
-.scholarships button {
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.flip-card {
-  background-color: transparent;
-  width: 220px;
-  height: 220px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  margin-bottom: 25px;
-}
-
-/* This container is needed to position the front and back side */
-.flip-card-inner {
-  position: relative;
-  width: 220px;
-  height: 220px;
-  text-align: center;
-  transition: transform 0.8s;
-  transform-style: preserve-3d;
-}
-
-/* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-/* Position the front and back side */
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 220px;
-  height: 220px;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
-}
-
-/* Style the back side */
-.flip-card-back {
-  background-color: #e8c527;
-  color: white;
-  transform: rotateY(180deg);
-  filter: drop-shadow(13px 10px 4px black);
-}
-
-.blue-card {
-  background-color: #337cbd;
-}
-
-.bodymovinanim {
-  width: 90%;
-  max-width: 50px;
-  margin-bottom: 30px;
-  cursor: pointer;
-}

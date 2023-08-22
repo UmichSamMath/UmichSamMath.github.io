@@ -366,11 +366,6 @@ embed {
   color: #FFCB05;
 }
 
-.resources:hover .dropdown {
-  /* display: block;
-  z-index: 1; */
-}
-
 .resources p {
   margin: 0;
   cursor: pointer;

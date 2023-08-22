@@ -58,8 +58,11 @@ p {
   font-family: 'Jost', sans-serif;
   background-image: url("/images/Einstein.png");
   background-size: 100% 104%;
-  margin-right: 25px;
-  margin-left: 25px;
+}
+
+.spacing {
+  width: 25px;
+  max-width: 5%;
 }
 
 .parent p {
@@ -83,7 +86,7 @@ p {
 }
 
 .info-item {
-  min-width: 350px;
+  min-width: 325px;
   width: 40%;
   font-size: 18px;
   padding-bottom: 25px;
@@ -277,8 +280,6 @@ p {
 .imgbox {
   width: 500px;
   max-width: 90%;
-  padding-left: 25px;
-  padding-right: 25px;
 }
 
 iframe {

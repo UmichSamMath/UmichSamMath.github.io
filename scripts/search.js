@@ -19,6 +19,14 @@ let companies = [
     "keywords": ["Virginia", "Maryland", "VA", "MD"]
   },
   {
+    "name": "AF Group",
+    "business": "Workers Compensation",
+    "typeOfWork": "Insurance",
+    "contactName": "Nick Zielinski",
+    "contactEmail": "Nick.Zielinski@accidentfund.com",
+    "keywords": []
+  },
+  {
     "name": "Allianz",
     "business": "Life",
     "typeOfWork": "Insurance",
@@ -27,12 +35,28 @@ let companies = [
     "keywords": ["Minneapolis", "MN", "Minnesota"]
   },
   {
+    "name": "Allstate",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "Doree Kreitman",
+    "contactEmail": "dkrek@allstate.com",
+    "keywords": []
+  },
+  {
     "name": "Ally",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
     "contactName": "Nathan Koo",
     "contactEmail": "nathan.koo@ally.com",
     "keywords": ["Detroit", "MI", "Michigan"]
+  },
+  {
+    "name": "American Family Insurance",
+    "business": "",
+    "typeOfWork": "",
+    "contactName": "David Binder",
+    "contactEmail": "dbinder@amfam.com",
+    "keywords": []
   },
   {
     "name": "Aon",
@@ -65,6 +89,14 @@ let companies = [
     "contactName": "Tom Whiting",
     "contactEmail": "twhiting@bcbsm.com",
     "keywords": ["Detroit", "MI", "Michigan"]
+  },
+  {
+    "name": "Brighthouse Financial",
+    "business": "Life",
+    "typeOfWork": "Insurance",
+    "contactName": "Kapil Mannem",
+    "contactEmail": "kapil.mannem@brighthousefinancial.com",
+    "keywords": []
   },
   {
     "name": "Centene",
@@ -147,10 +179,34 @@ let companies = [
     "keywords": ["Boston", "MA", "Massachusetts"]
   },
   {
+    "name": "Global Atlantic Financial Group",
+    "business": "Life",
+    "typeOfWork": "",
+    "contactName": "Jinyi Lan",
+    "contactEmail": "Jinyi.Lan@gafg.com",
+    "keywords": []
+  },
+  {
+    "name": "Hagerty",
+    "business": "Property and Casualty",
+    "typeOfWork": "",
+    "contactName": "Karin Chung",
+    "contactEmail": "kchung@hagerty.com",
+    "keywords": []
+  },
+  {
+    "name": "The Hanover Insurance Group",
+    "business": "Property and Casualty",
+    "typeOfWork": "",
+    "contactName": "Steve Bunker",
+    "contactEmail": "STBUNKER@hanover.com",
+    "keywords": []
+  },
+  {
     "name": "HAP",
     "business": "Health",
     "typeOfWork": "Insurance",
-    "contactName": "",
+    "contactName": "Erica Cook-Shugart",
     "contactEmail": "ecooks1@hap.org",
     "keywords": ["Michigan", "Detroit", "MI", "Troy"]
   },
@@ -195,6 +251,14 @@ let companies = [
     "keywords": ["Boston", "MA", "Massachusetts"]
   },
   {
+    "name": "Lockton",
+    "business": "",
+    "typeOfWork": "Consulting",
+    "contactName": "Jon Acker",
+    "contactEmail": "jon.acker@lockton.com",
+    "keywords": []
+  },
+  {
     "name": "Mercer",
     "business": "",
     "typeOfWork": "Consulting",
@@ -214,8 +278,8 @@ let companies = [
     "name": "Milliman Life & FRM",
     "business": "Life/Financial Risk Management",
     "typeOfWork": "Consulting",
-    "contactName": "",
-    "contactEmail": "",
+    "contactName": "Mandie Molina",
+    "contactEmail": "mandie.molina@milliman.com",
     "keywords": ["Chicago", "IL", "Illinois", "LTS"]
   },
   {
@@ -259,12 +323,52 @@ let companies = [
     "keywords": ["New York", "NY", "Chicago", "IL", "Illinois"]
   },
   {
+    "name": "RGA",
+    "business": "",
+    "typeOfWork": "Reinsurance",
+    "contactName": "Stephanie Kut",
+    "contactEmail": "Stephanie.Kut@rgare.com",
+    "keywords": []
+  },
+  {
+    "name": "Santa Barbara Actuaries",
+    "business": "Health",
+    "typeOfWork": "",
+    "contactName": "Ian Duncan",
+    "contactEmail": "ian.duncan@sbactuaries.com",
+    "keywords": []
+  },
+  {
+    "name": "Segal Group",
+    "business": "Pension/Retirement",
+    "typeOfWork": "Consulting",
+    "contactName": "Bill Gitterman",
+    "contactEmail": "wgitterman@segalco.com",
+    "keywords": []
+  },
+  {
+    "name": "SelectQuote",
+    "business": "",
+    "typeOfWork": "",
+    "contactName": "Mika McGinnis",
+    "contactEmail": "mika.mcginnis@selectquote.com",
+    "keywords": []
+  },
+  {
     "name": "State Farm",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
     "contactName": "Lynn Barnes",
     "contactEmail": "lynn.barnes.cn27@statefarm.com",
     "keywords": ["Bloomington", "IL", "Illinois"]
+  },
+  {
+    "name": "Stout",
+    "business": "Financial Services",
+    "typeOfWork": "",
+    "contactName": "Colin Copeland",
+    "contactEmail": "ccopeland@stout.com",
+    "keywords": []
   },
   {
     "name": "Swiss Re",
@@ -281,6 +385,14 @@ let companies = [
     "contactName": "Eric Prospect",
     "contactEmail": "eric_prospect1@uhc.com",
     "keywords": ["Minneapolis", "MN", "Minnesota"]
+  },
+  {
+    "name": "Wakely",
+    "business": "Health",
+    "typeOfWork": "Consulting",
+    "contactName": "Mark Koransky",
+    "contactEmail": "mark.koransky@wakely.com",
+    "keywords": []
   },
   {
     "name": "WTW",

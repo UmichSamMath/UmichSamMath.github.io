@@ -520,15 +520,20 @@ td a {
 }
 
 .groupme img {
-  width: 150px;
-  border-radius: 20px;
+  width: 100%;
+}
+
+.groupme a {
+  width: 166px;
+  max-width: 35%;
   margin: 5px 15px 5px 15px;
+  border-radius: 20px;
   border: 4px solid black;
   padding: 4px;
   background-color: #0075A0;
 }
 
-.groupme img:hover {
+.groupme a:hover {
   filter: drop-shadow(4px 4px 2px black);
 }
 
@@ -600,7 +605,7 @@ table {
   padding-bottom: 15px;
   margin-bottom: 20px;
   color: white;
-  min-width: 600px;
+  min-width: 350px;
   
 }
 

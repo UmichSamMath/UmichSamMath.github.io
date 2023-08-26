@@ -17,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "Festifall",
-    "Description": "We will be located on central campus between Mason Hall and the School of Kinesiology Building, at table D84.",
+    "Description": "We will be located on central campus between Mason Hall and the School of Kinesiology Building, at table D84. Come visit us to learn more about SAM and get some free swag!",
     "Location": "The Diag",
     "Date": "August 30",
     "StartTimeStr": "6:00",

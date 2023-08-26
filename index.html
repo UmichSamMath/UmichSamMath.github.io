@@ -150,43 +150,7 @@
 
         <p>Want to be celebrated? Fill out <a href="https://forms.gle/oiiPCLXvM5dbYCVv7" target="_blank">this survey</a> to let the SAM club know of your recent accomplishments! We will announce the club's accomplishments (job acceptances, internships, exam passings, etc.) on the website, and we would love to announce yours!</p>
       </div>
-    </div>
-
- <p>Google Calendar API Quickstart</p>
-
-    <button id="authorize-button">Authorize with Google</button>
-    <script>
-      document.getElementById('authorize-button').addEventListener('click', function() {
-    gapi.auth2.getAuthInstance().signIn();
-});
-    </script>
-<script>
-  gapi.load('client:auth2', initClient);
-
-function initClient() {
-    gapi.client.init({
-        apiKey: 'AIzaSyD3loe4y-LxykV9Ew7wQNKXx-kY6ntRwP8',
-        clientId: '162219993558-9f9auqn7n2g02fv5uqiaibv6a46d4p6q.apps.googleusercontent.com',
-        discoveryDocs: ['https://www.googleapis.com/discovery/v1/apis/calendar/v3/rest'],
-        scope: 'https://www.googleapis.com/auth/calendar.readonly',
-    }).then(function () {
-        // Handle the API initialization.
-        // You can now make API calls.
-        gapi.auth2.getAuthInstance().isSignedIn.listen(updateSigninStatus);
-        updateSigninStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
-    });
-}
-
-function updateSigninStatus(isSignedIn) {
-    if (isSignedIn) {
-        // User is signed in. Make API calls.
-    } else {
-        // User is not signed in. Show the "Authorize" button.
-    }
-}
-</script>
-
-    
+    </div>   
     
   </div>
 </body>

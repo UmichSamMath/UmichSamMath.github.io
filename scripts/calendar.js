@@ -5,8 +5,8 @@
 let SAMevents = [
   {
     "Title": "Resume Workshop 1",
-    "Description": "",
-    "Location": "",
+    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd19ahfNtcPYeQHBs7VYGsxqHurDYGyIPUOeQd7NXgaFwq5tw/viewform?usp=sharing\" target=_blank>here</a>!",
+    "Location": "East Hall 1084",
     "Date": "August 29",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -29,8 +29,8 @@ let SAMevents = [
   },
   {
     "Title": "Mass Meeting",
-    "Description": "",
-    "Location": "",
+    "Description": "Learn all about the SAM events and opportunities throughout the upcoming school year. RSVP <a href=\"https://forms.gle/FiNDc8ZYKKTSD43y9\" target=_blank>here</a>!",
+    "Location": "East Hall 1360",
     "Date": "September 5",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",
@@ -41,8 +41,8 @@ let SAMevents = [
   },
   {
     "Title": "Resume Workshop 2",
-    "Description": "",
-    "Location": "",
+    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdhxJQQHgKpDNdMCtBtkpsMnbsKPkBs3RuMad8TcUD2FONYOA/viewform?usp=sharing\" target=_blank>here</a>!",
+    "Location": "East Hall 1084",
     "Date": "September 5",
     "StartTimeStr": "8:00",
     "EndTimeStr": "9:00",
@@ -52,9 +52,21 @@ let SAMevents = [
     "EndTime": "2023-09-05T21:00"
   },
   {
+    "Title": "Resume Office Hours",
+    "Description": "<a href=\"https://docs.google.com/spreadsheets/d/1zku-cawcopkG86t_JUxWwtuRb06C7hGc3uESJql-gM8/edit#gid=1953096505\" target=_blank>Sign up</a> to have your resume reviewed one-on-one with a board member. Please sign up at least 24 hours in advance.",
+    "Location": "Board member will email zoom link/location",
+    "Date": "September 6",
+    "StartTimeStr": "9:00AM",
+    "EndTimeStr": "Tuesday, September 12, 6:00PM",
+    "AmPm": "",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2023-09-06T00:00",
+    "EndTime": "2023-09-13T00:00"
+  },
+  {
     "Title": "New Member Orientation",
-    "Description": "",
-    "Location": "",
+    "Description": "Introduction to the actuarial profession and information about SAM. Overview of the actuarial curriculum, actuarial scholarships, and advice for underclassmen/new actuaries. RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSenXnPFOfwpu7xzT8wpwHaKucnncJ4cB-Dq-hrqzTEGe2TaFg/viewform?usp=sf_link\" target=_blank>here</a>!",
+    "Location": "East Hall 1084",
     "Date": "September 6",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",
@@ -65,8 +77,8 @@ let SAMevents = [
   },
   {
     "Title": "Interview Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "Come to learn about what makes a successful performance in a professional interview! Presenters will go over how to prepare for the interview beforehand, the types of questions to expect, how to structure one's answers, and post-interview etiquette. RSVP <a href=\"https://forms.gle/TyEYGthsDwNJKWWs9\" target=_blank>here</a>!",
+    "Location": "East Hall 1084",
     "Date": "September 7",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",
@@ -78,7 +90,7 @@ let SAMevents = [
   {
     "Title": "International Students Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 1088",
     "Date": "September 11",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",
@@ -90,7 +102,7 @@ let SAMevents = [
   {
     "Title": "LinkedIn Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 1068",
     "Date": "September 12",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",
@@ -114,7 +126,7 @@ let SAMevents = [
   {
     "Title": "Case Study Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 4096",
     "Date": "September 14",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",
@@ -234,7 +246,7 @@ let SAMevents = [
   {
     "Title": "Post Career Fair Recruiting Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 3088",
     "Date": "October 24",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",

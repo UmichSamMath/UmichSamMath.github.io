@@ -124,6 +124,18 @@ let SAMevents = [
     "EndTime": "2023-09-13T18:30"
   },
   {
+    "Title": "Allianz Life Info Session",
+    "Description": "Come to learn more about Allianz life and what a career at this company would look like. There will be pizza provided as well! RSVP <a href=\"https://forms.gle/GWdoBcoeH6e3r7tz8\" target=_blank>here</a>!",
+    "Location": "",
+    "Date": "September 14",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2023-09-14T17:30",
+    "EndTime": "2023-09-14T18:30"
+  },
+  {
     "Title": "Case Study Workshop",
     "Description": "",
     "Location": "East Hall 4096",

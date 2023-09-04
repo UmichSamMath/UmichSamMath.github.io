@@ -4,32 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Resume Workshop 1",
-    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd19ahfNtcPYeQHBs7VYGsxqHurDYGyIPUOeQd7NXgaFwq5tw/viewform?usp=sharing\" target=_blank>here</a>!",
-    "Location": "East Hall 1084",
-    "Date": "August 29",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2023-08-29T19:00",
-    "EndTime": "2023-08-29T20:00"
-  },
-  {
-    "Title": "Festifall",
-    "Description": "We will be located on central campus between Mason Hall and the School of Kinesiology Building, at table D84. Come visit us to learn more about SAM and get some free swag!",
-    "Location": "The Diag",
-    "Date": "August 30",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2023-08-30T18:00",
-    "EndTime": "2023-08-30T20:30"
-  },
-  {
     "Title": "Mass Meeting",
-    "Description": "Learn all about the SAM events and opportunities throughout the upcoming school year. RSVP <a href=\"https://forms.gle/FiNDc8ZYKKTSD43y9\" target=_blank>here</a>!",
+    "Description": "Learn all about the SAM events and opportunities throughout the upcoming school year. RSVP <a target=_blank href=\"https://forms.gle/FiNDc8ZYKKTSD43y9\">here</a>!",
     "Location": "East Hall 1360",
     "Date": "September 5",
     "StartTimeStr": "6:30",
@@ -41,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "Resume Workshop 2",
-    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSdhxJQQHgKpDNdMCtBtkpsMnbsKPkBs3RuMad8TcUD2FONYOA/viewform?usp=sharing\" target=_blank>here</a>!",
+    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSdhxJQQHgKpDNdMCtBtkpsMnbsKPkBs3RuMad8TcUD2FONYOA/viewform?usp=sharing\">here</a>!",
     "Location": "East Hall 1084",
     "Date": "September 5",
     "StartTimeStr": "8:00",
@@ -53,19 +29,19 @@ let SAMevents = [
   },
   {
     "Title": "Resume Office Hours",
-    "Description": "<a href=\"https://docs.google.com/spreadsheets/d/1zku-cawcopkG86t_JUxWwtuRb06C7hGc3uESJql-gM8/edit#gid=1953096505\" target=_blank>Sign up</a> to have your resume reviewed one-on-one with a board member. Please sign up at least 24 hours in advance.",
+    "Description": "<a target=_blank href=\"https://docs.google.com/spreadsheets/d/1zku-cawcopkG86t_JUxWwtuRb06C7hGc3uESJql-gM8/edit#gid=1953096505\">Sign up</a> to have your resume reviewed one-on-one with a board member. Please sign up at least 24 hours in advance.",
     "Location": "Board member will email zoom link/location",
     "Date": "September 6",
     "StartTimeStr": "9:00AM",
-    "EndTimeStr": "Tuesday, September 12, 6:00PM",
-    "AmPm": "",
+    "EndTimeStr": "Tuesday, September 13, 6:00",
+    "AmPm": "PM",
     "DayofWeek": "Wednesday",
     "StartTime": "2023-09-06T00:00",
     "EndTime": "2023-09-13T00:00"
   },
   {
     "Title": "New Member Orientation",
-    "Description": "Introduction to the actuarial profession and information about SAM. Overview of the actuarial curriculum, actuarial scholarships, and advice for underclassmen/new actuaries. RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSenXnPFOfwpu7xzT8wpwHaKucnncJ4cB-Dq-hrqzTEGe2TaFg/viewform?usp=sf_link\" target=_blank>here</a>!",
+    "Description": "Introduction to the actuarial profession and information about SAM. Overview of the actuarial curriculum, actuarial scholarships, and advice for underclassmen/new actuaries. RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSenXnPFOfwpu7xzT8wpwHaKucnncJ4cB-Dq-hrqzTEGe2TaFg/viewform?usp=sf_link\">here</a>!",
     "Location": "East Hall 1084",
     "Date": "September 6",
     "StartTimeStr": "7:00",
@@ -77,7 +53,7 @@ let SAMevents = [
   },
   {
     "Title": "Interview Workshop",
-    "Description": "Come to learn about what makes a successful performance in a professional interview! Presenters will go over how to prepare for the interview beforehand, the types of questions to expect, how to structure one's answers, and post-interview etiquette. RSVP <a href=\"https://forms.gle/TyEYGthsDwNJKWWs9\" target=_blank>here</a>!",
+    "Description": "Come to learn about what makes a successful performance in a professional interview! Presenters will go over how to prepare for the interview beforehand, the types of questions to expect, how to structure one's answers, and post-interview etiquette. RSVP <a target=_blank href=\"https://forms.gle/TyEYGthsDwNJKWWs9\">here</a>!",
     "Location": "East Hall 1084",
     "Date": "September 7",
     "StartTimeStr": "7:00",
@@ -88,8 +64,20 @@ let SAMevents = [
     "EndTime": "2023-09-07T20:30"
   },
   {
+    "Title": "Stout Info Session",
+    "Description": "Come learn more about Stout! Please RSVP <a target=_blank href=\"https://forms.gle/5bYjcraFya5NKtNQ8\">here</a>!",
+    "Location": "",
+    "Date": "September 11",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2023-09-11T17:00",
+    "EndTime": "2023-09-11T18:00"
+  },
+  {
     "Title": "International Students Workshop",
-    "Description": "",
+    "Description": "The International Students Workshop aims to cover all things career related for International students. It will cover work authorization (CPT/OPT), timelines, shortlisting companies and how to approach recruitment in general. It will also cover some key points of advice vital to presenting your best self during recruitment. Please RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSf_juAUh9fngXYgBpWiXHeoou5x3vEUwaJmmSSwyhr9OpMpBA/viewform?usp=sf_link\">here</a>!",
     "Location": "East Hall 1088",
     "Date": "September 11",
     "StartTimeStr": "6:30",
@@ -98,6 +86,18 @@ let SAMevents = [
     "DayofWeek": "Monday",
     "StartTime": "2023-09-11T18:30",
     "EndTime": "2023-09-11T20:00"
+  },
+  {
+    "Title": "Cigna Info Session",
+    "Description": "Come learn more about Cigna! Please RSVP <a target=_blank href=\"https://forms.gle/ZcXxaBkyWz6PDbGY6\">here</a>!",
+    "Location": "Virtual - Link to be sent soon",
+    "Date": "September 12",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2023-09-12T17:00",
+    "EndTime": "2023-09-12T18:00"
   },
   {
     "Title": "LinkedIn Workshop",
@@ -124,8 +124,20 @@ let SAMevents = [
     "EndTime": "2023-09-13T18:30"
   },
   {
+    "Title": "Mock Interviews",
+    "Description": "<a target=_blank href=\"https://docs.google.com/spreadsheets/d/1qStGvNDgf_NBB7nwcrfjIqCFuDkRuvNv4Gq6AK6zpoA/edit#gid=0\">Sign up</a> to practice interviewing with a board member. Please sign up at least 24 hours in advance.",
+    "Location": "Board member will email zoom link/location",
+    "Date": "September 14",
+    "StartTimeStr": "9:00AM",
+    "EndTimeStr": "Wednesday, September 20, 6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2023-09-14T00:00",
+    "EndTime": "2023-09-21T00:00"
+  },
+  {
     "Title": "Allianz Life Info Session",
-    "Description": "Come to learn more about Allianz life and what a career at this company would look like. There will be pizza provided as well! RSVP <a href=\"https://forms.gle/GWdoBcoeH6e3r7tz8\" target=_blank>here</a>!",
+    "Description": "Come to learn more about Allianz life and what a career at this company would look like. There will be pizza provided as well! RSVP <a target=_blank href=\"https://forms.gle/GWdoBcoeH6e3r7tz8\">here</a>!",
     "Location": "",
     "Date": "September 14",
     "StartTimeStr": "5:30",
@@ -242,6 +254,18 @@ let SAMevents = [
     "DayofWeek": "Wednesday",
     "StartTime": "2023-09-27T19:00",
     "EndTime": "2023-09-27T20:30"
+  },
+  {
+    "Title": "BCBSM Info Session",
+    "Description": "Come learn more about Blue Cross Blue Shield of Michigan! Please RSVP here!",
+    "Location": "",
+    "Date": "September 28",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2023-09-28T18:00",
+    "EndTime": "2023-09-28T19:00"
   },
   {
     "Title": "CAS Intro Workshop",

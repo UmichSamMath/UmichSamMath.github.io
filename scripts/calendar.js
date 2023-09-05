@@ -160,6 +160,18 @@ let SAMevents = [
     "EndTime": "2023-09-14T20:00"
   },
   {
+    "Title": "BCBSM Open House",
+    "Description": "Come learn more about Blue Cross Blue Shield of Michigan! Join the call <a href=\"https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWUyNjgyNmMtNTRmMi00ZjAxLTk1ODItNzU2YzkwMWU5NTZk%40thread.v2/0?context=%7b%22Tid%22%3a%226f56d3fa-5682-4261-b169-bc0d615da17c%22%2c%22Oid%22%3a%22f1539ded-76bd-432e-b04f-381c6673bb20%22%7d\" target=_blank>here</a>!",
+    "Location": "Microsoft Teams",
+    "Date": "September 15",
+    "StartTimeStr": "10:00",
+    "EndTimeStr": "11:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2023-09-15T10:00",
+    "EndTime": "2023-09-15T11:00"
+  },
+  {
     "Title": "Career Fair Coffee Chat",
     "Description": "",
     "Location": "",

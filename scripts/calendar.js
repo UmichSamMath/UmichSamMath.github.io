@@ -66,7 +66,7 @@ let SAMevents = [
   {
     "Title": "Stout Info Session",
     "Description": "Come learn more about Stout! Please RSVP <a target=_blank href=\"https://forms.gle/5bYjcraFya5NKtNQ8\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 1866",
     "Date": "September 11",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:00",
@@ -114,7 +114,7 @@ let SAMevents = [
   {
     "Title": "Mutual of Omaha Info Session",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 2866",
     "Date": "September 13",
     "StartTimeStr": "5:30",
     "EndTimeStr": "6:30",
@@ -138,7 +138,7 @@ let SAMevents = [
   {
     "Title": "Allianz Life Info Session",
     "Description": "Come to learn more about Allianz life and what a career at this company would look like. There will be pizza provided as well! RSVP <a target=_blank href=\"https://forms.gle/GWdoBcoeH6e3r7tz8\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 1866",
     "Date": "September 14",
     "StartTimeStr": "5:30",
     "EndTimeStr": "6:30",
@@ -198,7 +198,7 @@ let SAMevents = [
   {
     "Title": "Milliman Info Session",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 3096",
     "Date": "September 19",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -210,7 +210,7 @@ let SAMevents = [
   {
     "Title": "Career Fair",
     "Description": "",
-    "Location": "",
+    "Location": "The Union, Rogel Ballroom (2nd floor)",
     "Date": "September 21",
     "StartTimeStr": "12:00",
     "EndTimeStr": "3:00",
@@ -222,7 +222,7 @@ let SAMevents = [
   {
     "Title": "Post Career Fair RAGER",
     "Description": "",
-    "Location": "",
+    "Location": "1203 White St",
     "Date": "September 22",
     "StartTimeStr": "9:00",
     "EndTimeStr": "9:00",
@@ -246,7 +246,7 @@ let SAMevents = [
   {
     "Title": "Mercer Info Session",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 1866",
     "Date": "September 25",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -270,7 +270,7 @@ let SAMevents = [
   {
     "Title": "BCBSM Info Session",
     "Description": "Come learn more about Blue Cross Blue Shield of Michigan! Please RSVP here!",
-    "Location": "",
+    "Location": "East Hall 1866",
     "Date": "September 28",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -282,7 +282,7 @@ let SAMevents = [
   {
     "Title": "CAS Intro Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 4096",
     "Date": "October 5",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",

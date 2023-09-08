@@ -23,6 +23,11 @@ let congratsMessages = [
     "name": "Gabe Weber",
     "congratsEvent": "passing Exam SRM",
     "dateAdded": new Date(2023, 7, 31)
+  },
+  {
+    "name": "Nicky Li",
+    "congratsEvent": "passing Exam P and Exam FM over the summer",
+    "dateAdded": new Date(2023, 8, 8)
   }
 ]
 
@@ -36,7 +41,7 @@ function populateCongrats(){
 
     if(currDate <= endShowDate) {
       resultDiv.innerHTML += `
-    <p style="font-size: 20px;">${c.name} on ${c.congratsEvent}!</p>
+    <p style="font-size: 20px; margin-top: 5px;">${c.name} on ${c.congratsEvent}!</p>
     `;
       numMessagesShown += 1;
     } 

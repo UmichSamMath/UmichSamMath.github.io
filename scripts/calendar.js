@@ -4,93 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Mass Meeting",
-    "Description": "Learn all about the SAM events and opportunities throughout the upcoming school year. RSVP <a target=_blank href=\"https://forms.gle/FiNDc8ZYKKTSD43y9\">here</a>!",
-    "Location": "East Hall 1360",
-    "Date": "September 5",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2023-09-05T18:30",
-    "EndTime": "2023-09-05T20:00"
-  },
-  {
-    "Title": "Resume Workshop 2",
-    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSdhxJQQHgKpDNdMCtBtkpsMnbsKPkBs3RuMad8TcUD2FONYOA/viewform?usp=sharing\">here</a>!",
-    "Location": "East Hall 1084",
-    "Date": "September 5",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "9:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2023-09-05T20:00",
-    "EndTime": "2023-09-05T21:00"
-  },
-  {
-    "Title": "Resume Office Hours",
-    "Description": "<a target=_blank href=\"https://docs.google.com/spreadsheets/d/1zku-cawcopkG86t_JUxWwtuRb06C7hGc3uESJql-gM8/edit#gid=1953096505\">Sign up</a> to have your resume reviewed one-on-one with a board member. Please sign up at least 24 hours in advance.",
-    "Location": "Board member will email zoom link/location",
-    "Date": "September 6",
-    "StartTimeStr": "9:00AM",
-    "EndTimeStr": "Tuesday, September 13, 6:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2023-09-06T00:00",
-    "EndTime": "2023-09-13T00:00"
-  },
-  {
-    "Title": "New Member Orientation",
-    "Description": "Introduction to the actuarial profession and information about SAM. Overview of the actuarial curriculum, actuarial scholarships, and advice for underclassmen/new actuaries. RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSenXnPFOfwpu7xzT8wpwHaKucnncJ4cB-Dq-hrqzTEGe2TaFg/viewform?usp=sf_link\">here</a>!",
-    "Location": "East Hall 1084",
-    "Date": "September 6",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2023-09-06T19:00",
-    "EndTime": "2023-09-06T20:30"
-  },
-  {
-    "Title": "Interview Workshop",
-    "Description": "Come to learn about what makes a successful performance in a professional interview! Presenters will go over how to prepare for the interview beforehand, the types of questions to expect, how to structure one's answers, and post-interview etiquette. RSVP <a target=_blank href=\"https://forms.gle/TyEYGthsDwNJKWWs9\">here</a>!",
-    "Location": "East Hall 1084",
-    "Date": "September 7",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2023-09-07T19:00",
-    "EndTime": "2023-09-07T20:30"
-  },
-  {
-    "Title": "Stout Info Session",
-    "Description": "Come learn more about Stout! Please RSVP <a target=_blank href=\"https://forms.gle/5bYjcraFya5NKtNQ8\">here</a>!",
-    "Location": "East Hall 1866",
-    "Date": "September 11",
-    "StartTimeStr": "5:00",
-    "EndTimeStr": "6:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2023-09-11T17:00",
-    "EndTime": "2023-09-11T18:00"
-  },
-  {
-    "Title": "International Students Workshop",
-    "Description": "The International Students Workshop aims to cover all things career related for International students. It will cover work authorization (CPT/OPT), timelines, shortlisting companies and how to approach recruitment in general. It will also cover some key points of advice vital to presenting your best self during recruitment. Please RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSf_juAUh9fngXYgBpWiXHeoou5x3vEUwaJmmSSwyhr9OpMpBA/viewform?usp=sf_link\">here</a>!",
-    "Location": "East Hall 1088",
-    "Date": "September 11",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2023-09-11T18:30",
-    "EndTime": "2023-09-11T20:00"
-  },
-  {
     "Title": "Cigna Info Session",
-    "Description": "Come learn more about Cigna! Please RSVP <a target=_blank href=\"https://forms.gle/ZcXxaBkyWz6PDbGY6\">here</a>!",
-    "Location": "Virtual - Link to be sent soon",
+    "Description": "Come learn more about Cigna! Please RSVP <a target=_blank href=\"https://forms.gle/ZcXxaBkyWz6PDbGY6\">here</a>! You can join the meeting <a target=_blank href=\"https://cigna.webex.com/wbxmjs/joinservice/sites/cigna/meeting/download/a7fc4726de0e4e568c5a73a85f1938d2?siteurl=cigna&amp;MTID=me13f9ba34f44679f6673016444c69e0b\">here</a>.",
+    "Location": "Virtual",
     "Date": "September 12",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:00",
@@ -101,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "LinkedIn Workshop",
-    "Description": "",
+    "Description": "Come to the LinkedIn Workshop to learn all about LinkedIn before the career fair! LinkedIn is a valuable tool where you can showcase your work-related experience, network, find jobs, and see interesting business-related content. There will be time at the end to work on your own LinkedIn profiles too! RSVP <a target=_blank href=\"https://forms.gle/aYKQAh4qyatnuSEM7\">here</a>!",
     "Location": "East Hall 1068",
     "Date": "September 12",
     "StartTimeStr": "6:30",
@@ -113,7 +29,7 @@ let SAMevents = [
   },
   {
     "Title": "Mutual of Omaha Info Session",
-    "Description": "",
+    "Description": "Come learn more about Mutual of Omaha! RSVP <a target=_blank href=\"https://forms.gle/fMBNV35Be9Dy1LRT6\">here</a>!",
     "Location": "East Hall 2866",
     "Date": "September 13",
     "StartTimeStr": "5:30",
@@ -149,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "Case Study Workshop",
-    "Description": "",
+    "Description": "Many companies have started involving case studies in their interview process. This part of the interview process can often seem intimidating. Come to the Case Study Workshop to learn about what case studies are, how to best prepare for them, and tips and tricks for answering case-study-related questions. RSVP <a target=_blank href=\"https://forms.gle/qfJGEERSgNon4bEE6\">here</a>!",
     "Location": "East Hall 4096",
     "Date": "September 14",
     "StartTimeStr": "6:30",
@@ -161,7 +77,7 @@ let SAMevents = [
   },
   {
     "Title": "BCBSM Open House",
-    "Description": "Come learn more about Blue Cross Blue Shield of Michigan! Join the call <a href=\"https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWUyNjgyNmMtNTRmMi00ZjAxLTk1ODItNzU2YzkwMWU5NTZk%40thread.v2/0?context=%7b%22Tid%22%3a%226f56d3fa-5682-4261-b169-bc0d615da17c%22%2c%22Oid%22%3a%22f1539ded-76bd-432e-b04f-381c6673bb20%22%7d\" target=_blank>here</a>!",
+    "Description": "Come learn more about Blue Cross Blue Shield of Michigan! Join the call <a target=_blank href=\"https://teams.microsoft.com/l/meetup-join/19%3ameeting_OWUyNjgyNmMtNTRmMi00ZjAxLTk1ODItNzU2YzkwMWU5NTZk%40thread.v2/0?context=%7b%22Tid%22%3a%226f56d3fa-5682-4261-b169-bc0d615da17c%22%2c%22Oid%22%3a%22f1539ded-76bd-432e-b04f-381c6673bb20%22%7d\">here</a>!",
     "Location": "Microsoft Teams",
     "Date": "September 15",
     "StartTimeStr": "10:00",
@@ -185,8 +101,8 @@ let SAMevents = [
   },
   {
     "Title": "State Farm Info Session",
-    "Description": "",
-    "Location": "",
+    "Description": "Come learn more about State Farm! Join the call <a target=_blank href=\"https://umich.zoom.us/j/91718654997\">here</a>. RSVP <a target=_blank href=\"https://forms.gle/A4rTHetHT3XQPQKf9\">here</a>!",
+    "Location": "Virtual",
     "Date": "September 18",
     "StartTimeStr": "5:30",
     "EndTimeStr": "6:30",
@@ -197,7 +113,7 @@ let SAMevents = [
   },
   {
     "Title": "Milliman Info Session",
-    "Description": "",
+    "Description": "Come learn more about Milliman! RSVP <a target=_blank href=\"https://forms.gle/7MGMfmiDAMFCmEqZ6\">here</a>!",
     "Location": "East Hall 3096",
     "Date": "September 19",
     "StartTimeStr": "6:00",
@@ -209,7 +125,7 @@ let SAMevents = [
   },
   {
     "Title": "Career Fair",
-    "Description": "",
+    "Description": "There will be 24 companies in attendance, and this is a great opportunity for networking! Many companies will be conducting interviews in person the next day as well. See the Career Fair Roadmap to get ready.",
     "Location": "The Union, Rogel Ballroom (2nd floor)",
     "Date": "September 21",
     "StartTimeStr": "12:00",
@@ -225,11 +141,11 @@ let SAMevents = [
     "Location": "1203 White St",
     "Date": "September 22",
     "StartTimeStr": "9:00",
-    "EndTimeStr": "9:00",
-    "AmPm": "PM",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
     "DayofWeek": "Friday",
     "StartTime": "2023-09-22T21:00",
-    "EndTime": "2023-09-22T21:00"
+    "EndTime": "2023-09-23T00:00"
   },
   {
     "Title": "SAM Recess",
@@ -280,6 +196,30 @@ let SAMevents = [
     "EndTime": "2023-09-28T19:00"
   },
   {
+    "Title": "Milliman Super Session",
+    "Description": "View the <a target = _blank href = \"/Resources/MillimanFlyerF23.pdf\">Super Session Flyer</a>.",
+    "Location": "Virtual",
+    "Date": "October 4",
+    "StartTimeStr": "4:00",
+    "EndTimeStr": "5:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2023-10-04T16:00",
+    "EndTime": "2023-10-04T17:00"
+  },
+  {
+    "Title": "Nationwide Info Session",
+    "Description": "Come learn more about Nationwide! Join the call <a target=_blank href=\"https://umich.zoom.us/j/99000537052\">here</a>. RSVP <a target=_blank href=\"https://forms.gle/SR4GwCK7mHVQ9nQg8\">here</a>!",
+    "Location": "Virtual",
+    "Date": "October 4",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2023-10-04T17:00",
+    "EndTime": "2023-10-04T18:00"
+  },
+  {
     "Title": "CAS Intro Workshop",
     "Description": "",
     "Location": "East Hall 4096",
@@ -290,6 +230,54 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2023-10-05T18:30",
     "EndTime": "2023-10-05T20:00"
+  },
+  {
+    "Title": "Mentorship Kickoff Workshop",
+    "Description": "MANDATORY for all mentors! Please RSVP via the Speed Dating RSVP.",
+    "Location": "",
+    "Date": "October 23",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2023-10-23T18:00",
+    "EndTime": "2023-10-23T18:30"
+  },
+  {
+    "Title": "Mentorship Speed Dating",
+    "Description": "MANDATORY for everyone in mentorship! RSVP <a target=_blank href=\"https://forms.gle/U6iXmtiwit79fsr19\">here</a>!",
+    "Location": "",
+    "Date": "October 23",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2023-10-23T18:30",
+    "EndTime": "2023-10-23T20:00"
+  },
+  {
+    "Title": "Post Career Fair Recruiting Workshop",
+    "Description": "",
+    "Location": "East Hall 3088",
+    "Date": "October 24",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2023-10-24T19:00",
+    "EndTime": "2023-10-24T20:30"
+  },
+  {
+    "Title": "Mentorship RAGER",
+    "Description": "HIGHLY encouraged for everyone in mentorship. Come hang out with all of the mentors and mentees to meet new people and learn who you may want to be partnered with this year! Please RSVP <a target=_blank href=\"https://forms.gle/7dtdJjnSNbdfCtPM6\">here</a>!",
+    "Location": "",
+    "Date": "October 27",
+    "StartTimeStr": "9:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2023-10-27T21:00",
+    "EndTime": "2023-10-28T00:00"
   },
   {
     "Title": "Post Career Fair Recruiting Workshop",

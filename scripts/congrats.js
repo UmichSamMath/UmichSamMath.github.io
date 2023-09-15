@@ -28,6 +28,11 @@ let congratsMessages = [
     "name": "Nicky Li",
     "congratsEvent": "passing Exam P and Exam FM over the summer",
     "dateAdded": new Date(2023, 8, 8)
+  },
+  {
+    "name": "Abby Hess",
+    "congratsEvent": "accepting a full-time position as an Actuarial Analyst at Thrivent Financial for June 2024",
+    "dateAdded": new Date(2023, 8, 15)
   }
 ]
 

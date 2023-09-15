@@ -89,8 +89,8 @@ let SAMevents = [
   },
   {
     "Title": "Career Fair Coffee Chat",
-    "Description": "",
-    "Location": "",
+    "Description": "Stop by to chat with board members about the career fair or just to hang out!",
+    "Location": "Upper Math Atrium, East Hall",
     "Date": "September 17",
     "StartTimeStr": "11:00",
     "EndTimeStr": "1:00",
@@ -122,6 +122,18 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2023-09-19T18:00",
     "EndTime": "2023-09-19T19:00"
+  },
+  {
+    "Title": "Elevance Health Webinar",
+    "Description": "Come learn more about Elevance Health! Join the call <a target = _blank href=\"https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_NmNiYzZhZTctNTRhYi00MGQzLTk5YWYtZmQ0M2QwMzdlMjU5%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522be8c08f2-ac07-442c-9a46-ebeeeb5bd4d7%2522%252c%2522Oid%2522%253a%2522bcfda91d-7492-4a62-be75-e2c9c130193b%2522%257d%26anon%3Dtrue&amp;type=meetup-join&amp;deeplinkId=a946ffde-c5f4-4d14-ab63-d8b6880cd25c&amp;directDl=true&amp;msLaunch=true&amp;enableMobilePage=true&amp;suppressPrompt=true\">here</a>. Apply for an internship <a target = _blank href=\"https://careers.elevancehealth.com/jobs/jr86915/actuarial-intern-summer-2024/?source=WayUp\">here</a>, or a full-time position <a target = _blank href=\"https://careers.elevancehealth.com/jobs/jr86899/actuarial-analyst-future-early-talent-opportunities/\">here</a>!",
+    "Location": "Virtual",
+    "Date": "September 19",
+    "StartTimeStr": "8:30",
+    "EndTimeStr": "9:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2023-09-19T20:30",
+    "EndTime": "2023-09-19T21:30"
   },
   {
     "Title": "Career Fair",

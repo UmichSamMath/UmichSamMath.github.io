@@ -4,57 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Career Fair",
-    "Description": "There will be 24 companies in attendance, and this is a great opportunity for networking! Many companies will be conducting interviews in person the next day as well. See the Career Fair Roadmap to get ready.",
-    "Location": "The Union, Rogel Ballroom (2nd floor)",
-    "Date": "September 21",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "3:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2023-09-21T12:00",
-    "EndTime": "2023-09-21T15:00"
-  },
-  {
-    "Title": "Post Career Fair RAGER",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/WQRJkP4XahM4bV9Q7\">here</a>!",
-    "Location": "1203 White St",
-    "Date": "September 22",
-    "StartTimeStr": "9:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2023-09-22T21:00",
-    "EndTime": "2023-09-23T00:00"
-  },
-  {
-    "Title": "SAM Recess",
-    "Description": "The SAM club is introducing a recess in the law quad! Come join us while we play football, frisbee, spikeball, and other fun activities. It will be a great opportunity to meet other SAM members in a casual setting. RSVP <a target=_blank href=\"https://forms.gle/kccvKuHBAxuTU5iV8\">here</a>!",
-    "Location": "Law Quad",
-    "Date": "September 24",
-    "StartTimeStr": "11:00",
-    "EndTimeStr": "12:30",
-    "AmPm": "PM",
-    "DayofWeek": "Sunday",
-    "StartTime": "2023-09-24T11:00",
-    "EndTime": "2023-09-24T12:30"
-  },
-  {
-    "Title": "Mercer Info Session",
-    "Description": "Come learn more about Mercer! RSVP <a target=_blank href=\"https://forms.gle/ZiL4JMWqn42TuBdX8\">here</a>!",
-    "Location": "East Hall 1866",
-    "Date": "September 25",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2023-09-25T18:00",
-    "EndTime": "2023-09-25T19:00"
-  },
-  {
     "Title": "Second Round Interview Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "Come to prepare for second round interviews after the career fair! Learn about questions you might be asked and some tips for answering them. RSVP <a target=_blank href=\"https://forms.gle/zBry3FwTkWw8HY8u8\">here</a>!",
+    "Location": "East Hall 1084",
     "Date": "September 27",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",
@@ -65,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "BCBSM Info Session",
-    "Description": "Come learn more about Blue Cross Blue Shield of Michigan! Please RSVP here!",
+    "Description": "Come learn more about Blue Cross Blue Shield of Michigan! Please RSVP <a target=_blank href=\"https://forms.gle/pRopP5uW9YUoiugeA\">here</a>!",
     "Location": "East Hall 1866",
     "Date": "September 28",
     "StartTimeStr": "6:00",
@@ -74,6 +26,18 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2023-09-28T18:00",
     "EndTime": "2023-09-28T19:00"
+  },
+  {
+    "Title": "DW Simpson Info Session",
+    "Description": "Come learn more about DW Simpson! RSVP <a target=_blank href=\"https://forms.gle/BYocUKsK2DrM41Zy6\">here</a>.",
+    "Location": "",
+    "Date": "October 3",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2023-10-03T17:00",
+    "EndTime": "2023-10-03T18:00"
   },
   {
     "Title": "Milliman Super Session",
@@ -101,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "CAS Intro Workshop",
-    "Description": "",
+    "Description": "Did you know there's another society for actuaries besides the SOA? Unsure about which path you want to go down? Come to the Intro to the CAS Presentation and learn about anything you could ever want to know about property &amp; casualty insurance and the Casualty Actuarial Society (CAS) as a whole. Bryce Peterson, FCAS, and Zach Johnson, FCAS, will be presenting, and there will be a fun, interactive portion at the end too! RSVP <a target=_blank href=\"https://forms.gle/ZsqXeJRiSk1SYt1L9\">here</a>.",
     "Location": "East Hall 4096",
     "Date": "October 5",
     "StartTimeStr": "6:30",
@@ -173,7 +137,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Speed Dating",
-    "Description": "MANDATORY for everyone in mentorship! RSVP <a target = _blank target=_blank href=\"https://forms.gle/U6iXmtiwit79fsr19\">here</a>!",
+    "Description": "MANDATORY for everyone in mentorship! RSVP <a target=_blank target=_blank href=\"https://forms.gle/U6iXmtiwit79fsr19\">here</a>!",
     "Location": "",
     "Date": "October 23",
     "StartTimeStr": "6:30",
@@ -197,7 +161,55 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship RAGER",
-    "Description": "HIGHLY encouraged for everyone in mentorship. Come hang out with all of the mentors and mentees to meet new people and learn who you may want to be partnered with this year! Please RSVP <a target = _blank target=_blank href=\"https://forms.gle/7dtdJjnSNbdfCtPM6\">here</a>!",
+    "Description": "HIGHLY encouraged for everyone in mentorship. Come hang out with all of the mentors and mentees to meet new people and learn who you may want to be partnered with this year! Please RSVP <a target=_blank target=_blank href=\"https://forms.gle/7dtdJjnSNbdfCtPM6\">here</a>!",
+    "Location": "",
+    "Date": "October 27",
+    "StartTimeStr": "9:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2023-10-27T21:00",
+    "EndTime": "2023-10-28T00:00"
+  },
+  {
+    "Title": "Mentorship Kickoff Workshop",
+    "Description": "MANDATORY for all mentors! Please RSVP via the Speed Dating RSVP.",
+    "Location": "",
+    "Date": "October 23",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2023-10-23T18:00",
+    "EndTime": "2023-10-23T18:30"
+  },
+  {
+    "Title": "Mentorship Speed Dating",
+    "Description": "MANDATORY for everyone in mentorship! RSVP <a target = _blank target=_blank target=_blank href=\"https://forms.gle/U6iXmtiwit79fsr19\">here</a>!",
+    "Location": "",
+    "Date": "October 23",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2023-10-23T18:30",
+    "EndTime": "2023-10-23T20:00"
+  },
+  {
+    "Title": "Post Career Fair Recruiting Workshop",
+    "Description": "",
+    "Location": "East Hall 3088",
+    "Date": "October 24",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2023-10-24T19:00",
+    "EndTime": "2023-10-24T20:30"
+  },
+  {
+    "Title": "Mentorship RAGER",
+    "Description": "HIGHLY encouraged for everyone in mentorship. Come hang out with all of the mentors and mentees to meet new people and learn who you may want to be partnered with this year! Please RSVP <a target = _blank target=_blank target=_blank href=\"https://forms.gle/7dtdJjnSNbdfCtPM6\">here</a>!",
     "Location": "",
     "Date": "October 27",
     "StartTimeStr": "9:00",
@@ -209,7 +221,7 @@ let SAMevents = [
   },
   {
     "Title": "Nationwide Info Session",
-    "Description": "Come learn more about Nationwide! Join the call <a target=_blank target = _blank target=_blank href=\"https://umich.zoom.us/j/99000537052\">here</a>. RSVP <a target=_blank target = _blank target=_blank href=\"https://forms.gle/SR4GwCK7mHVQ9nQg8\">here</a>!",
+    "Description": "Come learn more about Nationwide! Join the call <a target=_blank target = _blank target=_blank target=_blank href=\"https://umich.zoom.us/j/99000537052\">here</a>. RSVP <a target=_blank target = _blank target=_blank target=_blank href=\"https://forms.gle/SR4GwCK7mHVQ9nQg8\">here</a>!",
     "Location": "Virtual",
     "Date": "October 4",
     "StartTimeStr": "5:00",
@@ -245,7 +257,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Speed Dating",
-    "Description": "MANDATORY for everyone in mentorship! RSVP <a target=_blank target = _blank target=_blank href=\"https://forms.gle/U6iXmtiwit79fsr19\">here</a>!",
+    "Description": "MANDATORY for everyone in mentorship! RSVP <a target=_blank target = _blank target=_blank target=_blank href=\"https://forms.gle/U6iXmtiwit79fsr19\">here</a>!",
     "Location": "",
     "Date": "October 23",
     "StartTimeStr": "6:30",
@@ -269,7 +281,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship RAGER",
-    "Description": "HIGHLY encouraged for everyone in mentorship. Come hang out with all of the mentors and mentees to meet new people and learn who you may want to be partnered with this year! Please RSVP <a target=_blank target = _blank target=_blank href=\"https://forms.gle/7dtdJjnSNbdfCtPM6\">here</a>!",
+    "Description": "HIGHLY encouraged for everyone in mentorship. Come hang out with all of the mentors and mentees to meet new people and learn who you may want to be partnered with this year! Please RSVP <a target=_blank target = _blank target=_blank target=_blank href=\"https://forms.gle/7dtdJjnSNbdfCtPM6\">here</a>!",
     "Location": "",
     "Date": "October 27",
     "StartTimeStr": "9:00",

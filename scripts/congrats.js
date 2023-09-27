@@ -33,6 +33,11 @@ let congratsMessages = [
     "name": "Abby Hess",
     "congratsEvent": "accepting a full-time position as an Actuarial Analyst at Thrivent Financial for June 2024",
     "dateAdded": new Date(2023, 8, 15)
+  },
+  {
+    "name": "Emily Lin",
+    "congratsEvent": "accepting an internship at State Farm",
+    "dateAdded": new Date(2023, 8, 27)
   }
 ]
 
@@ -46,7 +51,7 @@ function populateCongrats(){
 
     if(currDate <= endShowDate) {
       resultDiv.innerHTML += `
-    <p style="font-size: 20px; margin-top: 5px;">${c.name} on ${c.congratsEvent}!</p>
+    <p style="font-size: 20px; margin-top: 20px;">${c.name} on ${c.congratsEvent}!</p>
     `;
       numMessagesShown += 1;
     } 

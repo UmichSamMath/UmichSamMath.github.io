@@ -218,6 +218,18 @@ let SAMevents = [
     "DayofWeek": "Friday",
     "StartTime": "2023-10-27T21:00",
     "EndTime": "2023-10-28T00:00"
+  },
+  {
+    "Title": "Everything Actuarial Workshop",
+    "Description": "The Everything Actuarial Workshop will cover exam preparation resources and everything you need to know about a career in the actuarial field! Come if you want to learn more about this path and how to succeed! RSVP <a href=\"https://forms.gle/3JdJsSEMZ6WVLMkm9\">here</a>!",
+    "Location": "East Hall 1068",
+    "Date": "October 11",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2023-10-11T19:00",
+    "EndTime": "2023-10-11T20:00"
   }
 ]
 

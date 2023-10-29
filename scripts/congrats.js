@@ -43,6 +43,11 @@ let congratsMessages = [
     "name": "Elena Post",
     "congratsEvent": "accepting an internship at Milliman",
     "dateAdded": new Date(2023, 9, 4)
+  },
+  {
+    "name": "Katherine Bednarz",
+    "congratsEvent": "accepting an internship at Deloitte",
+    "dateAdded": new Date(2023, 9, 29)
   }
 ]
 

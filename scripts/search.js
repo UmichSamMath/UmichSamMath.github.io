@@ -227,6 +227,14 @@ let companies = [
     "keywords": ["Louisville", "KY", "Kentucky"]
   },
   {
+    "name": "Incline Actuarial Group",
+    "business": "Health",
+    "typeOfWork": "Consulting",
+    "contactName": "Sarah Wolf",
+    "contactEmail": "swolf@inclineag.com",
+    "keywords": ["Remote"]
+  },
+  {
     "name": "Jackson",
     "business": "Life",
     "typeOfWork": "Insurance",

@@ -714,3 +714,18 @@ form {
   margin-bottom: 30px;
   cursor: pointer;
 }
+
+.leaderboard tr, td, th{
+  border-radius: 10px;
+  border-spacingb: 10px;
+}
+
+.leaderboardButton {
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.leaderboard th {
+  background-color: #00274C;
+  color: white;
+}

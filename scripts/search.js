@@ -52,8 +52,8 @@ let companies = [
   },
   {
     "name": "American Family Insurance",
-    "business": "",
-    "typeOfWork": "",
+    "business": "<br>",
+    "typeOfWork": "<br>",
     "contactName": "David Binder",
     "contactEmail": "dbinder@amfam.com",
     "keywords": []
@@ -141,14 +141,14 @@ let companies = [
   {
     "name": "D.E. Shaw",
     "business": "Investment and Technology",
-    "typeOfWork": "",
+    "typeOfWork": "<br>",
     "contactName": "Erin Bergano",
     "contactEmail": "ebergano@recruitedshaw.com",
     "keywords": ["New York", "NY", "NYC"]
   },
   {
     "name": "Deloitte",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Kate Woodruff",
     "contactEmail": "kwoodruff@deloitte.com",
@@ -156,15 +156,15 @@ let companies = [
   },
   {
     "name": "DW Simpson",
-    "business": "",
-    "typeOfWork": "",
+    "business": "<br>",
+    "typeOfWork": "<br>",
     "contactName": "Charlotte Chandler",
     "contactEmail": "charlotte.chandler@dwsimpson.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {
     "name": "Ernst & Young",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Joe Santulli",
     "contactEmail": "joe.santulli@ey.com",
@@ -173,7 +173,7 @@ let companies = [
   {
     "name": "Fidelity",
     "business": "Investment",
-    "typeOfWork": "",
+    "typeOfWork": "<br>",
     "contactName": "Vincent Lee",
     "contactEmail": "vincent.lee@fmr.com",
     "keywords": ["Boston", "MA", "Massachusetts"]
@@ -181,7 +181,7 @@ let companies = [
   {
     "name": "Global Atlantic Financial Group",
     "business": "Life",
-    "typeOfWork": "",
+    "typeOfWork": "<br>",
     "contactName": "Jinyi Lan",
     "contactEmail": "Jinyi.Lan@gafg.com",
     "keywords": []
@@ -189,7 +189,7 @@ let companies = [
   {
     "name": "Hagerty",
     "business": "Property and Casualty",
-    "typeOfWork": "",
+    "typeOfWork": "<br>",
     "contactName": "Karin Chung",
     "contactEmail": "kchung@hagerty.com",
     "keywords": []
@@ -197,7 +197,7 @@ let companies = [
   {
     "name": "The Hanover Insurance Group",
     "business": "Property and Casualty",
-    "typeOfWork": "",
+    "typeOfWork": "<br>",
     "contactName": "Steve Bunker",
     "contactEmail": "STBUNKER@hanover.com",
     "keywords": []
@@ -212,7 +212,7 @@ let companies = [
   },
   {
     "name": "Hub",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Insurance",
     "contactName": "Katherine Strong",
     "contactEmail": "katherine.strong@hubinternational.com",
@@ -244,7 +244,7 @@ let companies = [
   },
   {
     "name": "KPMG",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Yessica Hernandez",
     "contactEmail": "yessicaharnandez@kpmg.com",
@@ -260,7 +260,7 @@ let companies = [
   },
   {
     "name": "Lockton",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Jon Acker",
     "contactEmail": "jon.acker@lockton.com",
@@ -268,7 +268,7 @@ let companies = [
   },
   {
     "name": "Mercer",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Kimberly Sukhnanda",
     "contactEmail": "kimberly.sukhnanda@mmc.com",
@@ -300,7 +300,7 @@ let companies = [
   },
   {
     "name": "Nationwide",
-    "business": "",
+    "business": "Property & Casualty, Financial Services",
     "typeOfWork": "Insurance",
     "contactName": "Tyler Blinn",
     "contactEmail": "blinnt2@nationwide.com",
@@ -324,7 +324,7 @@ let companies = [
   },
   {
     "name": "PwC",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Allison Muer",
     "contactEmail": "allison.a.muer@pwc.com",
@@ -332,16 +332,24 @@ let companies = [
   },
   {
     "name": "RGA",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Reinsurance",
     "contactName": "Stephanie Kut",
     "contactEmail": "Stephanie.Kut@rgare.com",
     "keywords": []
+  }, 
+  {
+    "name": "Sage Corps",
+    "business": "<br>",
+    "typeOfWork": "<br>",
+    "contactName": "Matt Meltzer",
+    "contactEmail": "mmeltzer@sagecorps.com",
+    "keywords": ["International", "Study abroad"]
   },
   {
     "name": "Santa Barbara Actuaries",
     "business": "Health",
-    "typeOfWork": "",
+    "typeOfWork": "<br>",
     "contactName": "Ian Duncan",
     "contactEmail": "ian.duncan@sbactuaries.com",
     "keywords": []
@@ -356,8 +364,8 @@ let companies = [
   },
   {
     "name": "SelectQuote",
-    "business": "",
-    "typeOfWork": "",
+    "business": "<br>",
+    "typeOfWork": "<br>",
     "contactName": "Mika McGinnis",
     "contactEmail": "mika.mcginnis@selectquote.com",
     "keywords": []
@@ -373,7 +381,7 @@ let companies = [
   {
     "name": "Stout",
     "business": "Financial Services",
-    "typeOfWork": "",
+    "typeOfWork": "<br>",
     "contactName": "Colin Copeland",
     "contactEmail": "ccopeland@stout.com",
     "keywords": []
@@ -404,7 +412,7 @@ let companies = [
   },
   {
     "name": "WTW",
-    "business": "",
+    "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Jacob Schaeffer",
     "contactEmail": "jacob.schaeffer@wtwco.com",

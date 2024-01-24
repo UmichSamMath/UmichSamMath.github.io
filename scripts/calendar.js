@@ -4,18 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Speaker Series Presentation - Charlie Johnson",
-    "Description": "Charlie Johnson is a credentialled actuary who began his career at State Farm and later worked at Northwestern Mutual. He has since left the corporate world and started his own company - the Actuarial Development Institute. For more information on ADI and Charlie, visit <a target = _blank href=\"https://www.actuarialdevelopment.com/\">https://www.actuarialdevelopment.com/</a>.  Charlie will be presenting on applying actuarial skills outside of your typical actuarial role. This is a great way to learn more about how useful your actuarial degree is and get ideas about other potential opportunities for you. RSVP <a target = _blank href=\"https://forms.gle/z7Rh4Ma6WxPyWjRUA\">here</a>!",
-    "Location": "East Hall 2866",
-    "Date": "January 23",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-01-23T18:30",
-    "EndTime": "2024-01-23T20:00"
-  },
-  {
     "Title": "Ross Minor Workshop",
     "Description": "RSVP <a target = _blank href=\"https://forms.gle/Y28HKDiyuCSk9sEW7\">here</a>!",
     "Location": "Ross R1240",
@@ -30,7 +18,7 @@ let SAMevents = [
   {
     "Title": "Speaker Series - Auto Owners",
     "Description": "Auto Owners is a leading Home and Auto insurance company headquartered in Lansing, MI. Auto Owners will be giving a CAS-focused presentation, and this is a great opportunity for you to learn more about working in home and auto insurance. RSVP <a target = _blank href=\"https://forms.gle/3hgeNJpempntqV9f7\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 1068",
     "Date": "January 25",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -89,7 +77,7 @@ let SAMevents = [
   },
   {
     "Title": "Speaker Series Presentation - Molly Li",
-    "Description": "RSVP <a target = _blank href=\"https://forms.gle/ejE9Vy76aANyhN5S7\">here</a>!",
+    "Description": "Molly Li is an FSA working a Cigna. She began her career working as an actuary in traditional actuarial roles, but has recently shifted to focus her career on data science and is even going back to school to pursue a Master’s degree in Data Science. This is an amazing opportunity to learn from an industry professional on the importance of data science in the actuarial profession.RSVP <a target = _blank href=\"https://forms.gle/ejE9Vy76aANyhN5S7\">here</a>!",
     "Location": "",
     "Date": "February 6",
     "StartTimeStr": "6:00",
@@ -98,6 +86,30 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2024-02-06T18:00",
     "EndTime": "2024-02-06T19:30"
+  },
+  {
+    "Title": "Excel Basics Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "February 8",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-02-08T18:30",
+    "EndTime": "2024-02-08T20:00"
+  },
+  {
+    "Title": "SAS/SQL Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "February 13",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-02-13T18:30",
+    "EndTime": "2024-02-13T20:00"
   },
   {
     "Title": "Speaker Series Presentation - Prof. Kausch",
@@ -124,6 +136,30 @@ let SAMevents = [
     "EndTime": "2024-03-07T22:00"
   },
   {
+    "Title": "VBA Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "March 14",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-03-14T18:30",
+    "EndTime": "2024-03-14T20:00"
+  },
+  {
+    "Title": "Board Elections Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "March 26",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-03-26T18:30",
+    "EndTime": "2024-03-26T20:00"
+  },
+  {
     "Title": "Annual Euchre Tournament!",
     "Description": "You know what time it is, join us to for a night of euchre and fun!! Mentors and mentees are heavily encouraged to be a team, but anyone else can join and make their own teams! If you don’t have a teammate, still sign up and we’ll pair you up day of. Prizes will be given out to the winners, and pizza will be provided! RSVP <a target = _blank href=\"https://forms.gle/J54WT1WFLYq3ZSzu5\">here</a>!",
     "Location": "",
@@ -136,6 +172,18 @@ let SAMevents = [
     "EndTime": "2024-03-28T20:30"
   },
   {
+    "Title": "Internship Panel",
+    "Description": "",
+    "Location": "",
+    "Date": "April 2",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-04-02T18:30",
+    "EndTime": "2024-04-02T20:00"
+  },
+  {
     "Title": "Alumni Day",
     "Description": "",
     "Location": "",
@@ -146,6 +194,42 @@ let SAMevents = [
     "DayofWeek": "Saturday",
     "StartTime": "2024-04-06T13:00",
     "EndTime": "2024-04-06T17:00"
+  },
+  {
+    "Title": "Board Elections",
+    "Description": "",
+    "Location": "",
+    "Date": "April 10",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2024-04-10T18:00",
+    "EndTime": "2024-04-10T20:00"
+  },
+  {
+    "Title": "Senior Bar Crawl",
+    "Description": "",
+    "Location": "",
+    "Date": "April 13",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "10:59",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2024-04-13T20:00",
+    "EndTime": "2024-04-13T23:59"
+  },
+  {
+    "Title": "Senior Send Off :')",
+    "Description": "",
+    "Location": "",
+    "Date": "April 20",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "3:00",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2024-04-20T13:00",
+    "EndTime": "2024-04-20T16:00"
   }
 ]
 

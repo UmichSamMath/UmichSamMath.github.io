@@ -41,8 +41,8 @@ let SAMevents = [
   },
   {
     "Title": "Speaker Series - Syed Raza",
-    "Description": "Syed Raza is an FSA and MAAA with 15+ years of experience in the actuarial field. She will be sharing her unique perspectives about practical aspects of our profession, the challenges we face, and the strategies for success in this dynamic field. RSVP <a target = _blank href=\"https://forms.gle/vdxn8HBqWbE9zeo98\">here</a>!",
-    "Location": "",
+    "Description": "Syed Raza is an FSA and MAAA with 15+ years of experience in the actuarial field. She will be sharing her unique perspectives about practical aspects of our profession, the challenges we face, and the strategies for success in this dynamic field. RSVP <a target = _blank href=\"https://forms.gle/vdxn8HBqWbE9zeo98\">here</a>! Join the presentation <a target = _blank href = \"https://umich.zoom.us/j/9756976472?omn=94722686430\">here</a>!",
+    "Location": "Virtual - See Description for Link!",
     "Date": "January 29",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

@@ -4,54 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Ross Minor Workshop",
-    "Description": "RSVP <a target = _blank href=\"https://forms.gle/Y28HKDiyuCSk9sEW7\">here</a>!",
-    "Location": "Ross R1240",
-    "Date": "January 24",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2024-01-24T18:00",
-    "EndTime": "2024-01-24T19:30"
-  },
-  {
-    "Title": "Speaker Series - Auto Owners",
-    "Description": "Auto Owners is a leading Home and Auto insurance company headquartered in Lansing, MI. Auto Owners will be giving a CAS-focused presentation, and this is a great opportunity for you to learn more about working in home and auto insurance. RSVP <a target = _blank href=\"https://forms.gle/3hgeNJpempntqV9f7\">here</a>!",
-    "Location": "East Hall 1068",
-    "Date": "January 25",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-01-25T18:00",
-    "EndTime": "2024-01-25T19:00"
-  },
-  {
-    "Title": "Mentorship Game Night",
-    "Description": "Mentors and mentees, come together to play games, snack, and have fun with your SAM peers! This event is open to all underclassmen SAM members too, come to have fun and make new friends. If you have a game that you really want to play, please bring that along too! RSVP <a target = _blank href=\"https://forms.gle/7YasNgRt6bvBiHDe9\">here</a>!",
-    "Location": "Mason Hall 1437",
-    "Date": "January 25",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-01-25T19:00",
-    "EndTime": "2024-01-25T20:30"
-  },
-  {
-    "Title": "Speaker Series - Syed Raza",
-    "Description": "Syed Raza is an FSA and MAAA with 15+ years of experience in the actuarial field. She will be sharing her unique perspectives about practical aspects of our profession, the challenges we face, and the strategies for success in this dynamic field. RSVP <a target = _blank href=\"https://forms.gle/vdxn8HBqWbE9zeo98\">here</a>! Join the presentation <a target = _blank href = \"https://umich.zoom.us/j/9756976472?omn=94722686430\">here</a>!",
-    "Location": "Virtual - See Description for Link!",
-    "Date": "January 29",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2024-01-29T18:00",
-    "EndTime": "2024-01-29T19:00"
-  },
-  {
     "Title": "Speaker Series Presentation - Milliman",
     "Description": "Milliman is an actuarial consulting firm. A couple actuaries on the recruiting team from the Chicago office will be coming to present about the differences between consulting and industry. This is a decision that many students struggle with, and this presentation will help provide some knowledge to inform that difficult decision. Pizza will also be provided! RSVP <a target = _blank href=\"https://forms.gle/KNKRq74CpwjnhMEG6\">here</a>!",
     "Location": "East Hall 2866",
@@ -77,8 +29,8 @@ let SAMevents = [
   },
   {
     "Title": "Speaker Series Presentation - Molly Li",
-    "Description": "Molly Li is an FSA working a Cigna. She began her career working as an actuary in traditional actuarial roles, but has recently shifted to focus her career on data science and is even going back to school to pursue a Master’s degree in Data Science. This is an amazing opportunity to learn from an industry professional on the importance of data science in the actuarial profession.RSVP <a target = _blank href=\"https://forms.gle/ejE9Vy76aANyhN5S7\">here</a>!",
-    "Location": "",
+    "Description": "Molly Li is an FSA working a Cigna. She began her career working as an actuary in traditional actuarial roles, but has recently shifted to focus her career on data science and is even going back to school to pursue a Master’s degree in Data Science. This is an amazing opportunity to learn from an industry professional on the importance of data science in the actuarial profession. RSVP <a target = _blank href=\"https://forms.gle/ejE9Vy76aANyhN5S7\">here</a>!",
+    "Location": "East Hall 1068",
     "Date": "February 6",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:30",
@@ -88,9 +40,21 @@ let SAMevents = [
     "EndTime": "2024-02-06T19:30"
   },
   {
+    "Title": "Speaker Series - Deloitte",
+    "Description": "Deloitte is a Big 4 company that employs actuarial consultants and routinely recruits from Michigan. Some representatives are coming to campus and giving a presentation on “AI in Actuarial” -   specifically some skills that can’t be replaced by AI. AI is a hot-button topic these days, so it’ll be very interesting to hear industry experts’ opinion on its impact to our jobs. Pizza will be provided as well! RSVP <a target = _blank href=\"https://forms.gle/yBLWCx2CYHghFxah7\">here</a>!",
+    "Location": "",
+    "Date": "February 7",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2024-02-07T18:00",
+    "EndTime": "2024-02-07T19:00"
+  },
+  {
     "Title": "Excel Basics Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "February 8",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",
@@ -100,9 +64,21 @@ let SAMevents = [
     "EndTime": "2024-02-08T20:00"
   },
   {
+    "Title": "Advanced Excel Workshop",
+    "Description": "RSVP <a target = _blank href=\"https://forms.gle/cFGDvdeW5XKjE3FK8\">here</a>!",
+    "Location": "Mason Hall Fishbowl Computer Lab A",
+    "Date": "February 12",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2024-02-12T18:30",
+    "EndTime": "2024-02-12T20:00"
+  },
+  {
     "Title": "SAS/SQL Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "Come learn the basics of SQL and SAS, two coding languages that you will use as an actuary. We will go through a presentation and then have time to practice coding in these languages. This is a great way to prepare for your internship or full time job! RSVP <a target = _blank href=\"https://forms.gle/9p7CNu2xCr4vTmr57\">here</a>!",
+    "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "February 13",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",
@@ -124,9 +100,57 @@ let SAMevents = [
     "EndTime": "2024-02-15T20:00"
   },
   {
+    "Title": "Communications Workshop",
+    "Description": "",
+    "Location": "East Hall 1068",
+    "Date": "February 19",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2024-02-19T18:30",
+    "EndTime": "2024-02-19T20:00"
+  },
+  {
+    "Title": "R Workshop",
+    "Description": "",
+    "Location": "East Hall B737",
+    "Date": "February 21",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2024-02-21T18:30",
+    "EndTime": "2024-02-21T20:00"
+  },
+  {
+    "Title": "Python Workshop",
+    "Description": "",
+    "Location": "Mason Hall Fishbowl Computer Lab A",
+    "Date": "March 5",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-03-05T18:30",
+    "EndTime": "2024-03-05T20:00"
+  },
+  {
+    "Title": "Second Semester DEI Event",
+    "Description": "",
+    "Location": "East Hall 1360",
+    "Date": "March 6",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2024-03-06T18:30",
+    "EndTime": "2024-03-06T20:00"
+  },
+  {
     "Title": "Mentorship Movie Night & Popcorn Bar!",
     "Description": "Take a break from classes and studying to hang out and watch a movie with the rest of SAM mentorship! There will be a popcorn bar to snack on, and some games will be played in the back too. RSVP <a target = _blank href=\"https://forms.gle/a3BjaGLwBZKHVu2H9\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 1360",
     "Date": "March 7",
     "StartTimeStr": "8:00",
     "EndTimeStr": "10:00",
@@ -138,7 +162,7 @@ let SAMevents = [
   {
     "Title": "VBA Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "March 14",
     "StartTimeStr": "5:30",
     "EndTimeStr": "7:00",
@@ -162,7 +186,7 @@ let SAMevents = [
   {
     "Title": "Annual Euchre Tournament!",
     "Description": "You know what time it is, join us to for a night of euchre and fun!! Mentors and mentees are heavily encouraged to be a team, but anyone else can join and make their own teams! If you don’t have a teammate, still sign up and we’ll pair you up day of. Prizes will be given out to the winners, and pizza will be provided! RSVP <a target = _blank href=\"https://forms.gle/J54WT1WFLYq3ZSzu5\">here</a>!",
-    "Location": "",
+    "Location": "USB 1250",
     "Date": "March 28",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:30",
@@ -186,7 +210,7 @@ let SAMevents = [
   {
     "Title": "Alumni Day",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 3rd Floor Terrace (Psych Atrium)",
     "Date": "April 6",
     "StartTimeStr": "12:00",
     "EndTimeStr": "4:00",

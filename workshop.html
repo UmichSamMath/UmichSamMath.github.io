@@ -17,23 +17,37 @@
     <div class="navbar">
         <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
         <p class="title">Student Actuaries at Michigan</p>
-        <div class="links">
-          <a href="index.html">Home</a>  
-          <a href="calendar.html">Calendar</a>
-            <a href="new.html">New Members</a>
-            <div class="resources">
-        <p id = "hover">Resources</p>
-        <div id = "dropdown" class="dropdown">
-          <a href="course.html">Course Resources</a>
-          <a href="workshop.html">Workshops</a>
-          <a href="exam.html">Exam Resources</a>
-        </div>
-        <script src = "/scripts/hover.js"></script>
-      </div>
-             <a href="scholarship.html">Scholarships</a>
-            <a href="mentor.html">Mentorship</a>
-            <a href="companies.html">Companies</a>
-            <a href="contact.html">Contact</a>
+          <div class="links">
+            <div class = "link-child"><a href="index.html">Home</a></div>
+            <div class = "link-child"><a href="calendar.html">Calendar</a></div>
+            <div class = "link-child"><a href="new.html">New Members</a></div>
+            <div class = "link-child">
+              <div class="resources">
+                <p id = "hover">Resources</p>
+                <div id = "dropdown" class="dropdown">
+                  <a href="course.html">Course Resources</a>
+                  <a href="workshop.html">Workshops</a>
+                  <a href="exam.html">Exam Resources</a>
+                </div>
+                <script src = "/scripts/hover.js"></script>
+              </div>
+            </div>
+            <div class = "link-child"><a href="scholarship.html">Scholarships</a></div>
+            <div class = "link-child"><a href="mentor.html">Mentorship</a></div>
+            <div class = "link-child"><a href="companies.html">Companies</a></div>
+            <div class = "link-child"><a href="contact.html">Contact</a></div>
+
+            <!-- search bar, only on homepage or on every page? -->
+
+            <!-- <div class = "link-child">
+              <form id="form" role = "search"> 
+                <input type="search" id="query" name="q" placeholder="Search..."
+                  aria-label="Search through site content">
+                <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
+              </form>
+            </div> -->
+
+            <script src="scripts/search_bar.js"></script>
         </div>
     </div>
     

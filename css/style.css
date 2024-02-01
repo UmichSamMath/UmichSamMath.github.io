@@ -328,6 +328,9 @@ embed {
   margin-right: 20px;
   float: right;
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .links a,
@@ -371,6 +374,7 @@ embed {
   margin: 0;
   cursor: pointer;
   font-size: 20px;
+  vertical-align: middle;
 }
 
 .resources {
@@ -718,7 +722,7 @@ form {
 
 .leaderboard tr, td, th{
   border-radius: 10px;
-  border-spacingb: 10px;
+  border-spacing: 10px;
 }
 
 .leaderboardButton {
@@ -729,4 +733,22 @@ form {
 .leaderboard th {
   background-color: #00274C;
   color: white;
+}
+
+form {
+  width: 200px;
+  /* height: 44px; */
+  border-radius: 5px;
+  /* display: flex;
+  flex-direction: row; */
+  /* align-items: center; */
+  margin: 0 10px;
+}
+
+#form button {
+  width: 25px;
+}
+
+.link-child {
+  
 }

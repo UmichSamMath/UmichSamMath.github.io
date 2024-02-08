@@ -4,56 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Speaker Series Presentation - Milliman",
-    "Description": "Milliman is an actuarial consulting firm. A couple actuaries on the recruiting team from the Chicago office will be coming to present about the differences between consulting and industry. This is a decision that many students struggle with, and this presentation will help provide some knowledge to inform that difficult decision. Pizza will also be provided! RSVP <a target = _blank href=\"https://forms.gle/KNKRq74CpwjnhMEG6\">here</a>!",
-    "Location": "East Hall 2866",
-    "Date": "January 31",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2024-01-31T18:30",
-    "EndTime": "2024-01-31T20:00"
-  },
-  {
-    "Title": "Speaker Series Presentation - Northwestern Mutual",
-    "Description": "Northwestern Mutual is a mutual life insurance company based in Milwaukee, Wisconsin. Some actuaries from the recruiting team will be in Ann Arbor to present on Annuities. Annuities are a very interesting insurance product, and there are so many intricacies to learn. This presentation is a great way to expand your knowledge on annuities. Pizza will also be provided! RSVP <a target = _blank href=\"https://forms.gle/J4DaCLSyfgdWNNmQA\">here</a>!",
-    "Location": "East Hall 2866",
-    "Date": "February 1",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-02-01T18:30",
-    "EndTime": "2024-02-01T20:00"
-  },
-  {
-    "Title": "Speaker Series Presentation - Molly Li",
-    "Description": "Molly Li is an FSA working a Cigna. She began her career working as an actuary in traditional actuarial roles, but has recently shifted to focus her career on data science and is even going back to school to pursue a Master’s degree in Data Science. This is an amazing opportunity to learn from an industry professional on the importance of data science in the actuarial profession. RSVP <a target = _blank href=\"https://forms.gle/ejE9Vy76aANyhN5S7\">here</a>!",
-    "Location": "East Hall 1068",
-    "Date": "February 6",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-02-06T18:00",
-    "EndTime": "2024-02-06T19:30"
-  },
-  {
-    "Title": "Speaker Series - Deloitte",
-    "Description": "Deloitte is a Big 4 company that employs actuarial consultants and routinely recruits from Michigan. Some representatives are coming to campus and giving a presentation on “AI in Actuarial” -   specifically some skills that can’t be replaced by AI. AI is a hot-button topic these days, so it’ll be very interesting to hear industry experts’ opinion on its impact to our jobs. Pizza will be provided as well! RSVP <a target = _blank href=\"https://forms.gle/yBLWCx2CYHghFxah7\">here</a>!",
-    "Location": "",
-    "Date": "February 7",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2024-02-07T18:00",
-    "EndTime": "2024-02-07T19:00"
-  },
-  {
     "Title": "Excel Basics Workshop",
-    "Description": "",
+    "Description": "Learn the basics of excel in preparation for an actuarial internship or full-time job! There will be computer workstations at each desk, but you can also work on your personal laptop or MacBook!  RSVP <a target = _blank href=\"https://forms.gle/9DWX1JeJyxfeq1sp6\">here</a>!",
     "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "February 8",
     "StartTimeStr": "6:30",
@@ -65,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "Advanced Excel Workshop",
-    "Description": "RSVP <a target = _blank href=\"https://forms.gle/cFGDvdeW5XKjE3FK8\">here</a>!",
+    "Description": "A hands-on approach to learning some more difficult Excel concepts. This workshop will include a quick overview of helpful Excel skills and then a “case study” in which you will apply them! RSVP <a target = _blank href=\"https://forms.gle/cFGDvdeW5XKjE3FK8\">here</a>!",
     "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "February 12",
     "StartTimeStr": "6:30",
@@ -76,8 +28,8 @@ let SAMevents = [
     "EndTime": "2024-02-12T20:00"
   },
   {
-    "Title": "SAS/SQL Workshop",
-    "Description": "Come learn the basics of SQL and SAS, two coding languages that you will use as an actuary. We will go through a presentation and then have time to practice coding in these languages. This is a great way to prepare for your internship or full time job! RSVP <a target = _blank href=\"https://forms.gle/9p7CNu2xCr4vTmr57\">here</a>!",
+    "Title": "SQL Workshop",
+    "Description": "Come learn the basics of SQL, a coding language that you will use as an actuary. We will go through a presentation and then have time to practice coding in this language. This is a great way to prepare for your internship or full time job!  RSVP <a target = _blank href=\"https://forms.gle/9p7CNu2xCr4vTmr57\">here</a>!",
     "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "February 13",
     "StartTimeStr": "6:30",
@@ -101,7 +53,7 @@ let SAMevents = [
   },
   {
     "Title": "Communications Workshop",
-    "Description": "",
+    "Description": "This workshop will allow allow you to practice communicating in a public setting. It will be low-stress, fun, and helpful for anyone wanting to practice their speaking skills! RSVP <a target = _blank href=\"https://forms.gle/wCtP9Fz7qjWjvzL28\">here</a>!",
     "Location": "East Hall 1068",
     "Date": "February 19",
     "StartTimeStr": "6:30",
@@ -113,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "R Workshop",
-    "Description": "",
+    "Description": "R is an important coding language used by many actuaries. Come to this event to learn the basics of R and practice some coding! RSVP <a target = _blank href=\"https://forms.gle/HpHWZbU2ZnwkdeyV7\">here</a>!",
     "Location": "East Hall B737",
     "Date": "February 21",
     "StartTimeStr": "6:30",
@@ -158,6 +110,18 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2024-03-07T20:00",
     "EndTime": "2024-03-07T22:00"
+  },
+  {
+    "Title": "Cigna Presentation",
+    "Description": "",
+    "Location": "",
+    "Date": "March 12",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-03-12T18:00",
+    "EndTime": "2024-03-12T19:00"
   },
   {
     "Title": "VBA Workshop",

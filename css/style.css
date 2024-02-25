@@ -472,6 +472,7 @@ td a {
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .scholarships p {

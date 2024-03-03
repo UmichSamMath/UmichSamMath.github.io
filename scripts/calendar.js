@@ -4,80 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Excel Basics Workshop",
-    "Description": "Learn the basics of excel in preparation for an actuarial internship or full-time job! There will be computer workstations at each desk, but you can also work on your personal laptop or MacBook!  RSVP <a target = _blank href=\"https://forms.gle/9DWX1JeJyxfeq1sp6\">here</a>!",
-    "Location": "Mason Hall Fishbowl Computer Lab A",
-    "Date": "February 8",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-02-08T18:30",
-    "EndTime": "2024-02-08T20:00"
-  },
-  {
-    "Title": "Advanced Excel Workshop",
-    "Description": "A hands-on approach to learning some more difficult Excel concepts. This workshop will include a quick overview of helpful Excel skills and then a “case study” in which you will apply them! RSVP <a target = _blank href=\"https://forms.gle/cFGDvdeW5XKjE3FK8\">here</a>!",
-    "Location": "Mason Hall Fishbowl Computer Lab A",
-    "Date": "February 12",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2024-02-12T18:30",
-    "EndTime": "2024-02-12T20:00"
-  },
-  {
-    "Title": "SQL Workshop",
-    "Description": "Come learn the basics of SQL, a coding language that you will use as an actuary. We will go through a presentation and then have time to practice coding in this language. This is a great way to prepare for your internship or full time job!  RSVP <a target = _blank href=\"https://forms.gle/9p7CNu2xCr4vTmr57\">here</a>!",
-    "Location": "Mason Hall Fishbowl Computer Lab A",
-    "Date": "February 13",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-02-13T18:30",
-    "EndTime": "2024-02-13T20:00"
-  },
-  {
-    "Title": "Speaker Series Presentation - Prof. Kausch",
-    "Description": "Professor Kausch will be giving a presentation on “The Actuarial Profession”. Prof Kausch earned his Ph.D. in Mathematics from the University of Michigan in 1993. He is a Fellow of the Society of Actuaries (FSA) and the Conference of Consulting Actuaries (FCA), a Member of the American Academy of Actuaries (MAAA), and an Enrolled Actuary (EA). He served as the Chief Actuary for Gabriel, Roeder, Smith &amp; Company from 2006 until his retirement in 2022. Gabriel, Roeder Smith &amp; Company is the largest actuarial consulting firm dedicated to the public sector. Dr. Kausch taught here between 2002 and 2011 and has since returned to teaching here. He hopes to share knowledge on the actuarial profession with us students. RSVP <a target = _blank href=\"https://forms.gle/kihos34fPVUJTwS96\">here</a>!",
-    "Location": "East Hall 2866",
-    "Date": "February 15",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-02-15T18:30",
-    "EndTime": "2024-02-15T20:00"
-  },
-  {
-    "Title": "Communications Workshop",
-    "Description": "This workshop will allow allow you to practice communicating in a public setting. It will be low-stress, fun, and helpful for anyone wanting to practice their speaking skills! RSVP <a target = _blank href=\"https://forms.gle/wCtP9Fz7qjWjvzL28\">here</a>!",
-    "Location": "East Hall 1068",
-    "Date": "February 19",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2024-02-19T18:30",
-    "EndTime": "2024-02-19T20:00"
-  },
-  {
-    "Title": "R Workshop",
-    "Description": "R is an important coding language used by many actuaries. Come to this event to learn the basics of R and practice some coding! RSVP <a target = _blank href=\"https://forms.gle/HpHWZbU2ZnwkdeyV7\">here</a>!",
-    "Location": "East Hall B737",
-    "Date": "February 21",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2024-02-21T18:30",
-    "EndTime": "2024-02-21T20:00"
-  },
-  {
     "Title": "Python Workshop",
-    "Description": "",
+    "Description": "From unlocking the secrets of large datasets to crafting captivating visualizations and automating tedious tasks, Python is your ticket to accomplishing actuarial tasks efficiently!  Join us for an introduction to the differences between C++ and Python, various datatypes, the Pandas library, and more. RSVP <a target = _blank href=\"https://forms.gle/EY1Bukt5DqPkk4eL7\">here</a>!",
     "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "March 5",
     "StartTimeStr": "6:30",
@@ -86,18 +14,6 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2024-03-05T18:30",
     "EndTime": "2024-03-05T20:00"
-  },
-  {
-    "Title": "Second Semester DEI Event",
-    "Description": "",
-    "Location": "East Hall 1360",
-    "Date": "March 6",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2024-03-06T18:30",
-    "EndTime": "2024-03-06T20:00"
   },
   {
     "Title": "Mentorship Movie Night & Popcorn Bar!",
@@ -112,9 +28,33 @@ let SAMevents = [
     "EndTime": "2024-03-07T22:00"
   },
   {
-    "Title": "Cigna Presentation",
-    "Description": "",
+    "Title": "Ally Presentation",
+    "Description": "RSVP <a target = _blank href=\"https://forms.gle/EdsMCyxDtAAGRTcE9\">here</a>!",
     "Location": "",
+    "Date": "March 11",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2024-03-11T18:00",
+    "EndTime": "2024-03-11T19:30"
+  },
+  {
+    "Title": "Second Semester DEI Event",
+    "Description": "Join us as we celebrate International Women's Day at our collaborative event hosted by SAM and Women in Mathematics! Be part of the push for fairness in the actuarial and mathematics fields with a panel of current Michigan students and a presentation delving into the history of International Women's Day, spotlighting influential women in both actuarial and mathematical realms. Dive into this enriching event with meaningful discussions, delicious food, and a shared dedication to promoting inclusivity and equality. RSVP <a target = _blank href=\"https://forms.gle/B4EVHedAb3faH6RA6\">here</a>!",
+    "Location": "East Hall 1324",
+    "Date": "March 11",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2024-03-11T19:30",
+    "EndTime": "2024-03-11T21:00"
+  },
+  {
+    "Title": "Cigna Presentation",
+    "Description": "Come hear from Cigna professionals on how to succeed in your recruiting endeavors and also learn more about the variety of roles that actuaries can fill! They are planning on providing food, as well! RSVP <a target = _blank href=\"https://forms.gle/KMmYwG4Rq3aeCp3N6\">here</a>!",
+    "Location": "East Hall 3088",
     "Date": "March 12",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:00",
@@ -125,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "VBA Workshop",
-    "Description": "",
+    "Description": "Visual Basic for Applications is a computer programming language often used in Excel. With VBA you can create macros to automate repetitive functions, and generate custom forms, graphs, and reports. RSVP <a target = _blank href=\"https://forms.gle/QF9E9yYjuy4mAT1J7\">here</a>!",
     "Location": "Mason Hall Fishbowl Computer Lab A",
     "Date": "March 14",
     "StartTimeStr": "5:30",
@@ -137,8 +77,8 @@ let SAMevents = [
   },
   {
     "Title": "Board Elections Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "RSVP <a target = _blank href=\"https://forms.gle/kh5KuJgRKXA2trdJA\">here</a>!",
+    "Location": "East Hall 1068",
     "Date": "March 26",
     "StartTimeStr": "5:30",
     "EndTimeStr": "7:00",
@@ -162,7 +102,7 @@ let SAMevents = [
   {
     "Title": "Internship Panel",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 1360",
     "Date": "April 2",
     "StartTimeStr": "5:30",
     "EndTimeStr": "7:00",
@@ -173,7 +113,7 @@ let SAMevents = [
   },
   {
     "Title": "Alumni Day",
-    "Description": "",
+    "Description": "SAM Alumni will return to Ann Arbor to discuss their various jobs and career tracks in a panel discussion, breakout session, and networking event. This will be a great event for members of all years! Make connections with actuaries from across the country and learn about all different actuarial career tracks! Mentorship is expected to attend. Attire is smart casual (think dinner with your parents!). Free food will also be provided in a networking luncheon with the alumni. The SAM Instagram (@Umich_SAM) will be featuring panelists, so be sure to check them out! RSVP <a target = _blank href=\"https://forms.gle/hmqHfiJjWXLAia4B7\">here</a>!",
     "Location": "East Hall 3rd Floor Terrace (Psych Atrium)",
     "Date": "April 6",
     "StartTimeStr": "12:00",
@@ -186,7 +126,7 @@ let SAMevents = [
   {
     "Title": "Board Elections",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 1360",
     "Date": "April 10",
     "StartTimeStr": "5:00",
     "EndTimeStr": "7:00",

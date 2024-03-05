@@ -42,7 +42,7 @@ let SAMevents = [
   {
     "Title": "Ally Presentation",
     "Description": "RSVP <a target = _blank href=\"https://forms.gle/EdsMCyxDtAAGRTcE9\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 3088",
     "Date": "March 11",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:30",

@@ -16,6 +16,18 @@ let SAMevents = [
     "EndTime": "2024-03-05T20:00"
   },
   {
+    "Title": "Scholarship Info Session w/ Prof N",
+    "Description": "Professor Natarajan will discuss the various Actuarial Scholarships due Monday, March 11th. This is highly recommended to students who need more information about the application process.",
+    "Location": "",
+    "Date": "March 7",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:30",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-03-07T18:00",
+    "EndTime": "2024-03-07T19:30"
+  },
+  {
     "Title": "Mentorship Movie Night & Popcorn Bar!",
     "Description": "Take a break from classes and studying to hang out and watch a movie with the rest of SAM mentorship! There will be a popcorn bar to snack on, and some games will be played in the back too. RSVP <a target = _blank href=\"https://forms.gle/a3BjaGLwBZKHVu2H9\">here</a>!",
     "Location": "East Hall 1360",

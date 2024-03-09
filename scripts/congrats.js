@@ -5,39 +5,9 @@ var monthsFeatured = 1;
 
 let congratsMessages = [
   {
-    "name": "Sawyer Gustafson",
-    "congratsEvent": "passing exam PA",
-    "dateAdded": new Date(2023, 11, 26)
-  },
-  {
-    "name": "Gabe Weber",
-    "congratsEvent": "passing exam PA",
-    "dateAdded": new Date(2023, 11, 26)
-  },
-  {
-    "name": "Michael Williams",
-    "congratsEvent": "passing exam FM",
-    "dateAdded": new Date(2023, 11, 26)
-  },
-  {
-    "name": "Abby Hess",
-    "congratsEvent": "passing exam ALTAM",
-    "dateAdded": new Date(2024, 0, 12)
-  },
-  {
-    "name": "Hunter Stanek",
-    "congratsEvent": "passing exam MAS-I",
-    "dateAdded": new Date(2024, 0, 16)
-  },
-  {
-    "name": "Jonathan Holland",
-    "congratsEvent": "passing exam P",
-    "dateAdded": new Date(2024, 0, 19)
-  },
-  {
-    "name": "Rachel Leonard",
-    "congratsEvent": "passing exam P",
-    "dateAdded": new Date(2024, 0, 31)
+    "name": "Elena Post",
+    "congratsEvent": "passing exam SRM",
+    "dateAdded": new Date(2024, 2, 8)
   }
 ]
 

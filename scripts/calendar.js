@@ -4,80 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Scholarship Info Session w/ Prof N",
-    "Description": "Professor Natarajan will discuss the various Actuarial Scholarships due Monday, March 11th. This is highly recommended to students who need more information about the application process.",
-    "Location": "East Hall 2866",
-    "Date": "March 7",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-03-07T18:00",
-    "EndTime": "2024-03-07T19:30"
-  },
-  {
-    "Title": "Mentorship Movie Night & Popcorn Bar!",
-    "Description": "Take a break from classes and studying to hang out and watch a movie with the rest of SAM mentorship! There will be a popcorn bar to snack on, and some games will be played in the back too. RSVP <a target = _blank href=\"https://forms.gle/a3BjaGLwBZKHVu2H9\">here</a>!",
-    "Location": "East Hall 1360",
-    "Date": "March 7",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "10:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-03-07T20:00",
-    "EndTime": "2024-03-07T22:00"
-  },
-  {
-    "Title": "Ally Presentation",
-    "Description": "RSVP <a target = _blank href=\"https://forms.gle/EdsMCyxDtAAGRTcE9\">here</a>!",
-    "Location": "East Hall 3088",
-    "Date": "March 11",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2024-03-11T18:00",
-    "EndTime": "2024-03-11T19:30"
-  },
-  {
-    "Title": "Second Semester DEI Event",
-    "Description": "Join us as we celebrate International Women's Day at our collaborative event hosted by SAM and Women in Mathematics! Be part of the push for fairness in the actuarial and mathematics fields with a panel of current Michigan students and a presentation delving into the history of International Women's Day, spotlighting influential women in both actuarial and mathematical realms. Dive into this enriching event with meaningful discussions, delicious food, and a shared dedication to promoting inclusivity and equality. RSVP <a target = _blank href=\"https://forms.gle/B4EVHedAb3faH6RA6\">here</a>!",
-    "Location": "East Hall 1324",
-    "Date": "March 11",
-    "StartTimeStr": "7:30",
-    "EndTimeStr": "9:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2024-03-11T19:30",
-    "EndTime": "2024-03-11T21:00"
-  },
-  {
-    "Title": "Cigna Presentation",
-    "Description": "Come hear from Cigna professionals on how to succeed in your recruiting endeavors and also learn more about the variety of roles that actuaries can fill! They are planning on providing food, as well! RSVP <a target = _blank href=\"https://forms.gle/KMmYwG4Rq3aeCp3N6\">here</a>!",
-    "Location": "East Hall 3088",
-    "Date": "March 12",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-03-12T18:00",
-    "EndTime": "2024-03-12T19:00"
-  },
-  {
-    "Title": "VBA Workshop",
-    "Description": "Visual Basic for Applications is a computer programming language often used in Excel. With VBA you can create macros to automate repetitive functions, and generate custom forms, graphs, and reports. RSVP <a target = _blank href=\"https://forms.gle/QF9E9yYjuy4mAT1J7\">here</a>!",
-    "Location": "Mason Hall Fishbowl Computer Lab A",
-    "Date": "March 14",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-03-14T18:30",
-    "EndTime": "2024-03-14T20:00"
-  },
-  {
     "Title": "Board Elections Workshop",
-    "Description": "RSVP <a target = _blank href=\"https://forms.gle/kh5KuJgRKXA2trdJA\">here</a>!",
+    "Description": "This workshop will focus on understanding the board elections process and the responsibilities of each board position. Highly encouraged for anyone considering running for board. RSVP <a target = _blank href=\"https://forms.gle/kh5KuJgRKXA2trdJA\">here</a>!",
     "Location": "East Hall 1068",
     "Date": "March 26",
     "StartTimeStr": "6:30",
@@ -112,6 +40,18 @@ let SAMevents = [
     "EndTime": "2024-04-02T20:00"
   },
   {
+    "Title": "CAS Ice Cream Social",
+    "Description": "Come stop by for a casual ice cream social at Michigan Creamery to hang out and talk about CAS! Your SAM CAS ambassadors will be there to answer any questions about CAS, the P&amp;C field in general, internships, recruiting, and running for SAM CAS Ambassador. They will also use this time to better get to know anyone needing a letter of rec for the CAS Student Central Summer Program (applications due April 10)! We’ll even pay for your ice cream🍦! RSVP <a target = _blank href=\"https://forms.gle/dHcCBCd4mBUqTujf7\">here</a>!",
+    "Location": "Michigan Creamery, 302 S State St, Ann Arbor, MI 48104, USA",
+    "Date": "April 3",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2024-04-03T17:00",
+    "EndTime": "2024-04-03T18:30"
+  },
+  {
     "Title": "Alumni Day",
     "Description": "SAM Alumni will return to Ann Arbor to discuss their various jobs and career tracks in a panel discussion, breakout session, and networking event. This will be a great event for members of all years! Make connections with actuaries from across the country and learn about all different actuarial career tracks! Mentorship is expected to attend. Attire is smart casual (think dinner with your parents!). Free food will also be provided in a networking luncheon with the alumni. The SAM Instagram (@Umich_SAM) will be featuring panelists, so be sure to check them out! RSVP <a target = _blank href=\"https://forms.gle/hmqHfiJjWXLAia4B7\">here</a>!",
     "Location": "East Hall 3rd Floor Terrace (Psych Atrium)",
@@ -125,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "Board Elections",
-    "Description": "",
+    "Description": "RSVP <a target = _blank href=\"https://forms.gle/E8VgmWpgHXRNn7mL9\">here</a>!",
     "Location": "East Hall 1360",
     "Date": "April 10",
     "StartTimeStr": "6:00",

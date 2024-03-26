@@ -28,6 +28,18 @@ let SAMevents = [
     "EndTime": "2024-03-28T20:30"
   },
   {
+    "Title": "Prof N Advising Session",
+    "Description": "Come to the mass advising session to learn about course planning and ask Prof Natarajan any questions!",
+    "Location": "East Hall 1068",
+    "Date": "April 1",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2024-04-01T18:00",
+    "EndTime": "2024-04-01T19:00"
+  },
+  {
     "Title": "Internship Panel",
     "Description": "",
     "Location": "East Hall 1360",
@@ -50,6 +62,18 @@ let SAMevents = [
     "DayofWeek": "Wednesday",
     "StartTime": "2024-04-03T17:00",
     "EndTime": "2024-04-03T18:30"
+  },
+  {
+    "Title": "Jackson National Networking Workshop",
+    "Description": "Jackson National is a life insurance company headquartered in Lansing, Michigan; they specialize in annuities but sell a variety of products. A team of actuaries will be coming to give a workshop on networking! As you prepare for your upcoming internship/full-time job, knowing how to network effectively is a valuable skill. Come learn from industry professionals the skill of networking! Jackson will also be bringing ice cream, so be sure to attend!! RSVP <a target = _blank href=\"https://forms.gle/ijf29dDZR518vrR38\">here</a>!",
+    "Location": "East Hall 1068",
+    "Date": "April 4",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-04-04T18:00",
+    "EndTime": "2024-04-04T19:00"
   },
   {
     "Title": "Alumni Day",

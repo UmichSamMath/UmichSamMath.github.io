@@ -4,30 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Board Elections Workshop",
-    "Description": "This workshop will focus on understanding the board elections process and the responsibilities of each board position. Highly encouraged for anyone considering running for board. RSVP <a target = _blank href=\"https://forms.gle/kh5KuJgRKXA2trdJA\">here</a>!",
-    "Location": "East Hall 1068",
-    "Date": "March 26",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-03-26T18:30",
-    "EndTime": "2024-03-26T20:00"
-  },
-  {
-    "Title": "Annual Euchre Tournament!",
-    "Description": "You know what time it is, join us to for a night of euchre and fun!! Mentors and mentees are heavily encouraged to be a team, but anyone else can join and make their own teams! If you don’t have a teammate, still sign up and we’ll pair you up day of. Prizes will be given out to the winners, and pizza will be provided! RSVP <a target = _blank href=\"https://forms.gle/J54WT1WFLYq3ZSzu5\">here</a>!",
-    "Location": "USB 1250",
-    "Date": "March 28",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-03-28T19:00",
-    "EndTime": "2024-03-28T20:30"
-  },
-  {
     "Title": "Prof N Advising Session",
     "Description": "Come to the mass advising session to learn about course planning and ask Prof Natarajan any questions!",
     "Location": "East Hall 1068",
@@ -78,7 +54,7 @@ let SAMevents = [
   {
     "Title": "Alumni Day",
     "Description": "SAM Alumni will return to Ann Arbor to discuss their various jobs and career tracks in a panel discussion, breakout session, and networking event. This will be a great event for members of all years! Make connections with actuaries from across the country and learn about all different actuarial career tracks! Mentorship is expected to attend. Attire is smart casual (think dinner with your parents!). Free food will also be provided in a networking luncheon with the alumni. The SAM Instagram (@Umich_SAM) will be featuring panelists, so be sure to check them out! RSVP <a target = _blank href=\"https://forms.gle/hmqHfiJjWXLAia4B7\">here</a>!",
-    "Location": "East Hall 3rd Floor Terrace (Psych Atrium)",
+    "Location": "East Hall 4448",
     "Date": "April 6",
     "StartTimeStr": "1:00",
     "EndTimeStr": "5:00",

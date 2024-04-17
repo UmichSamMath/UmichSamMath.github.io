@@ -709,14 +709,23 @@ form {
 
 /* Style the back side */
 .flip-card-back {
-  background-color: #e8c527;
-  color: white;
+  background-color: #f3d659;
+  border: 10px solid #e8c527;
+  color: black;
   transform: rotateY(180deg);
   filter: drop-shadow(13px 10px 4px black);
+  width: 190px;
+  height: 190px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .blue-card {
-  background-color: #337cbd;
+  background-color: #5690c2;
+  border: 10px solid #337cbd;
+  color: white;
 }
 
 .bodymovinanim {

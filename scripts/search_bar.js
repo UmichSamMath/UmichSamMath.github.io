@@ -1,13 +1,13 @@
-const f = document.getElementById('form');
-const q = document.getElementById('query');
-const google = 'https://www.google.com/search?q=site%3A+';
-const site = '\"umichsam.com\"';
+// const f = document.getElementById('form');
+// const q = document.getElementById('query');
+// const google = 'https://www.google.com/search?q=site%3A+';
+// const site = '\"umichsam.com\"';
 
-function submitted(event) {
-  event.preventDefault();
-  const url = google + site + '+' + q.value;
-  const win = window.open(url, '_blank');
-  win.focus();
-}
+// function submitted(event) {
+//   event.preventDefault();
+//   const url = google + site + '+' + q.value;
+//   const win = window.open(url, '_blank');
+//   win.focus();
+// }
 
-f.addEventListener('submit', submitted);
+// f.addEventListener('submit', submitted);

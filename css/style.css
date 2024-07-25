@@ -764,6 +764,9 @@ form {
   width: 25px;
 }
 
-.link-child {
-  
+.collage {
+  width: 75%;
+  min-width: 300px;
+  border: #0075A0 dashed 5px;
+  /* filter: drop-shadow(20px 20px 10px #0075A0); */
 }

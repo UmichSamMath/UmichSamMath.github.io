@@ -52,8 +52,8 @@ let companies = [
   },
   {
     "name": "American Family Insurance",
-    "business": "<br>",
-    "typeOfWork": "<br>",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
     "contactName": "David Binder",
     "contactEmail": "dbinder@amfam.com",
     "keywords": []
@@ -141,7 +141,7 @@ let companies = [
   {
     "name": "D.E. Shaw",
     "business": "Investment and Technology",
-    "typeOfWork": "<br>",
+    "typeOfWork": "Financial Services",
     "contactName": "Erin Bergano",
     "contactEmail": "ebergano@recruitedshaw.com",
     "keywords": ["New York", "NY", "NYC"]
@@ -156,8 +156,8 @@ let companies = [
   },
   {
     "name": "DW Simpson",
-    "business": "<br>",
-    "typeOfWork": "<br>",
+    "business": "Actuarial",
+    "typeOfWork": "Recruitment & Staffing",
     "contactName": "Charlotte Chandler",
     "contactEmail": "charlotte.chandler@dwsimpson.com",
     "keywords": ["Chicago", "IL", "Illinois"]
@@ -173,7 +173,7 @@ let companies = [
   {
     "name": "Fidelity",
     "business": "Investment",
-    "typeOfWork": "<br>",
+    "typeOfWork": "Financial Services",
     "contactName": "Vincent Lee",
     "contactEmail": "vincent.lee@fmr.com",
     "keywords": ["Boston", "MA", "Massachusetts"]
@@ -181,7 +181,7 @@ let companies = [
   {
     "name": "Global Atlantic Financial Group",
     "business": "Life",
-    "typeOfWork": "<br>",
+    "typeOfWork": "Insurance",
     "contactName": "Jinyi Lan",
     "contactEmail": "Jinyi.Lan@gafg.com",
     "keywords": []
@@ -189,7 +189,7 @@ let companies = [
   {
     "name": "Hagerty",
     "business": "Property and Casualty",
-    "typeOfWork": "<br>",
+    "typeOfWork": "Insurance",
     "contactName": "Karin Chung",
     "contactEmail": "kchung@hagerty.com",
     "keywords": []
@@ -197,7 +197,7 @@ let companies = [
   {
     "name": "The Hanover Insurance Group",
     "business": "Property and Casualty",
-    "typeOfWork": "<br>",
+    "typeOfWork": "Insurance",
     "contactName": "Steve Bunker",
     "contactEmail": "STBUNKER@hanover.com",
     "keywords": []

@@ -22,8 +22,8 @@ let companies = [
     "name": "AF Group",
     "business": "Workers Compensation",
     "typeOfWork": "Insurance",
-    "contactName": "Nick Zielinski",
-    "contactEmail": "Nick.Zielinski@accidentfund.com",
+    "contactName": "Ashleigh Tufnell",
+    "contactEmail": "ashleigh.tufnell@afgroup.com",
     "keywords": []
   },
   {

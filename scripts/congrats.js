@@ -5,14 +5,14 @@ var monthsFeatured = 1;
 
 let congratsMessages = [
   {
-    "name": "Elena Post",
-    "congratsEvent": "passing exam SRM",
-    "dateAdded": new Date(2024, 2, 8)
+    "name": "Thomas Bednarz",
+    "congratsEvent": "passing exam P",
+    "dateAdded": new Date(2024, 7, 26)
   },
   {
-    name: "Abby Hess",
-    congratsEvent: "passing the PAF module",
-    dateAdded: new Date(2024, 3, 19)
+    "name": "Katherine Bednarz",
+    "congratsEvent": "passing exam MAS-I",
+    "dateAdded": new Date(2024, 7, 26)
   }
 ]
 

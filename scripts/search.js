@@ -310,8 +310,8 @@ let companies = [
     "name": "New York Life",
     "business": "Life",
     "typeOfWork": "Insurance",
-    "contactName": "Daniel Lei",
-    "contactEmail": "daniel_lei@newyorklife.com",
+    "contactName": "Andy Lee",
+    "contactEmail": "sunyoup_lee@newyorklife.com",
     "keywords": ["New York", "NY", "NYC"]
   },
   {

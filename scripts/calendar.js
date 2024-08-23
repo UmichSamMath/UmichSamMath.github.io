@@ -5,8 +5,8 @@
 let SAMevents = [
   {
     "Title": "Resume Workshop 1",
-    "Description": "RSVP <a href=\"https://forms.gle/GWAfwBjkgDMWXr3o7\">here</a>!",
-    "Location": "",
+    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a href target=_blank=\"https://forms.gle/GWAfwBjkgDMWXr3o7\" target=\"_blank\">here</a>!",
+    "Location": "East Hall 3096",
     "Date": "August 27",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -17,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "Festifall!",
-    "Description": "Our table is located in Ingalls Mall on the side of the Michigan League. We can't wait to see you!!",
+    "Description": "Our table is located in Ingalls Mall on the side of the Michigan League. Come stop by to learn more about SAM and get some swag!",
     "Location": "Central Campus Table F30",
     "Date": "August 28",
     "StartTimeStr": "2:30",
@@ -29,7 +29,7 @@ let SAMevents = [
   },
   {
     "Title": "Learn S'more about SAM",
-    "Description": "",
+    "Description": "Come to our bonfire to learn all about the SAM events and enjoy some smores! RSVP <a href target=_blank=\"https://forms.gle/gpomba8dYGWt6zBd9\">here</a>!",
     "Location": "319 Catherine St",
     "Date": "September 2",
     "StartTimeStr": "8:00",
@@ -41,7 +41,7 @@ let SAMevents = [
   },
   {
     "Title": "Mass Meeting",
-    "Description": "",
+    "Description": "Learn all about SAM and our fall semester events and opportunities! RSVP <a href target=_blank=\"https://forms.gle/gsZqEUSZVrtKGjHZ7\">here</a>!",
     "Location": "",
     "Date": "September 3",
     "StartTimeStr": "7:00",
@@ -53,7 +53,7 @@ let SAMevents = [
   },
   {
     "Title": "New Member Orientation",
-    "Description": "",
+    "Description": "Introduction to the actuarial profession and information about SAM. Overview of the actuarial curriculum, actuarial scholarships, and advice for underclassmen/new actuaries. RSVP <a href target=_blank=\"https://forms.gle/7qBRQLHaejfiWSveA\">here</a>!",
     "Location": "",
     "Date": "September 3",
     "StartTimeStr": "8:00",
@@ -65,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "Resume Office Hours",
-    "Description": "Sign-up coming soon!",
+    "Description": "Sign up to have your resume reviewed one-on-one with a board member. Sign-up coming soon!",
     "Location": "Math Atrium, or coordinate with your reviewer!",
     "Date": "September 4",
     "StartTimeStr": "12:00",
@@ -77,8 +77,8 @@ let SAMevents = [
   },
   {
     "Title": "Drop-in Headshots",
-    "Description": "",
-    "Location": "",
+    "Description": "Get your professional headshot taken; free for dues paying members and $5 for anyone else.",
+    "Location": "Ross",
     "Date": "September 4",
     "StartTimeStr": "4:00",
     "EndTimeStr": "6:00",
@@ -88,9 +88,21 @@ let SAMevents = [
     "EndTime": "2024-09-04T18:00"
   },
   {
-    "Title": "Resume Workshop 2",
-    "Description": "",
+    "Title": "BCBSM Actuarial and Underwriting Open House",
+    "Description": "Join <a href target=_blank=\"https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_Zjk1ZTg4MjUtZTZkMS00MzhiLThlYzQtMDg4Zjc4MWYwZTIz%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%25226f56d3fa-5682-4261-b169-bc0d615da17c%2522%252c%2522Oid%2522%253a%2522f1539ded-76bd-432e-b04f-381c6673bb20%2522%257d%26anon%3Dtrue&amp;type=meetup-join&amp;deeplinkId=393fc11f-cd1c-48ff-a3dc-1bc56a528585&amp;directDl=true&amp;msLaunch=true&amp;enableMobilePage=true&amp;suppressPrompt=true\">here</a>!<br>Meeting ID: 210 555 944 113 <br>Passcode: SZrScY",
     "Location": "",
+    "Date": "September 5",
+    "StartTimeStr": "2:00",
+    "EndTimeStr": "3:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-09-05T14:00",
+    "EndTime": "2024-09-05T15:00"
+  },
+  {
+    "Title": "Resume Workshop 2",
+    "Description": "The resume workshop will go over each section of the resume in detail with insight from board members to help prepare to submit resumes for the career fair. RSVP <a href target=_blank=\"https://forms.gle/CeoFeGEuL8NxDvbJ7\">here</a>!",
+    "Location": "East Hall 4096",
     "Date": "September 5",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -101,8 +113,8 @@ let SAMevents = [
   },
   {
     "Title": "Interview Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "Come to learn about what makes a successful performance in a professional interview! Presenters will go over how to prepare for the interview beforehand, the types of questions to expect, how to structure one's answers, and post-interview etiquette. RSVP <a href target=_blank=\"https://forms.gle/Ts411tTHSrV3NCiB6\">here</a>!",
+    "Location": "East Hall 4096",
     "Date": "September 5",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -113,7 +125,7 @@ let SAMevents = [
   },
   {
     "Title": "MassMutual Ascend Info Session",
-    "Description": "",
+    "Description": "RSVP <a href target=_blank=\"https://forms.gle/fDzDPtXNS6MCREfF9\">here</a>!",
     "Location": "",
     "Date": "September 9",
     "StartTimeStr": "5:00",
@@ -125,7 +137,7 @@ let SAMevents = [
   },
   {
     "Title": "Aon Info Session",
-    "Description": "",
+    "Description": "RSVP <a href target=_blank=\"https://forms.gle/EtPXYqyMZG4J8WbN9\">here</a>!",
     "Location": "",
     "Date": "September 10",
     "StartTimeStr": "5:00",
@@ -149,7 +161,7 @@ let SAMevents = [
   },
   {
     "Title": "Auto Owners Info Session",
-    "Description": "",
+    "Description": "RSVP <a href target=_blank=\"https://forms.gle/NF8WRuAMjLfwweyPA\">here</a>!",
     "Location": "",
     "Date": "September 11",
     "StartTimeStr": "5:30",
@@ -172,8 +184,20 @@ let SAMevents = [
     "EndTime": "2024-09-19T00:00"
   },
   {
+    "Title": "UnitedHealth Group Info Session",
+    "Description": "Includes both Optum (consulting) and UnitedHealth (insurance). RSVP <a href target=_blank=\"https://forms.gle/Kq4Pz2r5zuDPE7m86\">here</a>!",
+    "Location": "Virtual",
+    "Date": "September 12",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-09-12T17:00",
+    "EndTime": "2024-09-12T18:00"
+  },
+  {
     "Title": "CareSource Info Session",
-    "Description": "",
+    "Description": "RSVP <a href target=_blank=\"https://forms.gle/RbtmtuR7XbZXBBLH9\">here</a>!",
     "Location": "",
     "Date": "September 16",
     "StartTimeStr": "5:30",
@@ -185,7 +209,7 @@ let SAMevents = [
   },
   {
     "Title": "Milliman Info Session",
-    "Description": "",
+    "Description": "RSVP <a href target=_blank=\"https://forms.gle/9FG2W7U5CiLkN9NC6\">here</a>!",
     "Location": "",
     "Date": "September 17",
     "StartTimeStr": "6:30",
@@ -197,7 +221,7 @@ let SAMevents = [
   },
   {
     "Title": "Mercer Info Session",
-    "Description": "",
+    "Description": "RSVP <a href target=_blank=\"https://forms.gle/MYtqv5jteHGBfrpm8\">here</a>!",
     "Location": "",
     "Date": "September 18",
     "StartTimeStr": "6:00",

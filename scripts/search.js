@@ -110,8 +110,8 @@ let companies = [
     "name": "Cigna",
     "business": "Health",
     "typeOfWork": "Insurance",
-    "contactName": "Jacob Hall",
-    "contactEmail": "jacob.hall@cigna.com",
+    "contactName": "Alec Behrendt",
+    "contactEmail": "alec.behrendt@cignahealthcare.com",
     "keywords": ["CT", "Connecticut", "Bloomfield"]
   },
   {

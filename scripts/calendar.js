@@ -42,7 +42,7 @@ let SAMevents = [
   {
     "Title": "Mass Meeting",
     "Description": "Learn all about SAM and our fall semester events and opportunities! RSVP <a target=_blank href=\"https://forms.gle/gsZqEUSZVrtKGjHZ7\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 4448",
     "Date": "September 3",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -54,7 +54,7 @@ let SAMevents = [
   {
     "Title": "New Member Orientation",
     "Description": "Introduction to the actuarial profession and information about SAM. Overview of the actuarial curriculum, actuarial scholarships, and advice for underclassmen/new actuaries. RSVP <a target=_blank href=\"https://forms.gle/7qBRQLHaejfiWSveA\">here</a>!",
-    "Location": "",
+    "Location": "Est Hall 4448",
     "Date": "September 3",
     "StartTimeStr": "8:00",
     "EndTimeStr": "8:30",
@@ -65,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "Resume Office Hours",
-    "Description": "Sign up to have your resume reviewed one-on-one with a board member. Sign-up coming soon!",
+    "Description": "Sign up <a target=_blank href=\"https://docs.google.com/spreadsheets/d/1g2e2xZZrTRzsLXuPAFz__1m2iJgAxD-5OyMN5utgvno/edit?gid=1953096505#gid=1953096505\">here</a> to have your resume reviewed one-on-one with a board member.",
     "Location": "Math Atrium, or coordinate with your reviewer!",
     "Date": "September 4",
     "StartTimeStr": "12:00",
@@ -125,7 +125,7 @@ let SAMevents = [
   },
   {
     "Title": "MassMutual Ascend Info Session",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/fDzDPtXNS6MCREfF9\">here</a>!",
+    "Description": "Come learn more about MassMutual Ascend! We will have having a watch party in a classroom to watch the virtual session.RSVP <a target=_blank href=\"https://forms.gle/fDzDPtXNS6MCREfF9\" target=\"_blank\">here</a>!",
     "Location": "",
     "Date": "September 9",
     "StartTimeStr": "5:00",
@@ -137,7 +137,7 @@ let SAMevents = [
   },
   {
     "Title": "Aon Info Session",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/EtPXYqyMZG4J8WbN9\">here</a>!",
+    "Description": "Come learn more about Aon, and get some free food!RSVP <a target=_blank href=\"https://forms.gle/EtPXYqyMZG4J8WbN9\" target=\"_blank\">here</a>!",
     "Location": "",
     "Date": "September 10",
     "StartTimeStr": "5:00",
@@ -161,7 +161,7 @@ let SAMevents = [
   },
   {
     "Title": "Auto Owners Info Session",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/NF8WRuAMjLfwweyPA\">here</a>!",
+    "Description": "Come learn more about Auto Owners, and get some free food!RSVP <a target=_blank href=\"https://forms.gle/NF8WRuAMjLfwweyPA\" target=\"_blank\">here</a>!",
     "Location": "",
     "Date": "September 11",
     "StartTimeStr": "5:30",
@@ -185,7 +185,7 @@ let SAMevents = [
   },
   {
     "Title": "UnitedHealth Group Info Session",
-    "Description": "Includes both Optum (consulting) and UnitedHealth (insurance). RSVP <a target=_blank href=\"https://forms.gle/Kq4Pz2r5zuDPE7m86\">here</a>!",
+    "Description": "Come learn more about UnitedHealth Group! Includes both Optum (consulting) and UnitedHealth (insurance). RSVP <a target=_blank href=\"https://forms.gle/Kq4Pz2r5zuDPE7m86\" target=\"_blank\">here</a>!",
     "Location": "Virtual",
     "Date": "September 12",
     "StartTimeStr": "5:00",
@@ -196,8 +196,20 @@ let SAMevents = [
     "EndTime": "2024-09-12T18:00"
   },
   {
+    "Title": "Cigna Info Session",
+    "Description": "Come learn more about Cigna, and get some free food! We will be hosting a watch party with food in a classroom to watch the virtual session.RSVP <a target=_blank href=\"https://forms.gle/FYpUsGKV65uv6nFw5\" target=\"_blank\">here</a>!",
+    "Location": "",
+    "Date": "September 12",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-09-12T18:00",
+    "EndTime": "2024-09-12T19:00"
+  },
+  {
     "Title": "CareSource Info Session",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/RbtmtuR7XbZXBBLH9\">here</a>!",
+    "Description": "Come learn more about CareSource, and get some free food!RSVP <a target=_blank href=\"https://forms.gle/RbtmtuR7XbZXBBLH9\" target=\"_blank\">here</a>!",
     "Location": "",
     "Date": "September 16",
     "StartTimeStr": "5:30",
@@ -209,7 +221,7 @@ let SAMevents = [
   },
   {
     "Title": "Milliman Info Session",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/9FG2W7U5CiLkN9NC6\">here</a>!",
+    "Description": "Come learn more about Milliman!RSVP <a target=_blank href=\"https://forms.gle/9FG2W7U5CiLkN9NC6\" target=\"_blank\">here</a>!",
     "Location": "",
     "Date": "September 17",
     "StartTimeStr": "6:30",
@@ -221,7 +233,7 @@ let SAMevents = [
   },
   {
     "Title": "Mercer Info Session",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/MYtqv5jteHGBfrpm8\">here</a>!",
+    "Description": "Come learn more about Mercer, and get some free food! RSVP <a target=_blank href=\"https://forms.gle/MYtqv5jteHGBfrpm8\" target=\"_blank\">here</a>!",
     "Location": "",
     "Date": "September 18",
     "StartTimeStr": "6:00",

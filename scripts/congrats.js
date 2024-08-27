@@ -16,7 +16,7 @@ let congratsMessages = [
   },
   {
     "name": "Grace Russo",
-    "congratsEvent": "passing Exam P and accepting a full time offer with Deloitte as an Actuarial Analyst!",
+    "congratsEvent": "passing Exam P and accepting a full time offer with Deloitte as an Actuarial Analyst",
     "dateAdded": new Date(2024, 7, 27)
   }
 ]

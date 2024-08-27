@@ -11,7 +11,7 @@ let congratsMessages = [
   },
   {
     "name": "Katherine Bednarz",
-    "congratsEvent": "passing exam MAS-I",
+    "congratsEvent": "passing exam MAS-I and DISC DA",
     "dateAdded": new Date(2024, 7, 26)
   },
   {

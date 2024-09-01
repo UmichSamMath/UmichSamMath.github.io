@@ -334,8 +334,8 @@ let companies = [
     "name": "RGA",
     "business": "<br>",
     "typeOfWork": "Reinsurance",
-    "contactName": "Stephanie Kut",
-    "contactEmail": "Stephanie.Kut@rgare.com",
+    "contactName": "Tristan Chen",
+    "contactEmail": "Tristan.Chen@rgare.com",
     "keywords": []
   }, 
   {

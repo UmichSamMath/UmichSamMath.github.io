@@ -30,7 +30,7 @@ let SAMevents = [
   {
     "Title": "Mass Meeting",
     "Description": "Learn all about SAM and our fall semester events and opportunities! RSVP <a target =_blank href=\"https://forms.gle/gsZqEUSZVrtKGjHZ7\">here</a>!",
-    "Location": "East Hall 4448",
+    "Location": "East Hall 1360",
     "Date": "September 3",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -42,7 +42,7 @@ let SAMevents = [
   {
     "Title": "New Member Orientation",
     "Description": "Introduction to the actuarial profession and information about SAM. Overview of the actuarial curriculum, actuarial scholarships, and advice for underclassmen/new actuaries. RSVP <a target =_blank href=\"https://forms.gle/7qBRQLHaejfiWSveA\">here</a>!",
-    "Location": "East Hall 4448",
+    "Location": "East Hall 1360",
     "Date": "September 3",
     "StartTimeStr": "8:00",
     "EndTimeStr": "8:30",

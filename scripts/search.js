@@ -118,8 +118,8 @@ let companies = [
     "name": "CNA",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
-    "contactName": "Bryce Peterson",
-    "contactEmail": "bryce.peterson@cna.com",
+    "contactName": "Josh Collier",
+    "contactEmail": "Joshua.Collier@cna.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {
@@ -214,8 +214,8 @@ let companies = [
     "name": "Hub",
     "business": "<br>",
     "typeOfWork": "Insurance",
-    "contactName": "Katherine Strong",
-    "contactEmail": "katherine.strong@hubinternational.com",
+    "contactName": "Tony Seatts",
+    "contactEmail": "tony.seatts@hubinternational.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {

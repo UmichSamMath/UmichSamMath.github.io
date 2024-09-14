@@ -136,7 +136,7 @@ let SAMevents = [
       "EndTime": "2024-09-18T19:00"
     },
     {
-      "Title": "reer Fair Chat",
+      "Title": "Pre-Career Fair Chat",
       "Description": "Come get your last minute questions about the career fair answered. We will have a table in the math atrium, and feel free to stop by anytime with questions! No RSVP required.",
       "Location": "Math Atrium",
       "Date": "September 19",

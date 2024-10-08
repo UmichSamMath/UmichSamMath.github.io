@@ -3,78 +3,78 @@
 // Then the spreadsheet needs to be exported as a csv file, then converted from csv to JSON
 
 let SAMevents = [
-    {
-      "Title": "Post-Career Fair Mixer",
-      "Description": "RSVP <a target=_blank href=\"https://forms.gle/UnrE1d7EorjMRBjs5\">here</a>!",
-      "Location": "319 Catherine St.",
-      "Date": "September 20",
-      "StartTimeStr": "8:00",
-      "EndTimeStr": "11:00",
-      "AmPm": "PM",
-      "DayofWeek": "Friday",
-      "StartTime": "2024-09-20T20:00",
-      "EndTime": "2024-09-20T23:00"
-    },
-    {
-      "Title": "Post-Career Fair Recess",
-      "Description": "",
-      "Location": "Law Quad",
-      "Date": "September 22",
-      "StartTimeStr": "12:00",
-      "EndTimeStr": "3:00",
-      "AmPm": "PM",
-      "DayofWeek": "Sunday",
-      "StartTime": "2024-09-22T12:00",
-      "EndTime": "2024-09-22T15:00"
-    },
-    {
-      "Title": "Hanover Re Info Session",
-      "Description": "Come learn more about Hanover Re’s internship program! Join the call <a target=_blank href=\"https://teams.microsoft.com/l/meetup-join/19%3Ameeting_Njc2YzRkNTUtMDA1NC00NDM5LTlhM2QtZjc5ZDlkYTkxODVi%40thread.v2/0?context={&quot;Tid&quot;%3A&quot;815f40e5-50f9-45a8-ae03-40ad9b986f88&quot;%2C&quot;Oid&quot;%3A&quot;7c7d4c67-accb-47b8-a250-ebe41addc444&quot;}\">here</a>. RSVP <a target=_blank href=\"https://forms.gle/eLdqqkmzsH58YBvs9\" target=\"_blank\">here</a>!",
-      "Location": "Virtual",
-      "Date": "September 25",
-      "StartTimeStr": "6:00",
-      "EndTimeStr": "7:00",
-      "AmPm": "PM",
-      "DayofWeek": "Wednesday",
-      "StartTime": "2024-09-25T18:00",
-      "EndTime": "2024-09-25T19:00"
-    },
-    {
-      "Title": "Second Round Interview/Case Study Workshop",
-      "Description": "Learn more about how to prepare for second round interviews and case studies. We will cover questions you could be asked as well as how the interview process typically works. RSVP <a target=_blank href=\"https://forms.gle/SdoJM5DAAoj6bw7Q6\">here</a>!",
-      "Location": "East Hall 1866",
-      "Date": "September 26",
-      "StartTimeStr": "6:00",
-      "EndTimeStr": "7:00",
-      "AmPm": "PM",
-      "DayofWeek": "Thursday",
-      "StartTime": "2024-09-26T18:00",
-      "EndTime": "2024-09-26T19:00"
-    },
-    {
-      "Title": "Mentorship Mixer",
-      "Description": "",
-      "Location": "319 Catherine St.",
-      "Date": "October 25",
-      "StartTimeStr": "8:00",
-      "EndTimeStr": "11:00",
-      "AmPm": "PM",
-      "DayofWeek": "Friday",
-      "StartTime": "2024-10-25T20:00",
-      "EndTime": "2024-10-25T23:00"
-    },
-    {
-      "Title": "Game Night",
-      "Description": "",
-      "Location": "",
-      "Date": "October 30",
-      "StartTimeStr": "6:00",
-      "EndTimeStr": "8:00",
-      "AmPm": "PM",
-      "DayofWeek": "Wednesday",
-      "StartTime": "2024-10-30T18:00",
-      "EndTime": "2024-10-30T20:00"
-    }
+  {
+    "Title": "Post-Career Fair Recruiting + LinkedIn Workshoop",
+    "Description": "",
+    "Location": "",
+    "Date": "October 17",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-10-17T17:30",
+    "EndTime": "2024-10-17T18:30"
+  },
+  {
+    "Title": "Mentorship Kickoff Workshop & Speed Dating (Mentors Only)",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/LKDzyGs8G9Lumu3F9\">here</a>!",
+    "Location": "East Hall 1068",
+    "Date": "October 21",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2024-10-21T18:30",
+    "EndTime": "2024-10-21T19:00"
+  },
+  {
+    "Title": "Mentorship Kickoff Workshop & Speed Dating (Mentors AND Mentees))",
+    "Description": "RSVP <a target=_blank href=\"https://www.google.com/url?q=https://forms.gle/LKDzyGs8G9Lumu3F9&amp;sa=D&amp;source=calendar&amp;ust=1728835783745506&amp;usg=AOvVaw2WX9GRSclQ3cRfyY0vPM58\" target=\"_blank\">here</a>!",
+    "Location": "East Hall 1068",
+    "Date": "October 21",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2024-10-21T19:00",
+    "EndTime": "2024-10-21T20:00"
+  },
+  {
+    "Title": "Mentorship Mixer",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/6buBgNGhexAjxdBG9\">here</a>!",
+    "Location": "319 Catherine St.",
+    "Date": "October 25",
+    "StartTimeStr": "8:00",
+    "EndTimeStr": "11:00",
+    "AmPm": "PM",
+    "DayofWeek": "Friday",
+    "StartTime": "2024-10-25T20:00",
+    "EndTime": "2024-10-25T23:00"
+  },
+  {
+    "Title": "Everything Actuarial Workshop",
+    "Description": "",
+    "Location": "East Hall 1866",
+    "Date": "October 29",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-10-29T19:00",
+    "EndTime": "2024-10-29T20:00"
+  },
+  {
+    "Title": "Intro to the CAS Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "November 12",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-11-12T19:00",
+    "EndTime": "2024-11-12T20:00"
+  }
 ]
 
 function populateEvents() {

@@ -4,16 +4,16 @@
 
 let SAMevents = [
   {
-    "Title": "Post-Career Fair Recruiting + LinkedIn Workshoop",
-    "Description": "",
-    "Location": "",
+    "Title": "Post-Career Fair Recruiting + LinkedIn Workshop",
+    "Description": "RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSefeRhL1F8ouCrRWlVVUvrLSvEoaRAqbNyfC7JHNGs3BPFuew/viewform\">here</a>!",
+    "Location": "East Hall 1866",
     "Date": "October 17",
-    "StartTimeStr": "5:30",
-    "EndTimeStr": "6:30",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
     "AmPm": "PM",
     "DayofWeek": "Thursday",
-    "StartTime": "2024-10-17T17:30",
-    "EndTime": "2024-10-17T18:30"
+    "StartTime": "2024-10-17T18:00",
+    "EndTime": "2024-10-17T19:00"
   },
   {
     "Title": "Mentorship Kickoff Workshop & Speed Dating (Mentors Only)",
@@ -28,7 +28,7 @@ let SAMevents = [
     "EndTime": "2024-10-21T19:00"
   },
   {
-    "Title": "Mentorship Kickoff Workshop & Speed Dating (Mentors AND Mentees))",
+    "Title": "Mentorship Kickoff Workshop & Speed Dating (Mentors AND Mentees)",
     "Description": "RSVP <a target=_blank href=\"https://www.google.com/url?q=https://forms.gle/LKDzyGs8G9Lumu3F9&amp;sa=D&amp;source=calendar&amp;ust=1728835783745506&amp;usg=AOvVaw2WX9GRSclQ3cRfyY0vPM58\" target=\"_blank\">here</a>!",
     "Location": "East Hall 1068",
     "Date": "October 21",
@@ -38,6 +38,18 @@ let SAMevents = [
     "DayofWeek": "Monday",
     "StartTime": "2024-10-21T19:00",
     "EndTime": "2024-10-21T20:00"
+  },
+  {
+    "Title": "Pumpkin Painting",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/sd8P6n86XeR3Bt2w6\">here</a>!",
+    "Location": "",
+    "Date": "October 22",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-10-22T19:00",
+    "EndTime": "2024-10-22T20:30"
   },
   {
     "Title": "Mentorship Mixer",
@@ -74,6 +86,18 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2024-11-12T19:00",
     "EndTime": "2024-11-12T20:00"
+  },
+  {
+    "Title": "Course Planning Workshop",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/9HrcmfSXGWyVhZaQ7\">here</a>!",
+    "Location": "",
+    "Date": "November 14",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-11-14T18:00",
+    "EndTime": "2024-11-14T19:00"
   }
 ]
 

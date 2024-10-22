@@ -42,7 +42,7 @@ let SAMevents = [
   {
     "Title": "Pumpkin Painting",
     "Description": "RSVP <a target=_blank href=\"https://forms.gle/sd8P6n86XeR3Bt2w6\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 4096",
     "Date": "October 22",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",

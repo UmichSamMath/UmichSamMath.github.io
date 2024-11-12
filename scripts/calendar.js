@@ -4,81 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Post-Career Fair Recruiting + LinkedIn Workshop",
-    "Description": "RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSefeRhL1F8ouCrRWlVVUvrLSvEoaRAqbNyfC7JHNGs3BPFuew/viewform\">here</a>!",
-    "Location": "East Hall 1866",
-    "Date": "October 17",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-10-17T18:00",
-    "EndTime": "2024-10-17T19:00"
-  },
-  {
-    "Title": "Mentorship Kickoff Workshop & Speed Dating (Mentors Only)",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/LKDzyGs8G9Lumu3F9\">here</a>!",
-    "Location": "East Hall 1068",
-    "Date": "October 21",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2024-10-21T18:30",
-    "EndTime": "2024-10-21T19:00"
-  },
-  {
-    "Title": "Mentorship Kickoff Workshop & Speed Dating (Mentors AND Mentees)",
-    "Description": "RSVP <a target=_blank href=\"https://www.google.com/url?q=https://forms.gle/LKDzyGs8G9Lumu3F9&amp;sa=D&amp;source=calendar&amp;ust=1728835783745506&amp;usg=AOvVaw2WX9GRSclQ3cRfyY0vPM58\" target=\"_blank\">here</a>!",
-    "Location": "East Hall 1068",
-    "Date": "October 21",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2024-10-21T19:00",
-    "EndTime": "2024-10-21T20:00"
-  },
-  {
-    "Title": "Pumpkin Painting",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/sd8P6n86XeR3Bt2w6\">here</a>!",
-    "Location": "East Hall 4096",
-    "Date": "October 22",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-10-22T19:00",
-    "EndTime": "2024-10-22T20:30"
-  },
-  {
-    "Title": "Mentorship Mixer",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/6buBgNGhexAjxdBG9\">here</a>!",
-    "Location": "319 Catherine St.",
-    "Date": "October 25",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "11:00",
-    "AmPm": "PM",
-    "DayofWeek": "Friday",
-    "StartTime": "2024-10-25T20:00",
-    "EndTime": "2024-10-25T23:00"
-  },
-  {
-    "Title": "Everything Actuarial Workshop",
-    "Description": "",
-    "Location": "East Hall 1866",
-    "Date": "October 29",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-10-29T19:00",
-    "EndTime": "2024-10-29T20:00"
-  },
-  {
     "Title": "Intro to the CAS Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/Q7zZqXKL1T4D3oeG6\">here</a>!",
+    "Location": "East Hall 4096",
     "Date": "November 12",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -90,7 +18,7 @@ let SAMevents = [
   {
     "Title": "Course Planning Workshop",
     "Description": "RSVP <a target=_blank href=\"https://forms.gle/9HrcmfSXGWyVhZaQ7\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 4096",
     "Date": "November 14",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -98,6 +26,54 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2024-11-14T18:00",
     "EndTime": "2024-11-14T19:00"
+  },
+  {
+    "Title": "Intro to DEI/Burnout",
+    "Description": "Join us for SAM’s Fall 2024 DEI Discussion!  We will be discussing the importance of DEI, what burnout is, and how to combat signs of burnout. There will be pizza. We hope to see you there :) RSVP <a target=_blank href=\"https://forms.gle/7tuHC3AGsVdTqACz7\">here</a>!",
+    "Location": "East Hall 1068",
+    "Date": "November 14",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2024-11-14T19:00",
+    "EndTime": "2024-11-14T20:00"
+  },
+  {
+    "Title": "Mentorship Game Night",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/bNj9MXxV4uLmY6xj6\">here</a>!",
+    "Location": "",
+    "Date": "November 20",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2024-11-20T19:00",
+    "EndTime": "2024-11-20T20:00"
+  },
+  {
+    "Title": "Mentorship Cookie Decorating",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/ryWrsKjoyFF7Zgy8A\">here</a>!",
+    "Location": "",
+    "Date": "December 3",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2024-12-03T19:00",
+    "EndTime": "2024-12-03T20:00"
+  },
+  {
+    "Title": "Milliman Speaker Series",
+    "Description": "",
+    "Location": "",
+    "Date": "January 23",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-01-23T18:00",
+    "EndTime": "2025-01-23T19:00"
   }
 ]
 

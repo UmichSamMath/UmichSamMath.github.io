@@ -4,57 +4,21 @@
 
 let SAMevents = [
   {
-    "Title": "Intro to the CAS Workshop",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/Q7zZqXKL1T4D3oeG6\">here</a>!",
-    "Location": "East Hall 4096",
-    "Date": "November 12",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-11-12T19:00",
-    "EndTime": "2024-11-12T20:00"
-  },
-  {
-    "Title": "Course Planning Workshop",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/9HrcmfSXGWyVhZaQ7\">here</a>!",
-    "Location": "East Hall 4096",
-    "Date": "November 14",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-11-14T18:00",
-    "EndTime": "2024-11-14T19:00"
-  },
-  {
-    "Title": "Intro to DEI/Burnout",
-    "Description": "Join us for SAM’s Fall 2024 DEI Discussion!  We will be discussing the importance of DEI, what burnout is, and how to combat signs of burnout. There will be pizza. We hope to see you there :) RSVP <a target=_blank href=\"https://forms.gle/7tuHC3AGsVdTqACz7\">here</a>!",
-    "Location": "East Hall 1068",
-    "Date": "November 14",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2024-11-14T19:00",
-    "EndTime": "2024-11-14T20:00"
-  },
-  {
     "Title": "Mentorship Game Night",
     "Description": "RSVP <a target=_blank href=\"https://forms.gle/bNj9MXxV4uLmY6xj6\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 1060",
     "Date": "November 20",
     "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
+    "EndTimeStr": "8:30",
     "AmPm": "PM",
     "DayofWeek": "Wednesday",
     "StartTime": "2024-11-20T19:00",
-    "EndTime": "2024-11-20T20:00"
+    "EndTime": "2024-11-20T20:30"
   },
   {
     "Title": "Mentorship Cookie Decorating",
     "Description": "RSVP <a target=_blank href=\"https://forms.gle/ryWrsKjoyFF7Zgy8A\">here</a>!",
-    "Location": "",
+    "Location": "Mason Hall 1437",
     "Date": "December 3",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",

@@ -5,29 +5,44 @@ var monthsFeatured = 1;
 
 let congratsMessages = [
   {
-    "name": "Thomas Bednarz",
-    "congratsEvent": "passing exam P",
-    "dateAdded": new Date(2024, 7, 26)
-  },
-  {
-    "name": "Katherine Bednarz",
-    "congratsEvent": "passing exam MAS-I and DISC DA",
-    "dateAdded": new Date(2024, 7, 26)
-  },
-  {
-    "name": "Grace Russo",
-    "congratsEvent": "passing Exam P and accepting a full time offer with Deloitte as an Actuarial Analyst",
-    "dateAdded": new Date(2024, 7, 27)
-  },
-  {
-    "name": "Valerie Caldwell",
-    "congratsEvent": "passing Exam P",
-    "dateAdded": new Date(2024, 8, 16)
-  },
-  {
     "name": "Gabe Weber",
     "congratsEvent": "accepting a full-time job with Milliman LifeRTC in Chicago",
     "dateAdded": new Date(2024, 8, 20)
+  },
+  {
+    "name": "Jay Vogel",
+    "congratsEvent": "accepting a full-time job with New York Life",
+    "dateAdded": new Date(2025, 0, 8)
+  },
+  {
+    "name": "Jordan Hoffner",
+    "congratsEvent": "accepting an internship with Auto Owners",
+    "dateAdded": new Date(2025, 0, 8)
+  },
+  {
+    "name": "Emily Lin",
+    "congratsEvent": "accepting an internship with Cigna",
+    "dateAdded": new Date(2025, 0, 8)
+  },
+  {
+    "name": "Rachel Leonard",
+    "congratsEvent": "accepting an internship with Allianz Life",
+    "dateAdded": new Date(2025, 0, 8)
+  },
+  {
+    "name": "Jonathan Holland",
+    "congratsEvent": "accepting an internship with Deloitte",
+    "dateAdded": new Date(2025, 0, 8)
+  },
+  {
+    "name": "Sean Kim",
+    "congratsEvent": "accepting an internship with Aon in NYC",
+    "dateAdded": new Date(2025, 0, 8)
+  },
+  {
+    "name": "Nikhil Kori",
+    "congratsEvent": "passing exam SRM",
+    "dateAdded": new Date(2025, 0, 8)
   }
 ]
 

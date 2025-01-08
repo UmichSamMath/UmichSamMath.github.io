@@ -4,30 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Mentorship Game Night",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/bNj9MXxV4uLmY6xj6\">here</a>!",
-    "Location": "East Hall 1060",
-    "Date": "November 20",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2024-11-20T19:00",
-    "EndTime": "2024-11-20T20:30"
-  },
-  {
-    "Title": "Mentorship Cookie Decorating",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/ryWrsKjoyFF7Zgy8A\">here</a>!",
-    "Location": "Mason Hall 1437",
-    "Date": "December 3",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2024-12-03T19:00",
-    "EndTime": "2024-12-03T20:00"
-  },
-  {
     "Title": "Milliman Speaker Series",
     "Description": "",
     "Location": "",
@@ -38,6 +14,30 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2025-01-23T18:00",
     "EndTime": "2025-01-23T19:00"
+  },
+  {
+    "Title": "Speaker Series - Prof. David Kausch",
+    "Description": "Mortality improvement in the US",
+    "Location": "",
+    "Date": "February 6",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-02-06T18:00",
+    "EndTime": "2025-02-06T19:00"
+  },
+  {
+    "Title": "Speaker Series - Actuarial Development Program",
+    "Description": "Asset side of actuarial business",
+    "Location": "",
+    "Date": "February 20",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-02-20T18:00",
+    "EndTime": "2025-02-20T19:00"
   }
 ]
 

@@ -4,6 +4,30 @@
 
 let SAMevents = [
   {
+    "Title": "Winterfest",
+    "Description": "Come learn more about Student Actuaries at Michigan (SAM) and get some SAM swag!",
+    "Location": "Michigan Union Courtyard",
+    "Date": "January 13",
+    "StartTimeStr": "4:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-01-13T16:00",
+    "EndTime": "2025-01-13T19:00"
+  },
+  {
+    "Title": "Winter Mass Meeting",
+    "Description": "",
+    "Location": "",
+    "Date": "January 21",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-01-21T19:00",
+    "EndTime": "2025-01-21T20:00"
+  },
+  {
     "Title": "Milliman Speaker Series",
     "Description": "",
     "Location": "",

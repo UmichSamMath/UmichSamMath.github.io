@@ -67,6 +67,14 @@ let companies = [
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {
+    "name": "Aon",
+    "business": "Property and Casualty",
+    "typeOfWork": "Consulting",
+    "contactName": "Kane Zwolinski",
+    "contactEmail": "raina.zwolinski@aon.com",
+    "keywords": ["Chicago", "IL", "Illinois"]
+  },
+  {
     "name": "Auto-Owners",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
@@ -96,6 +104,14 @@ let companies = [
     "typeOfWork": "Insurance",
     "contactName": "Kapil Mannem",
     "contactEmail": "kapil.mannem@brighthousefinancial.com",
+    "keywords": []
+  },
+  {
+    "name": "CareSource",
+    "business": "Health",
+    "typeOfWork": "Insurance",
+    "contactName": "Sean Kageff",
+    "contactEmail": "sean.kageff@caresource.com",
     "keywords": []
   },
   {
@@ -163,11 +179,19 @@ let companies = [
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {
+    "name": "Elevance Health",
+    "business": "Health",
+    "typeOfWork": "Insurance",
+    "contactName": "Adam Koenig",
+    "contactEmail": "adam.koenig@elevancehealth.com",
+    "keywords": []
+  },
+  {
     "name": "Ernst & Young",
     "business": "<br>",
     "typeOfWork": "Consulting",
-    "contactName": "Joe Santulli",
-    "contactEmail": "joe.santulli@ey.com",
+    "contactName": "Margot Bass",
+    "contactEmail": "margot.bass@ey.com",
     "keywords": ["Chicago", "IL", "Illinois", "EY"]
   },
   {
@@ -201,6 +225,14 @@ let companies = [
     "contactName": "Steve Bunker",
     "contactEmail": "STBUNKER@hanover.com",
     "keywords": []
+  },
+  {
+    "name": "Hannover Re",
+    "business": "<br>",
+    "typeOfWork": "Reinsurance",
+    "contactName": "Blake Jordan",
+    "contactEmail": "Blake.Jordan@hlramerica.com",
+    "keywords": ['Property and Casualty', 'P&C', 'P & C', 'life', 'health']
   },
   {
     "name": "HAP",
@@ -267,7 +299,7 @@ let companies = [
     "keywords": []
   },
   {
-    "name": "Mercer",
+    "name": "Marsh McLennan",
     "business": "<br>",
     "typeOfWork": "Consulting",
     "contactName": "Kimberly Sukhnanda",
@@ -283,12 +315,28 @@ let companies = [
     "keywords": ["Chicago", "IL", "Illinois", "Milwaukee", "Wisconsin", "WI", "Hartford", "CT", "Connecticut"]
   },
   {
+    "name": "Milliman Indianapolis Health",
+    "business": "Health",
+    "typeOfWork": "Consulting",
+    "contactName": "<br>",
+    "contactEmail": "IndyRecruiting@milliman.com",
+    "keywords": ["Chicago", "IL", "Illinois", "Milwaukee", "Wisconsin", "WI", "Hartford", "CT", "Connecticut"]
+  },
+  {
     "name": "Milliman Life & FRM",
     "business": "Life/Financial Risk Management",
     "typeOfWork": "Consulting",
     "contactName": "Mandie Molina",
     "contactEmail": "mandie.molina@milliman.com",
     "keywords": ["Chicago", "IL", "Illinois", "LTS"]
+  },
+  {
+    "name": "Munich Re",
+    "business": "<br>",
+    "typeOfWork": "Reinsurance",
+    "contactName": "Paulina Stadnik",
+    "contactEmail": "pstadnik@munichre.ca",
+    "keywords": []
   },
   {
     "name": "Mutual of Omaha",
@@ -393,6 +441,14 @@ let companies = [
     "contactName": "LiMing Chin",
     "contactEmail": "LiMing_Chin@swissre.com",
     "keywords": ["Fort Wayne", "IN", "Indiana"]
+  },
+  {
+    "name": "Thrivent",
+    "business": "Life/Financial Services",
+    "typeOfWork": "Insurance",
+    "contactName": "Abby DeVaughn",
+    "contactEmail": "ActuarialRecruiting@Thrivent.com",
+    "keywords": ["minneapolis", 'minnesota']
   },
   {
     "name": "United Healthcare",

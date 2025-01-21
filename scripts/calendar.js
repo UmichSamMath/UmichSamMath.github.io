@@ -4,21 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Winterfest",
-    "Description": "Come learn more about Student Actuaries at Michigan (SAM) and get some SAM swag!",
-    "Location": "Michigan Union Courtyard",
-    "Date": "January 13",
-    "StartTimeStr": "4:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2025-01-13T16:00",
-    "EndTime": "2025-01-13T19:00"
-  },
-  {
     "Title": "Winter Mass Meeting",
-    "Description": "",
-    "Location": "",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/3NuReXBC4Htrz8RG6\">here</a>!",
+    "Location": "East Hall 1360",
     "Date": "January 21",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -29,8 +17,8 @@ let SAMevents = [
   },
   {
     "Title": "Milliman Speaker Series",
-    "Description": "",
-    "Location": "",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/WAb1q2L5C54gYLQB6\">here</a>!",
+    "Location": "USB 1250",
     "Date": "January 23",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -40,8 +28,32 @@ let SAMevents = [
     "EndTime": "2025-01-23T19:00"
   },
   {
+    "Title": "Underclassmen Event",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/c3fvD6MZvYFig1Lv8\">here</a>!",
+    "Location": "",
+    "Date": "January 28",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-01-28T19:00",
+    "EndTime": "2025-01-28T20:00"
+  },
+  {
+    "Title": "Mentorship Euchre Tournament",
+    "Description": "",
+    "Location": "",
+    "Date": "January 30",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "9:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-01-30T19:00",
+    "EndTime": "2025-01-30T21:00"
+  },
+  {
     "Title": "Speaker Series - Prof. David Kausch",
-    "Description": "Mortality improvement in the US",
+    "Description": "Mortality improvement in the US. RSVP <a target=_blank href=\"https://forms.gle/eMZAnMZG8oUQ4hEW8\">here</a>!",
     "Location": "",
     "Date": "February 6",
     "StartTimeStr": "6:00",
@@ -52,8 +64,20 @@ let SAMevents = [
     "EndTime": "2025-02-06T19:00"
   },
   {
+    "Title": "Mentorship Trivia Night",
+    "Description": "",
+    "Location": "",
+    "Date": "February 13",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:30",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-02-13T19:00",
+    "EndTime": "2025-02-13T20:30"
+  },
+  {
     "Title": "Speaker Series - Actuarial Development Program",
-    "Description": "Asset side of actuarial business",
+    "Description": "Asset side of actuarial business. RSVP <a target=_blank href=\"https://forms.gle/CgD8C1BLknbp94bV8\">here</a><span>!</span>",
     "Location": "",
     "Date": "February 20",
     "StartTimeStr": "6:00",
@@ -62,6 +86,42 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2025-02-20T18:00",
     "EndTime": "2025-02-20T19:00"
+  },
+  {
+    "Title": "Mentorship Movie Night",
+    "Description": "",
+    "Location": "",
+    "Date": "March 12",
+    "StartTimeStr": "7:30",
+    "EndTimeStr": "9:30",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-03-12T19:30",
+    "EndTime": "2025-03-12T21:30"
+  },
+  {
+    "Title": "ial Development Institute Workshop",
+    "Description": "Coaching Actuaries partners with ADI for exclusive workshops. This presentation dives into various asset classes, their cash flow structures, and their impact on the financial landscape. From Risk-Free bonds to Venture Capital, you'll explore diverse investment options.",
+    "Location": "",
+    "Date": "March 31",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-03-31T19:00",
+    "EndTime": "2025-03-31T20:00"
+  },
+  {
+    "Title": "Mentorship Field Day",
+    "Description": "",
+    "Location": "",
+    "Date": "April 5",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "2:00",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2025-04-05T12:00",
+    "EndTime": "2025-04-05T14:00"
   }
 ]
 

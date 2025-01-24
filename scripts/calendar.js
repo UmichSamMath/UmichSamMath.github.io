@@ -4,33 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Winter Mass Meeting",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/3NuReXBC4Htrz8RG6\">here</a>!",
-    "Location": "East Hall 1360",
-    "Date": "January 21",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-01-21T19:00",
-    "EndTime": "2025-01-21T20:00"
-  },
-  {
-    "Title": "Milliman Speaker Series",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/WAb1q2L5C54gYLQB6\">here</a>!",
-    "Location": "USB 1250",
-    "Date": "January 23",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-01-23T18:00",
-    "EndTime": "2025-01-23T19:00"
-  },
-  {
-    "Title": "Underclassmen Event",
+    "Title": "Winter Welcome ft. Prof. Natarajan",
     "Description": "RSVP <a target=_blank href=\"https://forms.gle/c3fvD6MZvYFig1Lv8\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 4096",
     "Date": "January 28",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -41,20 +17,44 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Euchre Tournament",
-    "Description": "",
-    "Location": "",
-    "Date": "January 30",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/BHepfrThxM7xXbVH9\">here</a>!",
+    "Location": "Mason Hall 1437",
+    "Date": "January 29",
     "StartTimeStr": "7:00",
     "EndTimeStr": "9:00",
     "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-01-30T19:00",
-    "EndTime": "2025-01-30T21:00"
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-01-29T19:00",
+    "EndTime": "2025-01-29T21:00"
+  },
+  {
+    "Title": "Ice Skating @ Yost",
+    "Description": "",
+    "Location": "Yost Ice Arena",
+    "Date": "February 2",
+    "StartTimeStr": "1:30",
+    "EndTimeStr": "3:00",
+    "AmPm": "PM",
+    "DayofWeek": "Sunday",
+    "StartTime": "2025-02-02T13:30",
+    "EndTime": "2025-02-02T15:00"
+  },
+  {
+    "Title": "Business Minor Info Session",
+    "Description": "",
+    "Location": "Ross 1240",
+    "Date": "February 5",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-02-05T17:00",
+    "EndTime": "2025-02-05T18:00"
   },
   {
     "Title": "Speaker Series - Prof. David Kausch",
     "Description": "Mortality improvement in the US. RSVP <a target=_blank href=\"https://forms.gle/eMZAnMZG8oUQ4hEW8\">here</a>!",
-    "Location": "",
+    "Location": "East Hall 4088",
     "Date": "February 6",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -66,7 +66,7 @@ let SAMevents = [
   {
     "Title": "Mentorship Trivia Night",
     "Description": "",
-    "Location": "",
+    "Location": "East Hall 1068",
     "Date": "February 13",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",
@@ -78,7 +78,7 @@ let SAMevents = [
   {
     "Title": "Speaker Series - Actuarial Development Program",
     "Description": "Asset side of actuarial business. RSVP <a target=_blank href=\"https://forms.gle/CgD8C1BLknbp94bV8\">here</a><span>!</span>",
-    "Location": "",
+    "Location": "East Hall 4088",
     "Date": "February 20",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -86,6 +86,30 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2025-02-20T18:00",
     "EndTime": "2025-02-20T19:00"
+  },
+  {
+    "Title": "Speaker Series - Jackson",
+    "Description": "Topic: Interviewing 101\nPizza will be provided!",
+    "Location": "",
+    "Date": "February 27",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-02-27T18:00",
+    "EndTime": "2025-02-27T19:00"
+  },
+  {
+    "Title": "Northwestern Mutual Info Session",
+    "Description": "",
+    "Location": "",
+    "Date": "March 11",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-03-11T18:00",
+    "EndTime": "2025-03-11T19:00"
   },
   {
     "Title": "Mentorship Movie Night",
@@ -122,6 +146,18 @@ let SAMevents = [
     "DayofWeek": "Saturday",
     "StartTime": "2025-04-05T12:00",
     "EndTime": "2025-04-05T14:00"
+  },
+  {
+    "Title": "CA Workshop: Actuarial Intelligence That is Not Artificial",
+    "Description": "Attend a workshop from the Coaching Actuaries team featuring Coach K and Coach Tong. They will present relevant industry information, share professional growth insights, discuss study tips and answer questions.",
+    "Location": "",
+    "Date": "April 6",
+    "StartTimeStr": "4:00",
+    "EndTimeStr": "5:00",
+    "AmPm": "PM",
+    "DayofWeek": "Sunday",
+    "StartTime": "2025-04-06T16:00",
+    "EndTime": "2025-04-06T17:00"
   }
 ]
 

@@ -16,7 +16,7 @@ let congratsMessages = [
   },
   {
     "name": "Jordan Hoffner",
-    "congratsEvent": "accepting an internship with Auto Owners",
+    "congratsEvent": "accepting an internship with Auto-Owners",
     "dateAdded": new Date(2025, 0, 8)
   },
   {
@@ -53,7 +53,22 @@ let congratsMessages = [
     "name": "Alex Drossman",
     "congratsEvent": "passing exam P",
     "dateAdded": new Date(2025, 0, 13)
-  }
+  },
+  {
+    "name": "Janae Shao",
+    "congratsEvent": "passing exam P",
+    "dateAdded": new Date(2025, 0, 28)
+  },
+  {
+    "name": "Janae Shao",
+    "congratsEvent": "accepting an internship with Hannover Re",
+    "dateAdded": new Date(2025, 0, 28)
+  },
+  {
+    "name": "Gabe Weber",
+    "congratsEvent": "passing Exam FAM",
+    "dateAdded": new Date(2025, 0, 28)
+  },
 ]
 
 function populateCongrats(){

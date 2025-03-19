@@ -4,54 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Northwestern Mutual Info Session",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/vpuK3hRfv13sCBcZ6\">here</a>!",
-    "Location": "East Hall 4088",
-    "Date": "March 11",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-03-11T18:00",
-    "EndTime": "2025-03-11T19:00"
-  },
-  {
-    "Title": "Mentorship Movie Night",
-    "Description": "",
-    "Location": "Mason Hall 1339",
-    "Date": "March 12",
-    "StartTimeStr": "7:30",
-    "EndTimeStr": "9:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-03-12T19:30",
-    "EndTime": "2025-03-12T21:30"
-  },
-  {
-    "Title": "Cigna Speaker Series",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/epXN4eLUcXk96t7d8\">here</a>!",
-    "Location": "East Hall 1866",
-    "Date": "March 13",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-03-13T18:00",
-    "EndTime": "2025-03-13T19:00"
-  },
-  {
-    "Title": "Women's Day Event",
-    "Description": "",
-    "Location": "East Hall 1360",
-    "Date": "March 18",
-    "StartTimeStr": "7:30",
-    "EndTimeStr": "9:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-03-18T19:30",
-    "EndTime": "2025-03-18T21:00"
-  },
-  {
     "Title": "Python Workshop",
     "Description": "",
     "Location": "Mason Hall Fishbowl G444A",
@@ -62,6 +14,18 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2025-03-20T18:00",
     "EndTime": "2025-03-20T19:00"
+  },
+  {
+    "Title": "CAS Summer Program Workshop",
+    "Description": "The CAS Student Central Summer Program is an online program for students interested in the property and casualty industry. It is a great opportunity for underclassmen who are looking for an actuarial experience this summer. We will walk through the application process during the workshop. RSVP <a target=_blank href=\"https://forms.gle/GGKgv7YN2btJxXXT6\">here</a>!",
+    "Location": "East Hall 3096",
+    "Date": "March 20",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-03-20T19:00",
+    "EndTime": "2025-03-20T20:00"
   },
   {
     "Title": "SQL Workshop",
@@ -134,6 +98,18 @@ let SAMevents = [
     "DayofWeek": "Sunday",
     "StartTime": "2025-04-06T16:00",
     "EndTime": "2025-04-06T17:00"
+  },
+  {
+    "Title": "Alumni Day",
+    "Description": "",
+    "Location": "East Hall 1360",
+    "Date": "April 12",
+    "StartTimeStr": "1:00",
+    "EndTimeStr": "5:00",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2025-04-12T13:00",
+    "EndTime": "2025-04-12T17:00"
   }
 ]
 

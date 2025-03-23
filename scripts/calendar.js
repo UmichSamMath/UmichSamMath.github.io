@@ -4,32 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Python Workshop",
-    "Description": "",
-    "Location": "Mason Hall Fishbowl G444A",
-    "Date": "March 20",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-03-20T18:00",
-    "EndTime": "2025-03-20T19:00"
-  },
-  {
-    "Title": "CAS Summer Program Workshop",
-    "Description": "The CAS Student Central Summer Program is an online program for students interested in the property and casualty industry. It is a great opportunity for underclassmen who are looking for an actuarial experience this summer. We will walk through the application process during the workshop. RSVP <a target=_blank href=\"https://forms.gle/GGKgv7YN2btJxXXT6\">here</a>!",
-    "Location": "East Hall 3096",
-    "Date": "March 20",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-03-20T19:00",
-    "EndTime": "2025-03-20T20:00"
-  },
-  {
     "Title": "SQL Workshop",
-    "Description": "",
+    "Description": "Come learn some basics about SQL, a language used for database querying and great tool for actuaries! RSVP <a target=_blank href=\"https://forms.gle/QAuXQoLTNNFnmVJ68\">here</a>!",
     "Location": "Mason Hall Fishbowl G444A",
     "Date": "March 25",
     "StartTimeStr": "6:00",
@@ -38,6 +14,18 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2025-03-25T18:00",
     "EndTime": "2025-03-25T19:00"
+  },
+  {
+    "Title": "Board Elections Workshop",
+    "Description": "Come and learn about the process and requirements to run for SAM Board! This is the first step in joining SAM Board. Joing SAM Board is the best decision I made in college, and it opened the doors to more experiences and opportunities than I ever would have imagined.",
+    "Location": "East Hall 4096",
+    "Date": "March 26",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-03-26T18:00",
+    "EndTime": "2025-03-26T19:00"
   },
   {
     "Title": "Milliman Networking Event",
@@ -64,18 +52,6 @@ let SAMevents = [
     "EndTime": "2025-03-31T20:00"
   },
   {
-    "Title": "Communications Workshop",
-    "Description": "",
-    "Location": "",
-    "Date": "April 1",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-04-01T18:00",
-    "EndTime": "2025-04-01T19:00"
-  },
-  {
     "Title": "Mentorship Field Day",
     "Description": "",
     "Location": "",
@@ -98,6 +74,18 @@ let SAMevents = [
     "DayofWeek": "Sunday",
     "StartTime": "2025-04-06T16:00",
     "EndTime": "2025-04-06T17:00"
+  },
+  {
+    "Title": "Board Elections",
+    "Description": "All of SAM membership is encouraged to attend to elect SAM's new executive board. Food will be provided!",
+    "Location": "West Hall 120",
+    "Date": "April 9",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "9:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-04-09T19:00",
+    "EndTime": "2025-04-09T21:00"
   },
   {
     "Title": "Alumni Day",

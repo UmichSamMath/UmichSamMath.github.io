@@ -28,9 +28,21 @@ let SAMevents = [
     "EndTime": "2025-03-26T19:00"
   },
   {
+    "Title": "Everything Exams Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "March 26",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-03-26T19:00",
+    "EndTime": "2025-03-26T20:00"
+  },
+  {
     "Title": "Milliman Networking Event",
     "Description": "RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSecw4Of3VoDaj2BTAu49l2ssDtD2bO42UhmRolxSc1xrqzSqQ/viewform?usp=sharing\">here</a>!",
-    "Location": "",
+    "Location": "HopCat",
     "Date": "March 27",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -40,7 +52,7 @@ let SAMevents = [
     "EndTime": "2025-03-27T20:00"
   },
   {
-    "Title": "ial Development Institute Workshop",
+    "Title": "Actuarial Development Institute Workshop",
     "Description": "Coaching Actuaries partners with ADI for exclusive workshops. This presentation dives into various asset classes, their cash flow structures, and their impact on the financial landscape. From Risk-Free bonds to Venture Capital, you'll explore diverse investment options.",
     "Location": "Virtual",
     "Date": "March 31",

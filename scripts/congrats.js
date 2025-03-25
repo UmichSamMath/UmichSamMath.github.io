@@ -4,71 +4,17 @@
 var monthsFeatured = 1;
 
 let congratsMessages = [
-  {
-    "name": "Gabe Weber",
-    "congratsEvent": "accepting a full-time job with Milliman LifeRTC in Chicago",
-    "dateAdded": new Date(2024, 8, 20)
-  },
-  {
-    "name": "Jay Vogel",
-    "congratsEvent": "accepting a full-time job with New York Life",
-    "dateAdded": new Date(2025, 0, 8)
-  },
-  {
-    "name": "Jordan Hoffner",
-    "congratsEvent": "accepting an internship with Auto-Owners",
-    "dateAdded": new Date(2025, 0, 8)
-  },
-  {
-    "name": "Emily Lin",
-    "congratsEvent": "accepting an internship with Cigna",
-    "dateAdded": new Date(2025, 0, 8)
-  },
-  {
-    "name": "Rachel Leonard",
-    "congratsEvent": "accepting an internship with Allianz Life",
-    "dateAdded": new Date(2025, 0, 8)
-  },
-  {
-    "name": "Jonathan Holland",
-    "congratsEvent": "accepting an internship with Deloitte",
-    "dateAdded": new Date(2025, 0, 8)
-  },
-  {
-    "name": "Sean Kim",
-    "congratsEvent": "accepting an internship with Aon in NYC",
-    "dateAdded": new Date(2025, 0, 8)
-  },
-  {
-    "name": "Nikhil Kori",
-    "congratsEvent": "passing exam SRM",
-    "dateAdded": new Date(2025, 0, 8)
-  },
-  {
-    "name": "Rachel Leonard",
-    "congratsEvent": "passing exam SRM",
-    "dateAdded": new Date(2025, 0, 9)
-  },
-  {
-    "name": "Alex Drossman",
-    "congratsEvent": "passing exam P",
-    "dateAdded": new Date(2025, 0, 13)
-  },
-  {
-    "name": "Janae Shao",
-    "congratsEvent": "passing exam P",
-    "dateAdded": new Date(2025, 0, 28)
-  },
-  {
-    "name": "Janae Shao",
-    "congratsEvent": "accepting an internship with Hannover Re",
-    "dateAdded": new Date(2025, 0, 28)
-  },
+  
   {
     "name": "Gabe Weber",
     "congratsEvent": "passing Exam FAM",
     "dateAdded": new Date(2025, 0, 28)
   },
+  {
+    "name": "William Furge",
+    "congratsEvent": "accepting an internship with WTW in Detroit",
+    "dateAdded": new Date(2025, 2, 25)
+  }
 ]
 
 function populateCongrats(){

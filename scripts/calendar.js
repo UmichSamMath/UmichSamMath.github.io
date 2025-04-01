@@ -4,66 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "SQL Workshop",
-    "Description": "Come learn some basics about SQL, a language used for database querying and great tool for actuaries! RSVP <a target=_blank href=\"https://forms.gle/QAuXQoLTNNFnmVJ68\">here</a>!",
-    "Location": "Mason Hall Fishbowl G444A",
-    "Date": "March 25",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-03-25T18:00",
-    "EndTime": "2025-03-25T19:00"
-  },
-  {
-    "Title": "Board Elections Workshop",
-    "Description": "Come and learn about the process and requirements to run for SAM Board! This is the first step in joining SAM Board. Joing SAM Board is the best decision I made in college, and it opened the doors to more experiences and opportunities than I ever would have imagined.",
-    "Location": "East Hall 4096",
-    "Date": "March 26",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-03-26T18:00",
-    "EndTime": "2025-03-26T19:00"
-  },
-  {
-    "Title": "Everything Exams Workshop",
-    "Description": "",
-    "Location": "",
-    "Date": "March 26",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-03-26T19:00",
-    "EndTime": "2025-03-26T20:00"
-  },
-  {
-    "Title": "Milliman Networking Event",
-    "Description": "RSVP <a target=_blank href=\"https://docs.google.com/forms/d/e/1FAIpQLSecw4Of3VoDaj2BTAu49l2ssDtD2bO42UhmRolxSc1xrqzSqQ/viewform?usp=sharing\">here</a>!",
-    "Location": "HopCat",
-    "Date": "March 27",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-03-27T19:00",
-    "EndTime": "2025-03-27T20:00"
-  },
-  {
-    "Title": "Actuarial Development Institute Workshop",
-    "Description": "Coaching Actuaries partners with ADI for exclusive workshops. This presentation dives into various asset classes, their cash flow structures, and their impact on the financial landscape. From Risk-Free bonds to Venture Capital, you'll explore diverse investment options.",
-    "Location": "Virtual",
-    "Date": "March 31",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2025-03-31T19:00",
-    "EndTime": "2025-03-31T20:00"
-  },
-  {
     "Title": "Mentorship Field Day",
     "Description": "",
     "Location": "",
@@ -110,6 +50,18 @@ let SAMevents = [
     "DayofWeek": "Saturday",
     "StartTime": "2025-04-12T13:00",
     "EndTime": "2025-04-12T17:00"
+  },
+  {
+    "Title": "Senior Bar Crawl",
+    "Description": "RSVP <a href=\"https://forms.gle/px2n3FpjVJmuF7vA7\">here</a>!",
+    "Location": "",
+    "Date": "April 12",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "11:00",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2025-04-12T18:30",
+    "EndTime": "2025-04-12T23:00"
   }
 ]
 

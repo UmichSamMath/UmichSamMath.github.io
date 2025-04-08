@@ -71,7 +71,7 @@ let companies = [
     "business": "Property and Casualty",
     "typeOfWork": "Consulting",
     "contactName": "Kane Zwolinski",
-    "contactEmail": "raina.zwolinski@aon.com",
+    "contactEmail": "kane.zwolinski@aon.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {

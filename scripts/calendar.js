@@ -4,30 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Mentorship Field Day",
-    "Description": "",
-    "Location": "",
-    "Date": "April 6",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "2:00",
-    "AmPm": "PM",
-    "DayofWeek": "Sunday",
-    "StartTime": "2025-04-06T12:00",
-    "EndTime": "2025-04-06T14:00"
-  },
-  {
-    "Title": "CA Workshop: Actuarial Intelligence That is Not Artificial",
-    "Description": "Attend a workshop from the Coaching Actuaries team featuring Coach K and Coach Tong. They will present relevant industry information, share professional growth insights, discuss study tips and answer questions.",
-    "Location": "Virtual",
-    "Date": "April 6",
-    "StartTimeStr": "4:00",
-    "EndTimeStr": "5:00",
-    "AmPm": "PM",
-    "DayofWeek": "Sunday",
-    "StartTime": "2025-04-06T16:00",
-    "EndTime": "2025-04-06T17:00"
-  },
-  {
     "Title": "Board Elections",
     "Description": "All of SAM membership is encouraged to attend to elect SAM's new executive board. Food will be provided!",
     "Location": "West Hall 120",
@@ -41,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "Alumni Day",
-    "Description": "",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/4MXAo9K1iv17KqR67\">here</a>!",
     "Location": "East Hall 1360",
     "Date": "April 12",
     "StartTimeStr": "1:00",
@@ -52,16 +28,28 @@ let SAMevents = [
     "EndTime": "2025-04-12T17:00"
   },
   {
-    "Title": "Senior Bar Crawl",
-    "Description": "RSVP <a href=\"https://forms.gle/px2n3FpjVJmuF7vA7\">here</a>!",
-    "Location": "",
+    "Title": "Senior Send Off \"Darty\"",
+    "Description": "Join us in sending off our SAM Seniors! All of SAM is welcome and Mentorship is encouraged to attend. We will have games, food, and drinks! RSVP <a target=_blank href=\"https://forms.gle/Cf2BCjYWFre32kR69\">here</a>!",
+    "Location": "319 Catherine St",
     "Date": "April 12",
+    "StartTimeStr": "8:00",
+    "EndTimeStr": "11:59",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2025-04-12T20:00",
+    "EndTime": "2025-04-12T23:59"
+  },
+  {
+    "Title": "Senior Bar Crawl",
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/px2n3FpjVJmuF7vA7\">here</a>!",
+    "Location": "",
+    "Date": "April 19",
     "StartTimeStr": "6:30",
     "EndTimeStr": "11:00",
     "AmPm": "PM",
     "DayofWeek": "Saturday",
-    "StartTime": "2025-04-12T18:30",
-    "EndTime": "2025-04-12T23:00"
+    "StartTime": "2025-04-19T18:30",
+    "EndTime": "2025-04-19T23:00"
   }
 ]
 

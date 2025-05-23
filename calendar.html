@@ -1,57 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Student Actuaries at Michigan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    
-    <script src='scripts/jquery.min.js'></script>
-  <script src='scripts/main.js'></script>
-  </head>
-  <body>
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
-        <p class="title">Student Actuaries at Michigan</p>
-          <div class="links">
-            <div class = "link-child"><a href="index.html">Home</a></div>
-            <div class = "link-child"><a href="calendar.html">Calendar</a></div>
-            <div class = "link-child"><a href="new.html">New Members</a></div>
-            <div class = "link-child">
-              <div class="resources">
-                <p id = "hover">Resources</p>
-                <div id = "dropdown" class="dropdown">
-                  <a href="course.html">Course Resources</a>
-                  <a href="workshop.html">Workshops</a>
-                  <a href="exam.html">Exam Resources</a>
-                </div>
-                <script src = "/scripts/hover.js"></script>
-              </div>
-            </div>
-            <div class = "link-child"><a href="scholarship.html">Scholarships</a></div>
-            <div class = "link-child"><a href="mentor.html">Mentorship</a></div>
-            <div class = "link-child"><a href="companies.html">Companies</a></div>
-            <div class = "link-child"><a href="contact.html">Contact</a></div>
 
-            <!-- search bar, only on homepage or on every page? -->
+<head>
+  <meta charset="utf-8">
+  <title>Companies • Student Actuaries at Michigan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-            <!-- <div class = "link-child">
-              <form id="form" role = "search"> 
-                <input type="search" id="query" name="q" placeholder="Search..."
-                  aria-label="Search through site content">
-                <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
-              </form>
-            </div> -->
+  <style>
+    :root {
+      --um-blue: #00274C;
+      --um-blue-light: #2e6aa3;
+      --um-maize: #FFCB05;
+    }
 
-            <script src="scripts/search_bar.js"></script>
+    .bg-um-blue {
+      background-color: var(--um-blue)
+    }
+
+    .bg-um-blue-light {
+      background-color: var(--um-blue-light)
+    }
+
+    .text-um-maize {
+      color: var(--um-maize)
+    }
+
+    /* company card helpers */
+    .company-card {
+      @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center;
+    }
+
+    .company-logo {
+      @apply h-24 w-auto object-contain mx-auto;
+    }
+
+    .group:hover>.invisible,
+    .group:focus-within>.invisible {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+</head>
+
+<body class="font-[Jost] leading-relaxed text-gray-900">
+
+  <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
+  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
+    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+
+      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
+        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
+        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      </a>
+
+      <!-- desktop links -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
+        <a href="index.html" class="text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
+
+        <!-- Resources dropdown -->
+        <div id="resourcesBox" class="relative group">
+          <button id="resourcesBtn" type="button"
+            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+            Resources
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div id="resourcesMenu"
+            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
+            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
+            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
+            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+          </div>
         </div>
+
+        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>
+      </nav>
+
+      <!-- mobile button -->
+      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
-    <div class="container">
-        <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y19zaXU1cnRvM2YwMTE5dTl1bjRxOWNudjZ0c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+
+    <!-- mobile nav -->
+    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
+      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
+        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
+        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
+        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
+        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
+        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
+      </nav>
     </div>
-  </body>
+
+    <!-- navbar helpers -->
+    <script>
+      document.getElementById('mobileBtn')
+        .addEventListener('click', () =>
+          document.getElementById('mobileMenu').classList.toggle('hidden'));
+
+      const btn = document.getElementById('resourcesBtn');
+      const menu = document.getElementById('resourcesMenu');
+
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        menu.classList.toggle('invisible');
+        menu.classList.toggle('opacity-0');
+      });
+      document.addEventListener('click', e => {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {
+          menu.classList.add('invisible', 'opacity-0');
+        }
+      });
+    </script>
+  </header>
+
+  <main class="py-20 bg-white">
+    <div class="mx-auto max-w-screen-xl px-6">
+      <h1 class="mb-10 text-center text-3xl font-bold text-um-blue">SAM Google Calendar</h1>
+      <div class="flex justify-center">
+        <div class="w-full max-w-4xl overflow-hidden rounded-lg shadow-lg">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y19zaXU1cnRvM2YwMTE5dTl1bjRxOWNudjZ0c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441"
+            style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-900 py-8 text-gray-200">
+    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
+      <div>
+        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+
+
+      </div>
+      <div class="space-x-4">
+        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+      </div>
+    </div>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
+
 </html>

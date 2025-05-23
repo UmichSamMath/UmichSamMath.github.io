@@ -1,112 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <title>Student Actuaries at Michigan</title>
-  <meta name="viewport" content="initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" href="/favicon.ico">
+  <title>New Members</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root{
+      --um-blue:#00274C;
+      --um-blue-light:#2e6aa3;
+      --um-maize:#FFCB05;
+    }
+    .bg-um-blue       { background-color:var(--um-blue) }
+    .bg-um-blue-light { background-color:var(--um-blue-light) }
+    .text-um-maize    { color:var(--um-maize) }
+
+    .company-card  { @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center; }
+    .company-logo  { @apply h-24 w-auto object-contain mx-auto; }
+
+    .group:hover>.invisible,
+    .group:focus-within>.invisible{visibility:visible;opacity:1;}
+  </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 
-  <script src='scripts/jquery.min.js' type="text/javascript"></script>
-  <script src='scripts/main.js'></script>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
+<body class="font-[Jost] leading-relaxed text-gray-900">
 
-<body>
-  <div class="navbar">
-    <div class="navbar-title">
-      <a href="index.html"><img src="images/logo-only.png"></a>
-      <p class="title">Student Actuaries at Michigan</p>
-    </div>
-      <div class="links">
-        <div class = "link-child"><a href="index.html">Home</a></div>
-        <div class = "link-child"><a href="calendar.html">Calendar</a></div>
-        <div class = "link-child"><a href="new.html">New Members</a></div>
-        <div class = "link-child">
-          <div class="resources">
-            <p id = "hover">Resources</p>
-            <div id = "dropdown" class="dropdown">
-              <a href="course.html">Course Resources</a>
-              <a href="workshop.html">Workshops</a>
-              <a href="exam.html">Exam Resources</a>
-            </div>
-            <script src = "/scripts/hover.js"></script>
+  <!-- ─────────────────────────────── NAVBAR ───────────────────────────────── -->
+  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
+    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+
+      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
+        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
+        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      </a>
+
+      <!-- desktop links -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
+        <a href="index.html"       class="text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html"    class="text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html"         class="text-um-maize hover:text-white">New Members</a>
+
+        <!-- Resources dropdown -->
+        <div id="resourcesBox" class="relative group">
+          <button id="resourcesBtn" type="button"
+                  class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+            Resources
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div id="resourcesMenu"
+               class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
+            <a href="course.html"   class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
+            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
+            <a href="exam.html"     class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
           </div>
         </div>
-        <div class = "link-child"><a href="scholarship.html">Scholarships</a></div>
-        <div class = "link-child"><a href="mentor.html">Mentorship</a></div>
-        <div class = "link-child"><a href="companies.html">Companies</a></div>
-        <div class = "link-child"><a href="contact.html">Contact</a></div>
 
-        <!-- search bar, only on homepage or on every page? -->
+        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html"      class="text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html"   class="text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html"     class="text-um-maize hover:text-white">Contact</a>
+      </nav>
 
-        <!-- <div class = "link-child">
-          <form id="form" role = "search"> 
-            <input type="search" id="query" name="q" placeholder="Search..."
-              aria-label="Search through site content">
-            <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
-          </form>
-        </div> -->
-
-        <script src="scripts/search_bar.js"></script>
+      <!-- mobile button -->
+      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
-  </div>
-  
-  <div class = "section blue-back">
-    <h1>New to SAM? Welcome!</h1>
-    <div  style = "width: 75%; margin:auto;"> 
-      <h2>Please fill out <a class = "h2-link" href="https://forms.gle/wjehfsURTbkPAMDG7" target="_blank">this form</a> to be added to our email list.          </h2>
-      <p>Paying dues is required to receive exam reimbursements, join our mentorship program, and get a SAM t-shirt! If you have not yet paid annual dues, please send <b>$40</b> via Venmo to @UmichSAM or drop off a check or cash in a sealed envelope to Professor Natarajan's office at East Hall 2855. For both methods, please include your full first name, last name, uniqname, and UMID number.</p>
+
+    <!-- mobile nav -->
+    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
+      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
+        <a href="index.html"       class="py-2 text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html"    class="py-2 text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html"         class="py-2 text-um-maize hover:text-white">New Members</a>
+        <a href="course.html"      class="py-2 text-um-maize hover:text-white">Course Resources</a>
+        <a href="workshop.html"    class="py-2 text-um-maize hover:text-white">Workshops</a>
+        <a href="exam.html"        class="py-2 text-um-maize hover:text-white">Exam Resources</a>
+        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html"      class="py-2 text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html"   class="py-2 text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html"     class="py-2 text-um-maize hover:text-white">Contact</a>
+      </nav>
     </div>
-  </div>
 
-  <div class = "section">
-    <h1>What is an actuary?</h1>
-      <p>Actuary: A business professional who analyzes the consequences of <b>risk</b>.</p>
-      <img src = "/images/ActuaryInfo.png" style = "width: 500px; margin: 30px auto; max-width: 95%;"></img>
-      <p>Actuaries must pass a series of exams in order to become certified by either the Society of Actuaries (<b>SOA</b>) or the Casualty Actuary Society (<b>CAS</b>).</p>
-  </div>
+    <!-- navbar helpers -->
+    <script>
+      document.getElementById('mobileBtn')
+              .addEventListener('click', () =>
+                document.getElementById('mobileMenu').classList.toggle('hidden'));
 
-  <div class = "section blue-back">
-    <h1>Why should I become an actuary?</h1>
-    <div class ="flexbox" style: "margin: auto;">
-      <div style = "width: 650px; margin-bottom: 15px;" class = "bullet-list">
+      const btn  = document.getElementById('resourcesBtn');
+      const menu = document.getElementById('resourcesMenu');
+
+      btn.addEventListener('click', e=>{
+        e.preventDefault();
+        menu.classList.toggle('invisible');
+        menu.classList.toggle('opacity-0');
+      });
+      document.addEventListener('click', e=>{
+        if(!menu.contains(e.target) && !btn.contains(e.target)){
+          menu.classList.add('invisible','opacity-0');
+        }
+      });
+    </script>
+  </header>
+
+  <!-- ═════════════ CONTENT ════════════ -->
+
+  <!-- New to SAM -->
+  <section class="py-20 bg-um-blue-light text-white">
+    <div class="mx-auto max-w-screen-lg px-6 text-center space-y-6">
+      <h1 class="text-4xl font-bold">New to SAM? Welcome!</h1>
+      <br>
+      <div class="mx-auto w-full max-w-4xl space-y-4 text-xl">
+        <h2>Please fill out <a class="underline text-um-maize" href="https://forms.gle/wjehfsURTbkPAMDG7"
+            target="_blank">this form</a> to be added to our email list.</h2>
         <br>
-        <li>Top Ranked Job -- #1 Job by Forbes</ul>
-        <li>High Demand & Growth -- Growing industry with advancement opportunities</li>
-        <li>High Salary -- Top-paying job</li>
-        <li>Work-Life Balance -- Flexible hours, low stress, hybrid work</li>
-        <li>No Graduate School -- Work immediately after undergrad</li>
-        <li>Make a Difference -- Interesting and rewarding work</li>
+        <p class="text-base">Paying dues is required to receive exam reimbursements, join our mentorship program, and
+          get a SAM t-shirt! If you have not yet paid annual dues, please send <b>$40</b> via Venmo to @UmichSAM or drop
+          off a check or cash in a sealed envelope to Professor Natarajan's office at East Hall&nbsp;2855. For both
+          methods, please include your full first name, last name, uniqname, and UMID number.</p>
       </div>
+    </div>
+  </section>
 
-      <div style = "width: 400px" class = "bullet-list">
-        <p>Incorporates the following fields:</p>
-        <li>Mathematics</li>
-        <li>Statistics</li>
-        <li>Business</li>
-        <li>Computer Science</li>
-        <li>Data Science</li>
-        <li>Economics</li>
+  <!-- What is an actuary -->
+  <section class="py-20 bg-white">
+    <div class="mx-auto max-w-screen-lg px-6 text-center space-y-6">
+      <h1 class="text-3xl font-bold text-um-blue">What is an actuary?</h1>
+      <p class="text-xl">Actuary: A business professional who analyzes the consequences of <b>risk</b>.</p>
+      <img src="/images/ActuaryInfo.png" alt="What is an actuary infographic" class="mx-auto w-full max-w-lg my-8">
+      <p class="text-xl">Actuaries must pass a series of exams in order to become certified by either the Society of
+        Actuaries (<b>SOA</b>) or the Casualty Actuary Society (<b>CAS</b>).</p>
+    </div>
+  </section>
+
+  <!-- Why become an actuary -->
+  <section class="py-20 bg-um-blue-light text-white">
+    <div class="mx-auto max-w-screen-xl px-6 space-y-8">
+      <h1 class="text-3xl font-bold text-center">Why should I become an actuary?</h1>
+      <br>
+
+      <div class="grid gap-10 lg:grid-cols-2">
+        <!-- left bullet list -->
+        <ul class="space-y-2 text-lg list-disc pl-20">
+          <li>Top Ranked Job&nbsp;— #1 Job by Forbes</li>
+          <li>High Demand &amp; Growth&nbsp;— Growing industry with advancement opportunities</li>
+          <li>High Salary&nbsp;— Top-paying job</li>
+          <li>Work-Life Balance&nbsp;— Flexible hours, low stress, hybrid work</li>
+          <li>No Graduate School&nbsp;— Work immediately after undergrad</li>
+          <li>Make a Difference&nbsp;— Interesting and rewarding work</li>
+        </ul>
+
+        <!-- right bullet list -->
+        <div class="lg:pl-20">
+          <div class="lg:pl-20">
+
+          <p class="mb-2 text-lg">Incorporates the following fields:</p>
+          <ul class="space-y-2 text-lg list-disc pl-12">
+            <li>Mathematics</li>
+            <li>Statistics</li>
+            <li>Business</li>
+            <li>Computer Science</li>
+            <li>Data Science</li>
+            <li>Economics</li>
+          </ul>
+        </div>
       </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resources -->
+<section class="py-20 bg-white">
+  <div class="mx-auto max-w-screen-lg px-6 text-center space-y-8">
+    <h1 class="text-3xl font-bold text-um-blue">Resources to Get You Started!</h1>
+    <p class="text-2xl">Not sure where to start? We recommend these resources!</p>
+
+    <div class="mx-auto w-full max-w-md rounded-lg bg-gray-100/60 p-6 shadow">
+      <ul class="space-y-2 text-xl">
+        <li><a href="/workshops/NewMemberF24.pdf"   target="_blank" class="underline text-um-blue-light">New&nbsp;Member&nbsp;Orientation&nbsp;Slides</a></li>
+        <li><a href="/workshops/MassMeetingF24.pdf" target="_blank" class="underline text-um-blue-light">Mass&nbsp;Meeting&nbsp;Slides</a></li>
+        <li><a href="https://www.soa.org/"          target="_blank" class="underline text-um-blue-light">Society&nbsp;of&nbsp;Actuaries&nbsp;Website</a></li>
+        <li><a href="https://www.casact.org/"       target="_blank" class="underline text-um-blue-light">Casualty&nbsp;Actuarial&nbsp;Society&nbsp;Website</a></li>
+        <li><a href="https://www.beanactuary.org/"  target="_blank" class="underline text-um-blue-light">Be&nbsp;An&nbsp;Actuary</a></li>
+      </ul>
     </div>
   </div>
+</section>
 
-  <div class = "section" style="margin-bottom: 50px;">
-    <h1>Resources to Get You Started!</h1>
-    <p>Not sure where to start? We recommend these resources!</p>
-    <br>
-    <div class = "bullet-list" style="width: 350px;">
-      <li><a href = "/workshops/NewMemberF24.pdf" target=_blank>New Member Orientation Slides</a></li>
-      <li><a href = "/workshops/MassMeetingF24.pdf" target=_blank>Mass Meeting Slides</a></li>
-      <li><a href = "https://www.soa.org/" target="_blank">Society of Actuaries Website</a></li>
-      <li><a href = "https://www.casact.org/" target="_blank">Casualty Actuarial Society Website</a></li>
-      <li><a href = "https://www.beanactuary.org/" target="_blank">Be An Actuary</a></li>
 
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-900 py-8 text-gray-200">
+    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
+      <div>
+        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+        
+
+      </div>
+      <div class="space-x-4">
+        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+      </div>
     </div>
-  
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
+
+</html>

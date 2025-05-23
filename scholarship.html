@@ -1,355 +1,547 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Student Actuaries at Michigan</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-    
-    <script src='scripts/jquery.min.js'></script>
-  <script src='scripts/main.js'></script>
-  </head>
-  <body>
-    <div class="navbar">
-        <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
-        <p class="title">Student Actuaries at Michigan</p>
-          <div class="links">
-            <div class = "link-child"><a href="index.html">Home</a></div>
-            <div class = "link-child"><a href="calendar.html">Calendar</a></div>
-            <div class = "link-child"><a href="new.html">New Members</a></div>
-            <div class = "link-child">
-              <div class="resources">
-                <p id = "hover">Resources</p>
-                <div id = "dropdown" class="dropdown">
-                  <a href="course.html">Course Resources</a>
-                  <a href="workshop.html">Workshops</a>
-                  <a href="exam.html">Exam Resources</a>
-                </div>
-                <script src = "/scripts/hover.js"></script>
-              </div>
-            </div>
-            <div class = "link-child"><a href="scholarship.html">Scholarships</a></div>
-            <div class = "link-child"><a href="mentor.html">Mentorship</a></div>
-            <div class = "link-child"><a href="companies.html">Companies</a></div>
-            <div class = "link-child"><a href="contact.html">Contact</a></div>
+<head>
+  <meta charset="utf-8">
+  <title>Scholarships</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <!-- search bar, only on homepage or on every page? -->
+  <script src="https://cdn.tailwindcss.com"></script>
 
-            <!-- <div class = "link-child">
-              <form id="form" role = "search"> 
-                <input type="search" id="query" name="q" placeholder="Search..."
-                  aria-label="Search through site content">
-                <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
-              </form>
-            </div> -->
+  <style>
+    :root{
+      --um-blue:#00274C;
+      --um-blue-light:#2e6aa3;
+      --um-maize:#FFCB05;
+    }
+    .bg-um-blue       { background-color:var(--um-blue) }
+    .bg-um-blue-light { background-color:var(--um-blue-light) }
+    .text-um-maize    { color:var(--um-maize) }
 
-            <script src="scripts/search_bar.js"></script>
+    .company-card  { @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center; }
+    .company-logo  { @apply h-24 w-auto object-contain mx-auto; }
+
+    .group:hover>.invisible,
+    .group:focus-within>.invisible{visibility:visible;opacity:1;}
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+</head>
+<body class="font-[Jost] leading-relaxed text-gray-900">
+
+  <!-- ─────────────────────────── NAVBAR ───────────────────────────────────── -->
+  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
+    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+
+      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
+        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
+        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      </a>
+
+      <!-- desktop links -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
+        <a href="index.html"       class="text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html"    class="text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html"         class="text-um-maize hover:text-white">New Members</a>
+
+        <!-- Resources dropdown -->
+        <div id="resourcesBox" class="relative group">
+          <button id="resourcesBtn" type="button"
+                  class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+            Resources
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                 viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div id="resourcesMenu"
+               class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
+            <a href="course.html"   class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
+            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
+            <a href="exam.html"     class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+          </div>
         </div>
+
+        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html"      class="text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html"   class="text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html"     class="text-um-maize hover:text-white">Contact</a>
+      </nav>
+
+      <!-- mobile button -->
+      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+             viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
 
+    <!-- mobile nav -->
+    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
+      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
+        <a href="index.html"       class="py-2 text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html"    class="py-2 text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html"         class="py-2 text-um-maize hover:text-white">New Members</a>
+        <a href="course.html"      class="py-2 text-um-maize hover:text-white">Course Resources</a>
+        <a href="workshop.html"    class="py-2 text-um-maize hover:text-white">Workshops</a>
+        <a href="exam.html"        class="py-2 text-um-maize hover:text-white">Exam Resources</a>
+        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html"      class="py-2 text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html"   class="py-2 text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html"     class="py-2 text-um-maize hover:text-white">Contact</a>
+      </nav>
+    </div>
 
-    
-    <div class="section">
-      <h1>University of Michigan Scholarships and Awards</h1>
-        
-      
-      <div class = scholarship-parent>
+    <!-- navbar helpers -->
+    <script>
+      document.getElementById('mobileBtn')
+              .addEventListener('click', () =>
+                document.getElementById('mobileMenu').classList.toggle('hidden'));
 
-        <div class = "scholarships">
-          <h2 class = event-title>Marc Altschull Actuarial Award</h2>
-          <p><b>Deadline:</b> February 28, 2025</p>
-          <p><b>Requirements:</b></p>
-            <ul>
+      const btn  = document.getElementById('resourcesBtn');
+      const menu = document.getElementById('resourcesMenu');
+
+      btn.addEventListener('click', e=>{
+        e.preventDefault();
+        menu.classList.toggle('invisible');
+        menu.classList.toggle('opacity-0');
+      });
+      document.addEventListener('click', e=>{
+        if(!menu.contains(e.target) && !btn.contains(e.target)){
+          menu.classList.add('invisible','opacity-0');
+        }
+      });
+    </script>
+  </header>
+
+  <!-- ───── HEADER ───── -->
+  <section class="py-20 bg-white">
+    <div class="mx-auto max-w-screen-xl px-6 text-center space-y-6">
+      <h1 class="text-4xl font-bold text-um-blue">University of Michigan Scholarships &amp; Awards</h1>
+    </div>
+  </section>
+
+  <!-- ───── U-M SCHOLARSHIP CARDS ───── -->
+  <section class="py-20 bg-um-blue-light text-white">
+    <div class="mx-auto max-w-screen-xl px-6">
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Marc Altschull -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Marc Altschull Actuarial Award</h2>
+            <p><strong>Deadline:</strong> February&nbsp;28,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
               <li>Have declared a major in Actuarial Mathematics</li>
-              <li>Have 90 or more cumulative credits towards an undergraduate degree</li>
-              <li>Have completed at least one actuarial or related internship</li>
-              <li>Have an overall GPA of 3.7 or better</li>
-              <li>Have passed at least two actuarial exams given by either the Society of Actuaries or the Casualty Actuarial Society</li>
-              <li>Be a US citizen or Permanent Resident</li>
-              <li>Be enrolled as an out-of-state student</li>
-              <li>Not have previously received this award</li>
+              <li>Have 90 + cumulative credits</li>
+              <li>Completed at least one actuarial/related internship</li>
+              <li>Overall GPA&nbsp;≥&nbsp;3.7</li>
+              <li>Passed ≥ 2 actuarial exams</li>
+              <li>US Citizen / Permanent Resident</li>
+              <li>Out-of-state student</li>
+              <li>Not a previous recipient</li>
             </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSdrE8mEqJuXrJHO2qKBX80tWVoQ0EMjU9WOG26-uzA1ZPqWlw/viewform
-" formtarget="_blank">Apply here!                    </button>
-          </form>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrE8mEqJuXrJHO2qKBX80tWVoQ0EMjU9WOG26-uzA1ZPqWlw/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
         </div>
 
+        <!-- Otto C. Richter -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Otto C. Richter Memorial Prize</h2>
+            <p><strong>Deadline:</strong> February&nbsp;28,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Graduating senior &amp; Actuarial Math major</li>
+              <li>GPA&nbsp;≥&nbsp;3.0</li>
+              <li>Passed ≥ 1 actuarial exam</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScYlb1MtQz6gImSlHxoZsB1paj7W_yi-GMDVOCJLFFSxJAcEg/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Thomas S. Solomon -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Thomas S. Solomon Actuarial Award</h2>
+            <p><strong>Deadline:</strong> February&nbsp;28,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Declared Actuarial Math major</li>
+              <li>Overall GPA&nbsp;≥&nbsp;3.5</li>
+              <li>Passed ≥ 2 actuarial exams</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3pmi-BNNPDq41T-WB3GMw1VELXww0Q8Sz6l0qvWD0T-gFhw/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Irving S. Wolfson -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Irving S. Wolfson Award</h2>
+            <p><strong>Deadline:</strong> February&nbsp;28,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Actuarial Math major, GPA&nbsp;≥&nbsp;3.5</li>
+              <li>≥ 1 term remaining</li>
+              <li>Evidence of actuarial achievement</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdWPYakPoxapTZVsKdTWG4_yFsbvVrH6folDWkh5y37Ek1xFw/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- D.W. Simpson -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">D.W. Simpson Actuarial Award</h2>
+            <p><strong>Deadline:</strong> February&nbsp;28,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Entering senior year in Actuarial Math</li>
+              <li>Actuarial GPA&nbsp;≥&nbsp;3.4 &amp; overall&nbsp;≥&nbsp;3.0</li>
+              <li>Passed ≥ 1 actuarial exam</li>
+              <li>Eligible to work in the US without sponsorship</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc8glJsgmrKlK_fdwmhRE4NUEYuETll7JyTmOmoD30szQh0Lg/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Natarajan Family -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Natarajan Family Award</h2>
+            <p><strong>Deadline:</strong> March&nbsp;11,&nbsp;2024</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Actuarial Math major, GPA&nbsp;≥&nbsp;3.5</li>
+              <li>Promise of future leadership (priority — SAM Board members)</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfnfBi8XcjA2kNBaEfd0RsCVH5y0KCpTU-w4NnXySkrVkBRRw/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- David G. Hartman -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">David G. Hartman Actuarial Scholarship</h2>
+            <p><strong>Deadline:</strong> May&nbsp;5,&nbsp;2024</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>≥ 1 academic year remaining</li>
+              <li>Declared Actuarial Math major</li>
+              <li>Major/minor in Business Administration</li>
+              <li>Pursuing casualty-actuary career</li>
+              <li>GPA&nbsp;≥&nbsp;3.0 &amp; passed ≥ 1 exam</li>
+              <li>US Citizen / Permanent Resident</li>
+              <li>Two essays</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeDhUIro5eaMSS9Zpbp24qHWeI4Uevpzp45h1eSmX3pEBRkYQ/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Margaret S. Huntington Prize -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Margaret S. Huntington Prize in Actuarial Outreach</h2>
+            <p><strong>Deadline:</strong> March&nbsp;9,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Freshman / sophomore (≤ 2nd term of residence)</li>
+              <li>A- / B grades in listed math courses</li>
+              <li>Have NOT declared Actuarial Math major</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfeMbCbOqPPCbQKys-9D4N-TVRXCaS_2KmpL8Sw_M__9YGwjA/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- M.S. Keeler -->
+        <div class="hidden rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">M.S. Keeler Dept of Math Merit Scholarships</h2>
+            <p><strong>Deadline:</strong> &nbsp;</p>
+          </div>
+          <a href="https://forms.gle/9fM2biGZhNe14tuq6"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Virginia McCulloh -->
+        <div class="hidden rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Virginia McCulloh Scholarship</h2>
+            <p><strong>Deadline:</strong> &nbsp;</p>
+          </div>
+          <a href="https://forms.gle/GKUgwFZsB87Qw42A9"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Dept of Math Emergency -->
+        <div class="rounded-lg bg-white text-gray-900 shadow-lg flex flex-col">
+          <div class="p-6 space-y-3 flex-grow">
+            <h2 class="text-2xl font-semibold">Dept of Mathematics Emergency Scholarship</h2>
+            <p><strong>Deadline:</strong> None (rolling)</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Current UM undergrad math major</li>
+              <li>12 + credits this term</li>
+              <li>≤ 4 terms left</li>
+              <li>Emergency impacting finances</li>
+              <li>Substantial financial need</li>
+            </ul>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSf-uy6s6Y3XzdewpuVJa3wvN3HSbIqzm06hxBHNRwad5_RpDQ/viewform"
+             target="_blank"
+             class="mt-auto block bg-um-blue text-center text-white py-3 rounded-b-lg font-semibold hover:bg-um-blue/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ───── ADDITIONAL SCHOLARSHIPS ───── -->
+  <section class="py-20 bg-white">
+    <div class="mx-auto max-w-screen-xl px-6">
+      <h2 class="mb-10 text-center text-4xl font-bold text-um-blue">Additional Scholarships</h2>
+
+      <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+
+        <!-- Actuarial Foundation -->
+        <div class="rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">The Actuarial Foundation</h3>
+            <p><strong>Deadline:</strong> Various</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Full-time undergrad (most programs)</li>
+              <li>Includes IABA &amp; OLA awards</li>
+              <li>Other criteria vary</li>
+            </ul>
+          </div>
+          <a href="https://actuarialfoundation.org/scholarships/#browse-scholarships"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Stuart A. Robertson -->
+        <div class="rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">Stuart A. Robertson Memorial Scholarship</h3>
+            <p><strong>Deadline:</strong> April&nbsp;14,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Undergrad sophomore + standing</li>
+              <li>Full-time study next academic year</li>
+              <li>Passed ≥ 2 actuarial exams</li>
+              <li>GPA&nbsp;≥&nbsp;3.0</li>
+            </ul>
+          </div>
+          <a href="https://elink.milliman.com/c/7/eyJhaSI6MjIxNDQyODgsImUiOiJyb2dlcm5hdEB1bWljaC5lZHUiLCJyaSI6ImNvbnRhY3QtOWFiNWYwYWFhZTA0ZTcxMTgxMDA1MDY1ZjM4YjQxZjEtNzE2ZjA2YzYxNzBlNDExYWEyY2RmYWRmYmY1MDRmZWYiLCJycSI6IjAyLWIyNTA0OS1jZjNhYjExMDVkNzc0ZjJmYWFmYWE4MTFhNTI1ZmRlMSIsIm0iOmZhbHNlLCJ1aSI6IjEiLCJ1biI6IiIsInUiOiJodHRwczovL2xlYXJubW9yZS5zY2hvbGFyc2FwcGx5Lm9yZy9yb2JlcnRzb24tbWVtb3JpYWw_X2NsZGVlPUVDYkVUS3JmeURlN0xCRmU1ZTNpQUtvT2tpQ0xqMGNaSkJISDJrdU9GeFViYnhwWGwxVURhN2E2dlN3bGhyZ3QmcmVjaXBpZW50aWQ9Y29udGFjdC05YWI1ZjBhYWFlMDRlNzExODEwMDUwNjVmMzhiNDFmMS03MTZmMDZjNjE3MGU0MTFhYTJjZGZhZGZiZjUwNGZlZiZlc2lkPWJjYTY1NTg5LWFmZTgtZWYxMS04ZWVhLTAwMGQzYTMxYzA5NiJ9/F6WZdgIXikE3uUbL9G3l-g"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Spencer Educational Foundation -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">Spencer Educational Foundation Undergraduate Scholarship</h3>
+            <p><strong>Deadline:</strong> January&nbsp;31,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Risk Mgmt / Insurance / Actuarial career path</li>
+              <li>Full-time study (US/Canada)</li>
+              <li>Preferred: RM/Insurance major &amp; internship experience</li>
+            </ul>
+          </div>
+          <a href="https://www.spencered.org/scholarships"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- CAS Trust -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">CAS Trust Scholarship</h3>
+            <p><strong>Deadline:</strong> January&nbsp;31,&nbsp;2025</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Full-time undergrad 2025-26</li>
+              <li>Sat ≥ 1 actuarial exam by Mar 31, 2025</li>
+              <li>CAS Student Central member</li>
+            </ul>
+          </div>
+          <a href="https://www.casact.org/trustscholarship"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Ezra Penland -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">The Ezra Penland Actuarial Scholarship</h3>
+            <p><strong>Deadline:</strong> &nbsp;</p>
+          </div>
+          <a href="https://www.ezrapenland.com/scholarships/"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Curtis E. Huntington -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">Curtis E. Huntington Memorial Scholarship</h3>
+            <p><strong>Deadline:</strong> &nbsp;</p>
+          </div>
+          <a href="https://www.actuarialfoundation.org/scholarships/huntington-memorial-scholarship/"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Hickman Scholars -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">Hickman Scholars Program</h3>
+            <p><strong>Deadline:</strong> &nbsp;</p>
+          </div>
+          <a href="https://www.soa.org/education/resources/academic-initiatives/soa-doc-stipend/"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- Midwestern Actuarial Forum -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">Midwestern Actuarial Forum Scholarship</h3>
+            <p><strong>Deadline:</strong> &nbsp;</p>
+          </div>
+          <a href="https://www.casact.org/article/apply-2022-midwestern-actuarial-forum-maf-scholarship"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- SAGAA -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">SAGAA Scholarship &amp; Internship<br>for LGBTQ+ Actuarial Students</h3>
+            <p><strong>Deadline:</strong> September&nbsp;15,&nbsp;2023&nbsp;@&nbsp;11 PM</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Identify as LGBTQ+</li>
+              <li>Full-time undergrad or grad student</li>
+              <li>Actuarial career path</li>
+              <li>GPA&nbsp;≥&nbsp;3.0</li>
+            </ul>
+          </div>
+          <a href="https://theactuarialfoundation.submittable.com/submit/250643/sagaa-2023-scholarship-internship-application-for-lgbtq-actuarial-students"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+        <!-- DW Simpson Actuarial Science Scholarship -->
+        <div class="hidden rounded-lg border shadow-sm flex flex-col">
+          <div class="p-6 flex-grow space-y-3">
+            <h3 class="text-2xl font-semibold">DW Simpson Actuarial Science Scholarship</h3>
+            <p><strong>Deadline:</strong> October&nbsp;31,&nbsp;2023</p>
+            <p><strong>Requirements:</strong></p>
+            <ul class="list-disc pl-6 space-y-1 text-sm">
+              <li>Entering senior year in actuarial science</li>
+              <li>Major GPA&nbsp;≥&nbsp;3.2 &amp; overall&nbsp;≥&nbsp;3.0</li>
+              <li>Passed ≥ 1 actuarial exam</li>
+              <li>Eligible to work in US without sponsorship</li>
+            </ul>
+          </div>
+          <a href="https://www.dwsimpson.com/about/scholarship-application/"
+             target="_blank"
+             class="mt-auto block bg-um-blue-light text-white text-center py-3 rounded-b-lg font-semibold hover:bg-um-blue-light/80">
+            Apply&nbsp;here!
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-900 py-8 text-gray-200">
+    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
+      <div>
+        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
         
-        <div class = "scholarships">
-          <h2 class = event-title>Otto C. Richter Memorial Prize</h2>
-          <p><b>Deadline:</b> February 28, 2025</p>
-          <p><b>Requirements:</b></p>
-            <ul>
-              <li>Be a graduating senior</li>
-              <li>Be currently majoring in Actuarial Mathematics</li>
-              <li>Have a GPA of 3.0 or above</li>
-              <li>Have passed at least one actuarial exam</li>
-            </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLScYlb1MtQz6gImSlHxoZsB1paj7W_yi-GMDVOCJLFFSxJAcEg/viewform" formtarget="_blank">Apply here!                    </button>
-          </form>
-        </div>
 
-
-        <div class = "scholarships">
-          <h2 class = event-title>Thomas S. Solomon Actuarial Award</h2>
-          <p><b>Deadline:</b> February 28, 2025</p>
-          <p><b>Requirements:</b></p>
-            <ul>
-              <li>Have declared Actuarial Math as your major</li>
-              <li>Have an overall GPA of 3.5 or better</li>
-              <li>Have passed at least two actuarial exams given by either the Society of Actuaries or the Casualty Actuarial Society</li>
-            </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSd3pmi-BNNPDq41T-WB3GMw1VELXww0Q8Sz6l0qvWD0T-gFhw/viewform" formtarget="_blank">Apply here!                    </button>
-          </form>
-        </div>
-
-
-        <div class = "scholarships">
-          <h2 class = event-title>Irving S. Wolfson Award</h2>
-          <p><b>Deadline:</b> February 28, 2025</p>
-          <p><b>Requirements:</b></p>
-            <ul>
-              <li>Majoring in Actuarial Mathematics</li>
-              <li>GPA of 3.5 or above</li>
-              <li>Have at least one term remaining for your undergraduate degree</li>
-              <li>Have shown actuarial achievement through academia, employment, and/or extra-curricular activity</li>
-            </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSdWPYakPoxapTZVsKdTWG4_yFsbvVrH6folDWkh5y37Ek1xFw/viewform" formtarget="_blank">Apply here!                    </button>
-          </form>
-        </div>
-
-        <div class = "scholarships">
-          <h2 class = event-title>D.W. Simpson Actuarial Award</h2>
-          <p><b>Deadline:</b> February 28, 2025</p>
-          <p><b>Requirements:</b></p>
-            <ul>
-              <li>Entering senior year of undergraduate study in Actuarial Mathematics</li>
-              <li>Have GPA of 3.4 or better in Actuarial Math and overall GPA of 3.0 or better</li>
-              <li>Have passed at least one actuarial exam</li>
-              <li>Eligible to work in the United States full time for any employer without requiring employer sponsorship</li>
-            </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSc8glJsgmrKlK_fdwmhRE4NUEYuETll7JyTmOmoD30szQh0Lg/viewform" formtarget="_blank">Apply here!                    </button>
-          </form>
-        </div>
-
-
-        <div class = "scholarships hidden-text">
-          <h2 class = event-title>Natarajan Family Award</h2>
-          <p><b>Deadline:</b> March 11, 2024</p>
-          <p><b>Requirements:</b></p>
-            <ul>
-              <li>Majoring in Actuarial Mathematics</li>
-              <li>GPA of 3.5 or above</li>
-              <li>Have shown promise of future leadership</li>
-              <li>Priority given to students on SAM Board</li>
-            </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSfnfBi8XcjA2kNBaEfd0RsCVH5y0KCpTU-w4NnXySkrVkBRRw/viewform" formtarget="_blank">Apply here!                    </button>
-          </form>
-        </div>
-
-
-        <div class = "scholarships hidden-text">
-          <h2 class = event-title>David G. Hartman Actuarial Scholarship</h2>
-          <p><b>Deadline:</b> May 5, 2024</p>
-          <p><b>Requirements:</b></p>
-            <ul>
-              <li>Has at least one more academic year to complete an undergraduate degree</li>
-              <li>Has already declared Actuarial Mathematics as their major</li>
-              <li>Is either majoring or minoring in Business Administration</li>
-              <li>Is pursuing a career as a casualty actuary</li>
-              <li>Has a GPA of 3.0 or higher</li>
-              <li>Has passed at least one actuarial exam</li>
-              <li>Is a US Citizen or Permanent Resident</li>
-              <li>Submits two essays</li>
-            </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSeDhUIro5eaMSS9Zpbp24qHWeI4Uevpzp45h1eSmX3pEBRkYQ/viewform" formtarget="_blank">Apply here!                    </button>
-          </form>
-        </div>
-
-
-        <div class = "scholarships">
-          <h2 class = event-title>Margaret S. Huntington Prize in Actuarial Outreach</h2>
-          <p><b>Deadline:</b> March 9, 2025</p>
-          <p><b>Requirements:</b></p>
-            <ul>
-              <li>Have freshman or sophomore standing</li>
-              <li>Be, at most, in your second term of residence</li>
-              <li>Have earned a grade of "A-" or better in one of the following courses: MATH 115, 116, 156, 175, or 185,  OR</li>
-              <li>Have earned a grade of "B" or better in MATH 205, 215, 217, 285, 295, 424, or 425</li>
-              <li>Not have declared Actuarial Math as your major already</li>
-            </ul>
-          <form>
-            <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSfeMbCbOqPPCbQKys-9D4N-TVRXCaS_2KmpL8Sw_M__9YGwjA/viewform" formtarget="_blank">Apply here!                    </button>
-          </form>
-        </div>
-        
-        
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>M.S. Keeler Department of Mathematics Merit Scholarships</h2>
-                <p>Deadline: </p>
-                <p><a href="https://forms.gle/9fM2biGZhNe14tuq6" target="_blank">Apply here!</a></p>
-          </div>
-          
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>Margaret S Huntington Prize in Actuarial Outreach</h2>
-            <p>Deadline:</p>
-            <p><a href="https://forms.gle/Jfyri3BJaQVi5hWv6" target="_blank">Apply here!</a></p>
-          </div>
-          
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>Virginia McCulloh Scholarship</h2>
-            <p>Deadline:</p>
-            <p><a href="https://forms.gle/GKUgwFZsB87Qw42A9" target="_blank">Apply here!</a></p>
-          </div>
-          
-          <div class = "scholarships">
-            <h2 class = event-title>Dept of Mathematics Emergency Scholarship</h2>
-            <p><b>Deadline:</b> None, on a rolling basis</p>
-            <p><b>Requirements:</b></p>
-              <ul>
-                <li>Current UM undergrad majoring in mathematics</li>
-                <li>Enrolled in the current term for 12+ credits</li>
-                <li>Have 4 or less terms left to complete your math degree</li>
-                <li>Have experienced an emergency situation which has impacted your financial stability</li>
-                <li>Demonstrate substantial financial need</li>
-              </ul>
-            <form>
-              <button type="submit" formaction = "https://docs.google.com/forms/d/e/1FAIpQLSf-uy6s6Y3XzdewpuVJa3wvN3HSbIqzm06hxBHNRwad5_RpDQ/viewform" formtarget="_blank">Apply here!                    </button>
-            </form>
-          </div>
-        </div>
+      </div>
+      <div class="space-x-4">
+        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+      </div>
     </div>
 
-    <div class="section blue-back" style="margin-bottom: 50px;">
-        <h1>Additional Scholarships</h1>
-      
-        <div class = scholarship-parent>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
+</body>
 
-          <!-- <div class = "scholarships">
-            <h2 class = event-title>SAGAA Scholarship & Internship Application for LGBTQ+ Actuarial Students</h2>
-            <p><b>Deadline:</b> Friday, September 15, 2023 @ 11PM</p>
-            <p><b>Requirements:</b></p>
-              <ul>
-                <li>Identify as LGBTQ+</li>
-                <li>Full-time undergrad or grad student</li>
-                <li>Plan on pursuing the actuarial profession</li>
-                <li>GPA is 3.00 or higher</li>
-              </ul>
-            <form>
-              <button type="submit" formaction = "https://theactuarialfoundation.submittable.com/submit/250643/sagaa-2023-scholarship-internship-application-for-lgbtq-actuarial-students" formtarget="_blank">Apply here!</button>
-            </form>
-          </div> -->
-          
-          <!-- <div class = "scholarships">
-            <h2 class = event-title>DW Simpson Actuarial Science Scholorship</h2>
-            <p><b>Deadline:</b> Tuesday, October 31st, 2023</p>
-            <p><b>Requirements:</b></p>
-              <ul>
-                <li>Entering senior year of undergrad study in actuarial science</li>
-                <li>Maintained a GPA of 3.2 or higher in their major and an overall GPA of 3.0 or better</li>
-                <li>Passed at least 1 actuarial examination</li>
-                <li>Eligible to work in the US full time for any employer without requiring employer sponsorship</li>
-              </ul>
-            <form>
-              <button type="submit" formaction = "https://www.dwsimpson.com/about/scholarship-application/" formtarget="_blank">Apply here!</button>
-            </form>
-          </div> -->
-
-          <div class = "scholarships">
-            <h2 class = event-title>The Actuarial Foundation</h2>
-            <p><b>Deadline:</b> Various Deadlines </p>
-            <p><b>Requirements:</b></p>
-              <ul>
-                <li>Mostly for full-time undergrad students</li>
-                <li>Includes scholarships through the International Association of Black Actuaries (IABA) and the Organization of Latino Actuaries (OLA)!</li>
-                <li>Various requirements depending on the scholarship</li>
-              </ul>
-            <form>
-              <button type="submit" formaction = "https://actuarialfoundation.org/scholarships/#browse-scholarships" formtarget="_blank">Apply here!</button>
-            </form>
-          </div>
-
-          <div class = "scholarships">
-            <h2 class = event-title>Stuart A. Robertson Memorial Scholarship</h2>
-            <p><b>Deadline:</b> April 14, 2025</p>
-            <p><b>Requirements:</b></p>
-              <ul>
-                <li>Be current college undergraduate with a minimum sophomore standing</li>
-                <li>Plan to enroll in full-time undergraduate study at an accredited four-year college or university in the United States (U.S.) for the entire upcoming academic year</li>
-                <li>Must have successfully completed at least two actuarial exams</li>
-                <li>Have a minimum grade point average of 3.0 on a 4.0 scale (or its equivalent)</li>
-              </ul>
-            <form>
-              <button type="submit" formaction = "https://elink.milliman.com/c/7/eyJhaSI6MjIxNDQyODgsImUiOiJyb2dlcm5hdEB1bWljaC5lZHUiLCJyaSI6ImNvbnRhY3QtOWFiNWYwYWFhZTA0ZTcxMTgxMDA1MDY1ZjM4YjQxZjEtNzE2ZjA2YzYxNzBlNDExYWEyY2RmYWRmYmY1MDRmZWYiLCJycSI6IjAyLWIyNTA0OS1jZjNhYjExMDVkNzc0ZjJmYWFmYWE4MTFhNTI1ZmRlMSIsIm0iOmZhbHNlLCJ1aSI6IjEiLCJ1biI6IiIsInUiOiJodHRwczovL2xlYXJubW9yZS5zY2hvbGFyc2FwcGx5Lm9yZy9yb2JlcnRzb24tbWVtb3JpYWw_X2NsZGVlPUVDYkVUS3JmeURlN0xCRmU1ZTNpQUtvT2tpQ0xqMGNaSkJISDJrdU9GeFViYnhwWGwxVURhN2E2dlN3bGhyZ3QmcmVjaXBpZW50aWQ9Y29udGFjdC05YWI1ZjBhYWFlMDRlNzExODEwMDUwNjVmMzhiNDFmMS03MTZmMDZjNjE3MGU0MTFhYTJjZGZhZGZiZjUwNGZlZiZlc2lkPWJjYTY1NTg5LWFmZTgtZWYxMS04ZWVhLTAwMGQzYTMxYzA5NiJ9/F6WZdgIXikE3uUbL9G3l-g" formtarget="_blank">Apply here!</button>
-            </form>
-          </div>
-          
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>Spencer Educational Foundation Undergrad Scholarship</h2>
-            <p><b>Deadline:</b> Friday, January 31, 2025</p>
-            <p><b>Requirements:</b></p>
-              <ul>
-                <li>Seeking a career in Risk Management, Insurance, and/or Actuarial Science</li>
-                <li>Enrolled at an accredited college/university for at least one full academic year (two semesters)</li>
-                <li>Must be physically studying in the United States or Canada</li>
-                <li>Preferred: Majoring/minoring in Risk Management/Insurance or a related field of study (e.g., actuarial science)</li>
-                <li>Preferred: Relevant work/internship experience and leadership skills</li>
-              </ul>
-            <form>
-              <button type="submit" formaction = "https://www.spencered.org/scholarships" formtarget="_blank">Apply here!</button>
-            </form>
-          </div>
-          
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>CAS Trust Scholarship</h2>
-            <p><b>Deadline:</b> Friday, January 31, 2025</p>
-            <p><b>Requirements:</b></p>
-              <ul>
-                <li>Must be currently attending a college or university as a full-time student and continue as a full-time student for the 2025-2026 academic year</li>
-                <li>Must have sat for at least one actuarial exam by March 31, 2025</li>
-                <li>Must be a member of CAS Student Central (free to sign up!).</li>
-              </ul>
-            <form>
-              <button type="submit" formaction = "https://www.casact.org/trustscholarship" formtarget="_blank">Apply here!</button>
-            </form>
-          </div>
-          
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>The Ezra Penland Actuarial Scholarship</h2>
-            <p>Deadline:</p>
-            <p><a href="https://www.ezrapenland.com/scholarships/" target="_blank">Apply here!</a></p>
-          </div>
-          
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>Curtis E. Huntington Memorial Scholarship</h2>
-            <p>Deadline:</p>
-            <p><a href="https://www.actuarialfoundation.org/scholarships/huntington-memorial-scholarship/" target="_blank">Apply here!</a></p>
-          </div>
-
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>Hickman Scholars Program</h2>
-            <p>Deadline:</p>
-            <p><a href="https://www.soa.org/education/resources/academic-initiatives/soa-doc-stipend/" target="_blank">Apply here!</a></p>
-          </div>
-            
-          <div class = "scholarships hidden-text">
-            <h2 class = event-title>Midwestern Actuarial Forum (MAF) Scholarship</h2>
-            <p>Deadline:</p>
-            <p><a href="https://www.casact.org/article/apply-2022-midwestern-actuarial-forum-maf-scholarship" target="_blank">Apply here!</a></p>
-          </div>
-        </div>
-    </div>
-    </div>
-  </body>
 </html>

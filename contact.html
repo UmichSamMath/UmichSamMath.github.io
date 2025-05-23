@@ -2,359 +2,313 @@
 <html lang="en">
 
 <head>
-  <title>Student Actuaries at Michigan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
+  <meta charset="utf-8" />
+  <title>Contact</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --um-blue: #00274C;
+      --um-blue-light: #2e6aa3;
+      --um-maize: #FFCB05;
+    }
+
+    .bg-um-blue {
+      background: var(--um-blue);
+    }
+
+    .text-um-maize {
+      color: var(--um-maize);
+    }
+
+    .board-grid {
+      display: grid;
+      gap: 2rem;
+    }
+
+    @media (min-width:640px) {
+      .board-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .profile {
+      background: var(--um-maize);
+      color: var(--um-blue);
+      padding: 1.75rem 1.25rem;
+      border-radius: 1rem;
+      box-shadow: 0 2px 6px rgb(0 0 0 / .05);
+      text-align: center;
+    }
+
+    .profile.blue {
+      background: var(--um-blue);
+      color: #fff;
+    }
+
+    .profile img {
+      width: 250px;
+      height: 250px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #fff;
+      margin: 0 auto 1rem;
+    }
+
+    .profile a {
+      text-decoration: underline;
+      transition: opacity .15s;
+    }
+
+    .profile a:hover {
+      opacity: .8;
+    }
+
+    .profile.blue a[href^="mailto:"] {
+      color: var(--um-maize);
+    }
+
+    .profile:not(.blue) a[href^="mailto:"] {
+      color: var(--um-blue);
+    }
+  </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 
-  <script src='scripts/jquery.min.js'></script>
-  <script src='scripts/main.js'></script>
-
-  <style>
-    .profile p {
-      text-align: center;
-    }
-
-    .profile p a:not([href^="mailto:"]) {
-      color: #000;
-      text-decoration: none;
-      position: relative;
-      font-weight: 500;
-      display: inline-block;
-      transition: color 0.15s ease-in-out;
-    }
-
-    .profile p a:not([href^="mailto:"]):hover,
-    .profile p a:not([href^="mailto:"]):focus {
-      text-decoration: underline;
-      color: #1e4a7e;
-    }
-
-    .profile p a:not([href^="mailto:"])::after {
-      content: "";
-      width: 14px;
-      height: 14px;
-      background: url('images/LinkedIn.png') no-repeat center/contain;
-      opacity: 0;
-      position: absolute;
-      right: -1.2em;
-      top: 0.365em;
-      transition: opacity 0.2s ease-in-out;
-    }
-
-    .profile p a:not([href^="mailto:"]):hover::after,
-    .profile p a:not([href^="mailto:"]):focus::after {
-      opacity: 1;
-    }
-  </style>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
-<body>
-  <div class="navbar">
-    <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
-    <p class="title">Student Actuaries at Michigan</p>
-    <div class="links">
-      <div class="link-child"><a href="index.html">Home</a></div>
-      <div class="link-child"><a href="calendar.html">Calendar</a></div>
-      <div class="link-child"><a href="new.html">New Members</a></div>
-      <div class="link-child">
-        <div class="resources">
-          <p id="hover">Resources</p>
-          <div id="dropdown" class="dropdown">
-            <a href="course.html">Course Resources</a>
-            <a href="workshop.html">Workshops</a>
-            <a href="exam.html">Exam Resources</a>
-          </div>
-          <script src="/scripts/hover.js"></script>
-        </div>
-      </div>
-      <div class="link-child"><a href="scholarship.html">Scholarships</a></div>
-      <div class="link-child"><a href="mentor.html">Mentorship</a></div>
-      <div class="link-child"><a href="companies.html">Companies</a></div>
-      <div class="link-child"><a href="contact.html">Contact</a></div>
-      <script src="scripts/search_bar.js"></script>
-    </div>
-  </div>
-  <div class="section" style="margin-bottom: 50px;">
-    <h1>Board Members</h1>
+<body class="font-[Jost] leading-relaxed text-gray-900">
 
-    <div class="flexbox">
+  <!-- ═════════ HEADER ═════════ -->
+  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
+    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
+        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
+        <span class="text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      </a>
+
+      <!-- desktop links -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
+        <a href="index.html" class="text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
+
+        <div class="relative group">
+          <button id="resourcesBtn" class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+            Resources
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div id="resourcesMenu"
+            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
+            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
+            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
+            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+          </div>
+        </div>
+
+        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>
+      </nav>
+
+      <!-- hamburger -->
+      <button id="mobileBtn" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- mobile -->
+    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
+      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
+        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
+        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
+        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
+        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
+        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
+      </nav>
+    </div>
+
+    <script>
+      document.getElementById('mobileBtn')
+        .addEventListener('click', () => document.getElementById('mobileMenu')
+          .classList.toggle('hidden'));
+
+      const btn = document.getElementById('resourcesBtn');
+      const menu = document.getElementById('resourcesMenu');
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        menu.classList.toggle('invisible'); menu.classList.toggle('opacity-0');
+      });
+      document.addEventListener('click', e => {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) { menu.classList.add('invisible', 'opacity-0'); }
+      });
+    </script>
+  </header>
+
+  <!-- ═════════ BOARD ═════════ -->
+  <section class="py-20 bg-white">
+    <h1 class="text-3xl font-bold text-center text-um-blue mb-12">Board&nbsp;Members</h1>
+
+    <div class="board-grid mx-auto max-w-screen-xl px-6">
+
       <!-- Advisor -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/professor.jpg" alt="Roger Natarajan">
-            </div>
-            <div class="flip-card-back"></div>
-          </div>
-        </div>
-        <p>Advisor</p>
-        <p>Roger Natarajan</p>
+        <img src="images/Board Headshots/professor.jpg" alt="Roger Natarajan">
+        <p class="font-semibold">Advisor</p>
+        <p>Roger&nbsp;Natarajan</p>
         <a href="mailto:rogernat@umich.edu">rogernat@umich.edu</a>
       </div>
 
       <!-- President -->
       <div class="profile blue">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Mitchell.jpg" alt="Mitchell Fuchs">
-            </div>
-            <div class="flip-card-back blue-card">
-              <div>
-                <p>"In the joy of others lies our own"</p>
-                <br>
-                <p>-Pramukh Swami Maharaj</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>President</p>
-        <p><a href="https://www.linkedin.com/in/mitchell-fuchs-24684b287/" target="_blank" rel="noopener">Mitchell Fuchs</a></p>
+        <img src="images/Board Headshots/Mitchell.jpg" alt="Mitchell Fuchs">
+        <p class="font-semibold">President</p>
+        <p><a href="https://www.linkedin.com/in/mitchell-fuchs-24684b287/" target="_blank">Mitchell&nbsp;Fuchs</a></p>
         <a href="mailto:mitchf@umich.edu">mitchf@umich.edu</a>
       </div>
 
       <!-- Vice President -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Raegan.jpeg" alt="Raegan Gothard">
-            </div>
-            <div class="flip-card-back">
-              <div>
-                <p>"Your most important work is always ahead of you, never behind you."</p>
-                <br>
-                <p>-Stephen Covey</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>Vice President</p>
-        <p><a href="https://www.linkedin.com/in/raegan-gothard" target="_blank" rel="noopener">Raegan Gothard</a></p>
+        <img src="images/Board Headshots/Raegan.jpeg" alt="Raegan Gothard">
+        <p class="font-semibold">Vice President</p>
+        <p><a href="https://www.linkedin.com/in/raegan-gothard" target="_blank">Raegan&nbsp;Gothard</a></p>
         <a href="mailto:rgothard@umich.edu">rgothard@umich.edu</a>
       </div>
 
       <!-- Senior Career Chair -->
       <div class="profile blue">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Nikki.jpg" alt="Nikki Gerodemos">
-            </div>
-            <div class="flip-card-back blue-card"></div>
-          </div>
-        </div>
-        <p>Career Chair</p>
-        <p><a href="https://www.linkedin.com/in/nikki-gerodemos-4b8951268/" target="_blank" rel="noopener">Nikki Gerodemos</a></p>
+        <img src="images/Board Headshots/Nikki.jpg" alt="Nikki Gerodemos">
+        <p class="font-semibold">Career Chair</p>
+        <p><a href="https://www.linkedin.com/in/nikki-gerodemos-4b8951268/" target="_blank">Nikki&nbsp;Gerodemos</a></p>
         <a href="mailto:ngerodem@umich.edu">ngerodem@umich.edu</a>
       </div>
 
       <!-- Junior Career Chair -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Bryce.JPG" alt="Bryce Poss">
-            </div>
-            <div class="flip-card-back"></div>
-          </div>
-        </div>
-        <p>Career Chair</p>
-        <p><a href="https://www.linkedin.com/in/bryce-poss-4bb0a42b0/" target="_blank" rel="noopener">Bryce Poss</a></p>
+        <img src="images/Board Headshots/Bryce.JPG" alt="Bryce Poss">
+        <p class="font-semibold">Career Chair</p>
+        <p><a href="https://www.linkedin.com/in/bryce-poss-4bb0a42b0/" target="_blank">Bryce&nbsp;Poss</a></p>
         <a href="mailto:bposs@umich.edu">bposs@umich.edu</a>
       </div>
 
       <!-- Secretary -->
       <div class="profile blue">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Alyssa.jpg" alt="Alyssa Falco">
-            </div>
-            <div class="flip-card-back blue-card">
-              <div>
-                <p>"To give anything less than your best is to sacrifice the gift."</p>
-                <br>
-                <p>-Steve Prefontaine</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>Secretary</p>
-        <p><a href="https://www.linkedin.com/in/alyssafalco" target="_blank" rel="noopener">Alyssa Falco</a></p>
+        <img src="images/Board Headshots/Alyssa.jpg" alt="Alyssa Falco">
+        <p class="font-semibold">Secretary</p>
+        <p><a href="https://www.linkedin.com/in/alyssafalco" target="_blank">Alyssa&nbsp;Falco</a></p>
         <a href="mailto:alfalco@umich.edu">alfalco@umich.edu</a>
       </div>
 
       <!-- Exam Chair -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Nikhil.jpeg" alt="Nikhil Kori">
-            </div>
-            <div class="flip-card-back">
-              <div>
-                <p>"No man is crushed by misfortune unless he has first been deceived by prosperity."</p>
-                <br>
-                <p>-Seneca</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>Exam Chair</p>
-        <p><a href="http://linkedin.com/in/nikhil-kori" target="_blank" rel="noopener">Nikhil Kori</a></p>
+        <img src="images/Board Headshots/Nikhil.jpeg" alt="Nikhil Kori">
+        <p class="font-semibold">Exam Chair</p>
+        <p><a href="https://linkedin.com/in/nikhil-kori" target="_blank">Nikhil&nbsp;Kori</a></p>
         <a href="mailto:nkori@umich.edu">nkori@umich.edu</a>
       </div>
 
       <!-- Outreach Chair -->
       <div class="profile blue">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/AnnDee.JPEG" alt="AnnDee Geddes">
-            </div>
-            <div class="flip-card-back blue-card"></div>
-          </div>
-        </div>
-        <p>Outreach Chair</p>
-        <p><a href="https://www.linkedin.com/in/anndeegeddes" target="_blank" rel="noopener">AnnDee Geddes</a></p>
+        <img src="images/Board Headshots/AnnDee.JPEG" alt="AnnDee Geddes">
+        <p class="font-semibold">Outreach Chair</p>
+        <p><a href="https://www.linkedin.com/in/anndeegeddes" target="_blank">AnnDee&nbsp;Geddes</a></p>
         <a href="mailto:ageddes@umich.edu">ageddes@umich.edu</a>
       </div>
 
       <!-- Treasurer -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Sajni.jpg" alt="Sajni Patel">
-            </div>
-            <div class="flip-card-back"></div>
-          </div>
-        </div>
-        <p>Treasurer</p>
-        <p><a href="https://www.linkedin.com/in/sajnipatelll" target="_blank" rel="noopener">Sajni Patel</a></p>
+        <img src="images/Board Headshots/Sajni.jpg" alt="Sajni Patel">
+        <p class="font-semibold">Treasurer</p>
+        <p><a href="https://www.linkedin.com/in/sajnipatelll" target="_blank">Sajni&nbsp;Patel</a></p>
         <a href="mailto:sajni@umich.edu">sajni@umich.edu</a>
       </div>
 
-      <!-- International Student Liaison -->
+      <!-- International Liaison -->
       <div class="profile blue">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Chuming.jpeg" alt="Chu-Ming (Phoebe) Hsiao">
-            </div>
-            <div class="flip-card-back blue-card">
-              <p>Ask me about my dogs!</p>
-            </div>
-          </div>
-        </div>
-        <p>International Student Liaison</p>
-        <p><a href="https://www.linkedin.com/in/chsiao0123" target="_blank" rel="noopener">Chu-Ming (Phoebe) Hsiao</a></p>
+        <img src="images/Board Headshots/Chuming.jpeg" alt="Chu-Ming Hsiao">
+        <p class="font-semibold">International Liaison</p>
+        <p><a href="https://www.linkedin.com/in/chsiao0123" target="_blank">Chu-Ming&nbsp;Hsiao</a></p>
         <a href="mailto:chuming@umich.edu">chuming@umich.edu</a>
       </div>
 
       <!-- Webmaster -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Janae.png" alt="Janae Shao">
-            </div>
-            <div class="flip-card-back">
-              <p>Those who live with purpose can endure almost any how.</p>
-            </div>
-          </div>
-        </div>
-        <p>Webmaster</p>
-        <p><a href="https://www.linkedin.com/in/jiayin-shao/" target="_blank" rel="noopener">Janae Shao</a></p>
+        <img src="images/Board Headshots/Janae.png" alt="Janae Shao">
+        <p class="font-semibold">Webmaster</p>
+        <p><a href="https://www.linkedin.com/in/jiayin-shao/" target="_blank">Janae&nbsp;Shao</a></p>
         <a href="mailto:sjanae@umich.edu">sjanae@umich.edu</a>
       </div>
 
       <!-- Underclassman Ambassador -->
       <div class="profile blue">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Nicholas.jpeg" alt="Nicholas Sheppard">
-            </div>
-            <div class="flip-card-back blue-card">
-              <div>
-                <p>"Impartiality is a dream, integrity is a duty"</p>
-                <br>
-                <p>-Gaetano Salvemini</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>Underclassman Ambassador</p>
-        <p><a href="https://www.linkedin.com/in/n1ckshep" target="_blank" rel="noopener">Nicholas Sheppard</a></p>
+        <img src="images/Board Headshots/Nicholas.jpeg" alt="Nicholas Sheppard">
+        <p class="font-semibold">Underclassman Ambassador</p>
+        <p><a href="https://www.linkedin.com/in/n1ckshep" target="_blank">Nicholas&nbsp;Sheppard</a></p>
         <a href="mailto:nickshep@umich.edu">nickshep@umich.edu</a>
       </div>
 
       <!-- Social Chair -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Jordan.JPG" alt="Jordan Hoffner">
-            </div>
-            <div class="flip-card-back">
-              <div>
-                <p>"It is better to show up than to give up"</p>
-                <br>
-                <p>-Bernie Sanders</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>Social Chair</p>
-        <p><a href="https://www.linkedin.com/in/jordan-hoffner-5021a7291" target="_blank" rel="noopener">Jordan Hoffner</a></p>
+        <img src="images/Board Headshots/Jordan.JPG" alt="Jordan Hoffner">
+        <p class="font-semibold">Social Chair</p>
+        <p><a href="https://www.linkedin.com/in/jordan-hoffner-5021a7291" target="_blank">Jordan&nbsp;Hoffner</a></p>
         <a href="mailto:jhoffner@umich.edu">jhoffner@umich.edu</a>
       </div>
 
       <!-- IM Sports Chair -->
       <div class="profile blue">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Andrew.jpeg" alt="Andrew Castelucci">
-            </div>
-            <div class="flip-card-back blue-card"></div>
-          </div>
-        </div>
-        <p>IM Sports Chair</p>
-        <p><a href="https://www.linkedin.com/in/andrew-castelucci-823bba32a/" target="_blank" rel="noopener">Andrew Castelucci</a></p>
+        <img src="images/Board Headshots/Andrew.jpeg" alt="Andrew Castelucci">
+        <p class="font-semibold">IM Sports Chair</p>
+        <p><a href="https://www.linkedin.com/in/andrew-castelucci-823bba32a/" target="_blank">Andrew&nbsp;Castelucci</a>
+        </p>
         <a href="mailto:acastelu@umich.edu">acastelu@umich.edu</a>
       </div>
 
       <!-- CAS Ambassador -->
       <div class="profile">
-        <div class="flip-card">
-          <div class="flip-card-inner">
-            <div class="flip-card-front">
-              <img src="images/Board Headshots/Naomi.png" alt="Naomi Sowa">
-            </div>
-            <div class="flip-card-back">
-              <div>
-                <p>"I can be changed by what happens to me. But I refuse to be reduced by it."</p>
-                <br>
-                <p>-Maya Angelou</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <p>CAS Ambassador</p>
-        <p><a href="https://www.linkedin.com/in/naomisowa" target="_blank" rel="noopener">Naomi Sowa</a></p>
+        <img src="images/Board Headshots/Naomi.png" alt="Naomi Sowa">
+        <p class="font-semibold">CAS Ambassador</p>
+        <p><a href="https://www.linkedin.com/in/naomisowa" target="_blank">Naomi&nbsp;Sowa</a></p>
         <a href="mailto:nsowa@umich.edu">nsowa@umich.edu</a>
       </div>
 
     </div>
-  </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-900 py-8 text-gray-200">
+    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
+      <div>
+        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+
+
+      </div>
+      <div class="space-x-4">
+        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+      </div>
+    </div>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
+
 </html>

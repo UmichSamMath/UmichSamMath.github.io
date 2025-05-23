@@ -2,251 +2,443 @@
 <html lang="en">
 
 <head>
-  <title>Student Actuaries at Michigan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
+  <title>Exam Resources</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    :root {
+      --um-blue: #00274C;
+      --um-blue-light: #2e6aa3;
+      --um-maize: #FFCB05;
+    }
+
+    .bg-um-blue {
+      background-color: var(--um-blue)
+    }
+
+    .bg-um-blue-light {
+      background-color: var(--um-blue-light)
+    }
+
+    .text-um-maize {
+      color: var(--um-maize)
+    }
+
+    .company-card {
+      @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center;
+    }
+
+    .company-logo {
+      @apply h-24 w-auto object-contain mx-auto;
+    }
+
+    .group:hover>.invisible,
+    .group:focus-within>.invisible {
+      visibility: visible;
+      opacity: 1;
+    }
+  </style>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
 
-  <script src='scripts/jquery.min.js'></script>
-  <script src='scripts/main.js'></script>
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
 </head>
 
-<body>
-  <div class="navbar">
-    <a href="index.html"><img src="images/logo-only.png" alt="SAM Logo"></a>
-    <p class="title">Student Actuaries at Michigan</p>
-      <div class="links">
-        <div class = "link-child"><a href="index.html">Home</a></div>
-        <div class = "link-child"><a href="calendar.html">Calendar</a></div>
-        <div class = "link-child"><a href="new.html">New Members</a></div>
-        <div class = "link-child">
-          <div class="resources">
-            <p id = "hover">Resources</p>
-            <div id = "dropdown" class="dropdown">
-              <a href="course.html">Course Resources</a>
-              <a href="workshop.html">Workshops</a>
-              <a href="exam.html">Exam Resources</a>
-            </div>
-            <script src = "/scripts/hover.js"></script>
+<body class="font-[Jost] leading-relaxed text-gray-900">
+
+  <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
+  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
+    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+
+      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
+        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
+        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      </a>
+
+      <!-- desktop links -->
+      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
+        <a href="index.html" class="text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
+
+        <!-- Resources dropdown -->
+        <div id="resourcesBox" class="relative group">
+          <button id="resourcesBtn" type="button"
+            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+            Resources
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div id="resourcesMenu"
+            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
+            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
+            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
+            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
           </div>
         </div>
-        <div class = "link-child"><a href="scholarship.html">Scholarships</a></div>
-        <div class = "link-child"><a href="mentor.html">Mentorship</a></div>
-        <div class = "link-child"><a href="companies.html">Companies</a></div>
-        <div class = "link-child"><a href="contact.html">Contact</a></div>
 
-        <!-- search bar, only on homepage or on every page? -->
+        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>
+      </nav>
 
-        <!-- <div class = "link-child">
-          <form id="form" role = "search"> 
-            <input type="search" id="query" name="q" placeholder="Search..."
-              aria-label="Search through site content">
-            <button><svg viewBox="0 0 1024 1024"><path class="path1" d="M848.471 928l-263.059-263.059c-48.941 36.706-110.118 55.059-177.412 55.059-171.294 0-312-140.706-312-312s140.706-312 312-312c171.294 0 312 140.706 312 312 0 67.294-24.471 128.471-55.059 177.412l263.059 263.059-79.529 79.529zM189.623 408.078c0 121.364 97.091 218.455 218.455 218.455s218.455-97.091 218.455-218.455c0-121.364-103.159-218.455-218.455-218.455-121.364 0-218.455 97.091-218.455 218.455z"></path></svg></button>
-          </form>
-        </div> -->
-
-        <script src="scripts/search_bar.js"></script>
+      <!-- mobile button -->
+      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
     </div>
-  </div> 
-  <div class = "section">
-    <h1>Exam Resources</h1>
-    <p style="margin-top: 20px; text-align:center;">For any questions regarding exams, please contact Nikhil Kori, Actuarial Exam Chair (<a href = "mailto: nkori@umich.edu">nkori@umich.edu</a>).</p>
-  </div>
-  
-  <div class="section">
-    <h1 class="section-title">Exam Dates</h1>
-    <table>
-      <tr>
-        <th>Exam</th>
-        <th>CBT Dates</th>
-        <th>Registration Deadline</th>
-      </tr>
-      <tr>
-        <td><a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank">Exam P, Probability</a></td>
-        <td>September 12 - 23, 2024</td>
-        <td>August 13, 2024</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>November 8 - 19, 2024</td>
-        <td>October 8, 2024</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>January 13 - 24, 2025</td>
-        <td>December 11, 2024</td>
-      </tr>
-      <tr>
-        <td></td>
-        <td>March 14 - 25, 2025</td>
-        <td>February 12, 2025</td>
-      </tr>
-      
-      <tr>
-        <td><a href="https://www.soa.org/education/exam-req/edu-exam-fm-detail/" target="_blank">Exam FM, Financial
-            Mathematics</a></td>
-        <td>October 1 - 12, 2024</td>
-        <td>September 3, 2024</td>
-      </tr>
-  
-      <tr>
-        <td></td>
-        <td>December 2 - 13, 2024</td>
-        <td>November 5, 2024</td>
-      </tr>
 
-      <tr>
-        <td></td>
-        <td>February 6 - 17, 2025</td>
-        <td>January 8, 2025</td>
-      </tr>
+    <!-- mobile nav -->
+    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
+      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
+        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
+        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
+        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
+        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
+        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
+      </nav>
+    </div>
 
-      <tr>
-        <td></td>
-        <td>April 3 - 14, 2025</td>
-        <td>March 5, 2025</td>
-      </tr>
-      
-      
-    </table>
+    <!-- navbar helpers -->
+    <script>
+      document.getElementById('mobileBtn')
+        .addEventListener('click', () =>
+          document.getElementById('mobileMenu').classList.toggle('hidden'));
 
-    <div class=event-container>
-        <div class="society-exams soa">
-          <div class = "header">
-            <img src = "/images/SOA Logo.png">SOA Exams</img>
-          </div>
-          <div style = "margin-left: 25px;">
-            <li><a href = "https://www.soa.org/education/exam-req/exam-day-info/exam-schedules/" target =_blank>SOA Exam Schedule</a></li>
-            <li><a href = https://pathways.soa.org/ target=_blank>SOA Pathways & Microcredentials</a></li>
-          </div>
-          
-          <table>
-            <tr>
-              <th>Exam</th>
-              <th>CBT Dates</th>
-              <th>Registration Deadline</th>
+      const btn = document.getElementById('resourcesBtn');
+      const menu = document.getElementById('resourcesMenu');
+
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        menu.classList.toggle('invisible');
+        menu.classList.toggle('opacity-0');
+      });
+      document.addEventListener('click', e => {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {
+          menu.classList.add('invisible', 'opacity-0');
+        }
+      });
+    </script>
+  </header>
+
+  <!-- ───────────── PAGE TITLE ───────────── -->
+  <section class="py-20 bg-white">
+    <div class="mx-auto max-w-screen-xl px-6 text-center space-y-6">
+      <h1 class="text-4xl font-bold text-um-blue">Exam Resources</h1>
+      <p class="text-xl">
+        For any questions regarding exams, please contact Nikhil Kori, Actuarial Exam Chair
+        (<a href="mailto:nkori@umich.edu" class="underline text-um-blue-light">nkori@umich.edu</a>).
+      </p>
+    </div>
+  </section>
+
+  <!-- ───────────── EXAM DATES TABLE ───────────── -->
+  <section class="py-20 bg-um-blue-light text-white">
+    <div class="mx-auto max-w-screen-xl px-6">
+      <h2 class="mb-8 text-3xl font-bold text-center">Exam Dates</h2>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-lg bg-white text-gray-900 rounded-lg overflow-hidden">
+          <thead class="bg-gray-200">
+            <tr class="divide-x">
+              <th class="px-4 py-3">Exam</th>
+              <th class="px-4 py-3">CBT Dates</th>
+              <th class="px-4 py-3">Registration&nbsp;Deadline</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y">
+            <!-- --- Exam P rows --- -->
+            <tr class="divide-x">
+              <td class="px-4 py-2">
+                <a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank"
+                  class="underline text-um-blue-light">
+                  Exam P, Probability
+                </a>
+              </td>
+              <td class="px-4 py-2">Mar&nbsp;14 – 25, 2025</td>
+              <td class="px-4 py-2">Feb 12, 2025</td>
+            </tr>
+            <tr class="divide-x">
+              <td class="px-4 py-2"></td>
+              <td class="px-4 py-2">Jul&nbsp;18 – 29, 2025</td>
+              <td class="px-4 py-2">Jun 18, 2025</td>
+            </tr>
+            <tr class="divide-x">
+              <td class="px-4 py-2"></td>
+              <td class="px-4 py-2">Sept&nbsp;11 – 22, 2024</td>
+              <td class="px-4 py-2">Aug 13, 2025</td>
+            </tr>
+            <tr class="divide-x">
+              <td class="px-4 py-2"></td>
+              <td class="px-4 py-2">Nov&nbsp;3 – 14, 2025</td>
+              <td class="px-4 py-2">Oct 8, 2025</td>
             </tr>
 
-            <tr>
-              <td><a href="https://www.soa.org/education/exam-req/edu-exam-pa-detail/" target="_blank">Exam PA, Predictive Analytics</a></td>
-              <td>Oct. 15 - 18, 2024</td>
-              <td>September 10, 2024</td>
-            </tr>
 
-            <tr>
-              <td></td>
-              <td>April 15 - 18, 2025</td>
-              <td>March 11, 2025</td>
+            <!-- --- Exam FM rows --- -->
+            <tr class="divide-x bg-gray-50">
+              <td class="px-4 py-2">
+                <a href="https://www.soa.org/education/exam-req/edu-exam-fm-detail/" target="_blank"
+                  class="underline text-um-blue-light">
+                  Exam FM, Financial Mathematics
+                </a>
+              </td>
+              <td class="px-4 py-2">Jun&nbsp;16 – 27, 2025</td>
+              <td class="px-4 py-2">Closed</td>
             </tr>
-            
+            <tr class="divide-x bg-gray-50">
+              <td class="px-4 py-2"></td>
+              <td class="px-4 py-2">Aug&nbsp; 6 – 17, 2025</td>
+              <td class="px-4 py-2">Jul 9, 2025</td>
+            </tr>
+            <tr class="divide-x bg-gray-50">
+              <td class="px-4 py-2"></td>
+              <td class="px-4 py-2">Oct&nbsp; 2 – 13, 2025</td>
+              <td class="px-4 py-2">Sept 3, 2025</td>
+            </tr>
+            <tr class="divide-x bg-gray-50">
+              <td class="px-4 py-2"></td>
+              <td class="px-4 py-2">Dec&nbsp; 1 – 12, 2025</td>
+              <td class="px-4 py-2">Nov 5, 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
 
-            <tr>
-              <td><a href="https://www.soa.org/education/exam-req/edu-exam-srm-detail/" target="_blank">Exam SRM, Statistics for Risk Modeling</a></td>
-              <td>Sept. 3 - 9, 2024</td>
-              <td>August 6, 2024</td>
-            </tr>
+  <!-- ───────────── SOA / CAS SECTIONS ───────────── -->
+  <section class="py-20 bg-white">
+    <div class="mx-auto grid max-w-screen-xl gap-10 px-6 lg:grid-cols-2">
+      <!-- SOA -->
+      <div class="rounded-lg border shadow-sm">
+        <div class="flex items-center gap-3 bg-gray-100 px-4 py-3">
+          <img src="/images/SOA%20Logo.png" class="h-10" alt="SOA logo" />
+          <h3 class="text-2xl font-bold">SOA Exams</h3>
+        </div>
 
-            <tr>
-              <td></td>
-              <td>January 3 - 9, 2025</td>
-              <td>December 3, 2024</td>
-            </tr>
+        <div class="space-y-2 px-6 py-4">
+          <a href="https://www.soa.org/education/exam-req/exam-day-info/exam-schedules/" target="_blank"
+            class="block underline text-um-blue-light">SOA Exam Schedule</a>
+          <a href="https://pathways.soa.org/" target="_blank" class="block underline text-um-blue-light">SOA Pathways
+            &amp; Microcredentials</a>
+        </div>
 
-            <tr>
-              <td><a href="https://www.soa.org/education/exam-req/edu-exam-fam/" target="_blank">Exam FAM, Fundamentals of Actuarial Mathematics</a></td>
-              <td>Nov. 20 - 26, 2024</td>
-              <td>October 22, 2024</td>
-            </tr>
-
-            <tr>
-              <td></td>
-              <td>March 4 - 10, 2025</td>
-              <td>January 28, 2025</td>
-            </tr>
-            
+        <div class="overflow-x-auto px-4 pb-6">
+          <table class="w-full text-left text-base">
+            <thead class="bg-gray-200">
+              <tr class="divide-x">
+                <th class="px-3 py-2">Exam</th>
+                <th class="px-3 py-2">CBT Dates</th>
+                <th class="px-3 py-2">Registration</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y">
+              <tr class="divide-x">
+                <td class="px-3 py-1">
+                  <a href="https://www.soa.org/education/exam-req/edu-exam-pa-detail/" target="_blank"
+                    class="underline text-um-blue-light">Exam PA</a>
+                </td>
+                <td class="px-3 py-1">Apr 15 – 18, 2025</td>
+                <td class="px-3 py-1">Mar 11, 2025</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1"></td>
+                <td class="px-3 py-1">Oct 14 – 17, 2025</td>
+                <td class="px-3 py-1">Sept 9, 2025</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1">
+                  <a href="https://www.soa.org/education/exam-req/edu-exam-srm-detail/" target="_blank"
+                    class="underline text-um-blue-light">Exam SRM</a>
+                </td>
+                <td class="px-3 py-1">May 23 – 29, 2025</td>
+                <td class="px-3 py-1">Closed</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1"></td>
+                <td class="px-3 py-1">Sept 2 – 8, 2025</td>
+                <td class="px-3 py-1">Aug 5, 2025</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1">
+                  <a href="https://www.soa.org/education/exam-req/edu-exam-fam/" target="_blank"
+                    class="underline text-um-blue-light">Exam FAM</a>
+                </td>
+                <td class="px-3 py-1">Jul 9 – 15, 2025</td>
+                <td class="px-3 py-1">Jun 10, 2025</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1"></td>
+                <td class="px-3 py-1">October 24 – 30, 2025 </td>
+                <td class="px-3 py-1">Sept 23, 2025</td>
+              </tr>
+            </tbody>
           </table>
-          </div>
-      
-        <div class="society-exams cas">
-          <div class = "header">
-            <img src = "/images/CAS Logo.png">CAS Exams</img>
-          </div>
-          <div style = "margin-left: 25px; color:white;">
-            <li><a href = https://www.casact.org/sites/default/files/2023-11/2024_Syllabus.pdf#page=10 target=_blank style="color:white;">CAS Exam Schedule</li>
-            <li><a href = https://www.casact.org/credential-requirements target=_blank style="color:white; ">CAS Pathways</a></li>
-          </div>
-            <table>
-            <tr>
-              <th>Exam</th>
-              <th>CBT Dates</th>
-              <th>Refund Deadline</th>
-            </tr>
+        </div>
+      </div>
 
-            <tr>
-              <td><a href="https://www.casact.org/exam/exam-mas-i-modern-actuarial-statistics-i" target="_blank">Exam MAS-I, Modern Actuarial Statistics-I</a></td>
-              <td>October 30 - November 6, 2024</td>
-              <td>October 9</td>
-            </tr>
+      <!-- CAS -->
+      <div class="rounded-lg border shadow-sm bg-um-blue-light text-white">
+        <div class="flex items-center gap-3 bg-um-blue px-4 py-3">
+          <img src="/images/CAS%20Logo.png" class="h-10" alt="CAS logo" />
+          <h3 class="text-2xl font-bold">CAS Exams</h3>
+        </div>
 
-              <td><a href="https://www.casact.org/exam/exam-mas-ii-modern-actuarial-statistics-ii" target="_blank">Exam MAS-II, Modern Actuarial Statistics-II</a></td>
-              <td>October 30 - November 6, 2024</td>
-              <td>October 9</td>
-            </tr>
+        <div class="space-y-2 px-6 py-4">
+          <a href="https://www.casact.org/sites/default/files/2025-01/2025_SOBE.pdf#page=11" target="_blank"
+            class="block underline">CAS Exam Schedule</a>
+          <a href="https://www.casact.org/credential-requirements" target="_blank" class="block underline">CAS
+            Pathways</a>
+        </div>
 
-            <tr>
-              <td><a href="https://www.casact.org/exam/exam-5-basic-ratemaking-and-est-claim-liabilities" target="_blank">Exam 5, Basic Ratemaking and Est Claim Liabilities</a></td>
-              <td>October 23 - October 30, 2024</td>
-              <td>October 9</td>
-            </tr>
-
-            <tr>
-              <td><a href="https://www.casact.org/exam/exam-6u-regulation-and-financial-reporting-us" target="_blank">Exam 6U, Regulation and Financial Reporting (US)</a></td>
-              <td>October 23 - October 30, 2024</td>
-              <td>October 9</td>
-            </tr>
-              
+        <div class="overflow-x-auto px-4 pb-6">
+          <table class="w-full text-left text-base">
+            <thead class="bg-um-blue text-white">
+              <tr class="divide-x">
+                <th class="px-3 py-2">Exam</th>
+                <th class="px-3 py-2">CBT Dates</th>
+                <th class="px-3 py-2">Refund Deadline</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-gray-300">
+              <tr class="divide-x">
+                <td class="px-3 py-1">
+                  <a href="https://www.casact.org/exam/exam-mas-i-modern-actuarial-statistics-i" target="_blank"
+                    class="underline">Exam MAS-I</a>
+                </td>
+                <td class="px-3 py-1">October 20 – 28, 2025</td>
+                <td class="px-3 py-1">Sept 30, 2025</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1">
+                  <a href="https://www.casact.org/exam/exam-mas-ii-modern-actuarial-statistics-ii" target="_blank"
+                    class="underline">Exam MAS-II</a>
+                </td>
+                <td class="px-3 py-1">October 20 – 28, 2025</td>
+                <td class="px-3 py-1">Sept 30, 2025</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1">
+                  <a href="https://www.casact.org/exam/exam-5-basic-ratemaking-and-est-claim-liabilities"
+                    target="_blank" class="underline">Exam 5</a>
+                </td>
+                <td class="px-3 py-1">October 14 – 20, 2025</td>
+                <td class="px-3 py-1">Sept 30, 2025</td>
+              </tr>
+              <tr class="divide-x">
+                <td class="px-3 py-1">
+                  <a href="https://www.casact.org/exam/exam-6u-regulation-and-financial-reporting-us" target="_blank"
+                    class="underline">Exam 6-US</a>
+                </td>
+                <td class="px-3 py-1">October 14 – 20, 2025</td>
+                <td class="px-3 py-1">Sept 30, 2025</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class = "section blue-back">
-    <h1>Exam Prep Checklist</h1>
-    <p>New to the exam-taking process? Check out this comprehensive <a href ="/Resources/SOA Exam Prep Checklist.pdf" target = "_blank">exam prep checklist (SOA)</a> and <a href = "https://docs.google.com/document/d/1tZ_DTU5zXIBjGGsjPAHBeFlrrTQExpIzioA0C91Q3RY/edit" target = _blank>exam prep checklist (CAS)</a>!</p>
-  </div>
-  
-  <div class="section">
-    <h1>Exam Reimbursement</h1>
-    <div class = "section-content">
-      <p>Congrats on passing your exam! If you are a dues-paying member of SAM and have declared Actuarial Math as your major, please fill out this <a href ="https://forms.gle/Bo3Nosr8ewqrUUV87" target="_blank"> reimbursement form</a> for reimbursement of your exam. Note that you will need your receipt and test result/confirmation letter. You do NOT need to wait for official results if you have confirmation of your UNOFFICIAL/PRELIMINARY passing.</p>
+  <!-- ───────────── CHECKLIST & OTHER SECTIONS ───────────── -->
+  <section class="py-20 bg-um-blue-light text-white">
+    <div class="mx-auto max-w-screen-xl px-6 space-y-6 text-center">
+      <h2 class="text-3xl font-bold">Exam Prep Checklist</h2>
+      <p class="text-xl">
+        New to the exam-taking process? Check out this comprehensive
+        <a href="/Resources/SOA Exam Prep Checklist.pdf" target="_blank" class="underline font-semibold">exam prep
+          checklist (SOA)</a>
+        and
+        <a href="https://docs.google.com/document/d/1tZ_DTU5zXIBjGGsjPAHBeFlrrTQExpIzioA0C91Q3RY/edit" target="_blank"
+          class="underline font-semibold">exam prep checklist (CAS)</a>!
+      </p>
     </div>
-  </div>
+  </section>
 
-  <div class = "section blue-back">
-    <h1>Exam Manual Checkout</h1>
-    <p><b>Step 1:</b> Check <a href = "https://docs.google.com/spreadsheets/d/1oHuqpwzFMlEXsMQ1TVzcH1OwIYzBjwj4VplIwN-GAeI/edit?gid=0#gid=0" target=_blank>this database</a> for exam manual availability.<br>
-    <b>Step 2:</b> Fill out the form below to request an exam manual.
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfRc_dgUOgKMqt0iHvoDvAfFSUawquuVlqLLz5sxUakF0bRDg/viewform?embedded=true" width="640" height="1522" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      <br><br>
-      <b>Step 3:</b> Exam Chair, Nikhil Kori, will reach out to coordinate a pick-up time for your manual.
-    </p>
-  </div>
-    
-  <div class = "section" style="margin-bottom: 50px;">
-    <h1>Coaching Actuaries Discounts</h1>
-    <div style="width:75%; margin: auto;">
-      <p>For <a href = "https://www.coachingactuaries.com/" target="_blank" class="p-link">Coaching Actuaries</a> discount codes, contact the SAM President, Mitchell Fuchs (<a href="mailto: mitchf@umich.edu">mitchf@umich.edu</a>). Please note that you must be a dues-paying member of SAM to receive our discount code. Not a dues paying member? Click <a href = https://www.umichsam.com/new.html target="_blank">here</a> for information on how to join!
-        <br><br>
-      Coaching Actuaries can help you take your exam prep to the next level, and help you save time and study efficiently, so be sure to check them out!       </p>
+  <section class="py-20 bg-white">
+    <div class="mx-auto max-w-screen-xl px-6 space-y-6">
+      <h2 class="text-3xl font-bold text-um-blue text-center">Exam Reimbursement</h2>
+      <p class="mx-auto max-w-3xl text-xl text-center">
+        Congrats on passing your exam! If you are a dues-paying member of SAM and have declared Actuarial Math
+        as your major, please fill out this
+        <a href="https://forms.gle/Bo3Nosr8ewqrUUV87" target="_blank" class="underline text-um-blue-light">reimbursement
+          form</a>.
+        Note that you will need your receipt and test result/confirmation letter. You do <strong>NOT</strong> need to
+        wait for official results if you have confirmation of your unofficial/preliminary passing.
+      </p>
     </div>
-  </div>
-    
-  </div>
+  </section>
+
+  <section class="py-20 bg-um-blue-light text-white">
+    <div class="mx-auto max-w-screen-xl px-6 space-y-8 text-center">
+      <h2 class="text-3xl font-bold">Exam Manual Checkout</h2>
+      <p class="text-xl">
+        <strong>Step 1:</strong> Check
+        <a href="https://docs.google.com/spreadsheets/d/1oHuqpwzFMlEXsMQ1TVzcH1OwIYzBjwj4VplIwN-GAeI/edit?gid=0#gid=0"
+          target="_blank" class="underline font-semibold">this database</a> for exam-manual availability.<br><br>
+        <strong>Step 2:</strong> Fill out the form below to request a manual. <br><br>
+        <strong>Step 3:</strong> Exam Chair, Nikhil Kori, will reach out to coordinate a pick-up time.
+      </p>
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSfRc_dgUOgKMqt0iHvoDvAfFSUawquuVlqLLz5sxUakF0bRDg/viewform?embedded=true"
+        width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0"
+        class="mx-auto max-w-4xl rounded-lg border-0 shadow-lg">
+      </iframe>
+    </div>
+  </section>
+
+  <section class="py-20 bg-white">
+    <div class="mx-auto max-w-screen-xl px-6 space-y-6">
+      <h2 class="text-3xl font-bold text-um-blue text-center">Coaching Actuaries Discounts</h2>
+      <p class="mx-auto max-w-4xl text-xl text-center">
+        <a href="https://www.coachingactuaries.com/" target="_blank" class="underline text-um-blue-light">Coaching
+          Actuaries</a> can help you take your exam prep to the next level by saving time and studying efficiently—be
+        sure to check them out!<br><br>
+        For Coaching Actuaries discount codes, contact the SAM President, Mitchell Fuchs
+        (<a href="mailto:mitchf@umich.edu" class="underline">mitchf@umich.edu</a>).<br>
+        Please note that you must be a dues-paying member of SAM to receive our discount code.<br>
+        Not a member yet? <a href="https://www.umichsam.com/new.html" target="_blank"
+          class="underline text-um-blue-light">Click here</a> for info on how to join!<br><br>
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="bg-gray-900 py-8 text-gray-200">
+    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
+      <div>
+        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+
+
+      </div>
+      <div class="space-x-4">
+        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+      </div>
+    </div>
+
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  </footer>
 </body>
 
 </html>

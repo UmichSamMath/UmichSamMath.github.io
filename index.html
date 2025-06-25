@@ -1,12 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-  
 <head>
   <meta charset="utf-8">
   <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- ================== IMAGE PRELOADS ================== -->
+  <!-- Critical hero / layout images get high priority -->
+  <link rel="preload" as="image" href="images/logo-only.png" fetchpriority="high">
+  <link rel="preload" as="image" href="images/welcome.png"    fetchpriority="high">
+
+  <!-- Remaining images -->
+  <link rel="preload" as="image" href="images/Instagram.png">
+  <link rel="preload" as="image" href="images/Facebook.png">
+  <link rel="preload" as="image" href="images/LinkedIn.png">
+  <link rel="preload" as="image" href="/images/GroupMeQR.jpg">
+  <link rel="preload" as="image" href="/images/IntlGroupMeQR.jpeg">
+  <link rel="preload" as="image" href="/images/Roadmap.png">
+
+  <!-- Optional: Preconnect for remote resources -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
 
   <style>
     :root{

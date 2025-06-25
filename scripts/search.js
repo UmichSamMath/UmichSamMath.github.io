@@ -219,6 +219,14 @@ let companies = [
     "keywords": []
   },
   {
+    "name": "The Cincinnati Insurance Companies",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "Corey Watt",
+    "contactEmail": "Corey_Watt@cinfin.com",
+    "keywords": ['P&C', "Property & Casualty"]
+  },
+  {
     "name": "The Hanover Insurance Group",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
@@ -232,7 +240,7 @@ let companies = [
     "typeOfWork": "Reinsurance",
     "contactName": "Blake Jordan",
     "contactEmail": "Blake.Jordan@hlramerica.com",
-    "keywords": ['Property and Casualty', 'P&C', 'P & C', 'life', 'health']
+    "keywords": ['life', 'health']
   },
   {
     "name": "HAP",

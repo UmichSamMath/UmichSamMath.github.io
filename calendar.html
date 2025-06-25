@@ -7,6 +7,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- ================== PRELOAD & PRECONNECT ================== -->
+  <!-- Logo shown immediately in navbar -->
+  <link rel="preload" as="image" href="images/logo-only.png" fetchpriority="high">
+
+  <!-- Google Calendar iframe (preload the document) -->
+  <link rel="preconnect" href="https://calendar.google.com">
+  <link rel="preload" as="document" href="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y19zaXU1cnRvM2YwMTE5dTl1bjRxOWNudjZ0c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+
   <style>
     :root {
       --um-blue: #00274C;

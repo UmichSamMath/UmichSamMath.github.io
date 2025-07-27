@@ -358,8 +358,10 @@ let companies = [
     "name": "Nationwide",
     "business": "Property & Casualty, Financial Services",
     "typeOfWork": "Insurance",
-    "contactName": "Tyler Blinn",
-    "contactEmail": "blinnt2@nationwide.com",
+    "contactName": "Chas Cullen",
+    "contactEmail": "CULLENC@nationwide.com",
+    "contactName": "Alexis Duch",
+    "contactEmail": "DUCHA1@nationwide.com",
     "keywords": ["Columbus", "Ohio", "OH"]
   },
   {

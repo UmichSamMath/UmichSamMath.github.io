@@ -30,7 +30,7 @@ let SAMevents = [
   },
   {
     "Title": "New Member Orientation",
-    "Description": "RSVP <a href=\"https://forms.gle/gsXGkvX4kK9v9zR76\" target=\"_blank\">here</a>!"
+    "Description": "RSVP <a href=\"https://forms.gle/gsXGkvX4kK9v9zR76\" target=\"_blank\">here</a>!",
     "Location": "East Hall-1360-MathAud",
     "Date": "September 2",
     "StartTimeStr": "8:00",

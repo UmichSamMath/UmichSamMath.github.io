@@ -1,6 +1,6 @@
-// Automatically displays upcoming events  when they are within a week of occuring and makes them disappear after they are over.
-// Uses output from "Calendar Events Information for Website", which can be updated by selecting "Import Calendar" >> "Import"
-// Then the spreadsheet needs to be exported as a csv file, then converted from csv to JSON
+// Automatically displays upcoming events when they are within a week of occurring and makes them disappear after they are over.
+// Uses output from "Calendar Events Information for Website", which can be updated by selecting "Import Calendar" >> "Import".
+// Then the spreadsheet needs to be exported as a csv file, then converted from csv to JSON.
 
 let SAMevents = [
   {
@@ -51,7 +51,20 @@ let SAMevents = [
     "StartTime": "2025-09-02T20:00",
     "EndTime": "2025-09-02T20:30"
   }
-]
+];
+
+// Cleans description strings to prevent syntax errors and fix RSVP links
+function sanitizeDescription(desc) {
+  if (!desc) return "More information coming soon!";
+
+  // Fix target=_blank → target="_blank"
+  desc = desc.replace(/target=_blank/gi, 'target="_blank"');
+
+  // Extra safety: strip dangerous inline scripts (just in case)
+  desc = desc.replace(/javascript:/gi, '');
+
+  return desc;
+}
 
 function populateEvents() {
   var resultDiv = document.getElementById("calendar");
@@ -62,13 +75,12 @@ function populateEvents() {
     startShowDate.setDate(startShowDate.getDate() - 7);
 
     var endShowDate = new Date(c.EndTime);
-    if (c.Location === "") {
+
+    if (!c.Location || c.Location.trim() === "") {
       c.Location = "Location To Be Determined";
     }
 
-    if (c.Description === "") {
-      c.Description = "More information coming soon!";
-    }
+    c.Description = sanitizeDescription(c.Description);
 
     if (startShowDate <= currDate && currDate <= endShowDate) {
       resultDiv.innerHTML += `
@@ -81,7 +93,7 @@ function populateEvents() {
             <p>${c.Description}</p>
           </div>
         </div>
-    `;
+      `;
     }
   });
 }

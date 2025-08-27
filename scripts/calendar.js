@@ -13,7 +13,7 @@ let SAMevents = [
     "AmPm": "AM",
     "DayofWeek": "Wednesday",
     "StartTime": "2025-08-27T14:00",
-    "EndTime": "2025-04-09T15:30"
+    "EndTime": "2025-08-27T15:30"
   },
   {
     "Title": "Learn S’more About SAM",

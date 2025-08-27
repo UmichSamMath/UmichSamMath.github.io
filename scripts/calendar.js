@@ -4,7 +4,7 @@
 
 let SAMevents = [
   {
-    "Title": "Festifal",
+    "Title": "Festifall",
     "Description": "Join us at Festifall to meet excited underclassmen, share what SAM is all about, and kick off the year!",
     "Location": "Table C56, near MLB & fountain",
     "Date": "August 27",

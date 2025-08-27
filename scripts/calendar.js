@@ -51,7 +51,7 @@ let SAMevents = [
     "StartTime": "2025-09-02T20:00",
     "EndTime": "2025-09-02T20:30"
   }
-];
+]
 
 // Cleans description strings to prevent syntax errors and fix RSVP links
 function sanitizeDescription(desc) {

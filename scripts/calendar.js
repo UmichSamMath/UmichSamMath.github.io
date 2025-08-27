@@ -83,18 +83,26 @@ function populateEvents() {
     c.Description = sanitizeDescription(c.Description);
 
     if (startShowDate <= currDate && currDate <= endShowDate) {
-      resultDiv.innerHTML += `
-        <div class="item">
-          <p class="event-title">${c.Title}</p>
-          <p>${c.DayofWeek}, ${c.Date}, ${c.StartTimeStr} - ${c.EndTimeStr}${c.AmPm}</p>
-          <p>${c.Location}</p>
-          <button type="button" class="collapsible">See More!</button>
-          <div class="hidden-text">
-            <p>${c.Description}</p>
-          </div>
+  resultDiv.innerHTML += `
+    <div class="bg-white rounded-lg shadow border p-6 flex flex-col justify-between">
+      <div>
+        <h3 class="text-xl font-bold text-um-blue mb-2">${c.Title}</h3>
+        <p class="text-sm text-gray-600 mb-1">${c.DayofWeek}, ${c.Date}</p>
+        <p class="text-sm text-gray-600 mb-1">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
+        <p class="text-sm text-gray-700 mb-4">${c.Location}</p>
+      </div>
+
+      <div class="mt-auto">
+        <button type="button" class="collapsible w-full bg-um-blue text-white rounded-md px-4 py-2 hover:bg-um-blue-light transition">
+          See More
+        </button>
+        <div class="hidden-text mt-3 text-gray-700">
+          <p>${c.Description}</p>
         </div>
-      `;
-    }
+      </div>
+    </div>
+  `;
+}
   });
 }
 

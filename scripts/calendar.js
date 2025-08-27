@@ -78,7 +78,7 @@ let SAMevents = [
   },
   {
     "Title": "Career Fair Interviews Workshop",
-    "Description": "RSVP <a href=\"https://forms.gle/9dtjBsNKYfMvd4zw5\" target=\"_blank\">here</a>!",
+    "Description": "RSVP <a href=\"https://forms.gle/9dtjBsNKYfMvd4zw5\">here</a>!",
     "Location": "EH 3096",
     "Date": "September 4",
     "StartTimeStr": "6:30",
@@ -443,8 +443,6 @@ function sanitizeDescription(desc) {
   if (!desc) return "More information coming soon!";
   desc = desc.replace(/target=_blank/gi, 'target="_blank"');
   desc = desc.replace(/javascript:/gi, '');
-  // Optionally style any "here" in descriptions
-  desc = desc.replace(/here/g, '<span class="text-um-blue font-bold underline">here</span>');
   return desc;
 }
 
@@ -474,7 +472,13 @@ function populateEvents() {
           </div>
           <div class="mt-3 text-gray-700">
             <p>${c.Description}</p>
-            ${c.RSVP ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">RSVP <span class="text-um-blue font-bold underline">here</span></a>` : ""}
+            ${
+              c.RSVP
+                ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">
+                     RSVP <span class="text-um-blue font-bold underline">Here</span>
+                   </a>`
+                : ""
+            }
           </div>
         </div>
       `;

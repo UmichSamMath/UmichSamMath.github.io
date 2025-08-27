@@ -10,7 +10,7 @@ let SAMevents = [
     "Date": "August 27",
     "StartTimeStr": "2:00",
     "EndTimeStr": "3:30",
-    "AmPm": "AM",
+    "AmPm": "PM",
     "DayofWeek": "Wednesday",
     "StartTime": "2025-08-27T14:00",
     "EndTime": "2025-08-27T15:30"

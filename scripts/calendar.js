@@ -438,7 +438,6 @@ let SAMevents = [
   }
 ];
 
-// Sanitize description strings
 function sanitizeDescription(desc) {
   if (!desc) return "More information coming soon!";
   desc = desc.replace(/target=_blank/gi, 'target="_blank"');
@@ -472,7 +471,7 @@ function populateEvents() {
           </div>
           <div class="mt-3 text-gray-700">
             <p>${c.Description}</p>
-            ${c.RSVP ? `<a href="${c.RSVP}" target="_blank" class="mt-2 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">RSVP Here</a>` : ""}
+            ${c.RSVP ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">RSVP Here</a>` : ""}
           </div>
         </div>
       `;

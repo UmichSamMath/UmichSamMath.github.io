@@ -2,8 +2,6 @@
 // Uses output from "Calendar Events Information for Website", which can be updated by selecting "Import Calendar" >> "Import".
 // Then the spreadsheet needs to be exported as a csv file, then converted from csv to JSON.
 
-// calendar.js
-
 let SAMevents = [
   {
     "Title": "Festifall",
@@ -40,20 +38,19 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2025-09-02T19:00",
     "EndTime": "2025-09-02T20:00"
-  }
-  // ,
-  // {
-  //   "Title": "New Member Orientation",
-  //   "Description": "RSVP <a target=_blank href=\"https://forms.gle/gsXGkvX4kK9v9zR76\">here</a>!",
-  //   "Location": "EH 1360",
-  //   "Date": "September 2",
-  //   "StartTimeStr": "8:00",
-  //   "EndTimeStr": "8:30",
-  //   "AmPm": "PM",
-  //   "DayofWeek": "Saturday",
-  //   "StartTime": "2025-09-02T20:00",
-  //   "EndTime": "2025-09-02T20:30"
-  // }
+  },
+ {
+     "Title": "New Member Orientation",
+     "Description": "RSVP <a target=_blank href=\"https://forms.gle/gsXGkvX4kK9v9zR76\">here</a>!",
+     "Location": "EH 1360",
+     "Date": "September 2",
+     "StartTimeStr": "8:00",
+     "EndTimeStr": "8:30",
+     "AmPm": "PM",
+     "DayofWeek": "Saturday",
+     "StartTime": "2025-09-02T20:00",
+     "EndTime": "2025-09-02T20:30"
+   }
 ];
 
 // Sanitize description strings

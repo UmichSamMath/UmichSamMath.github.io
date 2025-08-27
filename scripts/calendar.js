@@ -17,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "Learn S’more About SAM",
-    "Description": "Kick off the semester with a fun bonfire intended to create a space for more in-depth questions about SAM. Anyone is welcome, and underclassmen are highly encouraged to attend. There will be s’mores! RSVP <a target=_blank href=\"https://forms.gle/UNNfgxX6hrRSsKoG9\">here</a>!"
+    "Description": "Kick off the semester with a fun bonfire intended to create a space for more in-depth questions about SAM. Anyone is welcome, and underclassmen are highly encouraged to attend. There will be s’mores! RSVP <a target=_blank href=\"https://forms.gle/UNNfgxX6hrRSsKoG9\">here</a>!",
     "Location": "1211 White St",
     "Date": "August 28",
     "StartTimeStr": "7:30",
@@ -29,7 +29,7 @@ let SAMevents = [
   },
   {
     "Title": "Mass Meeting",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/7hAwbpigLrhougxC7\">here</a>!"
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/7hAwbpigLrhougxC7\">here</a>!",
     "Location": "EH 1360",
     "Date": "September 2",
     "StartTimeStr": "7:00",
@@ -41,7 +41,7 @@ let SAMevents = [
   },
   {
     "Title": "New Member Orientation",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/gsXGkvX4kK9v9zR76\">here</a>!"
+    "Description": "RSVP <a target=_blank href=\"https://forms.gle/gsXGkvX4kK9v9zR76\">here</a>!",
     "Location": "EH 1360",
     "Date": "September 2",
     "StartTimeStr": "8:00",

@@ -456,7 +456,9 @@ function populateEvents() {
     startShowDate.setDate(startShowDate.getDate() - 7);
     const endShowDate = new Date(c.EndTime);
 
-    if (!c.Location || c.Location.trim() === "") c.Location = "Location To Be Determined";
+    if (!c.Location || c.Location.trim() === "") {
+      c.Location = "Location To Be Determined";
+    }
     c.Description = sanitizeDescription(c.Description);
 
     if (startShowDate <= currDate && currDate <= endShowDate) {
@@ -468,35 +470,14 @@ function populateEvents() {
             <p class="text-sm text-gray-600">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
             <p class="text-sm text-gray-700">${c.Location}</p>
           </div>
-          <div class="flex flex-col space-y-2 mt-3">
-            <button type="button" class="collapsible w-full bg-um-blue text-white font-semibold rounded-md px-4 py-2 hover:bg-um-blue-light transition">
-              See More
-            </button>
-            <div class="hidden-text mt-2 text-gray-700 overflow-hidden max-h-0 transition-all duration-500 ease-in-out">
-              <p>${c.Description}</p>
-              ${c.RSVP ? `<a href="${c.RSVP}" target="_blank" class="mt-2 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">RSVP Here</a>` : ""}
-            </div>
+          <div class="mt-3 text-gray-700">
+            <p>${c.Description}</p>
+            ${c.RSVP ? `<a href="${c.RSVP}" target="_blank" class="mt-2 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">RSVP Here</a>` : ""}
           </div>
         </div>
       `;
     }
   });
-
-  // Attach collapsible functionality with smooth animation
-  const coll = document.getElementsByClassName("collapsible");
-  for (let i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      const content = this.nextElementSibling;
-      if (content.style.maxHeight && content.style.maxHeight !== "0px") {
-        content.style.maxHeight = "0px";
-        this.textContent = "See More"; // 🔹 collapse back
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-        this.textContent = "See Less"; // 🔹 expand
-      }
-    });
-  }
 }
 
 populateEvents();

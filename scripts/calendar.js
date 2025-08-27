@@ -2,6 +2,8 @@
 // Uses output from "Calendar Events Information for Website", which can be updated by selecting "Import Calendar" >> "Import".
 // Then the spreadsheet needs to be exported as a csv file, then converted from csv to JSON.
 
+// calendar.js
+
 let SAMevents = [
   {
     "Title": "Festifall",
@@ -51,59 +53,64 @@ let SAMevents = [
     "StartTime": "2025-09-02T20:00",
     "EndTime": "2025-09-02T20:30"
   }
-]
+];
 
-// Cleans description strings to prevent syntax errors and fix RSVP links
+// Sanitize description strings
 function sanitizeDescription(desc) {
   if (!desc) return "More information coming soon!";
-
-  // Fix target=_blank → target="_blank"
   desc = desc.replace(/target=_blank/gi, 'target="_blank"');
-
-  // Extra safety: strip dangerous inline scripts (just in case)
   desc = desc.replace(/javascript:/gi, '');
-
   return desc;
 }
 
+// Create event cards
 function populateEvents() {
-  var resultDiv = document.getElementById("calendar");
-  var currDate = new Date(); // gets the current date
+  const resultDiv = document.getElementById("calendar");
+  const currDate = new Date();
 
   SAMevents.forEach(c => {
-    var startShowDate = new Date(c.StartTime);
+    const startShowDate = new Date(c.StartTime);
     startShowDate.setDate(startShowDate.getDate() - 7);
+    const endShowDate = new Date(c.EndTime);
 
-    var endShowDate = new Date(c.EndTime);
-
-    if (!c.Location || c.Location.trim() === "") {
-      c.Location = "Location To Be Determined";
-    }
-
+    if (!c.Location || c.Location.trim() === "") c.Location = "Location To Be Determined";
     c.Description = sanitizeDescription(c.Description);
 
     if (startShowDate <= currDate && currDate <= endShowDate) {
-  resultDiv.innerHTML += `
-    <div class="bg-white rounded-lg shadow border p-6 flex flex-col justify-between">
-      <div>
-        <h3 class="text-xl font-bold text-um-blue mb-2">${c.Title}</h3>
-        <p class="text-sm text-gray-600 mb-1">${c.DayofWeek}, ${c.Date}</p>
-        <p class="text-sm text-gray-600 mb-1">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
-        <p class="text-sm text-gray-700 mb-4">${c.Location}</p>
-      </div>
-
-      <div class="mt-auto">
-        <button type="button" class="collapsible w-full bg-um-blue text-white rounded-md px-4 py-2 hover:bg-um-blue-light transition">
-          See More
-        </button>
-        <div class="hidden-text mt-3 text-gray-700">
-          <p>${c.Description}</p>
+      resultDiv.innerHTML += `
+        <div class="bg-white rounded-lg shadow border p-6 flex flex-col justify-between space-y-3">
+          <div>
+            <h3 class="text-xl font-bold text-um-blue mb-2">${c.Title}</h3>
+            <p class="text-sm text-gray-600">${c.DayofWeek}, ${c.Date}</p>
+            <p class="text-sm text-gray-600">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
+            <p class="text-sm text-gray-700">${c.Location}</p>
+          </div>
+          <div>
+            <button type="button" class="collapsible w-full bg-um-blue text-white font-semibold rounded-md px-4 py-2 hover:bg-um-blue-light transition">
+              See More
+            </button>
+            <div class="hidden-text mt-3 text-gray-700">
+              <p>${c.Description}</p>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
-  `;
-}
+      `;
+    }
   });
+
+  // Attach collapsible functionality
+  var coll = document.getElementsByClassName("collapsible");
+  for (let i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
 }
 
 populateEvents();

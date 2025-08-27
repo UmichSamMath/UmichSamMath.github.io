@@ -474,13 +474,7 @@ function populateEvents() {
           </div>
           <div class="mt-3 text-gray-700">
             <p>${c.Description}</p>
-            ${
-              c.RSVP
-                ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">
-                     RSVP <span class="text-um-blue font-bold underline">here</span>
-                   </a>`
-                : ""
-            }
+            ${c.RSVP ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">RSVP <span class="text-um-blue font-bold underline">here</span></a>` : ""}
           </div>
         </div>
       `;

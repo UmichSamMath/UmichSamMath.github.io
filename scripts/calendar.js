@@ -4,52 +4,52 @@
 
 let SAMevents = [
   {
-    "Title": "Board Elections",
-    "Description": "All of SAM membership is encouraged to attend to elect SAM's new executive board. Food will be provided!",
-    "Location": "West Hall 120",
-    "Date": "April 9",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "9:00",
-    "AmPm": "PM",
+    "Title": "Festifal",
+    "Description": "Join us at Festifall to meet excited underclassmen, share what SAM is all about, and kick off the year!",
+    "Location": "Table C56, near MLB & fountain",
+    "Date": "August 27",
+    "StartTimeStr": "2:00",
+    "EndTimeStr": "3:30",
+    "AmPm": "AM",
     "DayofWeek": "Wednesday",
-    "StartTime": "2025-04-09T19:00",
-    "EndTime": "2025-04-09T21:00"
+    "StartTime": "2025-08-27T14:00",
+    "EndTime": "2025-04-09T15:30"
   },
   {
-    "Title": "Alumni Day",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/4MXAo9K1iv17KqR67\">here</a>!",
-    "Location": "East Hall 1360",
-    "Date": "April 12",
-    "StartTimeStr": "1:00",
-    "EndTimeStr": "5:00",
+    "Title": "Learn S’more About SAM",
+    "Description": "Kick off the semester with a fun bonfire intended to create a space for more in-depth questions about SAM. Anyone is welcome, and underclassmen are highly encouraged to attend. There will be s’mores! RSVP <a target=_blank href=\"https://www.google.com/url?q=https://forms.gle/UNNfgxX6hrRSsKoG9&sa=D&source=calendar&ust=1756730348969758&usg=AOvVaw0KN3K0U-OUTc1rlevzFD6W">here</a>!",
+    "Location": "1211 White St",
+    "Date": "August 28",
+    "StartTimeStr": "7:30",
+    "EndTimeStr": "9:30",
     "AmPm": "PM",
-    "DayofWeek": "Saturday",
-    "StartTime": "2025-04-12T13:00",
-    "EndTime": "2025-04-12T17:00"
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-08-28T19:30",
+    "EndTime": "2025-08-28T21:30"
   },
   {
-    "Title": "Senior Send Off \"Darty\"",
-    "Description": "Join us in sending off our SAM Seniors! All of SAM is welcome and Mentorship is encouraged to attend. We will have games, food, and drinks! RSVP <a target=_blank href=\"https://forms.gle/Cf2BCjYWFre32kR69\">here</a>!",
-    "Location": "319 Catherine St",
-    "Date": "April 12",
+    "Title": "Mass Meeting",
+    "Description": "RSVP <a target=_blank href=\"https://www.google.com/url?q=https://forms.gle/7hAwbpigLrhougxC7&sa=D&source=calendar&ust=1756730349840610&usg=AOvVaw11Jn4SY51sVoQXrwg5y8kI">here</a>!",
+    "Location": "EH 1360",
+    "Date": "September 2",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-09-02T19:00",
+    "EndTime": "2025-09-02T20:00"
+  },
+  {
+    "Title": "New Member Orientation",
+    "Description": "RSVP <a target=_blank href=\"https://www.google.com/url?q=https://forms.gle/gsXGkvX4kK9v9zR76&sa=D&source=calendar&ust=1756730349840610&usg=AOvVaw1temhPviiYVK0mdF5ev2RZ">here</a>!",
+    "Location": "EH 1360",
+    "Date": "September 2",
     "StartTimeStr": "8:00",
-    "EndTimeStr": "11:59",
+    "EndTimeStr": "8:30",
     "AmPm": "PM",
     "DayofWeek": "Saturday",
-    "StartTime": "2025-04-12T20:00",
-    "EndTime": "2025-04-12T23:59"
-  },
-  {
-    "Title": "Senior Bar Crawl",
-    "Description": "RSVP <a target=_blank href=\"https://forms.gle/px2n3FpjVJmuF7vA7\">here</a>!",
-    "Location": "",
-    "Date": "April 19",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "11:00",
-    "AmPm": "PM",
-    "DayofWeek": "Saturday",
-    "StartTime": "2025-04-19T18:30",
-    "EndTime": "2025-04-19T23:00"
+    "StartTime": "2025-09-02T20:00",
+    "EndTime": "2025-09-02T20:30"
   }
 ]
 

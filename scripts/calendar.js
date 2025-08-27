@@ -6,7 +6,7 @@
 let SAMevents = [
   {
     "Title": "Learn S’more About SAM",
-    "Description": "Kick off the semester with a fun bonfire intended to create a space for more in-depth questions about SAM. Anyone is welcome, and underclassmen are highly encouraged to attend. There will be s’mores!<br><br>RSVP <a href=\"https://forms.gle/UNNfgxX6hrRSsKoG9\">here</a>!",
+    "Description": "Kick off the semester with a fun bonfire intended to create a space for more in-depth questions about SAM. Anyone is welcome, and underclassmen are highly encouraged to attend. There will be s’mores!<br><br>RSVP <a href=\"https://forms.gle/UNNfgxX6hrRSsKoG9\" target=\"_blank\">here</a>!",
     "Location": "1211 White St, Ann Arbor, MI 48104, USA",
     "Date": "August 28",
     "StartTimeStr": "7:30",
@@ -18,7 +18,7 @@ let SAMevents = [
   },
   {
     "Title": "Mass Meeting",
-    "Description": "RSVP <a href=\"https://forms.gle/7hAwbpigLrhougxC7\">here</a>!",
+    "Description": "RSVP <a href=\"https://forms.gle/7hAwbpigLrhougxC7\" target=\"_blank\">here</a>!",
     "Location": "East Hall-1360-MathAud",
     "Date": "September 2",
     "StartTimeStr": "7:00",
@@ -30,7 +30,7 @@ let SAMevents = [
   },
   {
     "Title": "New Member Orientation",
-    "Description": "RSVP <a href=\"https://forms.gle/gsXGkvX4kK9v9zR76\">here</a>!",
+    "Description": "RSVP <a href=\"https://forms.gle/gsXGkvX4kK9v9zR76\" target=\"_blank\">here</a>!"
     "Location": "East Hall-1360-MathAud",
     "Date": "September 2",
     "StartTimeStr": "8:00",
@@ -54,7 +54,7 @@ let SAMevents = [
   },
   {
     "Title": "International Student Careers Workshop",
-    "Description": "RSVP <a href=\"https://forms.gle/sqMYNvQx3kvvafMJA\">here</a>!",
+    "Description": "RSVP <a href=\"https://forms.gle/sqMYNvQx3kvvafMJA\" target=\"_blank\">here</a>!",
     "Location": "EH 3096",
     "Date": "September 3",
     "StartTimeStr": "6:30",
@@ -66,7 +66,7 @@ let SAMevents = [
   },
   {
     "Title": "Resume Workshop #2",
-    "Description": "RSVP <a href=\"https://forms.gle/DdQspAHAJti3nsK19\">here</a>!",
+    "Description": "RSVP <a href=\"https://forms.gle/DdQspAHAJti3nsK19\" target=\"_blank\">here</a>!",
     "Location": "EH 3096",
     "Date": "September 4",
     "StartTimeStr": "6:00",
@@ -78,7 +78,7 @@ let SAMevents = [
   },
   {
     "Title": "Career Fair Interviews Workshop",
-    "Description": "RSVP <a href=\"https://forms.gle/9dtjBsNKYfMvd4zw5\">here</a>!",
+    "Description": "RSVP <a href=\"https://forms.gle/9dtjBsNKYfMvd4zw5\" target=\"_blank\">here</a>!",
     "Location": "EH 3096",
     "Date": "September 4",
     "StartTimeStr": "6:30",
@@ -443,6 +443,8 @@ function sanitizeDescription(desc) {
   if (!desc) return "More information coming soon!";
   desc = desc.replace(/target=_blank/gi, 'target="_blank"');
   desc = desc.replace(/javascript:/gi, '');
+  // Optionally style any "here" in descriptions
+  desc = desc.replace(/here/g, '<span class="text-um-blue font-bold underline">here</span>');
   return desc;
 }
 
@@ -475,7 +477,7 @@ function populateEvents() {
             ${
               c.RSVP
                 ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">
-                     RSVP <span class="text-um-blue font-bold underline">Here</span>
+                     RSVP <span class="text-um-blue font-bold underline">here</span>
                    </a>`
                 : ""
             }

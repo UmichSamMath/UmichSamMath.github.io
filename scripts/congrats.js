@@ -20,26 +20,30 @@ let congratsMessages = [
     "congratsEvent": "passing exam FM",
     "dateAdded": new Date(2025, 7, 27)
   }
-]
+];
 
-function populateCongrats(){
+function populateCongrats() {
   var resultDiv = document.getElementById("congrats");
-  var currDate = new Date(); // gets the current date
+  var currDate = new Date();
   var numMessagesShown = 0;
-  
-  congratsMessages.forEach(c => {
-    var endShowDate = new Date(c.dateAdded.setMonth(c.dateAdded.getMonth() + monthsFeatured));
 
-    if(currDate <= endShowDate) {
+  congratsMessages.forEach(c => {
+    // Copy dateAdded so original isn’t mutated
+    var endShowDate = new Date(c.dateAdded);
+    endShowDate.setMonth(endShowDate.getMonth() + monthsFeatured);
+
+    if (currDate <= endShowDate) {
       resultDiv.innerHTML += `
-    <li style="font-size: 20px; margin-top: 20px;">${c.name} on ${c.congratsEvent}!</li>
-    `;
+        <li style="font-size: 20px; margin-top: 20px;">
+          ${c.name} on ${c.congratsEvent}!
+        </li>
+      `;
       numMessagesShown += 1;
-    } 
+    }
   });
 
-  if(numMessagesShown == 0) {
-    document.getElementById("congrats-title").className += 'hidden-text';
+  if (numMessagesShown === 0) {
+    document.getElementById("congrats-title").classList.add('hidden-text');
   }
 }
 

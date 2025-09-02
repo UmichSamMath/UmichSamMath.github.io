@@ -27,14 +27,6 @@ let companies = [
     "keywords": []
   },
   {
-    "Company Name": "AIG",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "",
-    "Contact Name": "",
-    "Contact Email": ""
-  },
-  {
     "name": "Allianz",
     "business": "Life",
     "typeOfWork": "Insurance",
@@ -155,14 +147,6 @@ let companies = [
     "keywords": ["Cincinnati", "OH", "Ohio"]
   },
   {
-    "Company Name": "CSAA Insurance Group",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "Walnut Creek, CA",
-    "Contact Name": "Justine Ramsey",
-    "Contact Email": "justine.ramsey@csaa.com"
-  },
-  {
     "name": "CVS",
     "business": "Health",
     "typeOfWork": "Insurance",
@@ -211,36 +195,12 @@ let companies = [
     "keywords": ["Chicago", "IL", "Illinois", "EY"]
   },
   {
-    "Company Name": "Farmers Insurance",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "Woodland Hills, CA",
-    "Contact Name": "Kenny Rosales",
-    "Contact Email": "kenny.rosales@farmersinsurance.com"
-  },
-  {
     "name": "Fidelity",
     "business": "Investment",
     "typeOfWork": "Financial Services",
     "contactName": "Vincent Lee",
     "contactEmail": "vincent.lee@fmr.com",
     "keywords": ["Boston", "MA", "Massachusetts"]
-  },
-  {
-    "Company Name": "Gabriel, Roeder, Smith & Company",
-    "Industry": "Retirement",
-    "Insurance/Consulting": "Consulting",
-    "Location": "",
-    "Contact Name": "",
-    "Contact Email": ""
-  },
-  {
-    "Company Name": "GEICO",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "Chevy Chase, MD",
-    "Contact Name": "John Rose",
-    "Contact Email": "johrose@geico.com"
   },
   {
     "name": "Global Atlantic Financial Group",
@@ -355,14 +315,6 @@ let companies = [
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {
-    "Company Name": "MassMutual Ascend",
-    "Industry": "Life",
-    "Insurance/Consulting": "Insurance",
-    "Location": "Cincinnati, OH",
-    "Contact Name": "Suzie Frankovich",
-    "Contact Email": "sfrankovich@mmascend.com"
-  },
-  {
     "name": "Milliman CMH Health",
     "business": "Health",
     "typeOfWork": "Consulting",
@@ -425,22 +377,6 @@ let companies = [
     "contactName": "Chris Helm",
     "contactEmail": "chrishelm@northwesternmutual.com",
     "keywords": ["Milwaukee", "Wisconsin", "WI"]
-  },
-  {
-    "Company Name": "Pioneer State Mutual Insurance Company",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "",
-    "Contact Name": "",
-    "Contact Email": ""
-  },
-  {
-    "Company Name": "Progressive",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "Mayfield, OH",
-    "Contact Name": "Kate Sisson",
-    "Contact Email": "kate_sisson@progressive.com"
   },
   {
     "name": "PwC",
@@ -515,14 +451,6 @@ let companies = [
     "keywords": ["Fort Wayne", "IN", "Indiana"]
   },
   {
-    "Company Name": "The Hartford",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "Hartford, CT",
-    "Contact Name": "Kendra Ashmore",
-    "Contact Email": "kendra.ashmore@thehartford.com"
-  },
-  {
     "name": "Thrivent",
     "business": "Life/Financial Services",
     "typeOfWork": "Insurance",
@@ -553,14 +481,6 @@ let companies = [
     "contactName": "Jacob Schaeffer",
     "contactEmail": "jacob.schaeffer@wtwco.com",
     "keywords": ["Chicago", "IL", "Illinois", "Willis Towers Watson"]
-  },
-  {
-    "Company Name": "Zurich North America",
-    "Industry": "Property and Casualty",
-    "Insurance/Consulting": "Insurance",
-    "Location": "Shaumburg, IL",
-    "Contact Name": "Zack Martin",
-    "Contact Email": "zack.martin@zurichna.com"
   }
 ]
 

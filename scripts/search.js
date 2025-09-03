@@ -27,6 +27,14 @@ let companies = [
     "keywords": []
   },
   {
+    "name": "AIG",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "<br>",
+    "contactEmail": "<br>",
+    "keywords": []
+  },
+  {
     "name": "Allianz",
     "business": "Life",
     "typeOfWork": "Insurance",
@@ -46,8 +54,8 @@ let companies = [
     "name": "Ally",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
-    "contactName": "Nathan Koo",
-    "contactEmail": "nathan.koo@ally.com",
+    "contactName": "Eric Sligay",
+    "contactEmail": "eric.sligay@ally.com",
     "keywords": ["Detroit", "MI", "Michigan"]
   },
   {
@@ -147,6 +155,14 @@ let companies = [
     "keywords": ["Cincinnati", "OH", "Ohio"]
   },
   {
+    "name": "CSAA Insurance Group",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "Justine Ramsey",
+    "contactEmail": "justine.ramsey@csaa.com",
+    "keywords": ["Walnut Creek", "CA", "California"]
+  },
+  {
     "name": "CVS",
     "business": "Health",
     "typeOfWork": "Insurance",
@@ -195,12 +211,36 @@ let companies = [
     "keywords": ["Chicago", "IL", "Illinois", "EY"]
   },
   {
+    "name": "Farmers Insurance",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "Kenny Rosales",
+    "contactEmail": "kenny.rosales@farmersinsurance.com",
+    "keywords": ["Woodland Hills", "CA", "California"]
+  },
+  {
     "name": "Fidelity",
     "business": "Investment",
     "typeOfWork": "Financial Services",
     "contactName": "Vincent Lee",
     "contactEmail": "vincent.lee@fmr.com",
     "keywords": ["Boston", "MA", "Massachusetts"]
+  },
+  {
+    "name": "Gabriel, Roeder, Smith and Company",
+    "business": "Retirement",
+    "typeOfWork": "Consulting",
+    "contactName": "<br>",
+    "contactEmail": "<br>",
+    "keywords": []
+  },
+  {
+    "name": "GEICO",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "John Rose",
+    "contactEmail": "johrose@geico.com",
+    "keywords": ["Chevy Chase", "MD", "Maryland"]
   },
   {
     "name": "Global Atlantic Financial Group",
@@ -246,8 +286,8 @@ let companies = [
     "name": "HAP",
     "business": "Health",
     "typeOfWork": "Insurance",
-    "contactName": "Erica Cook-Shugart",
-    "contactEmail": "ecooks1@hap.org",
+    "contactName": "Michael Hamann",
+    "contactEmail": "mhamann@hap.org",
     "keywords": ["Michigan", "Detroit", "MI", "Troy"]
   },
   {
@@ -315,6 +355,14 @@ let companies = [
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {
+    "name": "MassMutual Ascend",
+    "business": "Life",
+    "typeOfWork": "Insurance",
+    "contactName": "Suzie Frankovich",
+    "contactEmail": "sfrankovich@mmascend.com",
+    "keywords": ["Cincinnati", "OH", "Ohio"]
+  },
+  {
     "name": "Milliman CMH Health",
     "business": "Health",
     "typeOfWork": "Consulting",
@@ -374,9 +422,25 @@ let companies = [
     "name": "Northwestern Mutual",
     "business": "Life",
     "typeOfWork": "Insurance",
-    "contactName": "Chris Helm",
-    "contactEmail": "chrishelm@northwesternmutual.com",
+    "contactName": "Kayla Siedlecki",
+    "contactEmail": "kaylasiedlecki@northwesternmutual.com",
     "keywords": ["Milwaukee", "Wisconsin", "WI"]
+  },
+  {
+    "name": "Pioneer State Mutual Insurance Company",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "<br>",
+    "contactEmail": "<br>",
+    "keywords": []
+  },
+  {
+    "name": "Progressive",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "Kate Sisson",
+    "contactEmail": "kate_sisson@progressive.com",
+    "keywords": ["Mayfield", "OH", "Ohio"]
   },
   {
     "name": "PwC",
@@ -451,6 +515,14 @@ let companies = [
     "keywords": ["Fort Wayne", "IN", "Indiana"]
   },
   {
+    "name": "The Hartford",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "Kendra Ashmore",
+    "contactEmail": "kendra.ashmore@thehartford.com",
+    "keywords": ["Hartford", "CT", "Connecticut"]
+  },
+  {
     "name": "Thrivent",
     "business": "Life/Financial Services",
     "typeOfWork": "Insurance",
@@ -481,6 +553,14 @@ let companies = [
     "contactName": "Jacob Schaeffer",
     "contactEmail": "jacob.schaeffer@wtwco.com",
     "keywords": ["Chicago", "IL", "Illinois", "Willis Towers Watson"]
+  },
+  {
+    "name": "Zurich North America",
+    "business": "Property and Casualty",
+    "typeOfWork": "Insurance",
+    "contactName": "Zack Martin",
+    "contactEmail": "zack.martin@zurichna.com",
+    "keywords": ["Schaumburg", "IL", "Illinois"]
   }
 ]
 

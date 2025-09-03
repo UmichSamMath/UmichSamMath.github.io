@@ -5,42 +5,6 @@
 
 let SAMevents = [
   {
-    "Title": "Learn S’more About SAM",
-    "Description": "Kick off the semester with a fun bonfire intended to create a space for more in-depth questions about SAM. Anyone is welcome, and underclassmen are highly encouraged to attend. There will be s’mores!<br><br>RSVP <a href=\"https://forms.gle/UNNfgxX6hrRSsKoG9\" target=\"_blank\">here</a>!",
-    "Location": "1211 White St, Ann Arbor, MI 48104, USA",
-    "Date": "August 28",
-    "StartTimeStr": "7:30",
-    "EndTimeStr": "9:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-08-28T19:30",
-    "EndTime": "2025-08-28T21:30"
-  },
-  {
-    "Title": "Mass Meeting",
-    "Description": "RSVP <a href=\"https://forms.gle/7hAwbpigLrhougxC7\" target=\"_blank\">here</a>!",
-    "Location": "East Hall-1360-MathAud",
-    "Date": "September 2",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-09-02T19:00",
-    "EndTime": "2025-09-02T20:00"
-  },
-  {
-    "Title": "New Member Orientation",
-    "Description": "RSVP <a href=\"https://forms.gle/gsXGkvX4kK9v9zR76\" target=\"_blank\">here</a>!",
-    "Location": "East Hall-1360-MathAud",
-    "Date": "September 2",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-09-02T20:00",
-    "EndTime": "2025-09-02T20:30"
-  },
-  {
     "Title": "Resume Workshop #1",
     "Description": "RSVP <a href=\"https://forms.gle/rvCiX2wRUrFHwrRd9\" target=\"_blank\">here</a>!",
     "Location": "East Hall 3096",
@@ -53,20 +17,32 @@ let SAMevents = [
     "EndTime": "2025-09-03T18:30"
   },
   {
-    "Title": "International Student Careers Workshop",
-    "Description": "RSVP <a href=\"https://forms.gle/sqMYNvQx3kvvafMJA\" target=\"_blank\">here</a>!",
+    "Title": "Career Fair Interviews Workshop",
+    "Description": "RSVP <a href=\"https://forms.gle/9dtjBsNKYfMvd4zw5\">here</a>!",
     "Location": "EH 3096",
     "Date": "September 3",
     "StartTimeStr": "6:30",
-    "EndTimeStr": "7:30",
+    "EndTimeStr": "7:00",
     "AmPm": "PM",
     "DayofWeek": "Wednesday",
     "StartTime": "2025-09-03T18:30",
-    "EndTime": "2025-09-03T19:30"
+    "EndTime": "2025-09-03T19:00"
+  },
+  {
+    "Title": "Drop-In Headshots (East Hall)",
+    "Description": "(1/2) Join us in the East Hall Math Atrium to get a headshot! Free for dues-paying members, and $5 for non-members.",
+    "Location": "East Hall Math Atrium",
+    "Date": "September 4",
+    "StartTimeStr": "4:00",
+    "EndTimeStr": "5:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-09-04T16:00",
+    "EndTime": "2025-09-04T17:00"
   },
   {
     "Title": "Resume Workshop #2",
-    "Description": "RSVP <a href=\"https://forms.gle/DdQspAHAJti3nsK19\" target=\"_blank\">here</a>!",
+    "Description": "RSVP <a href=\"https://forms.gle/DdQspAHAJti3nsK19\">here</a>!",
     "Location": "EH 3096",
     "Date": "September 4",
     "StartTimeStr": "6:00",
@@ -77,8 +53,8 @@ let SAMevents = [
     "EndTime": "2025-09-04T18:30"
   },
   {
-    "Title": "Career Fair Interviews Workshop",
-    "Description": "RSVP <a href=\"https://forms.gle/9dtjBsNKYfMvd4zw5\">here</a>!",
+    "Title": "International Student Careers Workshop",
+    "Description": "RSVP <a href=\"https://forms.gle/sqMYNvQx3kvvafMJA\">here</a>!",
     "Location": "EH 3096",
     "Date": "September 4",
     "StartTimeStr": "6:30",
@@ -101,9 +77,21 @@ let SAMevents = [
     "EndTime": "2025-09-11T00:00"
   },
   {
+    "Title": "Drop-In Headshots (Ross)",
+    "Description": "(2/2) Join us in Ross to get a headshot! Exact location will be sent in GroupMe. Free for dues-paying members, and $5 for non-members.",
+    "Location": "Jeff T Blau Hall",
+    "Date": "September 8",
+    "StartTimeStr": "2:00",
+    "EndTimeStr": "3:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-09-08T14:00",
+    "EndTime": "2025-09-08T15:00"
+  },
+  {
     "Title": "CareSource Info Session",
-    "Description": "CareSource will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "",
+    "Description": "CareSource will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/efgz5BBexvpy3TJu9\">here</a>!",
+    "Location": "Mason 2306",
     "Date": "September 8",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:00",
@@ -114,8 +102,8 @@ let SAMevents = [
   },
   {
     "Title": "MassMutual Ascend Info Session",
-    "Description": "MassMutual Ascend will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "",
+    "Description": "MassMutual Ascend will be coming to present a company overview as well as their employment opportunities.<br><br>RSVP <a href=\"https://forms.gle/wgtuRD46ySrMouhEA\">here</a>!",
+    "Location": "Mason 3330",
     "Date": "September 8",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -126,8 +114,8 @@ let SAMevents = [
   },
   {
     "Title": "Auto-Owners Info Session",
-    "Description": "Auto-Owners will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "",
+    "Description": "Auto-Owners will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/qU5weFN3MyYftALY8\" target=\"_blank\">here</a>!",
+    "Location": "NUB 2520",
     "Date": "September 9",
     "StartTimeStr": "5:30",
     "EndTimeStr": "6:30",
@@ -138,7 +126,7 @@ let SAMevents = [
   },
   {
     "Title": "Allianz Life Info Session",
-    "Description": "Allianz Life will be coming to present a company overview as well as their employment opportunities. There will be food!",
+    "Description": "Allianz Life will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/vwt1cd1uVMapz3CD8\">here</a>!",
     "Location": "",
     "Date": "September 9",
     "StartTimeStr": "6:30",
@@ -147,6 +135,18 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2025-09-09T18:30",
     "EndTime": "2025-09-09T19:30"
+  },
+  {
+    "Title": "Constitution Amendment Meeting",
+    "Description": "Join us in voting to adopt amendments to our SAM Constitution. We will be voting to officially add all remaining board positions and to establish a Mentorship Committee.",
+    "Location": "",
+    "Date": "September 9",
+    "StartTimeStr": "7:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-09-09T19:30",
+    "EndTime": "2025-09-09T20:00"
   },
   {
     "Title": "Resume Book Due",
@@ -162,8 +162,8 @@ let SAMevents = [
   },
   {
     "Title": "CNA Info Session",
-    "Description": "CNA will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "",
+    "Description": "CNA will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/DG5ptKWWVNYaEvzS6\">here</a>!",
+    "Location": "Mason 3333",
     "Date": "September 10",
     "StartTimeStr": "5:30",
     "EndTimeStr": "6:30",
@@ -174,8 +174,8 @@ let SAMevents = [
   },
   {
     "Title": "Nationwide Info Session",
-    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "",
+    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/Au8tDWxzDdGLy1xz5\">here</a>!",
+    "Location": "Mason 3463",
     "Date": "September 10",
     "StartTimeStr": "6:30",
     "EndTimeStr": "7:30",
@@ -186,7 +186,7 @@ let SAMevents = [
   },
   {
     "Title": "Aon Info Session",
-    "Description": "Aon will be coming to present a company overview as well as their employment opportunities. There will be food!",
+    "Description": "Aon will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/ZKZbksAcHkT7PQ6U7\">here</a>!",
     "Location": "",
     "Date": "September 11",
     "StartTimeStr": "5:30",
@@ -206,12 +206,12 @@ let SAMevents = [
     "AmPm": "AM",
     "DayofWeek": "Friday",
     "StartTime": "2025-09-12T00:00",
-    "EndTime": "2025-09-17T00:00"
+    "EndTime": "2025-09-18T00:00"
   },
   {
     "Title": "Underclassmen Bonding/Intro to SAM Event",
     "Description": "",
-    "Location": "",
+    "Location": "EH 1068",
     "Date": "September 12",
     "StartTimeStr": "6:30",
     "EndTimeStr": "8:00",
@@ -222,7 +222,7 @@ let SAMevents = [
   },
   {
     "Title": "Cigna Info Session",
-    "Description": "Cigna will be coming to present a company overview as well as their employment opportunities. There will be food!",
+    "Description": "Cigna will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/ukj73tkaYGtfow6a6\">here</a>!",
     "Location": "",
     "Date": "September 15",
     "StartTimeStr": "5:00",
@@ -234,7 +234,7 @@ let SAMevents = [
   },
   {
     "Title": "Hanover Insurance Group Info Session",
-    "Description": "Hanover will be coming to present a company overview as well as their employment opportunities. There will be food!",
+    "Description": "Hanover will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/21JCE8ttwMEAkSiZ8\">here</a>!",
     "Location": "",
     "Date": "September 15",
     "StartTimeStr": "6:00",
@@ -246,7 +246,7 @@ let SAMevents = [
   },
   {
     "Title": "Milliman Info Session",
-    "Description": "Milliman will be coming to present a company overview as well as their employment opportunities. There will be food!",
+    "Description": "Milliman will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/RPqLkCtLr3k8QHGy6\">here</a>!",
     "Location": "",
     "Date": "September 16",
     "StartTimeStr": "6:00",
@@ -258,7 +258,7 @@ let SAMevents = [
   },
   {
     "Title": "EY Info Session",
-    "Description": "EY will be coming to present a company overview as well as their employment opportunities. There will be food!",
+    "Description": "EY will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/3DaApdXQYtMfhrST7\">here</a>!",
     "Location": "",
     "Date": "September 17",
     "StartTimeStr": "5:00",

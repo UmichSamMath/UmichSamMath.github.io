@@ -527,7 +527,7 @@ let companies = [
     "business": "Life/Financial Services",
     "typeOfWork": "Insurance",
     "contactName": "Abby DeVaughn",
-    "contactEmail": "ActuarialRecruiting@Thrivent.com",
+    "contactEmail": "<br>",
     "keywords": ["minneapolis", 'minnesota']
   },
   {

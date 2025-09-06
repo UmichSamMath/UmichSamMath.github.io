@@ -1,187 +1,429 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <title>Companies • Student Actuaries at Michigan</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://cdn.tailwindcss.com"></script>
-
-  <!-- ================== PRELOAD & PRECONNECT ================== -->
-  <!-- Logo shown immediately in navbar -->
-  <link rel="preload" as="image" href="images/logo-only.png" fetchpriority="high">
-
-  <!-- Google Calendar iframe (preload the document) -->
-  <link rel="preconnect" href="https://calendar.google.com">
-  <link rel="preload" as="document" href="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y19zaXU1cnRvM2YwMTE5dTl1bjRxOWNudjZ0c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441" fetchpriority="high">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+// Automatically displays upcoming events when they are within a week of occurring and makes them disappear after they are over.
+// Uses output from "Calendar Events Information for Website", which can be updated by selecting "Import Calendar" >> "Import".
+// Then the spreadsheet needs to be exported as a csv file, then converted from csv to JSON.
 
 
-  <style>
-    :root {
-      --um-blue: #00274C;
-      --um-blue-light: #2e6aa3;
-      --um-maize: #FFCB05;
+let SAMevents = [
+  {
+    "Title": "Resume Office Hours",
+    "Description": "",
+    "Location": "",
+    "Date": "September 5",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2025-09-05T00:00",
+    "EndTime": "2025-09-11T00:00"
+  },
+  {
+    "Title": "Drop-In Headshots (Ross)",
+    "Description": "(2/2) Join us in Ross to get a headshot! Exact location will be sent in GroupMe. Free for dues-paying members, and $5 for non-members.",
+    "Location": "Jeff T Blau Hall",
+    "Date": "September 8",
+    "StartTimeStr": "2:00",
+    "EndTimeStr": "3:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-09-08T14:00",
+    "EndTime": "2025-09-08T15:00"
+  },
+  {
+    "Title": "CareSource Info Session",
+    "Description": "CareSource will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/efgz5BBexvpy3TJu9\">here</a>!",
+    "Location": "Mason 2306",
+    "Date": "September 8",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-09-08T17:00",
+    "EndTime": "2025-09-08T18:00"
+  },
+  {
+    "Title": "MassMutual Ascend Info Session",
+    "Description": "MassMutual Ascend will be coming to present a company overview as well as their employment opportunities.<br><br>RSVP <a href=\"https://forms.gle/wgtuRD46ySrMouhEA\">here</a>!",
+    "Location": "Mason 3330",
+    "Date": "September 8",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-09-08T18:00",
+    "EndTime": "2025-09-08T19:00"
+  },
+  {
+    "Title": "Auto-Owners Info Session",
+    "Description": "Auto-Owners will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/qU5weFN3MyYftALY8\" target=\"_blank\">here</a>!",
+    "Location": "NUB 2520",
+    "Date": "September 9",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-09-09T17:30",
+    "EndTime": "2025-09-09T18:30"
+  },
+  {
+    "Title": "Allianz Life Info Session",
+    "Description": "Allianz Life will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/vwt1cd1uVMapz3CD8\">here</a>!",
+    "Location": "NUB 1518",
+    "Date": "September 9",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "7:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-09-09T18:30",
+    "EndTime": "2025-09-09T19:30"
+  },
+  {
+    "Title": "Constitution Amendment Meeting",
+    "Description": "Join us in voting to adopt amendments to our SAM Constitution. We will be voting to officially add all remaining board positions and to establish a Mentorship Committee.",
+    "Location": "EH 1360",
+    "Date": "September 9",
+    "StartTimeStr": "7:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-09-09T19:30",
+    "EndTime": "2025-09-09T20:00"
+  },
+  {
+    "Title": "Resume Book Due",
+    "Description": "By the end of day 11:59pm",
+    "Location": "",
+    "Date": "September 10",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-09-10T00:00",
+    "EndTime": "2025-09-11T00:00"
+  },
+  {
+    "Title": "CNA Info Session",
+    "Description": "CNA will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/DG5ptKWWVNYaEvzS6\">here</a>!",
+    "Location": "Mason 3333",
+    "Date": "September 10",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "6:30",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-09-10T17:30",
+    "EndTime": "2025-09-10T18:30"
+  },
+  {
+    "Title": "Nationwide Info Session",
+    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/Au8tDWxzDdGLy1xz5\">here</a>!",
+    "Location": "Mason 3463",
+    "Date": "September 10",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "7:30",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-09-10T18:30",
+    "EndTime": "2025-09-10T19:30"
+  },
+  {
+    "Title": "Aon Info Session",
+    "Description": "Aon will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/ZKZbksAcHkT7PQ6U7\">here</a>!",
+    "Location": "NUB 1544",
+    "Date": "September 11",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-09-11T17:30",
+    "EndTime": "2025-09-11T19:00"
+  },
+  {
+    "Title": "Mock Interviews",
+    "Description": "",
+    "Location": "",
+    "Date": "September 12",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2025-09-12T00:00",
+    "EndTime": "2025-09-18T00:00"
+  },
+  {
+    "Title": "Underclassmen Bonding/Intro to SAM Event",
+    "Description": "",
+    "Location": "EH 1068",
+    "Date": "September 12",
+    "StartTimeStr": "6:30",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Friday",
+    "StartTime": "2025-09-12T18:30",
+    "EndTime": "2025-09-12T20:00"
+  },
+  {
+    "Title": "Cigna Info Session",
+    "Description": "Cigna will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/ukj73tkaYGtfow6a6\">here</a>!",
+    "Location": "",
+    "Date": "September 15",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-09-15T17:00",
+    "EndTime": "2025-09-15T18:00"
+  },
+  {
+    "Title": "Hanover Insurance Group Info Session",
+    "Description": "Hanover will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/21JCE8ttwMEAkSiZ8\">here</a>!",
+    "Location": "",
+    "Date": "September 15",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-09-15T18:00",
+    "EndTime": "2025-09-15T19:00"
+  },
+  {
+    "Title": "Milliman Info Session",
+    "Description": "Milliman will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/RPqLkCtLr3k8QHGy6\">here</a>!",
+    "Location": "",
+    "Date": "September 16",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-09-16T18:00",
+    "EndTime": "2025-09-16T19:30"
+  },
+  {
+    "Title": "EY Info Session",
+    "Description": "EY will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/3DaApdXQYtMfhrST7\">here</a>!",
+    "Location": "",
+    "Date": "September 17",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-09-17T17:00",
+    "EndTime": "2025-09-17T18:00"
+  },
+  {
+    "Title": "Pre-Career Fair Chat",
+    "Description": "",
+    "Location": "",
+    "Date": "September 18",
+    "StartTimeStr": "9:00",
+    "EndTimeStr": "11:00",
+    "AmPm": "AM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-09-18T09:00",
+    "EndTime": "2025-09-18T11:00"
+  },
+  {
+    "Title": "Actuarial Career Expo",
+    "Description": "The 10th Annual Career Expo will be held on Thursday, September 18th from 12 to 3 pm in the Michigan League. There will be [TBD] employers there looking to hire interns and full time actuaries. Come prepared with printed resumes and professional dress. This is a great opportunity to network with some of the best actuarial employers and make new connections. Interviews will be held at the University Career Center on Friday, September 19th.",
+    "Location": "Michigan League - Hussey and Vandenburg Rooms",
+    "Date": "September 18",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "3:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-09-18T12:00",
+    "EndTime": "2025-09-18T15:00"
+  },
+  {
+    "Title": "Post Career Fair Mixer",
+    "Description": "",
+    "Location": "1211 White St, Ann Arbor, MI 48104, USA",
+    "Date": "September 19",
+    "StartTimeStr": "8:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2025-09-19T20:00",
+    "EndTime": "2025-09-20T00:00"
+  },
+  {
+    "Title": "Case Study Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "September 23",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-09-23T18:00",
+    "EndTime": "2025-09-23T19:00"
+  },
+  {
+    "Title": "SAM Game Night",
+    "Description": "",
+    "Location": "",
+    "Date": "October 1",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-10-01T18:00",
+    "EndTime": "2025-10-01T20:00"
+  },
+  {
+    "Title": "Mentorship Interest Form Due",
+    "Description": "",
+    "Location": "",
+    "Date": "October 16",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-10-16T00:00",
+    "EndTime": "2025-10-17T00:00"
+  },
+  {
+    "Title": "Mentorship Pumpkin Painting",
+    "Description": "",
+    "Location": "",
+    "Date": "October 16",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-10-16T18:00",
+    "EndTime": "2025-10-16T19:00"
+  },
+  {
+    "Title": "Mentorship Mingling/Kickoff!",
+    "Description": "",
+    "Location": "",
+    "Date": "October 20",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-10-20T18:00",
+    "EndTime": "2025-10-20T20:00"
+  },
+  {
+    "Title": "Mentorship Mixer",
+    "Description": "",
+    "Location": "1211 White St, Ann Arbor, MI 48104, USA",
+    "Date": "October 24",
+    "StartTimeStr": "8:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2025-10-24T20:00",
+    "EndTime": "2025-10-25T00:00"
+  },
+  {
+    "Title": "Everything Actuarial Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "October 27",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:30",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-10-27T18:00",
+    "EndTime": "2025-10-27T19:30"
+  },
+  {
+    "Title": "Mentorship Preference Forms Due",
+    "Description": "",
+    "Location": "",
+    "Date": "October 28",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-10-28T00:00",
+    "EndTime": "2025-10-29T00:00"
+  },
+  {
+    "Title": "International Student Careers Workshop - Preparation for Internship/Work",
+    "Description": "(tentative)",
+    "Location": "",
+    "Date": "November 6",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-11-06T19:00",
+    "EndTime": "2025-11-06T20:00"
+  },
+  {
+    "Title": "Course Planning Workshop",
+    "Description": "Tentative date",
+    "Location": "",
+    "Date": "November 19",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:30",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-11-19T18:00",
+    "EndTime": "2025-11-19T19:30"
+  },
+  {
+    "Title": "Mentorship Cookie Decorating",
+    "Description": "",
+    "Location": "",
+    "Date": "December 3",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-12-03T18:00",
+    "EndTime": "2025-12-03T19:00"
+  }
+];
+
+// Sanitize description strings
+function sanitizeDescription(desc) {
+  if (!desc) return "More information coming soon!";
+  desc = desc.replace(/target=_blank/gi, 'target="_blank"');
+  desc = desc.replace(/javascript:/gi, '');
+  return desc;
+}
+
+// Create event cards
+function populateEvents() {
+  const resultDiv = document.getElementById("calendar");
+  const currDate = new Date();
+
+  SAMevents.forEach(c => {
+    const startShowDate = new Date(c.StartTime);
+    startShowDate.setDate(startShowDate.getDate() - 7);
+    const endShowDate = new Date(c.EndTime);
+
+    if (!c.Location || c.Location.trim() === "") {
+      c.Location = "Location To Be Determined";
     }
+    c.Description = sanitizeDescription(c.Description);
 
-    .bg-um-blue {
-      background-color: var(--um-blue)
-    }
-
-    .bg-um-blue-light {
-      background-color: var(--um-blue-light)
-    }
-
-    .text-um-maize {
-      color: var(--um-maize)
-    }
-
-    /* company card helpers */
-    .company-card {
-      @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center;
-    }
-
-    .company-logo {
-      @apply h-24 w-auto object-contain mx-auto;
-    }
-
-    .group:hover>.invisible,
-    .group:focus-within>.invisible {
-      visibility: visible;
-      opacity: 1;
-    }
-  </style>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-
-  <script src="scripts/jquery.min.js"></script>
-  <script src="scripts/main.js"></script>
-</head>
-
-<body class="font-[Jost] leading-relaxed text-gray-900">
-
-  <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
-  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
-    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
-
-      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
-        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
-      </a>
-
-      <!-- desktop links -->
-      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
-        <a href="index.html" class="text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
-
-        <!-- Resources dropdown -->
-        <div id="resourcesBox" class="relative group">
-          <button id="resourcesBtn" type="button"
-            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
-            Resources
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-
-          <div id="resourcesMenu"
-            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
-            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
-            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
-            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+    if (startShowDate <= currDate && currDate <= endShowDate) {
+      resultDiv.innerHTML += `
+        <div class="bg-white rounded-lg shadow border p-6 flex flex-col justify-between space-y-3 text-center mt-8">
+          <div>
+            <h3 class="text-xl font-bold text-um-blue mb-2">${c.Title}</h3>
+            <p class="text-sm text-gray-600">${c.DayofWeek}, ${c.Date}</p>
+            <p class="text-sm text-gray-600">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
+            <p class="text-sm text-gray-700">${c.Location}</p>
+          </div>
+          <div class="mt-3 text-gray-700">
+            <p>${c.Description}</p>
+            ${
+              c.RSVP
+                ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">
+                     RSVP <span class="text-um-blue font-bold underline">Here</span>
+                   </a>`
+                : ""
+            }
           </div>
         </div>
+      `;
+    }
+  });
+}
 
-        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>
-      </nav>
-
-      <!-- mobile button -->
-      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
-
-    <!-- mobile nav -->
-    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
-      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
-        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
-        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
-        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
-        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
-        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
-      </nav>
-    </div>
-
-    <!-- navbar helpers -->
-    <script>
-      document.getElementById('mobileBtn')
-        .addEventListener('click', () =>
-          document.getElementById('mobileMenu').classList.toggle('hidden'));
-
-      const btn = document.getElementById('resourcesBtn');
-      const menu = document.getElementById('resourcesMenu');
-
-      btn.addEventListener('click', e => {
-        e.preventDefault();
-        menu.classList.toggle('invisible');
-        menu.classList.toggle('opacity-0');
-      });
-      document.addEventListener('click', e => {
-        if (!menu.contains(e.target) && !btn.contains(e.target)) {
-          menu.classList.add('invisible', 'opacity-0');
-        }
-      });
-    </script>
-  </header>
-
-  <main class="py-20 bg-white">
-    <div class="mx-auto max-w-screen-xl px-6">
-      <h1 class="mb-10 text-center text-3xl font-bold text-um-blue">SAM Google Calendar</h1>
-      <div class="flex justify-center">
-        <div class="w-full max-w-4xl overflow-hidden rounded-lg shadow-lg">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=Y19zaXU1cnRvM2YwMTE5dTl1bjRxOWNudjZ0c0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23E4C441"
-            style="border:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-      </div>
-    </div>
-  </main>
-
-  <!-- ============ FOOTER ============ -->
-  <footer class="bg-gray-900 py-8 text-gray-200">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
-      <div>
-        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
-
-
-      </div>
-      <div class="space-x-4">
-        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
-        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
-        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
-      </div>
-    </div>
-
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
-</body>
-
-</html>
+populateEvents();

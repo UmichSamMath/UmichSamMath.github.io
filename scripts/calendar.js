@@ -5,66 +5,6 @@
 
 let SAMevents = [
   {
-    "Title": "Resume Workshop #1",
-    "Description": "RSVP <a href=\"https://forms.gle/rvCiX2wRUrFHwrRd9\" target=\"_blank\">here</a>!",
-    "Location": "East Hall 3096",
-    "Date": "September 3",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "6:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-09-03T18:00",
-    "EndTime": "2025-09-03T18:30"
-  },
-  {
-    "Title": "Career Fair Interviews Workshop",
-    "Description": "RSVP <a href=\"https://forms.gle/9dtjBsNKYfMvd4zw5\">here</a>!",
-    "Location": "EH 3096",
-    "Date": "September 3",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-09-03T18:30",
-    "EndTime": "2025-09-03T19:00"
-  },
-  {
-    "Title": "Drop-In Headshots (East Hall)",
-    "Description": "(1/2) Join us in the East Hall Math Atrium to get a headshot! Free for dues-paying members, and $5 for non-members.",
-    "Location": "East Hall Math Atrium",
-    "Date": "September 4",
-    "StartTimeStr": "4:00",
-    "EndTimeStr": "5:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-09-04T16:00",
-    "EndTime": "2025-09-04T17:00"
-  },
-  {
-    "Title": "Resume Workshop #2",
-    "Description": "RSVP <a href=\"https://forms.gle/DdQspAHAJti3nsK19\">here</a>!",
-    "Location": "EH 3096",
-    "Date": "September 4",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "6:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-09-04T18:00",
-    "EndTime": "2025-09-04T18:30"
-  },
-  {
-    "Title": "International Student Careers Workshop",
-    "Description": "RSVP <a href=\"https://forms.gle/sqMYNvQx3kvvafMJA\">here</a>!",
-    "Location": "EH 3096",
-    "Date": "September 4",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-09-04T18:30",
-    "EndTime": "2025-09-04T19:00"
-  },
-  {
     "Title": "Resume Office Hours",
     "Description": "",
     "Location": "",
@@ -127,7 +67,7 @@ let SAMevents = [
   {
     "Title": "Allianz Life Info Session",
     "Description": "Allianz Life will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/vwt1cd1uVMapz3CD8\">here</a>!",
-    "Location": "",
+    "Location": "NUB 1518",
     "Date": "September 9",
     "StartTimeStr": "6:30",
     "EndTimeStr": "7:30",
@@ -139,7 +79,7 @@ let SAMevents = [
   {
     "Title": "Constitution Amendment Meeting",
     "Description": "Join us in voting to adopt amendments to our SAM Constitution. We will be voting to officially add all remaining board positions and to establish a Mentorship Committee.",
-    "Location": "",
+    "Location": "EH 1360",
     "Date": "September 9",
     "StartTimeStr": "7:30",
     "EndTimeStr": "8:00",
@@ -187,7 +127,7 @@ let SAMevents = [
   {
     "Title": "Aon Info Session",
     "Description": "Aon will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/ZKZbksAcHkT7PQ6U7\">here</a>!",
-    "Location": "",
+    "Location": "NUB 1544", 
     "Date": "September 11",
     "StartTimeStr": "5:30",
     "EndTimeStr": "7:00",

@@ -2,7 +2,6 @@
 // Uses output from "Calendar Events Information for Website", which can be updated by selecting "Import Calendar" >> "Import".
 // Then the spreadsheet needs to be exported as a csv file, then converted from csv to JSON.
 
-
 let SAMevents = [
   {
     "Title": "Resume Office Hours",

@@ -1,279 +1,308 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> 
+<html lang="en">  
+<head>   
+  <meta charset="utf-8">   
+  <title>Exam Resources</title>   
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
 
-<head>
-  <meta charset="utf-8">
-  <title>Exam Resources</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.tailwindcss.com"></script>    
 
-  <script src="https://cdn.tailwindcss.com"></script>
+  <style>     
+    :root {       
+      --um-blue: #00274C;       
+      --um-blue-light: #2e6aa3;       
+      --um-maize: #FFCB05;     
+    }      
 
-  <style>
-    :root {
-      --um-blue: #00274C;
-      --um-blue-light: #2e6aa3;
-      --um-maize: #FFCB05;
-    }
+    .bg-um-blue {       
+      background-color: var(--um-blue)     
+    }      
 
-    .bg-um-blue {
-      background-color: var(--um-blue)
-    }
+    .bg-um-blue-light {       
+      background-color: var(--um-blue-light)     
+    }      
 
-    .bg-um-blue-light {
-      background-color: var(--um-blue-light)
-    }
+    .text-um-maize {       
+      color: var(--um-maize)     
+    }      
 
-    .text-um-maize {
-      color: var(--um-maize)
-    }
+    .company-card {       
+      @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center;     
+    }      
 
-    .company-card {
-      @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center;
-    }
+    .company-logo {       
+      @apply h-24 w-auto object-contain mx-auto;     
+    }      
 
-    .company-logo {
-      @apply h-24 w-auto object-contain mx-auto;
-    }
+    .group:hover>.invisible,     
+    .group:focus-within>.invisible {       
+      visibility: visible;       
+      opacity: 1;     
+    }   
+  </style>    
 
-    .group:hover>.invisible,
-    .group:focus-within>.invisible {
-      visibility: visible;
-      opacity: 1;
-    }
-  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">   
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">    
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <script src="scripts/jquery.min.js"></script>   
+  <script src="scripts/main.js"></script> 
+</head>  
 
-  <script src="scripts/jquery.min.js"></script>
-  <script src="scripts/main.js"></script>
-</head>
+<body class="font-[Jost] leading-relaxed text-gray-900">    
 
-<body class="font-[Jost] leading-relaxed text-gray-900">
+  <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->   
+  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">     
+    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">        
 
-  <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
-  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
-    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">         
+        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">         
+        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>       
+      </a>        
 
-      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
-        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
-      </a>
+      <!-- desktop links -->       
+      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">         
+        <a href="index.html" class="text-um-maize hover:text-white">Home</a>         
+        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>         
+        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>          
 
-      <!-- desktop links -->
-      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
-        <a href="index.html" class="text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
-
-        <!-- Resources dropdown -->
-        <div id="resourcesBox" class="relative group">
+        <!-- Resources dropdown -->         
+        <div id="resourcesBox" class="relative group">           
           <button id="resourcesBtn" type="button"
-            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
-            Resources
+            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">             
+            Resources             
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
+              stroke="currentColor">               
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />             
+            </svg>           
+          </button>            
 
           <div id="resourcesMenu"
-            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
-            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
-            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
-            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
-          </div>
-        </div>
+            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">             
+            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>             
+            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>             
+            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>           
+          </div>         
+        </div>          
 
-        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>
-      </nav>
+        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>         
+        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>         
+        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>         
+        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>       
+      </nav>        
 
-      <!-- mobile button -->
-      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-        </svg>
-      </button>
-    </div>
+      <!-- mobile button -->       
+      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">         
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">           
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />         
+        </svg>       
+      </button>     
+    </div>      
 
-    <!-- mobile nav -->
-    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
-      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
-        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
-        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
-        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
-        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
-        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
-      </nav>
-    </div>
+    <!-- mobile nav -->     
+    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">       
+      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">         
+        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>         
+        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>         
+        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>         
+        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>         
+        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>         
+        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>         
+        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>         
+        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>         
+        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>         
+        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>       
+      </nav>     
+    </div>      
 
-    <!-- navbar helpers -->
-    <script>
+    <!-- navbar helpers -->     
+    <script>       
       document.getElementById('mobileBtn')
         .addEventListener('click', () =>
-          document.getElementById('mobileMenu').classList.toggle('hidden'));
+          document.getElementById('mobileMenu').classList.toggle('hidden'));        
 
-      const btn = document.getElementById('resourcesBtn');
-      const menu = document.getElementById('resourcesMenu');
+      const btn = document.getElementById('resourcesBtn');       
+      const menu = document.getElementById('resourcesMenu');        
 
-      btn.addEventListener('click', e => {
-        e.preventDefault();
-        menu.classList.toggle('invisible');
-        menu.classList.toggle('opacity-0');
-      });
-      document.addEventListener('click', e => {
-        if (!menu.contains(e.target) && !btn.contains(e.target)) {
-          menu.classList.add('invisible', 'opacity-0');
-        }
-      });
-    </script>
-  </header>
+      btn.addEventListener('click', e => {         
+        e.preventDefault();         
+        menu.classList.toggle('invisible');         
+        menu.classList.toggle('opacity-0');       
+      });       
 
-  <!-- ───────────── PAGE TITLE ───────────── -->
-  <section class="py-20 bg-white">
-    <div class="mx-auto max-w-screen-xl px-6 text-center space-y-6">
-      <h1 class="text-4xl font-bold text-um-blue">Exam Resources</h1>
-      <p class="text-xl">
+      document.addEventListener('click', e => {         
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {           
+          menu.classList.add('invisible', 'opacity-0');         
+        }       
+      });     
+    </script>   
+  </header>    
+
+  <!-- ───────────── PAGE TITLE ───────────── -->   
+  <section class="py-20 bg-white">     
+    <div class="mx-auto max-w-screen-xl px-6 text-center space-y-6">       
+      <h1 class="text-4xl font-bold text-um-blue">Exam Resources</h1>       
+      <p class="text-xl">         
         For any questions regarding exams, please contact Nikhil Kori, Actuarial Exam Chair
-        (<a href="mailto:nkori@umich.edu" class="underline text-um-blue-light">nkori@umich.edu</a>).
-      </p>
-    </div>
-  </section>
+        (<a href="mailto:nkori@umich.edu" class="underline text-um-blue-light">nkori@umich.edu</a>).       
+      </p>     
+    </div>   
+  </section>    
 
-  <!-- ───────────── EXAM DATES TABLE ───────────── -->
-  <section class="py-20 bg-um-blue-light text-white">
-    <div class="mx-auto max-w-screen-xl px-6">
-      <h2 class="mb-8 text-3xl font-bold text-center">Exam Dates</h2>
+  <!-- ───────────── EXAM REIMBURSEMENT (MOVED UP) ───────────── -->   
+  <section class="py-20 bg-um-blue-light text-white">     
+    <div class="mx-auto max-w-screen-xl px-6 space-y-8">       
+      <h2 class="text-3xl font-bold text-center">Exam Reimbursement</h2>       
+      <p class="mx-auto max-w-3xl text-xl text-center">         
+        Congratulations on passing your exam! If you are a dues-paying member of SAM and have declared Actuarial
+        Mathematics as your major, please see the following guidelines and complete this
+        <a href="https://forms.gle/Bo3Nosr8ewqrUUV87" target="_blank" class="underline font-semibold">reimbursement form</a>.       
+      </p>        
 
-      <div class="overflow-x-auto">
-        <table class="w-full text-left text-lg bg-white text-gray-900 rounded-lg overflow-hidden">
-          <thead class="bg-gray-200">
-            <tr class="divide-x">
-              <th class="px-4 py-3">Exam</th>
-              <th class="px-4 py-3">CBT Dates</th>
-              <th class="px-4 py-3">Registration&nbsp;Deadline</th>
-            </tr>
-          </thead>
-          <tbody class="divide-y">
-            <!-- --- Exam P rows --- -->
-            <tr class="divide-x">
-              <td class="px-4 py-2">
+      <div class="mx-auto max-w-3xl space-y-6 text-lg">         
+        <p>To receive exam fee reimbursement, you will need to submit the following:</p>          
+
+        <ul class="list-disc pl-6 space-y-4">           
+          <li>             
+            <span class="font-semibold">Proof of Passing</span> — If you took a computer-based exam (CBT),
+            you should be able to print a Provisional Pass Certificate immediately after the exam if you pass.
+            This certificate is sufficient documentation; you do not need to wait for the official
+            numerical (6 - 10) grade report.           
+          </li>          
+
+          <li>             
+            <span class="font-semibold">Proof of Exam Fee Payment</span> — This document has 2 pages. The simplest thing to do is to create a pdf document of this 2-page confirmation letter. The second page has all the info that we need to verify the method of payment. Another alternative is to create a pdf document of just the 2nd page of the confirmation letter. <strong>Many of you submit only a portion of the second page.</strong>
+            The Math Department and Office of Finance <strong>want to see the entire 2nd page</strong>, especially the method of payment (mostly by credit card).           
+          </li>         
+        </ul>       
+      </div>     
+    </div>   
+  </section>    
+
+  <!-- ───────────── EXAM DATES TABLE ───────────── -->   
+  <section class="py-20 bg-white">     
+    <div class="mx-auto max-w-screen-xl px-6">       
+      <h2 class="mb-8 text-3xl font-bold text-center">Exam Dates</h2>        
+
+      <div class="overflow-x-auto">         
+        <table class="w-full text-left text-lg bg-white text-gray-900 rounded-lg overflow-hidden">           
+          <thead class="bg-gray-200">             
+            <tr class="divide-x">               
+              <th class="px-4 py-3">Exam</th>               
+              <th class="px-4 py-3">CBT Dates</th>               
+              <th class="px-4 py-3">Registration&nbsp;Deadline</th>             
+            </tr>           
+          </thead>           
+          <tbody class="divide-y">             
+            <!-- --- Exam P rows --- -->             
+            <tr class="divide-x">               
+              <td class="px-4 py-2">                 
                 <a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank"
-                  class="underline text-um-blue-light">
-                  Exam P, Probability
-                </a>
-              </td>
-              <td class="px-4 py-2">Mar&nbsp;14 – 25, 2025</td>
-              <td class="px-4 py-2">Feb 12, 2025</td>
-            </tr>
-            <tr class="divide-x">
-              <td class="px-4 py-2"></td>
-              <td class="px-4 py-2">Jul&nbsp;18 – 29, 2025</td>
-              <td class="px-4 py-2">Jun 18, 2025</td>
-            </tr>
-            <tr class="divide-x">
-              <td class="px-4 py-2"></td>
-              <td class="px-4 py-2">Sept&nbsp;11 – 22, 2024</td>
-              <td class="px-4 py-2">Aug 13, 2025</td>
-            </tr>
-            <tr class="divide-x">
-              <td class="px-4 py-2"></td>
-              <td class="px-4 py-2">Nov&nbsp;3 – 14, 2025</td>
-              <td class="px-4 py-2">Oct 8, 2025</td>
-            </tr>
+                  class="underline text-um-blue-light">                   
+                  Exam P, Probability                 
+                </a>               
+              </td>               
+              <td class="px-4 py-2">Mar&nbsp;14 – 25, 2025</td>               
+              <td class="px-4 py-2">Feb 12, 2025</td>             
+            </tr>             
+            <tr class="divide-x">               
+              <td class="px-4 py-2"></td>               
+              <td class="px-4 py-2">Jul&nbsp;18 – 29, 2025</td>               
+              <td class="px-4 py-2">Jun 18, 2025</td>             
+            </tr>             
+            <tr class="divide-x">               
+              <td class="px-4 py-2"></td>               
+              <td class="px-4 py-2">Sept&nbsp;11 – 22, 2025</td>               
+              <td class="px-4 py-2">Aug 13, 2025</td>             
+            </tr>             
+            <tr class="divide-x">               
+              <td class="px-4 py-2"></td>               
+              <td class="px-4 py-2">Nov&nbsp;3 – 14, 2025</td>               
+              <td class="px-4 py-2">Oct 8, 2025</td>             
+            </tr>               
 
-
-            <!-- --- Exam FM rows --- -->
-            <tr class="divide-x bg-gray-50">
-              <td class="px-4 py-2">
+            <!-- --- Exam FM rows --- -->             
+            <tr class="divide-x bg-gray-50">               
+              <td class="px-4 py-2">                 
                 <a href="https://www.soa.org/education/exam-req/edu-exam-fm-detail/" target="_blank"
-                  class="underline text-um-blue-light">
-                  Exam FM, Financial Mathematics
-                </a>
-              </td>
-              <td class="px-4 py-2">Jun&nbsp;16 – 27, 2025</td>
-              <td class="px-4 py-2">Closed</td>
-            </tr>
-            <tr class="divide-x bg-gray-50">
-              <td class="px-4 py-2"></td>
-              <td class="px-4 py-2">Aug&nbsp; 6 – 17, 2025</td>
-              <td class="px-4 py-2">Jul 9, 2025</td>
-            </tr>
-            <tr class="divide-x bg-gray-50">
-              <td class="px-4 py-2"></td>
-              <td class="px-4 py-2">Oct&nbsp; 2 – 13, 2025</td>
-              <td class="px-4 py-2">Sept 3, 2025</td>
-            </tr>
-            <tr class="divide-x bg-gray-50">
-              <td class="px-4 py-2"></td>
-              <td class="px-4 py-2">Dec&nbsp; 1 – 12, 2025</td>
-              <td class="px-4 py-2">Nov 5, 2025</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
+                  class="underline text-um-blue-light">                   
+                  Exam FM, Financial Mathematics                 
+                </a>               
+              </td>               
+              <td class="px-4 py-2">Jun&nbsp;16 – 27, 2025</td>               
+              <td class="px-4 py-2">Closed</td>             
+            </tr>             
+            <tr class="divide-x bg-gray-50">               
+              <td class="px-4 py-2"></td>               
+              <td class="px-4 py-2">Aug&nbsp; 6 – 17, 2025</td>               
+              <td class="px-4 py-2">Jul 9, 2025</td>             
+            </tr>             
+            <tr class="divide-x bg-gray-50">               
+              <td class="px-4 py-2"></td>               
+              <td class="px-4 py-2">Oct&nbsp; 2 – 13, 2025</td>               
+              <td class="px-4 py-2">Sept 3, 2025</td>             
+            </tr>             
+            <tr class="divide-x bg-gray-50">               
+              <td class="px-4 py-2"></td>               
+              <td class="px-4 py-2">Dec&nbsp; 1 – 12, 2025</td>               
+              <td class="px-4 py-2">Nov 5, 2025</td>             
+            </tr>           
+          </tbody>         
+        </table>       
+      </div>     
+    </div>   
+  </section>    
 
-  <!-- ───────────── SOA / CAS SECTIONS ───────────── -->
-  <section class="py-20 bg-white">
-    <div class="mx-auto grid max-w-screen-xl gap-10 px-6 lg:grid-cols-2">
-      <!-- SOA -->
-      <div class="rounded-lg border shadow-sm">
-        <div class="flex items-center gap-3 bg-gray-100 px-4 py-3">
-          <img src="/images/SOA%20Logo.png" class="h-10" alt="SOA logo" />
-          <h3 class="text-2xl font-bold">SOA Exams</h3>
-        </div>
+  <!-- ───────────── SOA / CAS SECTIONS ───────────── -->   
+  <section class="py-20 bg-um-blue-light text-white">     
+    <div class="mx-auto grid max-w-screen-xl gap-10 px-6 lg:grid-cols-2">       
+      <!-- SOA -->       
+      <div class="rounded-lg border shadow-sm bg-white text-gray-900">         
+        <div class="flex items-center gap-3 bg-gray-100 px-4 py-3">           
+          <img src="/images/SOA%20Logo.png" class="h-10" alt="SOA logo" />           
+          <h3 class="text-2xl font-bold">SOA Exams</h3>         
+        </div>          
 
-        <div class="space-y-2 px-6 py-4">
+        <div class="space-y-2 px-6 py-4">           
           <a href="https://www.soa.org/education/exam-req/exam-day-info/exam-schedules/" target="_blank"
-            class="block underline text-um-blue-light">SOA Exam Schedule</a>
+            class="block underline text-um-blue-light">SOA Exam Schedule</a>           
           <a href="https://pathways.soa.org/" target="_blank" class="block underline text-um-blue-light">SOA Pathways
-            &amp; Microcredentials</a>
-        </div>
+            &amp; Microcredentials</a>         
+        </div>          
 
-        <div class="overflow-x-auto px-4 pb-6">
-          <table class="w-full text-left text-base">
-            <thead class="bg-gray-200">
-              <tr class="divide-x">
-                <th class="px-3 py-2">Exam</th>
-                <th class="px-3 py-2">CBT Dates</th>
-                <th class="px-3 py-2">Registration</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y">
-              <tr class="divide-x">
-                <td class="px-3 py-1">
+        <div class="overflow-x-auto px-4 pb-6">           
+          <table class="w-full text-left text-base">             
+            <thead class="bg-gray-200">               
+              <tr class="divide-x">                 
+                <th class="px-3 py-2">Exam</th>                 
+                <th class="px-3 py-2">CBT Dates</th>                 
+                <th class="px-3 py-2">Registration</th>               
+              </tr>             
+            </thead>             
+            <tbody class="divide-y">               
+              <tr class="divide-x">                 
+                <td class="px-3 py-1">                   
                   <a href="https://www.soa.org/education/exam-req/edu-exam-pa-detail/" target="_blank"
-                    class="underline text-um-blue-light">Exam PA</a>
-                </td>
-                <td class="px-3 py-1">Apr 15 – 18, 2025</td>
-                <td class="px-3 py-1">Mar 11, 2025</td>
-              </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1"></td>
-                <td class="px-3 py-1">Oct 14 – 17, 2025</td>
-                <td class="px-3 py-1">Sept 9, 2025</td>
-              </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1">
+                    class="underline text-um-blue-light">Exam PA</a>                 
+                </td>                 
+                <td class="px-3 py-1">Apr 15 – 18, 2025</td>                 
+                <td class="px-3 py-1">Mar 11, 2025</td>               
+              </tr>               
+              <tr class="divide-x">                 
+                <td class="px-3 py-1"></td>                 
+                <td class="px-3 py-1">Oct 14 – 17, 2025</td>                 
+                <td class="px-3 py-1">Sept 9, 2025</td>               
+              </tr>               
+              <tr class="divide-x">                 
+                <td class="px-3 py-1">                   
                   <a href="https://www.soa.org/education/exam-req/edu-exam-srm-detail/" target="_blank"
-                    class="underline text-um-blue-light">Exam SRM</a>
-                </td>
-                <td class="px-3 py-1">May 23 – 29, 2025</td>
-                <td class="px-3 py-1">Closed</td>
-              </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1"></td>
+                    class="underline text-um-blue-light">Exam SRM</a>                 
+                </td>                 
+                <td class="px-3 py-1">May 23 – 29, 2025</td>                 
+                <td class="px-3 py-1">Closed</td>               
+              </tr>               
+              <tr class="divide-x">                 
+                <td class="px-3 py-1"></td>                 
                 <td class="px-3 py-1">Sept 2 – 8, 2025</td>
                 <td class="px-3 py-1">Aug 5, 2025</td>
               </tr>
@@ -359,7 +388,7 @@
   </section>
 
   <!-- ───────────── CHECKLIST & OTHER SECTIONS ───────────── -->
-  <section class="py-20 bg-um-blue-light text-white">
+  <section class="py-20 bg-white">     
     <div class="mx-auto max-w-screen-xl px-6 space-y-6 text-center">
       <h2 class="text-3xl font-bold">Exam Prep Checklist</h2>
       <p class="text-xl">
@@ -372,35 +401,6 @@
       </p>
     </div>
   </section>
-
-  <section class="py-20 bg-white">
-  <div class="mx-auto max-w-screen-xl px-6 space-y-8">
-    <h2 class="text-3xl font-bold text-um-blue text-center">Exam Reimbursement</h2>
-    <p class="mx-auto max-w-3xl text-xl text-center">
-      Congratulations on passing your exam! If you are a dues-paying member of SAM and have declared Actuarial
-      Mathematics as your major, please see the following guidelines and complete this
-      <a href="https://forms.gle/Bo3Nosr8ewqrUUV87" target="_blank" class="underline text-um-blue-light">reimbursement form</a>.
-    </p>
-
-    <div class="mx-auto max-w-3xl space-y-6 text-lg">
-      <p>To receive exam fee reimbursement, you will need to submit the following:</p>
-
-      <ul class="list-disc pl-6 space-y-4">
-        <li>
-          <span class="font-semibold">Proof of Passing</span> — If you took a computer-based exam (CBT),
-          you should be able to print a Provisional Pass Certificate immediately after the exam if you pass.
-          This certificate is sufficient documentation; you do not need to wait for the official
-          numerical (6 - 10) grade report.
-        </li>
-
-        <li>
-          <span class="font-semibold">Proof of Exam Fee Payment</span> — This document has 2 pages.  The simplest thing to do is to create a pdf document of this 2-page confirmation letter.  The second page has all the info that we need to verify the method of payment.  Another alternative is to create a pdf document of just the 2nd page of the confirmation letter. <strong>Many of you submit only a portion of the second page.</strong>
-          The Math Department and Office of Finance  <strong>want to see the entire 2nd page</strong>, especially the method of payment (mostly by credit card).
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
 
   <section class="py-20 bg-um-blue-light text-white">
     <div class="mx-auto max-w-screen-xl px-6 space-y-8 text-center">

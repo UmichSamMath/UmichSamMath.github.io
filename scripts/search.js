@@ -30,8 +30,8 @@ let companies = [
     "name": "AIG",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
-    "contactName": "<br>",
-    "contactEmail": "<br>",
+    "contactName": "George Hroziencik",
+    "contactEmail": "George.Hroziencik@AIG.com",
     "keywords": []
   },
   {

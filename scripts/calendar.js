@@ -53,7 +53,7 @@ let SAMevents = [
   },
   {
     "Title": "Auto-Owners Info Session",
-    "Description": "Auto-Owners will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/qU5weFN3MyYftALY8\" target=\"_blank\">here</a>!",
+    "Description": "Auto-Owners will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/vwt1cd1uVMapz3CD8\" target=\"_blank\">here</a>!",
     "Location": "NUB 2520",
     "Date": "September 9",
     "StartTimeStr": "5:30",
@@ -65,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "Allianz Life Info Session",
-    "Description": "Allianz Life will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/vwt1cd1uVMapz3CD8\">here</a>!",
+    "Description": "Allianz Life will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/qU5weFN3MyYftALY8\">here</a>!",
     "Location": "NUB 1518",
     "Date": "September 9",
     "StartTimeStr": "6:30",

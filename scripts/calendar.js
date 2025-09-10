@@ -295,13 +295,13 @@ let SAMevents = [
     "Title": "Mentorship Mingling/Kickoff!",
     "Description": "",
     "Location": "",
-    "Date": "October 20",
+    "Date": "October 21",
     "StartTimeStr": "6:00",
     "EndTimeStr": "8:00",
     "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2025-10-20T18:00",
-    "EndTime": "2025-10-20T20:00"
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-10-21T18:00",
+    "EndTime": "2025-10-21T20:00"
   },
   {
     "Title": "Mentorship Mixer",

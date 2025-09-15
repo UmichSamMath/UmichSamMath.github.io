@@ -4,138 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Resume Office Hours",
-    "Description": "",
-    "Location": "",
-    "Date": "September 5",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2025-09-05T00:00",
-    "EndTime": "2025-09-11T00:00"
-  },
-  {
-    "Title": "Drop-In Headshots (Ross)",
-    "Description": "(2/2) Join us in Ross to get a headshot! Exact location will be sent in GroupMe. Free for dues-paying members, and $5 for non-members.",
-    "Location": "Jeff T Blau Hall",
-    "Date": "September 8",
-    "StartTimeStr": "2:00",
-    "EndTimeStr": "3:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2025-09-08T14:00",
-    "EndTime": "2025-09-08T15:00"
-  },
-  {
-    "Title": "CareSource Info Session",
-    "Description": "CareSource will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/efgz5BBexvpy3TJu9\">here</a>!",
-    "Location": "Mason 2306",
-    "Date": "September 8",
-    "StartTimeStr": "5:00",
-    "EndTimeStr": "6:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2025-09-08T17:00",
-    "EndTime": "2025-09-08T18:00"
-  },
-  {
-    "Title": "MassMutual Ascend Info Session",
-    "Description": "MassMutual Ascend will be coming to present a company overview as well as their employment opportunities.<br><br>RSVP <a href=\"https://forms.gle/wgtuRD46ySrMouhEA\">here</a>!",
-    "Location": "Mason 3330",
-    "Date": "September 8",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2025-09-08T18:00",
-    "EndTime": "2025-09-08T19:00"
-  },
-  {
-    "Title": "Auto-Owners Info Session",
-    "Description": "Auto-Owners will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/vwt1cd1uVMapz3CD8\" target=\"_blank\">here</a>!",
-    "Location": "NUB 2520",
-    "Date": "September 9",
-    "StartTimeStr": "5:30",
-    "EndTimeStr": "6:30",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-09-09T17:30",
-    "EndTime": "2025-09-09T18:30"
-  },
-  {
-    "Title": "Allianz Life Info Session",
-    "Description": "Allianz Life will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/qU5weFN3MyYftALY8\">here</a>!",
-    "Location": "NUB 1518",
-    "Date": "September 9",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-09-09T18:30",
-    "EndTime": "2025-09-09T19:30"
-  },
-  {
-    "Title": "Constitution Amendment Meeting",
-    "Description": "Join us in voting to adopt amendments to our SAM Constitution. We will be voting to officially add all remaining board positions and to establish a Mentorship Committee.",
-    "Location": "EH 1360",
-    "Date": "September 9",
-    "StartTimeStr": "7:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-09-09T19:30",
-    "EndTime": "2025-09-09T20:00"
-  },
-  {
-    "Title": "Resume Book Due",
-    "Description": "By the end of day 11:59pm",
-    "Location": "",
-    "Date": "September 10",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-09-10T00:00",
-    "EndTime": "2025-09-11T00:00"
-  },
-  {
-    "Title": "CNA Info Session",
-    "Description": "CNA will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/DG5ptKWWVNYaEvzS6\">here</a>!",
-    "Location": "Mason 3333",
-    "Date": "September 10",
-    "StartTimeStr": "5:30",
-    "EndTimeStr": "6:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-09-10T17:30",
-    "EndTime": "2025-09-10T18:30"
-  },
-  {
-    "Title": "Nationwide Info Session",
-    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/Au8tDWxzDdGLy1xz5\">here</a>!",
-    "Location": "Mason 3463",
-    "Date": "September 10",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-09-10T18:30",
-    "EndTime": "2025-09-10T19:30"
-  },
-  {
-    "Title": "Aon Info Session",
-    "Description": "Aon will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/ZKZbksAcHkT7PQ6U7\">here</a>!",
-    "Location": "NUB 1544", 
-    "Date": "September 11",
-    "StartTimeStr": "5:30",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-09-11T17:30",
-    "EndTime": "2025-09-11T19:00"
-  },
-  {
     "Title": "Mock Interviews",
     "Description": "",
     "Location": "",
@@ -148,21 +16,9 @@ let SAMevents = [
     "EndTime": "2025-09-18T00:00"
   },
   {
-    "Title": "Underclassmen Bonding/Intro to SAM Event",
-    "Description": "",
-    "Location": "EH 1068",
-    "Date": "September 12",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Friday",
-    "StartTime": "2025-09-12T18:30",
-    "EndTime": "2025-09-12T20:00"
-  },
-  {
     "Title": "Cigna Info Session",
     "Description": "Cigna will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/ukj73tkaYGtfow6a6\">here</a>!",
-    "Location": "",
+    "Location": "MH 1460",
     "Date": "September 15",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:00",
@@ -174,7 +30,7 @@ let SAMevents = [
   {
     "Title": "Hanover Insurance Group Info Session",
     "Description": "Hanover will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/21JCE8ttwMEAkSiZ8\">here</a>!",
-    "Location": "",
+    "Location": "EH 1068",
     "Date": "September 15",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -186,7 +42,7 @@ let SAMevents = [
   {
     "Title": "Milliman Info Session",
     "Description": "Milliman will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/RPqLkCtLr3k8QHGy6\">here</a>!",
-    "Location": "",
+    "Location": "WH 120",
     "Date": "September 16",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:30",
@@ -198,7 +54,7 @@ let SAMevents = [
   {
     "Title": "EY Info Session",
     "Description": "EY will be coming to present a company overview as well as their employment opportunities. There will be food!<br><br>RSVP <a href=\"https://forms.gle/3DaApdXQYtMfhrST7\">here</a>!",
-    "Location": "",
+    "Location": "MH 3333",
     "Date": "September 17",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:00",
@@ -210,7 +66,7 @@ let SAMevents = [
   {
     "Title": "Pre-Career Fair Chat",
     "Description": "",
-    "Location": "",
+    "Location": "Atrium",
     "Date": "September 18",
     "StartTimeStr": "9:00",
     "EndTimeStr": "11:00",
@@ -221,7 +77,7 @@ let SAMevents = [
   },
   {
     "Title": "Actuarial Career Expo",
-    "Description": "The 10th Annual Career Expo will be held on Thursday, September 18th from 12 to 3 pm in the Michigan League. There will be [TBD] employers there looking to hire interns and full time actuaries. Come prepared with printed resumes and professional dress. This is a great opportunity to network with some of the best actuarial employers and make new connections. Interviews will be held at the University Career Center on Friday, September 19th.",
+    "Description": "The 10th Annual Career Expo will be held on Thursday, September 18th from 12 to 3 pm in the Michigan League. There will be 25+ employers there looking to hire interns and full time actuaries. Come prepared with printed resumes and professional dress. This is a great opportunity to network with some of the best actuarial employers and make new connections. Interviews will be held at the University Career Center on Friday, September 19th.",
     "Location": "Michigan League - Hussey and Vandenburg Rooms",
     "Date": "September 18",
     "StartTimeStr": "12:00",

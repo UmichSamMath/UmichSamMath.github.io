@@ -6,19 +6,14 @@ var monthsFeatured = 1;
 let congratsMessages = [
   
   {
-    "name": "Maansi Kandula",
-    "congratsEvent": "passing Exam P",
-    "dateAdded": new Date(2025, 8, 2)
+    "name": "Thomas Bednarz",
+    "congratsEvent": "passing Exam FM & SRM",
+    "dateAdded": new Date(2025, 9, 8)
   },
   {
     "name": "Jordan Hoffner",
     "congratsEvent": "passing exam FM",
-    "dateAdded": new Date(2025, 8, 2)
-  },
-  {
-    "name": "Jordan Hoffner",
-    "congratsEvent": "accepting a full-time offer at Auto-Owners Insurance",
-    "dateAdded": new Date(2025, 8, 2)
+    "dateAdded": new Date(2025, 9, 12)
   }
 ];
 

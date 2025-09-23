@@ -4,20 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Case Study + Second Round Interview Workshop",
-    "Description": "Learn more about how to prepare for second round interviews and case studies. We will cover questions you could be asked as well as how the interview process typically works.",
-    "Location": "EH 4096",
-    "Date": "September 23",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-09-23T18:00",
-    "EndTime": "2025-09-23T19:00"
-  },
-  {
     "Title": "ACAE Actuarial Event",
-    "Description": "This event is MANDATORY for all prospective Actuarial students and members of SAM, especially undeclared students. Professor Natarajan will be summarizing why we are a Center of Actuarial Intelligence. You will learn important information about our predecessors and program. Please make every effort to attend and celebrate with us. Dinner will be provided!",
+    "Description": "This event is MANDATORY for all prospective Actuarial students and members of SAM, especially undeclared students. Professor Natarajan will be summarizing why we are a Center of Actuarial Intelligence. You will learn important information about our predecessors and program. Please make every effort to attend and celebrate with us. Dinner will be provided!<br><br>RSVP <a href=\"https://forms.gle/eNGx9PM4esuLE1YS7\">Here</a>!",
     "Location": "EH 1360",
     "Date": "September 24",
     "StartTimeStr": "6:00",
@@ -38,6 +26,18 @@ let SAMevents = [
     "DayofWeek": "Wednesday",
     "StartTime": "2025-09-24T19:00",
     "EndTime": "2025-09-24T20:00"
+  },
+  {
+    "Title": "SAM Recess",
+    "Description": "",
+    "Location": "Law Quad",
+    "Date": "September 28",
+    "StartTimeStr": "11:00",
+    "EndTimeStr": "2:00",
+    "AmPm": "PM",
+    "DayofWeek": "Sunday",
+    "StartTime": "2025-09-28T11:00",
+    "EndTime": "2025-09-28T14:00"
   },
   {
     "Title": "SAM Game Night",

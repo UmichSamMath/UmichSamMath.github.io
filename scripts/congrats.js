@@ -6,14 +6,14 @@ var monthsFeatured = 1;
 let congratsMessages = [
   
   {
-    "name": "Thomas Bednarz",
-    "congratsEvent": "passing Exam FM & SRM",
-    "dateAdded": new Date(2025, 9, 8)
+    "name": "Ashley Pittel",
+    "congratsEvent": "passing Exam P",
+    "dateAdded": new Date(2025, 9, 27)
   },
   {
-    "name": "Jordan Hoffner",
-    "congratsEvent": "passing exam FM",
-    "dateAdded": new Date(2025, 9, 12)
+    "name": "Madelyne Cabasaan",
+    "congratsEvent": "passing Exam P",
+    "dateAdded": new Date(2025, 9, 27)
   }
 ];
 

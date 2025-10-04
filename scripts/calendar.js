@@ -4,52 +4,16 @@
 
 let SAMevents = [
   {
-    "Title": "ACAE Actuarial Event",
-    "Description": "This event is MANDATORY for all prospective Actuarial students and members of SAM, especially undeclared students. Professor Natarajan will be summarizing why we are a Center of Actuarial Intelligence. You will learn important information about our predecessors and program. Please make every effort to attend and celebrate with us. Dinner will be provided!<br><br>RSVP <a href=\"https://forms.gle/eNGx9PM4esuLE1YS7\">Here</a>!",
-    "Location": "EH 1360",
-    "Date": "September 24",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-09-24T18:00",
-    "EndTime": "2025-09-24T19:30"
-  },
-  {
-    "Title": "Hanover Insurance Group \"Former Intern and Early Career Panel",
-    "Description": "Hanover Insurance Group is hosting a Summer 2026 Internship Overview and Former Intern Panel. This is a great way to learn about their recruitment process and hear from former students regarding their experience!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=56685f5766&amp;e=63c96118a3\" target=\"_blank\"><u>Register Here</u></a>!",
-    "Location": "Microsoft Teams",
-    "Date": "September 24",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-09-24T19:00",
-    "EndTime": "2025-09-24T20:00"
-  },
-  {
-    "Title": "SAM Recess",
+    "Title": "Coaching Actuaries Workshop",
     "Description": "",
-    "Location": "Law Quad",
-    "Date": "September 28",
-    "StartTimeStr": "11:00",
-    "EndTimeStr": "2:00",
-    "AmPm": "PM",
-    "DayofWeek": "Sunday",
-    "StartTime": "2025-09-28T11:00",
-    "EndTime": "2025-09-28T14:00"
-  },
-  {
-    "Title": "SAM Game Night",
-    "Description": "",
-    "Location": "USB 1250",
-    "Date": "October 1",
+    "Location": "EH 4096",
+    "Date": "October 7",
     "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
+    "EndTimeStr": "7:00",
     "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-10-01T18:00",
-    "EndTime": "2025-10-01T20:00"
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-10-07T18:00",
+    "EndTime": "2025-10-07T19:00"
   },
   {
     "Title": "Mentorship Interest Form Due",
@@ -77,7 +41,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Mingling/Kickoff!",
-    "Description": "",
+    "Description": "RSVP <a href=\"https://forms.gle/2wx9i3dPXF3LwQkM9\">here</a>!",
     "Location": "",
     "Date": "October 21",
     "StartTimeStr": "6:00",
@@ -89,7 +53,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Mixer",
-    "Description": "",
+    "Description": "RSVP <a href=\"https://forms.gle/r9Gg8QhXQyEdJhSR8\">here</a>!",
     "Location": "1211 White St, Ann Arbor, MI 48104, USA",
     "Date": "October 24",
     "StartTimeStr": "8:00",

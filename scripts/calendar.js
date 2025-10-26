@@ -4,69 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Coaching Actuaries Workshop",
-    "Description": "",
-    "Location": "EH 4096",
-    "Date": "October 7",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-10-07T18:00",
-    "EndTime": "2025-10-07T19:00"
-  },
-  {
-    "Title": "Mentorship Interest Form Due",
-    "Description": "",
-    "Location": "",
-    "Date": "October 16",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-10-16T00:00",
-    "EndTime": "2025-10-17T00:00"
-  },
-  {
-    "Title": "Mentorship Pumpkin Painting",
-    "Description": "",
-    "Location": "",
-    "Date": "October 16",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-10-16T18:00",
-    "EndTime": "2025-10-16T19:00"
-  },
-  {
-    "Title": "Mentorship Mingling/Kickoff!",
-    "Description": "RSVP <a href=\"https://forms.gle/2wx9i3dPXF3LwQkM9\">here</a>!",
-    "Location": "",
-    "Date": "October 21",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-10-21T18:00",
-    "EndTime": "2025-10-21T20:00"
-  },
-  {
-    "Title": "Mentorship Mixer",
-    "Description": "RSVP <a href=\"https://forms.gle/r9Gg8QhXQyEdJhSR8\">here</a>!",
-    "Location": "1211 White St, Ann Arbor, MI 48104, USA",
-    "Date": "October 24",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2025-10-24T20:00",
-    "EndTime": "2025-10-25T00:00"
-  },
-  {
     "Title": "Everything Actuarial Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "The Everything Actuarial <u></u>Workshop will cover exam preparation resources and everything you need to know about a career in the actuarial field! Come if you want to learn more about this path and how to succeed!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=9055bca3e2&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 3866",
     "Date": "October 27",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:30",
@@ -77,7 +17,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Preference Forms Due",
-    "Description": "",
+    "Description": "Be sure to fill out your preference for mentor/mentee by Tuesday!<br><br>FOR MENTORS: <a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=a70151a571&amp;e=63c96118a3\" target=\"_blank\"><u>Mentee Preference Form</u></a><br>FOR MENTEES: <a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=f76e9eff9a&amp;e=63c96118a3\" target=\"_blank\"><u>Mentor Preference Form</u></a>",
     "Location": "",
     "Date": "October 28",
     "StartTimeStr": "12:00",
@@ -86,6 +26,42 @@ let SAMevents = [
     "DayofWeek": "Tuesday",
     "StartTime": "2025-10-28T00:00",
     "EndTime": "2025-10-29T00:00"
+  },
+  {
+    "Title": "Course Planning Workshop",
+    "Description": "The course planning workshop is highly encouraged for underclassmen! It will help you plan out your 4 years at college as well as get tips on when to take actuarial exams! Great resources will be provided!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=24025f9cba&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 2866",
+    "Date": "October 28",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-10-28T19:00",
+    "EndTime": "2025-10-28T20:00"
+  },
+  {
+    "Title": "TIA Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "November 3",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2025-11-03T19:00",
+    "EndTime": "2025-11-03T20:00"
+  },
+  {
+    "Title": "Intro to the CAS Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "November 6",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2025-11-06T18:00",
+    "EndTime": "2025-11-06T19:00"
   },
   {
     "Title": "International Student Careers Workshop - Preparation for Internship/Work",
@@ -100,6 +76,30 @@ let SAMevents = [
     "EndTime": "2025-11-06T20:00"
   },
   {
+    "Title": "Workshop on Imposter Syndrome",
+    "Description": "",
+    "Location": "",
+    "Date": "November 11",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-11-11T18:00",
+    "EndTime": "2025-11-11T19:00"
+  },
+  {
+    "Title": "Advanced Actuarial Industry Workshop",
+    "Description": "Come to this workshop for an in-depth look at the actuarial industry, job market, and career pathways. We’ll cover everything from work deliverables and compensation design to emerging trends like AI and how you can stay ahead as a young professional!",
+    "Location": "",
+    "Date": "November 12",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2025-11-12T18:00",
+    "EndTime": "2025-11-12T19:00"
+  },
+  {
     "Title": "Course Planning Workshop",
     "Description": "Tentative date",
     "Location": "",
@@ -110,6 +110,18 @@ let SAMevents = [
     "DayofWeek": "Wednesday",
     "StartTime": "2025-11-19T18:00",
     "EndTime": "2025-11-19T19:30"
+  },
+  {
+    "Title": "FM Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "December 2",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2025-12-02T18:00",
+    "EndTime": "2025-12-02T20:00"
   },
   {
     "Title": "Mentorship Cookie Decorating",

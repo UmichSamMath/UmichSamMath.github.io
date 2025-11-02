@@ -5,16 +5,16 @@ var monthsFeatured = 1;
 
 let congratsMessages = [
   
-  {
-    "name": "Ashley Pittel",
-    "congratsEvent": "passing Exam P",
-    "dateAdded": new Date(2025, 9, 27)
-  },
-  {
-    "name": "Madelyne Cabasaan",
-    "congratsEvent": "passing Exam P",
-    "dateAdded": new Date(2025, 9, 27)
-  }
+  //{
+  //  "name": "Ashley Pittel",
+  //  "congratsEvent": "passing Exam P",
+  //  "dateAdded": new Date(2025, 9, 27)
+  //},
+  //{
+  //  "name": "Madelyne Cabasaan",
+  //  "congratsEvent": "passing Exam P",
+  //  "dateAdded": new Date(2025, 9, 27)
+  //}
 ];
 
 function populateCongrats() {

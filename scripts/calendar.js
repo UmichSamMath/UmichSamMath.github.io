@@ -6,7 +6,7 @@ let SAMevents = [
   {
     "Title": "TIA Workshop",
     "Description": "A representative from TIA will virtually present about valuable exam resources and online course access. Come to learn more about TIA and their discounts! There will also be food and merch! <br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=aa7aa708f1&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "",
+    "Location": "EH 1866",
     "Date": "November 3",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",

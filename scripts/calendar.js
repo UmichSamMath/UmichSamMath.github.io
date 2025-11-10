@@ -4,33 +4,21 @@
 
 let SAMevents = [
   {
-    "Title": "TIA Workshop",
-    "Description": "A representative from TIA will virtually present about valuable exam resources and online course access. Come to learn more about TIA and their discounts! There will also be food and merch! <br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=aa7aa708f1&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 1866",
-    "Date": "November 3",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
+    "Title": "Mentorship Game Night",
+    "Description": "We are hosting game night for you and your mentorship pairing to hang out and play some games together! Please feel free to bring any games you might want to play! Snacks provided.<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=48f15d2444&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "SKB 3600",
+    "Date": "November 10",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:30",
     "AmPm": "PM",
     "DayofWeek": "Monday",
-    "StartTime": "2025-11-03T19:00",
-    "EndTime": "2025-11-03T20:00"
-  },
-  {
-    "Title": "Intro to the CAS Workshop",
-    "Description": "Are you interested in the CAS or unsure about which path you want to go down? Come to the Intro to the CAS Presentation to learn more about property &amp; casualty insurance and the Casualty Actuarial Society (CAS).<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=c06150399f&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "",
-    "Date": "November 6",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2025-11-06T18:00",
-    "EndTime": "2025-11-06T19:00"
+    "StartTime": "2025-11-10T18:00",
+    "EndTime": "2025-11-10T19:30"
   },
   {
     "Title": "Workshop on Imposter Syndrome",
-    "Description": "",
-    "Location": "",
+    "Description": "Come to this workshop to learn about impostor syndrome and the ways to combat it! This is a great event to attend with your mentor/mentee!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=0517875e6c&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 4096",
     "Date": "November 11",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -41,8 +29,8 @@ let SAMevents = [
   },
   {
     "Title": "Advanced Actuarial Industry Workshop",
-    "Description": "Come to this workshop for an in-depth look at the actuarial industry, job market, and career pathways. We’ll cover everything from work deliverables and compensation design to emerging trends like AI and how you can stay ahead as a young professional!",
-    "Location": "",
+    "Description": "Come to this workshop for an in-depth look at the actuarial industry, job market, and career pathways. We’ll cover everything from work deliverables and compensation design to emerging trends like AI and how you can stay ahead as a young professional!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=d11cf4a112&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 4096",
     "Date": "November 12",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -77,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Cookie Decorating",
-    "Description": "",
+    "Description": "Join us for a fun way to connect with your mentorship pairing! We will decorate sugar cookies while watching a holiday movie!",
     "Location": "",
     "Date": "December 3",
     "StartTimeStr": "6:00",

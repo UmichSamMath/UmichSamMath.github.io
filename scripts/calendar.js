@@ -4,54 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Mentorship Game Night",
-    "Description": "We are hosting game night for you and your mentorship pairing to hang out and play some games together! Please feel free to bring any games you might want to play! Snacks provided.<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=48f15d2444&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "SKB 3600",
-    "Date": "November 10",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2025-11-10T18:00",
-    "EndTime": "2025-11-10T19:30"
-  },
-  {
-    "Title": "Workshop on Imposter Syndrome",
-    "Description": "Come to this workshop to learn about impostor syndrome and the ways to combat it! This is a great event to attend with your mentor/mentee!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=0517875e6c&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 4096",
-    "Date": "November 11",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2025-11-11T18:00",
-    "EndTime": "2025-11-11T19:00"
-  },
-  {
-    "Title": "Advanced Actuarial Industry Workshop",
-    "Description": "Come to this workshop for an in-depth look at the actuarial industry, job market, and career pathways. We’ll cover everything from work deliverables and compensation design to emerging trends like AI and how you can stay ahead as a young professional!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=d11cf4a112&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 4096",
-    "Date": "November 12",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-11-12T18:00",
-    "EndTime": "2025-11-12T19:00"
-  },
-  {
-    "Title": "Course Planning Workshop",
-    "Description": "Tentative date",
-    "Location": "",
-    "Date": "November 19",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2025-11-19T18:00",
-    "EndTime": "2025-11-19T19:30"
-  },
-  {
     "Title": "FM Workshop",
     "Description": "",
     "Location": "",

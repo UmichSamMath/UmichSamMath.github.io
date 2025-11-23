@@ -5,16 +5,16 @@ var monthsFeatured = 1;
 
 let congratsMessages = [
   
-  //{
-  //  "name": "Ashley Pittel",
-  //  "congratsEvent": "passing Exam P",
-  //  "dateAdded": new Date(2025, 9, 27)
-  //},
-  //{
-  //  "name": "Madelyne Cabasaan",
-  //  "congratsEvent": "passing Exam P",
-  //  "dateAdded": new Date(2025, 9, 27)
-  //}
+  {
+    "name": "Will Banfield",
+    "congratsEvent": "accepting internship offer at Cincinnati Insurance Company",
+    "dateAdded": new Date(2025, 10, 23)
+  },
+  {
+    "name": "Blake Holmgren",
+    "congratsEvent": "accepting internship offer at Blue Cross Blue Shield of Michigan",
+    "dateAdded": new Date(2025, 10, 23)
+  }
 ];
 
 function populateCongrats() {

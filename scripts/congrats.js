@@ -17,7 +17,7 @@ let congratsMessages = [
   },
   {
     "name": "Evelyn House",
-    "congratsEvent": "accepting an Internship with Aon Reinsurance in their Chicago office",
+    "congratsEvent": "accepting an internship with Aon Reinsurance in their Chicago office",
     "dateAdded": new Date(2025, 11, 1)
   }
 ];

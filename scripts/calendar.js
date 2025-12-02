@@ -5,8 +5,8 @@
 let SAMevents = [
   {
     "Title": "FM Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "Join us for an FM problem-solving session to prepare for December sittings of the exam! We’ll work through key concepts, problem-solving strategy, and more.<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=b31d4feffb&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "MH 1427",
     "Date": "December 2",
     "StartTimeStr": "6:00",
     "EndTimeStr": "8:00",
@@ -17,8 +17,8 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Cookie Decorating",
-    "Description": "Join us for a fun way to connect with your mentorship pairing! We will decorate sugar cookies while watching a holiday movie!",
-    "Location": "",
+    "Description": "Join us for a fun way to connect with your mentorship pairing! We will decorate sugar cookies while watching a holiday movie!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=a48c6387c2&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 4096",
     "Date": "December 3",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

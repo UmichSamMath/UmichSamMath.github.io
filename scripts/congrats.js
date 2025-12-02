@@ -14,6 +14,11 @@ let congratsMessages = [
     "name": "Blake Holmgren",
     "congratsEvent": "accepting an internship offer at Blue Cross Blue Shield of Michigan",
     "dateAdded": new Date(2025, 10, 23)
+  },
+  {
+    "name": "Evelyn House",
+    "congratsEvent": "accepting an Internship with Aon Reinsurance in their Chicago office",
+    "dateAdded": new Date(2025, 11, 1)
   }
 ];
 

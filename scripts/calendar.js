@@ -4,51 +4,15 @@
 
 let SAMevents = [
   {
-    "Title": "Winterfest 1",
-    "Description": "",
-    "Location": "Michigan Union, 530 S State St, Ann Arbor, MI 48109, USA",
-    "Date": "January 12",
-    "StartTimeStr": "4:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-01-12T16:00",
-    "EndTime": "2026-01-12T19:00"
-  },
-  {
-    "Title": "Winterfest 2",
-    "Description": "",
-    "Location": "Michigan Union, 530 S State St, Ann Arbor, MI 48109, USA",
-    "Date": "January 13",
-    "StartTimeStr": "4:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-01-13T16:00",
-    "EndTime": "2026-01-13T19:00"
-  },
-  {
-    "Title": "SAM Project Team Introduction",
-    "Description": "Join us for the introductory meeting of SAM's first ever project team! This is a great opportunity to bolster your resume and strengthen your technical skills in a collaborative learning environment. Work alongside other members on a semester-long project to build real-world experience.",
-    "Location": "EH 1866",
-    "Date": "January 14",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-01-14T18:00",
-    "EndTime": "2026-01-14T19:00"
-  },
-  {
     "Title": "Winter Mass Meeting",
-    "Description": "Attend to learn all about SAM, the actuarial profession, and our upcoming winter semester events!",
-    "Location": "EH 1086",
+    "Description": "Attend to learn all about SAM, the actuarial profession, and our upcoming winter semester events!<br><br>RSVP <a href=\"https://forms.gle/5NmLR2sLY5myM8MM8\">Here</a>!",
+    "Location": "EH 1360",
     "Date": "January 20",
-    "StartTimeStr": "6:00",
+    "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
     "AmPm": "PM",
     "DayofWeek": "Tuesday",
-    "StartTime": "2026-01-20T18:00",
+    "StartTime": "2026-01-20T19:00",
     "EndTime": "2026-01-20T20:00"
   },
   {
@@ -62,6 +26,18 @@ let SAMevents = [
     "DayofWeek": "Wednesday",
     "StartTime": "2026-01-21T18:00",
     "EndTime": "2026-01-21T20:00"
+  },
+  {
+    "Title": "GI Advocacy Research Opportunity",
+    "Description": "",
+    "Location": "EH 3866",
+    "Date": "January 22",
+    "StartTimeStr": "7:15",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-01-22T19:15",
+    "EndTime": "2026-01-22T20:00"
   },
   {
     "Title": "Yost Ice Skating",
@@ -89,7 +65,7 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Euchre Night",
-    "Description": "Pair up with your mentor/mentee and compete in our annual mentorship Euchre tournament!",
+    "Description": "Pair up with your mentor/mentee and compete in our annual mentorship Euchre tournament!<br><br>RSVP <a href=\"https://forms.gle/4WjkjeNpSWyMKeaW9\">Here</a>!",
     "Location": "Weiser 110",
     "Date": "January 29",
     "StartTimeStr": "7:00",
@@ -98,6 +74,198 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2026-01-29T19:00",
     "EndTime": "2026-01-29T21:00"
+  },
+  {
+    "Title": "Business Minor Session",
+    "Description": "RSVP <a href=\"https://events.blackthorn.io/36uWEr6/5a5nVu8VMFl\">Here</a>!",
+    "Location": "Corner Commons Room in Blau",
+    "Date": "February 4",
+    "StartTimeStr": "4:00",
+    "EndTimeStr": "5:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-02-04T16:00",
+    "EndTime": "2026-02-04T17:00"
+  },
+  {
+    "Title": "Professor Kausch Speaker Series",
+    "Description": "",
+    "Location": "",
+    "Date": "February 4",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-02-04T18:00",
+    "EndTime": "2026-02-04T19:00"
+  },
+  {
+    "Title": "Excel Workshops",
+    "Description": "",
+    "Location": "",
+    "Date": "February 10",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2026-02-10T18:00",
+    "EndTime": "2026-02-10T20:00"
+  },
+  {
+    "Title": "Ally Speaker Series",
+    "Description": "",
+    "Location": "",
+    "Date": "February 12",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-02-12T18:00",
+    "EndTime": "2026-02-12T19:00"
+  },
+  {
+    "Title": "DEI Event",
+    "Description": "",
+    "Location": "",
+    "Date": "February 16",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2026-02-16T18:00",
+    "EndTime": "2026-02-16T19:00"
+  },
+  {
+    "Title": "Mentorship Trivia Night",
+    "Description": "",
+    "Location": "",
+    "Date": "February 18",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:30",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-02-18T19:00",
+    "EndTime": "2026-02-18T20:30"
+  },
+  {
+    "Title": "Cigna Speaker Series",
+    "Description": "",
+    "Location": "",
+    "Date": "February 19",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-02-19T18:00",
+    "EndTime": "2026-02-19T19:00"
+  },
+  {
+    "Title": "Women’s Day Event",
+    "Description": "",
+    "Location": "",
+    "Date": "March 9",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2026-03-09T18:00",
+    "EndTime": "2026-03-09T19:00"
+  },
+  {
+    "Title": "AAA Life Speaker Series",
+    "Description": "",
+    "Location": "",
+    "Date": "March 11",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-03-11T18:00",
+    "EndTime": "2026-03-11T19:00"
+  },
+  {
+    "Title": "Alumni Day",
+    "Description": "",
+    "Location": "",
+    "Date": "March 21",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2026-03-21T18:00",
+    "EndTime": "2026-03-21T20:00"
+  },
+  {
+    "Title": "CAS Summer Program Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "March 23",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2026-03-23T18:00",
+    "EndTime": "2026-03-23T19:00"
+  },
+  {
+    "Title": "Board Elections Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "March 25",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-03-25T18:00",
+    "EndTime": "2026-03-25T19:00"
+  },
+  {
+    "Title": "Northwestern Mutual Speaker Series",
+    "Description": "",
+    "Location": "",
+    "Date": "March 26",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-03-26T18:00",
+    "EndTime": "2026-03-26T19:00"
+  },
+  {
+    "Title": "Everything Exams Workshop + CA Event",
+    "Description": "",
+    "Location": "",
+    "Date": "April 1",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-04-01T18:00",
+    "EndTime": "2026-04-01T19:00"
+  },
+  {
+    "Title": "SAM Board Elections",
+    "Description": "",
+    "Location": "",
+    "Date": "April 8",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-04-08T18:00",
+    "EndTime": "2026-04-08T20:00"
+  },
+  {
+    "Title": "Mentorship Field Day",
+    "Description": "",
+    "Location": "",
+    "Date": "April 11",
+    "StartTimeStr": "11:00",
+    "EndTimeStr": "2:00",
+    "AmPm": "PM",
+    "DayofWeek": "Saturday",
+    "StartTime": "2026-04-11T11:00",
+    "EndTime": "2026-04-11T14:00"
   }
 ];
 

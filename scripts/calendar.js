@@ -4,80 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Winter Mass Meeting",
-    "Description": "Attend to learn all about SAM, the actuarial profession, and our upcoming winter semester events!<br><br>RSVP <a href=\"https://forms.gle/5NmLR2sLY5myM8MM8\">Here</a>!",
-    "Location": "EH 1360",
-    "Date": "January 20",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-01-20T19:00",
-    "EndTime": "2026-01-20T20:00"
-  },
-  {
-    "Title": "Winter Welcome",
-    "Description": "Join us to meet other members and learn more about the resources SAM provides. Underclassmen are highly encouraged to attend!",
-    "Location": "NUB 1518",
-    "Date": "January 21",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-01-21T18:00",
-    "EndTime": "2026-01-21T20:00"
-  },
-  {
-    "Title": "GI Advocacy Research Opportunity",
-    "Description": "",
-    "Location": "EH 3866",
-    "Date": "January 22",
-    "StartTimeStr": "7:15",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-01-22T19:15",
-    "EndTime": "2026-01-22T20:00"
-  },
-  {
-    "Title": "Yost Ice Skating",
-    "Description": "Meet up with SAM members for a fun afternoon of open skate at Yost! The cost is $5 for entry and $5 to rent skates. This is a great event to attend with your mentor/mentee!",
-    "Location": "Yost Ice Arena, 1116 S State St, Ann Arbor, MI 48109, USA",
-    "Date": "January 25",
-    "StartTimeStr": "1:30",
-    "EndTimeStr": "3:30",
-    "AmPm": "PM",
-    "DayofWeek": "Sunday",
-    "StartTime": "2026-01-25T13:30",
-    "EndTime": "2026-01-25T15:30"
-  },
-  {
-    "Title": "Milliman Speaker Series",
-    "Description": "Milliman will be coming to present about Medicare Advantage. Attend to learn more about this healthcare product and its relevance in the industry.<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=3bdbe58a35&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "AH G168",
-    "Date": "January 28",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-01-28T18:00",
-    "EndTime": "2026-01-28T19:00"
-  },
-  {
-    "Title": "Mentorship Euchre Night",
-    "Description": "Pair up with your mentor/mentee and compete in our annual mentorship Euchre tournament!<br><br>RSVP <a href=\"https://forms.gle/4WjkjeNpSWyMKeaW9\">Here</a>!",
-    "Location": "Weiser 110",
-    "Date": "January 29",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "9:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-01-29T19:00",
-    "EndTime": "2026-01-29T21:00"
-  },
-  {
     "Title": "Business Minor Session",
-    "Description": "RSVP <a href=\"https://events.blackthorn.io/36uWEr6/5a5nVu8VMFl\">Here</a>!",
+    "Description": "Attend the info session to learn all about the Michigan Ross Business Minor and how to apply!<br><br><a href=\"https://us.list-manage.com/tWoKdrjzEgG?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
     "Location": "Corner Commons Room in Blau",
     "Date": "February 4",
     "StartTimeStr": "4:00",
@@ -89,8 +17,8 @@ let SAMevents = [
   },
   {
     "Title": "Professor Kausch Speaker Series",
-    "Description": "",
-    "Location": "",
+    "Description": "With an aging population, shrinking pensions, and declining savings, the United States is facing a retirement crisis that calls for actuarial solutions. Come hear Professor Kausch speak about this situation and what it means for actuaries!<br><br><a href=\"https://us.list-manage.com/z3paNfhyYBI?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 1866",
     "Date": "February 4",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

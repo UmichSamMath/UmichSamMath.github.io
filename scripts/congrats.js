@@ -7,7 +7,7 @@ let congratsMessages = [
   
   {
     "name": "Will Banfield",
-    "congratsEvent": “passing Exam P“,
+    "congratsEvent": "passing Exam Probability",
     "dateAdded": new Date(2025, 10, 23)
   },
   {

@@ -4,33 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Business Minor Session",
-    "Description": "Attend the info session to learn all about the Michigan Ross Business Minor and how to apply!<br><br><a href=\"https://us.list-manage.com/tWoKdrjzEgG?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "Corner Commons Room in Blau",
-    "Date": "February 4",
-    "StartTimeStr": "4:00",
-    "EndTimeStr": "5:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-02-04T16:00",
-    "EndTime": "2026-02-04T17:00"
-  },
-  {
-    "Title": "Professor Kausch Speaker Series",
-    "Description": "With an aging population, shrinking pensions, and declining savings, the United States is facing a retirement crisis that calls for actuarial solutions. Come hear Professor Kausch speak about this situation and what it means for actuaries!<br><br><a href=\"https://us.list-manage.com/z3paNfhyYBI?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 1866",
-    "Date": "February 4",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-02-04T18:00",
-    "EndTime": "2026-02-04T19:00"
-  },
-  {
     "Title": "Excel Workshops",
-    "Description": "",
-    "Location": "",
+    "Description": "Come practice your technical skills! We will go over the basics of Excel in preparation for an actuarial internship or full-time job, as well as a hands on approach to learning some more difficult Excel concepts. This workshop will also include a “case study” in which you will apply these skills!<br><br><a href=\"https://us.list-manage.com/Z0x0DhTp46l?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 1068",
     "Date": "February 10",
     "StartTimeStr": "6:00",
     "EndTimeStr": "8:00",
@@ -41,8 +17,8 @@ let SAMevents = [
   },
   {
     "Title": "Ally Speaker Series",
-    "Description": "",
-    "Location": "",
+    "Description": "Join us to hear representatives from Ally present about the industry and the opportunities they offer!<br><br><a href=\"https://us.list-manage.com/FRDTswG2jnM?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 4096",
     "Date": "February 12",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

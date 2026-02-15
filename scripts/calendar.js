@@ -4,33 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Excel Workshops",
-    "Description": "Come practice your technical skills! We will go over the basics of Excel in preparation for an actuarial internship or full-time job, as well as a hands on approach to learning some more difficult Excel concepts. This workshop will also include a “case study” in which you will apply these skills!<br><br><a href=\"https://us.list-manage.com/Z0x0DhTp46l?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 1068",
-    "Date": "February 10",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-02-10T18:00",
-    "EndTime": "2026-02-10T20:00"
-  },
-  {
-    "Title": "Ally Speaker Series",
-    "Description": "Join us to hear representatives from Ally present about the industry and the opportunities they offer!<br><br><a href=\"https://us.list-manage.com/FRDTswG2jnM?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Title": "ADI Speaker Series",
+    "Description": "ADI will virtually present on the topic of banks and finance within the context of actuarial math. There will also be a case study!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=9334cf9f3f&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
     "Location": "EH 4096",
-    "Date": "February 12",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-02-12T18:00",
-    "EndTime": "2026-02-12T19:00"
-  },
-  {
-    "Title": "DEI Event",
-    "Description": "",
-    "Location": "",
     "Date": "February 16",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -41,8 +17,8 @@ let SAMevents = [
   },
   {
     "Title": "Mentorship Trivia Night",
-    "Description": "",
-    "Location": "",
+    "Description": "Come play trivia with mentorship! Bring your mentor/mentee, eat some snacks, and have fun!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=03a8582d2e&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 4096",
     "Date": "February 18",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",
@@ -53,8 +29,8 @@ let SAMevents = [
   },
   {
     "Title": "Cigna Speaker Series",
-    "Description": "",
-    "Location": "",
+    "Description": "Cigna will be visiting to present on the topic of Setting Yourself Up for Success with discussions about recruiting, internships, and post-grad. They will also be hosting coffee chats on 2/18 and 2/19!<br>See the link below for additional details and sign up.<br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=0b4c57bafa&amp;e=63c96118a3\" target=\"_blank\"><u>Coffee Chat Sign Up</u></a><br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=d7ea4f973c&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 4096",
     "Date": "February 19",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

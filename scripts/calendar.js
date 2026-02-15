@@ -146,7 +146,7 @@ let SAMevents = [
     "DayofWeek": "Saturday",
     "StartTime": "2026-04-11T11:00",
     "EndTime": "2026-04-11T14:00"
-  }
+  } 
 ];
 
 // Sanitize description strings

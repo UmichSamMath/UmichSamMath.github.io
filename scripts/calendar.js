@@ -5,7 +5,7 @@
 let SAMevents = [
   {
     "Title": "Faculty Panel",
-    "Description": "Want to learn more about your professors? SAM’s Faculty Panel provides a space for you to ask any questions you might have. We’ll be hosting five accomplished actuaries at UM: Dr. Roger Natarajan, Dr. Virginia Young, Dr. David Kausch, Dr. Kristen Moore, and Prof. Joe Marker. Food will be provided. Don’t miss it!<br><br>RSVP <a>Here</a>!",
+    "Description": "Want to learn more about your professors? SAM’s Faculty Panel provides a space for you to ask any questions you might have. We’ll be hosting five accomplished actuaries at UM: Dr. Roger Natarajan, Dr. Virginia Young, Dr. David Kausch, Dr. Kristen Moore, and Prof. Joe Marker. Food will be provided. Don’t miss it!<br><br><a href="https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=7ed6c0c51a&amp;e=63c96118a3" target="_blank"><u>RSVP HERE</u></a>",
     "Location": "NUB 1528",
     "Date": "February 23",
     "StartTimeStr": "6:00",

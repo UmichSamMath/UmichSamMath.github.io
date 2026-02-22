@@ -5,7 +5,7 @@
 let SAMevents = [
   {
     "Title": "Faculty Panel",
-    "Description": "Want to learn more about your professors? SAM’s Faculty Panel provides a space for you to ask any questions you might have. We’ll be hosting five accomplished actuaries at UM: Dr. Roger Natarajan, Dr. Virginia Young, Dr. David Kausch, Dr. Kristen Moore, and Prof. Joe Marker. Food will be provided. Don’t miss it!<br><br><a href="https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=7ed6c0c51a&amp;e=63c96118a3" target="_blank"><u>RSVP HERE</u></a>",
+    "Description": "Want to learn more about your professors? SAM’s Faculty Panel provides a space for you to ask any questions you might have. We’ll be hosting five accomplished actuaries at UM: Dr. Roger Natarajan, Dr. Virginia Young, Dr. David Kausch, Dr. Kristen Moore, and Prof. Joe Marker. Food will be provided. Don’t miss it!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=7ed6c0c51a&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
     "Location": "NUB 1528",
     "Date": "February 23",
     "StartTimeStr": "6:00",
@@ -16,7 +16,7 @@ let SAMevents = [
     "EndTime": "2026-02-23T20:00"
   },
   {
-    "Title": "Women’s Day Event",
+    "Title": "Allianz Life Panel Q&A",
     "Description": "",
     "Location": "",
     "Date": "March 9",
@@ -26,6 +26,18 @@ let SAMevents = [
     "DayofWeek": "Monday",
     "StartTime": "2026-03-09T18:00",
     "EndTime": "2026-03-09T19:00"
+  },
+  {
+    "Title": "Women’s Day Event",
+    "Description": "",
+    "Location": "",
+    "Date": "March 10",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2026-03-10T18:00",
+    "EndTime": "2026-03-10T20:00"
   },
   {
     "Title": "AAA Life Speaker Series",
@@ -38,6 +50,18 @@ let SAMevents = [
     "DayofWeek": "Wednesday",
     "StartTime": "2026-03-11T18:00",
     "EndTime": "2026-03-11T19:00"
+  },
+  {
+    "Title": "ACTEX Workshop: Redefining Actuarial Learning with AI",
+    "Description": "",
+    "Location": "",
+    "Date": "March 16",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:15",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2026-03-16T18:00",
+    "EndTime": "2026-03-16T19:15"
   },
   {
     "Title": "Alumni Day",

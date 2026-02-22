@@ -4,40 +4,16 @@
 
 let SAMevents = [
   {
-    "Title": "ADI Speaker Series",
-    "Description": "ADI will virtually present on the topic of banks and finance within the context of actuarial math. There will also be a case study!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=9334cf9f3f&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 4096",
-    "Date": "February 16",
+    "Title": "Faculty Panel",
+    "Description": "Want to learn more about your professors? SAM’s Faculty Panel provides a space for you to ask any questions you might have. We’ll be hosting five accomplished actuaries at UM: Dr. Roger Natarajan, Dr. Virginia Young, Dr. David Kausch, Dr. Kristen Moore, and Prof. Joe Marker. Food will be provided. Don’t miss it!<br><br>RSVP <a>Here</a>!",
+    "Location": "NUB 1528",
+    "Date": "February 23",
     "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
+    "EndTimeStr": "8:00",
     "AmPm": "PM",
     "DayofWeek": "Monday",
-    "StartTime": "2026-02-16T18:00",
-    "EndTime": "2026-02-16T19:00"
-  },
-  {
-    "Title": "Mentorship Trivia Night",
-    "Description": "Come play trivia with mentorship! Bring your mentor/mentee, eat some snacks, and have fun!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=03a8582d2e&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 4096",
-    "Date": "February 18",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-02-18T19:00",
-    "EndTime": "2026-02-18T20:30"
-  },
-  {
-    "Title": "Cigna Speaker Series",
-    "Description": "Cigna will be visiting to present on the topic of Setting Yourself Up for Success with discussions about recruiting, internships, and post-grad. They will also be hosting coffee chats on 2/18 and 2/19!<br>See the link below for additional details and sign up.<br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=0b4c57bafa&amp;e=63c96118a3\" target=\"_blank\"><u>Coffee Chat Sign Up</u></a><br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=d7ea4f973c&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 4096",
-    "Date": "February 19",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-02-19T18:00",
-    "EndTime": "2026-02-19T19:00"
+    "StartTime": "2026-02-23T18:00",
+    "EndTime": "2026-02-23T20:00"
   },
   {
     "Title": "Women’s Day Event",
@@ -146,7 +122,7 @@ let SAMevents = [
     "DayofWeek": "Saturday",
     "StartTime": "2026-04-11T11:00",
     "EndTime": "2026-04-11T14:00"
-  } 
+  }
 ];
 
 // Sanitize description strings

@@ -4,21 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Faculty Panel",
-    "Description": "Want to learn more about your professors? SAM’s Faculty Panel provides a space for you to ask any questions you might have. We’ll be hosting five accomplished actuaries at UM: Dr. Roger Natarajan, Dr. Virginia Young, Dr. David Kausch, Dr. Kristen Moore, and Prof. Joe Marker. Food will be provided. Don’t miss it!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=7ed6c0c51a&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "NUB 1528",
-    "Date": "February 23",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-02-23T18:00",
-    "EndTime": "2026-02-23T20:00"
-  },
-  {
     "Title": "Allianz Life Panel Q&A",
-    "Description": "",
-    "Location": "",
+    "Description": "Allianz Life is having five full-time actuaries answer questions in a Q&amp;A format. This is a great way to hear from a variety of roles within a large insurance company!<br>Be sure to submit your questions <a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=609de9ebff&amp;e=63c96118a3\" target=\"_blank\"><u>HERE</u></a>",
+    "Location": "EH 3096",
     "Date": "March 9",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -29,8 +17,8 @@ let SAMevents = [
   },
   {
     "Title": "Women’s Day Event",
-    "Description": "",
-    "Location": "",
+    "Description": "Come celebrate International Women’s Day with us by learning about the experiences of female industry professionals and students through our Women’s Day Panel! Time will be reserved for Q&amp;A at the end of the event, and dinner will be provided!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=f45807712c&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH B844",
     "Date": "March 10",
     "StartTimeStr": "6:00",
     "EndTimeStr": "8:00",
@@ -41,8 +29,8 @@ let SAMevents = [
   },
   {
     "Title": "AAA Life Speaker Series",
-    "Description": "",
-    "Location": "",
+    "Description": "Actuaries from AAA Life are visiting to speak with students and present on an industry topic.",
+    "Location": "EH 2866",
     "Date": "March 11",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -68,12 +56,12 @@ let SAMevents = [
     "Description": "",
     "Location": "",
     "Date": "March 21",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
+    "StartTimeStr": "1:00",
+    "EndTimeStr": "5:00",
     "AmPm": "PM",
     "DayofWeek": "Saturday",
-    "StartTime": "2026-03-21T18:00",
-    "EndTime": "2026-03-21T20:00"
+    "StartTime": "2026-03-21T13:00",
+    "EndTime": "2026-03-21T17:00"
   },
   {
     "Title": "CAS Summer Program Workshop",

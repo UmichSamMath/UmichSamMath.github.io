@@ -4,45 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Allianz Life Panel Q&A",
-    "Description": "Allianz Life is having five full-time actuaries answer questions in a Q&amp;A format. This is a great way to hear from a variety of roles within a large insurance company!<br>Be sure to submit your questions <a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=609de9ebff&amp;e=63c96118a3\" target=\"_blank\"><u>HERE</u></a>",
-    "Location": "EH 3096",
-    "Date": "March 9",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-03-09T18:00",
-    "EndTime": "2026-03-09T19:00"
-  },
-  {
-    "Title": "Women’s Day Event",
-    "Description": "Come celebrate International Women’s Day with us by learning about the experiences of female industry professionals and students through our Women’s Day Panel! Time will be reserved for Q&amp;A at the end of the event, and dinner will be provided!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=f45807712c&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH B844",
-    "Date": "March 10",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-03-10T18:00",
-    "EndTime": "2026-03-10T20:00"
-  },
-  {
-    "Title": "AAA Life Speaker Series",
-    "Description": "Actuaries from AAA Life are visiting to speak with students and present on an industry topic.",
+    "Title": "ACTEX Workshop",
+    "Description": "The topic of this workshop is Redefining Actuarial Learning with AI. There will also be a raffle! For every 10 attendees, one winner will receive free three month access to the full ACTEX Digital Study Guide for an exam of their choice!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=2938d1e302&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
     "Location": "EH 2866",
-    "Date": "March 11",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-03-11T18:00",
-    "EndTime": "2026-03-11T19:00"
-  },
-  {
-    "Title": "ACTEX Workshop: Redefining Actuarial Learning with AI",
-    "Description": "",
-    "Location": "",
     "Date": "March 16",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:15",
@@ -52,9 +16,21 @@ let SAMevents = [
     "EndTime": "2026-03-16T19:15"
   },
   {
+    "Title": "CAS Summer Program Workshop",
+    "Description": "The CAS Student Central Summer Program is an online program for students interested in the property and casualty industry. It is a great opportunity for underclassmen who are looking for an actuarial experience this summer. We will walk through the application process during the workshop.",
+    "Location": "EH 2866",
+    "Date": "March 19",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-03-19T18:00",
+    "EndTime": "2026-03-19T19:00"
+  },
+  {
     "Title": "Alumni Day",
-    "Description": "",
-    "Location": "",
+    "Description": "SAM Alumni will return to Ann Arbor to discuss their various jobs and career tracks in a panel discussion, breakout session, and networking event. This will be a great event for members of all years! Make connections with actuaries from across the country and learn about all different actuarial career tracks! <u>Mentorship is expected to attend.</u> Attire is smart casual (think dinner with your parents!). Free food will also be provided in a networking luncheon with the alumni. More info will be sent out in a separate email with the schedule and panelists, so be sure to check it out and put the event in your calendar!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=5a2f8fbe88&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "East Hall",
     "Date": "March 21",
     "StartTimeStr": "1:00",
     "EndTimeStr": "5:00",
@@ -62,18 +38,6 @@ let SAMevents = [
     "DayofWeek": "Saturday",
     "StartTime": "2026-03-21T13:00",
     "EndTime": "2026-03-21T17:00"
-  },
-  {
-    "Title": "CAS Summer Program Workshop",
-    "Description": "",
-    "Location": "",
-    "Date": "March 23",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-03-23T18:00",
-    "EndTime": "2026-03-23T19:00"
   },
   {
     "Title": "Board Elections Workshop",

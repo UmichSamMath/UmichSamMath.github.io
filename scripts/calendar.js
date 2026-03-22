@@ -4,44 +4,20 @@
 
 let SAMevents = [
   {
-    "Title": "ACTEX Workshop",
-    "Description": "The topic of this workshop is Redefining Actuarial Learning with AI. There will also be a raffle! For every 10 attendees, one winner will receive free three month access to the full ACTEX Digital Study Guide for an exam of their choice!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=2938d1e302&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "EH 2866",
-    "Date": "March 16",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:15",
+    "Title": "Coaching Actuaries Trivia Night",
+    "Description": "Come play trivia for the chance to win a free Coaching Actuaries course of your choosing!",
+    "Location": "",
+    "Date": "March 24",
+    "StartTimeStr": "5:00",
+    "EndTimeStr": "6:00",
     "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-03-16T18:00",
-    "EndTime": "2026-03-16T19:15"
-  },
-  {
-    "Title": "CAS Summer Program Workshop",
-    "Description": "The CAS Student Central Summer Program is an online program for students interested in the property and casualty industry. It is a great opportunity for underclassmen who are looking for an actuarial experience this summer. We will walk through the application process during the workshop.",
-    "Location": "EH 2866",
-    "Date": "March 19",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-03-19T18:00",
-    "EndTime": "2026-03-19T19:00"
-  },
-  {
-    "Title": "Alumni Day",
-    "Description": "SAM Alumni will return to Ann Arbor to discuss their various jobs and career tracks in a panel discussion, breakout session, and networking event. This will be a great event for members of all years! Make connections with actuaries from across the country and learn about all different actuarial career tracks! <u>Mentorship is expected to attend.</u> Attire is smart casual (think dinner with your parents!). Free food will also be provided in a networking luncheon with the alumni. More info will be sent out in a separate email with the schedule and panelists, so be sure to check it out and put the event in your calendar!<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=5a2f8fbe88&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP HERE</u></a>",
-    "Location": "East Hall",
-    "Date": "March 21",
-    "StartTimeStr": "1:00",
-    "EndTimeStr": "5:00",
-    "AmPm": "PM",
-    "DayofWeek": "Saturday",
-    "StartTime": "2026-03-21T13:00",
-    "EndTime": "2026-03-21T17:00"
+    "DayofWeek": "Tuesday",
+    "StartTime": "2026-03-24T17:00",
+    "EndTime": "2026-03-24T18:00"
   },
   {
     "Title": "Board Elections Workshop",
-    "Description": "",
+    "Description": "This workshop will provide an overview of the responsibilities of each position, what it means to be a board member, and what the election process is like. Highly encouraged for anyone considering running for board.",
     "Location": "",
     "Date": "March 25",
     "StartTimeStr": "6:00",
@@ -53,7 +29,7 @@ let SAMevents = [
   },
   {
     "Title": "Northwestern Mutual Speaker Series",
-    "Description": "",
+    "Description": "Northwestern Mutual is sending representatives to speak on the topic of Economic Capital.<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=2fba9861bd&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP</u></a>",
     "Location": "",
     "Date": "March 26",
     "StartTimeStr": "6:00",

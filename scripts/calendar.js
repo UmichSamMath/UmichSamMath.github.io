@@ -6,7 +6,7 @@ let SAMevents = [
   {
     "Title": "Coaching Actuaries Trivia Night",
     "Description": "Come play trivia for the chance to win a free Coaching Actuaries course of your choosing!",
-    "Location": "",
+    "Location": "EH 3088",
     "Date": "March 24",
     "StartTimeStr": "5:00",
     "EndTimeStr": "6:00",
@@ -30,7 +30,7 @@ let SAMevents = [
   {
     "Title": "Northwestern Mutual Speaker Series",
     "Description": "Northwestern Mutual is sending representatives to speak on the topic of Economic Capital.<br><br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=2fba9861bd&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP</u></a>",
-    "Location": "",
+    "Location": "EH 3096",
     "Date": "March 26",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

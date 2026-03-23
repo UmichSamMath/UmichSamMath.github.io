@@ -18,7 +18,7 @@ let SAMevents = [
   {
     "Title": "Board Elections Workshop",
     "Description": "This workshop will provide an overview of the responsibilities of each position, what it means to be a board member, and what the election process is like. Highly encouraged for anyone considering running for board.",
-    "Location": "",
+    "Location": "EH 1360",
     "Date": "March 25",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

@@ -29,7 +29,7 @@ let SAMevents = [
   },
   {
     "Title": "Board Elections Interviews",
-    "Description": "If you're running for board, each candidate must meet with the current board member in the position they are applying for to discuss the role and expectations.\nSign Up Coming Soon!",
+    "Description": "If you're running for board, each candidate must meet with the current board member in the position they are applying for to discuss the role and expectations.",
     "Location": "Math Atrium",
     "Date": "April 1",
     "StartTimeStr": "12:00",

@@ -18,7 +18,7 @@ let SAMevents = [
   {
     "Title": "Mentorship Field Day",
     "Description": "Get some fresh air and hang out with other SAM members! There will be water balloons and other fun games!",
-    "Location": "Mitchell Field",
+    "Location": "Ferry Field",
     "Date": "April 11",
     "StartTimeStr": "11:00",
     "EndTimeStr": "2:00",

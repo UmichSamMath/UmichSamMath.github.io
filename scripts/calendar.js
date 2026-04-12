@@ -4,28 +4,28 @@
 
 let SAMevents = [
   {
-    "Title": "SAM Board Elections",
-    "Description": "All membership is encouraged to attend to elect SAM's new executive board. Food provided!",
-    "Location": "EH 1324",
-    "Date": "April 8",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
+    "Title": "Senior Bar Crawl",
+    "Description": "5:30 PM: Bill's Beer Garden<br>7:00 PM: BABS Underground<br>8:00 PM: Good Time Charley's<br>9:30 PM: Garage Bar<br>11:00 PM: Rick’s American Cafe<br>We will update the <a href=\"https://groupme.com/join_group/114270822/lNhxScQS\"><u>GroupMe</u></a> as we move locations. Please keep in mind that all of these locations are 21+, so remember to bring your ID!<br><br>RSVP <a href=\"https://forms.gle/Hb8PfJN8iw1cumja8\">Here</a>!",
+    "Location": "Bill’s Beer Garden",
+    "Date": "April 16",
+    "StartTimeStr": "5:30",
+    "EndTimeStr": "11:00",
     "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-04-08T18:00",
-    "EndTime": "2026-04-08T20:00"
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-04-16T17:30",
+    "EndTime": "2026-04-16T23:00"
   },
   {
-    "Title": "Mentorship Field Day",
-    "Description": "Get some fresh air and hang out with other SAM members! There will be water balloons and other fun games!",
-    "Location": "Ferry Field",
-    "Date": "April 11",
-    "StartTimeStr": "11:00",
+    "Title": "Senior Send Off Darty",
+    "Description": "Join us to send off our seniors with our last mixer of the year! Food and drinks will be provided (vegetarian options available)",
+    "Location": "1211 White St",
+    "Date": "April 18",
+    "StartTimeStr": "12:00",
     "EndTimeStr": "2:00",
     "AmPm": "PM",
     "DayofWeek": "Saturday",
-    "StartTime": "2026-04-11T11:00",
-    "EndTime": "2026-04-11T14:00"
+    "StartTime": "2026-04-18T12:00",
+    "EndTime": "2026-04-18T14:00"
   }
 ];
 

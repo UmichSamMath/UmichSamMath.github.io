@@ -66,7 +66,7 @@ function populateEvents() {
 
     if (startShowDate <= currDate && currDate <= endShowDate) {
       resultDiv.innerHTML += `
-        <div class="bg-white rounded-lg shadow border p-6 flex flex-col justify-between space-y-3 text-center mt-8">
+        <div class="bg-white rounded-lg shadow border p-6 flex flex-col justify-start space-y-3 text-center mt-8">
           <div>
             <h3 class="text-xl font-bold text-um-blue mb-2">${c.Title}</h3>
             <p class="text-sm text-gray-600">${c.DayofWeek}, ${c.Date}</p>

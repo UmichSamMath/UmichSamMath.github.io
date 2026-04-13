@@ -16,8 +16,20 @@ let SAMevents = [
     "EndTime": "2026-04-16T23:00"
   },
   {
+    "Title": "Project Team Showcase",
+    "Description": "Check out the SAM Project Team showcase table and see the amazing work they've done this year!",
+    "Location": "",
+    "Date": "April 17",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-04-17T18:00",
+    "EndTime": "2026-04-17T20:00"
+  },
+  {
     "Title": "Senior Send Off Darty",
-    "Description": "Join us to send off our seniors with our last mixer of the year! Food and drinks will be provided (vegetarian options available)",
+    "Description": "Join us to send off our seniors with our last mixer of the year! Food and drinks will be provided (vegetarian options available)<br><a href=\"https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&amp;id=9232bd1512&amp;e=63c96118a3\" target=\"_blank\"><u>RSVP Here</u></a>",
     "Location": "1211 White St",
     "Date": "April 18",
     "StartTimeStr": "12:00",

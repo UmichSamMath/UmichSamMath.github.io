@@ -18,7 +18,7 @@ let SAMevents = [
   {
     "Title": "Project Team Showcase",
     "Description": "Check out the SAM Project Team showcase table and see the amazing work they've done this year!",
-    "Location": "CCCB 0460",
+    "Location": "CCCB 2460",
     "Date": "April 17",
     "StartTimeStr": "6:00",
     "EndTimeStr": "8:00",

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
@@ -33,11 +32,11 @@
   <link rel="preload" as="image" href="images/Board Headshots/Pablo.jpg">
   <link rel="preload" as="image" href="images/Board Headshots/Vannela.png">
   <link rel="preload" as="image" href="images/Board Headshots/Angelina.png">
-  <link rel="preload" as="image" href="images/Board Headshots/Janae.png" fetchpriority="high">
+  <link rel="preload" as="image" href="images/Board Headshots/Janae.JPG" fetchpriority="high">
   <link rel="preload" as="image" href="images/Board Headshots/Eason.png">
   <link rel="preload" as="image" href="images/Board Headshots/Naomi.png">
   <link rel="preload" as="image" href="images/Board Headshots/Akash.jpg">
-  <link rel="preload" as="image" href="images/Board Headshots/Zabelle.png">
+  <link rel="preload" as="image" href="images/Board Headshots/Zabelle.jpg">
 
   <!-- Social icons -->
   <link rel="preload" as="image" href="images/Instagram.png">
@@ -125,6 +124,12 @@
     .profile:not(.blue) a[href^="mailto:"] {
       color: var(--um-blue);
     }
+
+    .group:hover>.invisible,
+    .group:focus-within>.invisible {
+      visibility: visible;
+      opacity: 1;
+    }
   </style>
 
   <script src="scripts/jquery.min.js"></script>
@@ -151,9 +156,11 @@
         <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
         <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
 
-        <div class="relative group">
+        <!-- Resources dropdown -->
+        <div id="resourcesBox" class="relative group">
 
-          <button id="resourcesBtn" class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+          <button id="resourcesBtn" type="button"
+            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
             Resources
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
               stroke="currentColor">
@@ -188,6 +195,44 @@
       </button>
 
     </div>
+
+    <!-- mobile nav -->
+    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
+      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
+        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
+        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
+        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
+        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
+        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
+        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
+        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
+        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
+        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
+        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
+      </nav>
+    </div>
+
+    <!-- navbar helpers -->
+    <script>
+      document.getElementById('mobileBtn')
+        .addEventListener('click', () =>
+          document.getElementById('mobileMenu').classList.toggle('hidden'));
+
+      const btn = document.getElementById('resourcesBtn');
+      const menu = document.getElementById('resourcesMenu');
+
+      btn.addEventListener('click', e => {
+        e.preventDefault();
+        menu.classList.toggle('invisible');
+        menu.classList.toggle('opacity-0');
+      });
+
+      document.addEventListener('click', e => {
+        if (!menu.contains(e.target) && !btn.contains(e.target)) {
+          menu.classList.add('invisible', 'opacity-0');
+        }
+      });
+    </script>
 
   </header>
 

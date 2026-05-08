@@ -1,16 +1,18 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-26VXYCX5HE"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-26VXYCX5HE');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-26VXYCX5HE"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-26VXYCX5HE');
+  </script>
+
   <meta charset="utf-8" />
   <title>Contact</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -18,25 +20,24 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- ================== IMAGE PRELOADS ================== -->
-  <!-- Top‑of‑page / always‑visible assets get high priority -->
   <link rel="preload" as="image" href="images/logo-only.png" fetchpriority="high">
 
   <!-- Board headshots -->
-  <link rel="preload" as="image" href="images/Board Headshots/professor.jpg" fetchpriority="high">
-  <link rel="preload" as="image" href="images/Board Headshots/Mitchell.jpg" fetchpriority="high">
-  <link rel="preload" as="image" href="images/Board Headshots/Raegan.jpeg" fetchpriority="high">
-  <link rel="preload" as="image" href="images/Board Headshots/Nikki.jpg" fetchpriority="high">
-  <link rel="preload" as="image" href="images/Board Headshots/Bryce.JPG" fetchpriority="high">
-  <link rel="preload" as="image" href="images/Board Headshots/Alyssa.jpg" fetchpriority="high">
-  <link rel="preload" as="image" href="images/Board Headshots/Nikhil.jpeg">
-  <link rel="preload" as="image" href="images/Board Headshots/AnnDee.JPEG">
-  <link rel="preload" as="image" href="images/Board Headshots/Sajni.jpg">
-  <link rel="preload" as="image" href="images/Board Headshots/Chuming.jpeg">
-  <link rel="preload" as="image" href="images/Board Headshots/Janae.png" fetchpriority="high">
-  <link rel="preload" as="image" href="images/Board Headshots/Nicholas.png">
-  <link rel="preload" as="image" href="images/Board Headshots/Jordan.JPG">
+  <link rel="preload" as="image" href="images/Board Headshots/professor.jpg">
+  <link rel="preload" as="image" href="images/Board Headshots/Raegan.png" fetchpriority="high">
+  <link rel="preload" as="image" href="images/Board Headshots/Nick.png">
+  <link rel="preload" as="image" href="images/Board Headshots/Bryce.JPG">
+  <link rel="preload" as="image" href="images/Board Headshots/Maansi.png">
   <link rel="preload" as="image" href="images/Board Headshots/Andrew.jpeg">
+  <link rel="preload" as="image" href="images/Board Headshots/Ashni.png">
+  <link rel="preload" as="image" href="images/Board Headshots/Pablo.jpg">
+  <link rel="preload" as="image" href="images/Board Headshots/Vannela.png">
+  <link rel="preload" as="image" href="images/Board Headshots/Angelina.png">
+  <link rel="preload" as="image" href="images/Board Headshots/Janae.png" fetchpriority="high">
+  <link rel="preload" as="image" href="images/Board Headshots/Eason.png">
   <link rel="preload" as="image" href="images/Board Headshots/Naomi.png">
+  <link rel="preload" as="image" href="images/Board Headshots/Akash.jpg">
+  <link rel="preload" as="image" href="images/Board Headshots/Zabelle.png">
 
   <!-- Social icons -->
   <link rel="preload" as="image" href="images/Instagram.png">
@@ -97,6 +98,17 @@
       margin: 0 auto 1rem;
     }
 
+    .linkedin-icon {
+      width: 16px !important;
+      height: 16px !important;
+      border-radius: 0 !important;
+      border: none !important;
+      margin: 0 !important;
+      object-fit: contain;
+      display: inline-block;
+      vertical-align: middle;
+    }
+
     .profile a {
       text-decoration: underline;
       transition: opacity .15s;
@@ -115,19 +127,18 @@
     }
   </style>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
+
 </head>
 
 <body class="font-[Jost] leading-relaxed text-gray-900">
 
   <!-- ═════════ HEADER ═════════ -->
   <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
+
     <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+
       <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
         <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
         <span class="text-xl md:text-2xl">Student Actuaries at Michigan</span>
@@ -135,11 +146,13 @@
 
       <!-- desktop links -->
       <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
+
         <a href="index.html" class="text-um-maize hover:text-white">Home</a>
         <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
         <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
 
         <div class="relative group">
+
           <button id="resourcesBtn" class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
             Resources
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
@@ -147,11 +160,14 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
           </button>
+
           <div id="resourcesMenu"
             class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
+
             <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
             <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
             <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+
           </div>
         </div>
 
@@ -159,52 +175,26 @@
         <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>
         <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>
         <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>
+
       </nav>
 
       <!-- hamburger -->
       <button id="mobileBtn" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
+
     </div>
 
-    <!-- mobile -->
-    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
-      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
-        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
-        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
-        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
-        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
-        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
-      </nav>
-    </div>
-
-    <script>
-      document.getElementById('mobileBtn')
-        .addEventListener('click', () => document.getElementById('mobileMenu')
-          .classList.toggle('hidden'));
-
-      const btn = document.getElementById('resourcesBtn');
-      const menu = document.getElementById('resourcesMenu');
-      btn.addEventListener('click', e => {
-        e.preventDefault();
-        menu.classList.toggle('invisible'); menu.classList.toggle('opacity-0');
-      });
-      document.addEventListener('click', e => {
-        if (!menu.contains(e.target) && !btn.contains(e.target)) { menu.classList.add('invisible', 'opacity-0'); }
-      });
-    </script>
   </header>
 
   <!-- ═════════ BOARD ═════════ -->
   <section class="py-20 bg-white">
-    <h1 class="text-3xl font-bold text-center text-um-blue mb-12">Board&nbsp;Members</h1>
+
+    <h1 class="text-3xl font-bold text-center text-um-blue mb-12">Board Members</h1>
 
     <div class="board-grid mx-auto max-w-screen-xl px-6">
 
@@ -212,143 +202,224 @@
       <div class="profile">
         <img src="images/Board Headshots/professor.jpg" alt="Roger Natarajan">
         <p class="font-semibold">Advisor</p>
-        <p>Roger&nbsp;Natarajan</p>
+        <p>Roger Natarajan</p>
         <a href="mailto:rogernat@umich.edu">rogernat@umich.edu</a>
       </div>
 
       <!-- President -->
       <div class="profile blue">
-        <img src="images/Board Headshots/Mitchell.jpg" alt="Mitchell Fuchs">
+        <img src="images/Board Headshots/Raegan.png" alt="Raegan Gothard">
         <p class="font-semibold">President</p>
-        <p><a href="https://www.linkedin.com/in/mitchell-fuchs-24684b287/" target="_blank">Mitchell&nbsp;Fuchs</a></p>
-        <a href="mailto:mitchf@umich.edu">mitchf@umich.edu</a>
+
+        <p class="flex justify-center gap-2">
+          <span>Raegan&nbsp;Gothard</span>
+          <a href="https://www.linkedin.com/in/raegan-gothard" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:rgothard@umich.edu">rgothard@umich.edu</a>
       </div>
 
       <!-- Vice President -->
       <div class="profile">
-        <img src="images/Board Headshots/Raegan.jpeg" alt="Raegan Gothard">
+        <img src="images/Board Headshots/Nick.png" alt="Nicholas Sheppard">
         <p class="font-semibold">Vice President</p>
-        <p><a href="https://www.linkedin.com/in/raegan-gothard" target="_blank">Raegan&nbsp;Gothard</a></p>
-        <a href="mailto:rgothard@umich.edu">rgothard@umich.edu</a>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Nicholas&nbsp;Sheppard</span>
+          <a href="https://www.linkedin.com/in/n1ckshep" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:nickshep@umich.edu">nickshep@umich.edu</a>
       </div>
 
       <!-- Senior Career Chair -->
       <div class="profile blue">
-        <img src="images/Board Headshots/Nikki.jpg" alt="Nikki Gerodemos">
-        <p class="font-semibold">Career Chair</p>
-        <p><a href="https://www.linkedin.com/in/nikki-gerodemos-4b8951268/" target="_blank">Nikki&nbsp;Gerodemos</a></p>
-        <a href="mailto:ngerodem@umich.edu">ngerodem@umich.edu</a>
+        <img src="images/Board Headshots/Bryce.JPG" alt="Bryce Poss">
+        <p class="font-semibold">Senior Career Chair</p>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Bryce&nbsp;Poss</span>
+          <a href="https://www.linkedin.com/in/bryceposs/" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:bposs@umich.edu">bposs@umich.edu</a>
       </div>
 
       <!-- Junior Career Chair -->
       <div class="profile">
-        <img src="images/Board Headshots/Bryce.JPG" alt="Bryce Poss">
-        <p class="font-semibold">Career Chair</p>
-        <p><a href="https://www.linkedin.com/in/bryce-poss-4bb0a42b0/" target="_blank">Bryce&nbsp;Poss</a></p>
-        <a href="mailto:bposs@umich.edu">bposs@umich.edu</a>
+        <img src="images/Board Headshots/Maansi.png" alt="Maansi Kandula">
+        <p class="font-semibold">Junior Career Chair</p>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Maansi&nbsp;Kandula</span>
+          <a href="https://www.linkedin.com/in/maansi-kandula/" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:maansik@umich.edu">maansik@umich.edu</a>
       </div>
 
       <!-- Secretary -->
       <div class="profile blue">
-        <img src="images/Board Headshots/Alyssa.jpg" alt="Alyssa Falco">
+        <img src="images/Board Headshots/Andrew.jpeg" alt="Andrew Castelucci">
         <p class="font-semibold">Secretary</p>
-        <p><a href="https://www.linkedin.com/in/alyssafalco" target="_blank">Alyssa&nbsp;Falco</a></p>
-        <a href="mailto:alfalco@umich.edu">alfalco@umich.edu</a>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Andrew&nbsp;Castelucci</span>
+          <a href="https://www.linkedin.com/in/andrew-castelucci-823bba32a/" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:acastelu@umich.edu">acastelu@umich.edu</a>
       </div>
 
       <!-- Exam Chair -->
       <div class="profile">
-        <img src="images/Board Headshots/Nikhil.jpeg" alt="Nikhil Kori">
+        <img src="images/Board Headshots/Ashni.png" alt="Ashni Kansara">
         <p class="font-semibold">Exam Chair</p>
-        <p><a href="https://linkedin.com/in/nikhil-kori" target="_blank">Nikhil&nbsp;Kori</a></p>
-        <a href="mailto:nkori@umich.edu">nkori@umich.edu</a>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Ashni&nbsp;Kansara</span>
+          <a href="https://www.linkedin.com/in/ashni-kansara" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:kansaraa@umich.edu">kansaraa@umich.edu</a>
       </div>
 
       <!-- Outreach Chair -->
       <div class="profile blue">
-        <img src="images/Board Headshots/AnnDee.JPEG" alt="AnnDee Geddes">
+        <img src="images/Board Headshots/Pablo.jpg" alt="Pablo Razny">
         <p class="font-semibold">Outreach Chair</p>
-        <p><a href="https://www.linkedin.com/in/anndeegeddes" target="_blank">AnnDee&nbsp;Geddes</a></p>
-        <a href="mailto:ageddes@umich.edu">ageddes@umich.edu</a>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Pablo&nbsp;Razny</span>
+          <a href="https://www.linkedin.com/in/pablo-razny" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:prazny@umich.edu">prazny@umich.edu</a>
       </div>
 
       <!-- Treasurer -->
       <div class="profile">
-        <img src="images/Board Headshots/Sajni.jpg" alt="Sajni Patel">
+        <img src="images/Board Headshots/Vannela.png" alt="Vennela Manepalli">
         <p class="font-semibold">Treasurer</p>
-        <p><a href="https://www.linkedin.com/in/sajnipatelll" target="_blank">Sajni&nbsp;Patel</a></p>
-        <a href="mailto:sajni@umich.edu">sajni@umich.edu</a>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Vennela&nbsp;Manepalli</span>
+          <a href="https://www.linkedin.com/in/vennela-manepalli" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:vennelam@umich.edu">vennelam@umich.edu</a>
       </div>
 
-      <!-- International Liaison -->
+      <!-- International Student Liaison -->
       <div class="profile blue">
-        <img src="images/Board Headshots/Chuming.jpeg" alt="Chu-Ming Hsiao">
-        <p class="font-semibold">International Liaison</p>
-        <p><a href="https://www.linkedin.com/in/chsiao0123" target="_blank">Chu-Ming&nbsp;Hsiao</a></p>
-        <a href="mailto:chuming@umich.edu">chuming@umich.edu</a>
+        <img src="images/Board Headshots/Angelina.png" alt="Angelina Song">
+        <p class="font-semibold">International Student Liaison</p>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Angelina&nbsp;Song</span>
+          <a href="https://www.linkedin.com/in/daysong/" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:dasong@umich.edu">dasong@umich.edu</a>
       </div>
 
       <!-- Webmaster -->
       <div class="profile">
         <img src="images/Board Headshots/Janae.JPG" alt="Janae Shao">
         <p class="font-semibold">Webmaster</p>
-        <p><a href="https://www.linkedin.com/in/jiayin-shao/" target="_blank">Janae&nbsp;Shao</a></p>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Janae&nbsp;Shao</span>
+          <a href="https://www.linkedin.com/in/jiayin-shao/" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
         <a href="mailto:sjanae@umich.edu">sjanae@umich.edu</a>
       </div>
 
-      <!-- Underclassman Ambassador -->
+      <!-- Underclassmen Ambassador -->
       <div class="profile blue">
-        <img src="images/Board Headshots/Nicholas.png" alt="Nicholas Sheppard">
-        <p class="font-semibold">Underclassman Ambassador</p>
-        <p><a href="https://www.linkedin.com/in/n1ckshep" target="_blank">Nicholas&nbsp;Sheppard</a></p>
-        <a href="mailto:nickshep@umich.edu">nickshep@umich.edu</a>
+        <img src="images/Board Headshots/Eason.png" alt="Eason Lin">
+        <p class="font-semibold">Underclassmen Ambassador</p>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Eason&nbsp;Lin</span>
+          <a href="https://www.linkedin.com/in/easn/" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:easn@umich.edu">easn@umich.edu</a>
       </div>
 
-      <!-- Social Chair -->
+      <!-- Social / PR Chair -->
       <div class="profile">
-        <img src="images/Board Headshots/Jordan.JPG" alt="Jordan Hoffner">
-        <p class="font-semibold">Social Chair</p>
-        <p><a href="https://www.linkedin.com/in/jordan-hoffner-5021a7291" target="_blank">Jordan&nbsp;Hoffner</a></p>
-        <a href="mailto:jhoffner@umich.edu">jhoffner@umich.edu</a>
+        <img src="images/Board Headshots/Naomi.png" alt="Naomi Sowa">
+        <p class="font-semibold">Social / PR Chair</p>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Naomi&nbsp;Sowa</span>
+          <a href="https://www.linkedin.com/in/naomisowa" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:nsowa@umich.edu">nsowa@umich.edu</a>
       </div>
 
       <!-- IM Sports Chair -->
       <div class="profile blue">
-        <img src="images/Board Headshots/Andrew.jpeg" alt="Andrew Castelucci">
+        <img src="images/Board Headshots/Akash.jpg" alt="Akash Fewell">
         <p class="font-semibold">IM Sports Chair</p>
-        <p><a href="https://www.linkedin.com/in/andrew-castelucci-823bba32a/" target="_blank">Andrew&nbsp;Castelucci</a>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Akash&nbsp;Fewell</span>
+          <a href="https://www.linkedin.com/in/akash-fewell/" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
         </p>
-        <a href="mailto:acastelu@umich.edu">acastelu@umich.edu</a>
+
+        <a href="mailto:afewell@umich.edu">afewell@umich.edu</a>
       </div>
 
-      <!-- CAS Ambassador -->
+      <!-- CAS Student Ambassador -->
       <div class="profile">
-        <img src="images/Board Headshots/Naomi.png" alt="Naomi Sowa">
-        <p class="font-semibold">CAS Ambassador</p>
-        <p><a href="https://www.linkedin.com/in/naomisowa" target="_blank">Naomi&nbsp;Sowa</a></p>
-        <a href="mailto:nsowa@umich.edu">nsowa@umich.edu</a>
+        <img src="images/Board Headshots/Zabelle.jpg" alt="Zabelle Bobelian">
+        <p class="font-semibold">CAS Student Ambassador</p>
+
+        <p class="flex items-center justify-center gap-2">
+          <span>Zabelle&nbsp;Bobelian</span>
+          <a href="https://www.linkedin.com/in/zabelle-bobelian-395673349" target="_blank">
+            <img src="images/LinkedIn.png" alt="LinkedIn" class="linkedin-icon">
+          </a>
+        </p>
+
+        <a href="mailto:zabelle@umich.edu">zabelle@umich.edu</a>
       </div>
 
     </div>
+
   </section>
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="bg-gray-900 py-8 text-gray-200">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
-      <div>
-        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
-
-
-      </div>
-      <div class="space-x-4">
-        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
-        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
-        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
-      </div>
-    </div>
-
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
 </body>
 
 </html>

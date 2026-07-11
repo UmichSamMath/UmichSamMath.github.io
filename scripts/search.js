@@ -142,8 +142,8 @@ let companies = [
     "name": "CNA",
     "business": "Property and Casualty",
     "typeOfWork": "Insurance",
-    "contactName": "Josh Collier",
-    "contactEmail": "Joshua.Collier@cna.com",
+    "contactName": "Collin Levis",
+    "contactEmail": "collin.levis@cna.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {

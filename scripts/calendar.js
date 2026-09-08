@@ -77,7 +77,7 @@ let SAMevents = [
   },
   {
     "Title": "Resume Office Hours",
-    "Description": "Sign up sheet coming soon",
+    "Description": "Sign up sheet <a href=\"https://docs.google.com/spreadsheets/d/14X5jnxlE9Fw0ga-5mrfmH9S3-OrCBI1XB2id6IppZBQ/edit?usp=sharing\">here</a>!",
     "Location": "East Hall Atrium",
     "Date": "September 11",
     "StartTimeStr": "12:00",
@@ -194,6 +194,18 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2026-09-17T19:00",
     "EndTime": "2026-09-17T20:00"
+  },
+  {
+    "Title": "Mock Interviews",
+    "Description": "Sign up sheet <a href=\"https://docs.google.com/spreadsheets/d/1M2B1Tg4vpdtml65MmMz7-_iOW4TnaCIjfXQx2Ls3usY/edit?usp=sharing\">here</a>!",
+    "Location": "",
+    "Date": "September 18",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-09-18T00:00",
+    "EndTime": "2026-09-24T00:00"
   },
   {
     "Title": "Allstate Info Session",

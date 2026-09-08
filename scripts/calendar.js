@@ -4,42 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Festifall",
-    "Description": "Join us at Festifall to meet excited underclassmen, share what SAM is all about, and kick off the year!",
-    "Location": "Table A-53, right in front of Kines building",
-    "Date": "September 2",
-    "StartTimeStr": "3:00",
-    "EndTimeStr": "5:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-09-02T15:00",
-    "EndTime": "2026-09-02T17:00"
-  },
-  {
-    "Title": "Deloitte Consultative Offerings Information Session",
-    "Description": "RSVP: <a href=\"https://app.joinhandshake.com/events/2004703/share_preview\" target=\"_blank\">https://app.joinhandshake.com/<wbr />events/2004703/share_preview</a>",
-    "Location": "",
-    "Date": "September 3",
-    "StartTimeStr": "5:45",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-09-03T17:45",
-    "EndTime": "2026-09-03T19:00"
-  },
-  {
-    "Title": "Learn S’More About SAM",
-    "Description": "",
-    "Location": "411 N State St",
-    "Date": "September 3",
-    "StartTimeStr": "7:30",
-    "EndTimeStr": "9:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-09-03T19:30",
-    "EndTime": "2026-09-03T21:30"
-  },
-  {
     "Title": "Mass Meeting",
     "Description": "RSVP: <a href=\"https://forms.gle/uuVKp5MprBQpJ9Sk9\"><u>https://forms.gle/uuVKp5MprBQpJ9Sk9</u></a>",
     "Location": "EH 1360",
@@ -122,6 +86,18 @@ let SAMevents = [
     "DayofWeek": "Friday",
     "StartTime": "2026-09-11T00:00",
     "EndTime": "2026-09-17T00:00"
+  },
+  {
+    "Title": "Learn S’More About SAM",
+    "Description": "Come to our bonfire tonight to learn more about SAM, meet other members, and enjoy some s'mores!",
+    "Location": "411 N State St",
+    "Date": "September 11",
+    "StartTimeStr": "7:30",
+    "EndTimeStr": "9:30",
+    "AmPm": "PM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-09-11T19:30",
+    "EndTime": "2026-09-11T21:30"
   },
   {
     "Title": "Auto-Owners Info Session",

@@ -89,7 +89,7 @@ let SAMevents = [
   },
   {
     "Title": "Learn S’More About SAM",
-    "Description": "Come to our bonfire tonight to learn more about SAM, meet other members, and enjoy some s'mores!",
+    "Description": "Come to our bonfire tonight to learn more about SAM, meet other members, and enjoy some s'mores!<br>RSVP: <a href=\"https://forms.gle/ve2KhruF9kjFf8ZT7\"><u>https://forms.gle/ve2KhruF9kjFf8ZT7</u></a>",
     "Location": "411 N State St",
     "Date": "September 11",
     "StartTimeStr": "7:30",

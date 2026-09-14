@@ -29,7 +29,7 @@ let SAMevents = [
   },
   {
     "Title": "Nationwide Info Session",
-    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities.<br><br>Join here: <a href=\"https://teams.microsoft.com/meet/219511858581059?p=D4YLVpiJ4dqfX2Ka9Z\"><u>https://teams.microsoft.com/meet/219511858581059?p=D4YLVpiJ4dqfX2Ka9Z</u></a>",
+    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities.",
     "Location": "EH 4088",
     "Date": "September 14",
     "StartTimeStr": "7:00",

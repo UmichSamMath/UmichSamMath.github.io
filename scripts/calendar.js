@@ -4,78 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Mass Meeting",
-    "Description": "RSVP: <a href=\"https://forms.gle/uuVKp5MprBQpJ9Sk9\"><u>https://forms.gle/uuVKp5MprBQpJ9Sk9</u></a>",
-    "Location": "EH 1360",
-    "Date": "September 8",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-09-08T19:00",
-    "EndTime": "2026-09-08T20:00"
-  },
-  {
-    "Title": "New Member Orientation",
-    "Description": "RSVP: <a href=\"https://forms.gle/cBRwDYNRNAFpQxnq8\"><u>https://forms.gle/cBRwDYNRNAFpQxnq8</u></a>",
-    "Location": "EH 1360",
-    "Date": "September 8",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-09-08T20:00",
-    "EndTime": "2026-09-08T20:30"
-  },
-  {
-    "Title": "Resume Workshop #1",
-    "Description": "RSVP: <a href=\"https://forms.gle/fJYQDawFTvZpoUZ68\"><u>https://forms.gle/fJYQDawFTvZpoUZ68</u></a>",
-    "Location": "EH 1068",
-    "Date": "September 9",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "6:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-09-09T18:00",
-    "EndTime": "2026-09-09T18:30"
-  },
-  {
-    "Title": "Career Fair Interviews Workshop",
-    "Description": "RSVP: <a href=\"https://forms.gle/tAbBd6PZTKs8cH6n6\"><u>https://forms.gle/tAbBd6PZTKs8cH6n6</u></a>",
-    "Location": "EH 1068",
-    "Date": "September 9",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-09-09T18:30",
-    "EndTime": "2026-09-09T19:00"
-  },
-  {
-    "Title": "Resume Workshop #2",
-    "Description": "RSVP: <a href=\"https://forms.gle/YQWEYdDL8SUQpLm18\"><u>https://forms.gle/YQWEYdDL8SUQpLm18</u></a>",
-    "Location": "EH 4096",
-    "Date": "September 10",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "6:30",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-09-10T18:00",
-    "EndTime": "2026-09-10T18:30"
-  },
-  {
-    "Title": "International Student Careers Workshop - Pre Career Fair",
-    "Description": "RSVP: <a href=\"https://forms.gle/YB36moyLqvi2hiaD8\"><u>https://forms.gle/YB36moyLqvi2hiaD8</u></a>",
-    "Location": "EH 4096",
-    "Date": "September 10",
-    "StartTimeStr": "6:30",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-09-10T18:30",
-    "EndTime": "2026-09-10T19:00"
-  },
-  {
     "Title": "Resume Office Hours",
     "Description": "Sign up sheet <a href=\"https://docs.google.com/spreadsheets/d/14X5jnxlE9Fw0ga-5mrfmH9S3-OrCBI1XB2id6IppZBQ/edit?usp=sharing\">here</a>!",
     "Location": "East Hall Atrium",
@@ -88,21 +16,9 @@ let SAMevents = [
     "EndTime": "2026-09-17T00:00"
   },
   {
-    "Title": "Learn S’More About SAM",
-    "Description": "Come to our bonfire tonight to learn more about SAM, meet other members, and enjoy some s'mores!<br>RSVP: <a href=\"https://forms.gle/ve2KhruF9kjFf8ZT7\"><u>https://forms.gle/ve2KhruF9kjFf8ZT7</u></a>",
-    "Location": "411 N State St",
-    "Date": "September 11",
-    "StartTimeStr": "7:30",
-    "EndTimeStr": "9:30",
-    "AmPm": "PM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-09-11T19:30",
-    "EndTime": "2026-09-11T21:30"
-  },
-  {
     "Title": "Auto-Owners Info Session",
     "Description": "Auto-Owners will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "",
+    "Location": "EH 4096",
     "Date": "September 14",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -113,8 +29,8 @@ let SAMevents = [
   },
   {
     "Title": "Nationwide Info Session",
-    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "",
+    "Description": "Nationwide will be coming to present a company overview as well as their employment opportunities.<br><br>Join here: <a href=\"https://teams.microsoft.com/meet/219511858581059?p=D4YLVpiJ4dqfX2Ka9Z\"><u>https://teams.microsoft.com/meet/219511858581059?p=D4YLVpiJ4dqfX2Ka9Z</u></a>",
+    "Location": "EH 4088",
     "Date": "September 14",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -126,7 +42,7 @@ let SAMevents = [
   {
     "Title": "CareSource Info Session",
     "Description": "Caresource will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "",
+    "Location": "EH 4096",
     "Date": "September 15",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -138,7 +54,7 @@ let SAMevents = [
   {
     "Title": "EY Networking Dinner",
     "Description": "EY will be hosting a networking dinner at Sava’s. Please RSVP by Friday, 9/11!",
-    "Location": "",
+    "Location": "Sava's, 216 S State St, Ann Arbor, MI 48104, USA",
     "Date": "September 15",
     "StartTimeStr": "7:30",
     "EndTimeStr": "9:00",
@@ -162,7 +78,7 @@ let SAMevents = [
   {
     "Title": "AON Info Session",
     "Description": "Aon will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "",
+    "Location": "EH 1068",
     "Date": "September 16",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:30",
@@ -174,7 +90,7 @@ let SAMevents = [
   {
     "Title": "MassMutual Ascend Info Session",
     "Description": "MassMutual Ascend will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "",
+    "Location": "EH 3866",
     "Date": "September 17",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -186,7 +102,7 @@ let SAMevents = [
   {
     "Title": "AIG Info Session",
     "Description": "AIG will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "",
+    "Location": "EH 4096",
     "Date": "September 17",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -210,7 +126,7 @@ let SAMevents = [
   {
     "Title": "Allstate Info Session",
     "Description": "Allstate will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "",
+    "Location": "EH 4096",
     "Date": "September 21",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -222,7 +138,7 @@ let SAMevents = [
   {
     "Title": "Mercer / Marsh Info Session",
     "Description": "Mercer / Marsh will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "",
+    "Location": "EH 4096",
     "Date": "September 21",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -270,7 +186,7 @@ let SAMevents = [
   {
     "Title": "Pre Career Fair Chat",
     "Description": "",
-    "Location": "",
+    "Location": "Math Atrium",
     "Date": "September 24",
     "StartTimeStr": "9:00",
     "EndTimeStr": "11:00",
@@ -290,6 +206,66 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2026-09-24T12:00",
     "EndTime": "2026-09-24T15:00"
+  },
+  {
+    "Title": "Post Career Fair Mixer",
+    "Description": "",
+    "Location": "",
+    "Date": "September 25",
+    "StartTimeStr": "8:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-09-25T20:00",
+    "EndTime": "2026-09-26T00:00"
+  },
+  {
+    "Title": "SAM Recess",
+    "Description": "Come join us in the Law Quad to unwind and enjoy some fun outdoor activities. It will be a great opportunity to meet other SAM members in a casual setting.",
+    "Location": "Law Quadrangle, 625 S State St, Ann Arbor, MI 48109, USA",
+    "Date": "September 27",
+    "StartTimeStr": "10:00",
+    "EndTimeStr": "2:00",
+    "AmPm": "PM",
+    "DayofWeek": "Sunday",
+    "StartTime": "2026-09-27T10:00",
+    "EndTime": "2026-09-27T14:00"
+  },
+  {
+    "Title": "Case Study and Second Round Interview Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "September 29",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2026-09-29T18:00",
+    "EndTime": "2026-09-29T19:00"
+  },
+  {
+    "Title": "Mentorship Program Interest Form Due",
+    "Description": "",
+    "Location": "",
+    "Date": "October 2",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-10-02T00:00",
+    "EndTime": "2026-10-03T00:00"
+  },
+  {
+    "Title": "Mentorship Preference Forms Due",
+    "Description": "",
+    "Location": "",
+    "Date": "October 15",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-10-15T00:00",
+    "EndTime": "2026-10-16T00:00"
   }
 ];
 

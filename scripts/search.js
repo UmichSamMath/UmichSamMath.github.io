@@ -350,8 +350,8 @@ let companies = [
     "name": "Marsh McLennan",
     "business": "<br>",
     "typeOfWork": "Consulting",
-    "contactName": "Kimberly Sukhnanda",
-    "contactEmail": "kimberly.sukhnanda@mmc.com",
+    "contactName": "Kimberly Sukhnandan",
+    "contactEmail": "kimberly.sukhnandan@mmc.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
   {

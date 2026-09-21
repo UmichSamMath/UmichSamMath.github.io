@@ -64,7 +64,7 @@ let SAMevents = [
     "EndTime": "2026-09-22T20:00"
   },
   {
-    "Title": "Milliman CMH Info Session",
+    "Title": "Milliman Info Session",
     "Description": "Milliman will be coming to present a company overview as well as their employment opportunities. There will be food!",
     "Location": "EH 1372",
     "Date": "September 23",

@@ -16,30 +16,6 @@ let SAMevents = [
     "EndTime": "2026-09-24T00:00"
   },
   {
-    "Title": "Allstate Info Session",
-    "Description": "Allstate will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "EH 4096",
-    "Date": "September 21",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-09-21T18:00",
-    "EndTime": "2026-09-21T19:00"
-  },
-  {
-    "Title": "Mercer / Marsh Info Session",
-    "Description": "Mercer / Marsh will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "EH 4096",
-    "Date": "September 21",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-09-21T19:00",
-    "EndTime": "2026-09-21T20:00"
-  },
-  {
     "Title": "Allianz Info Session",
     "Description": "Allianz will be coming to present a company overview as well as their employment opportunities.",
     "Location": "EH 1360",
@@ -102,7 +78,7 @@ let SAMevents = [
   {
     "Title": "Post Career Fair Mixer",
     "Description": "",
-    "Location": "",
+    "Location": "1211 White St, Ann Arbor, MI 48104, USA",
     "Date": "September 25",
     "StartTimeStr": "8:00",
     "EndTimeStr": "12:00",
@@ -126,7 +102,7 @@ let SAMevents = [
   {
     "Title": "Case Study and Second Round Interview Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "EH 4096",
     "Date": "September 30",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",

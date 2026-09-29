@@ -4,104 +4,8 @@
 
 let SAMevents = [
   {
-    "Title": "Mock Interviews",
-    "Description": "Sign up sheet <a href=\"https://docs.google.com/spreadsheets/d/1M2B1Tg4vpdtml65MmMz7-_iOW4TnaCIjfXQx2Ls3usY/edit?usp=sharing\">here</a>!",
-    "Location": "",
-    "Date": "September 18",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-09-18T00:00",
-    "EndTime": "2026-09-24T00:00"
-  },
-  {
-    "Title": "Allianz Info Session",
-    "Description": "Allianz will be coming to present a company overview as well as their employment opportunities.",
-    "Location": "EH 1360",
-    "Date": "September 22",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-09-22T18:00",
-    "EndTime": "2026-09-22T19:00"
-  },
-  {
-    "Title": "Cigna Info Session",
-    "Description": "Cigna will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "EH 1360",
-    "Date": "September 22",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:00",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-09-22T19:00",
-    "EndTime": "2026-09-22T20:00"
-  },
-  {
-    "Title": "Milliman Info Session",
-    "Description": "Milliman will be coming to present a company overview as well as their employment opportunities. There will be food!",
-    "Location": "EH 1372",
-    "Date": "September 23",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:30",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-09-23T18:00",
-    "EndTime": "2026-09-23T19:30"
-  },
-  {
-    "Title": "Pre Career Fair Chat",
-    "Description": "Come get your last minute questions about the career fair answered. We will have a table in the math atrium, and feel free to stop by anytime with questions!",
-    "Location": "Math Atrium",
-    "Date": "September 24",
-    "StartTimeStr": "9:00",
-    "EndTimeStr": "11:00",
-    "AmPm": "AM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-09-24T09:00",
-    "EndTime": "2026-09-24T11:00"
-  },
-  {
-    "Title": "Actuarial Career Expo",
-    "Description": "",
-    "Location": "Michigan League, 911 N University Ave, Ann Arbor, MI 48109, USA",
-    "Date": "September 24",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "3:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-09-24T12:00",
-    "EndTime": "2026-09-24T15:00"
-  },
-  {
-    "Title": "Post Career Fair Mixer",
-    "Description": "",
-    "Location": "1211 White St, Ann Arbor, MI 48104, USA",
-    "Date": "September 25",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-09-25T20:00",
-    "EndTime": "2026-09-26T00:00"
-  },
-  {
-    "Title": "SAM Recess",
-    "Description": "Come join us in the Law Quad to unwind and enjoy some fun outdoor activities. It will be a great opportunity to meet other SAM members in a casual setting.",
-    "Location": "Law Quadrangle, 625 S State St, Ann Arbor, MI 48109, USA",
-    "Date": "September 27",
-    "StartTimeStr": "11:00",
-    "EndTimeStr": "2:00",
-    "AmPm": "PM",
-    "DayofWeek": "Sunday",
-    "StartTime": "2026-09-27T11:00",
-    "EndTime": "2026-09-27T14:00"
-  },
-  {
     "Title": "Case Study and Second Round Interview Workshop",
-    "Description": "",
+    "Description": "RSVP: <a href=\"https://forms.gle/qpQ9hmct3nfBqhbE7\"><u>https://forms.gle/qpQ9hmct3nfBqhbE7</u></a>",
     "Location": "EH 4096",
     "Date": "September 30",
     "StartTimeStr": "6:00",
@@ -126,14 +30,38 @@ let SAMevents = [
   {
     "Title": "SAM Fall Bonding",
     "Description": "",
-    "Location": "",
+    "Location": "EH 3096",
     "Date": "October 2",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "8:00",
+    "StartTimeStr": "4:00",
+    "EndTimeStr": "6:00",
     "AmPm": "PM",
     "DayofWeek": "Friday",
-    "StartTime": "2026-10-02T18:00",
-    "EndTime": "2026-10-02T20:00"
+    "StartTime": "2026-10-02T16:00",
+    "EndTime": "2026-10-02T18:00"
+  },
+  {
+    "Title": "Mentorship Mingling & Kickoff",
+    "Description": "RSVP: <a href=\"https://forms.gle/Apb6ZU954t4nUqsY7\"><u>https://forms.gle/Apb6ZU954t4nUqsY7</u></a>",
+    "Location": "USB 1230",
+    "Date": "October 6",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:30",
+    "AmPm": "PM",
+    "DayofWeek": "Tuesday",
+    "StartTime": "2026-10-06T19:00",
+    "EndTime": "2026-10-06T20:30"
+  },
+  {
+    "Title": "Mentorship Mixer 1",
+    "Description": "RSVP: <a href=\"https://forms.gle/MSzQEkdhLyAGokeU9\"><u>https://forms.gle/MSzQEkdhLyAGokeU9</u></a>",
+    "Location": "",
+    "Date": "October 9",
+    "StartTimeStr": "8:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-10-09T20:00",
+    "EndTime": "2026-10-10T00:00"
   },
   {
     "Title": "Mentorship Preference Forms Due",
@@ -146,6 +74,54 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2026-10-15T00:00",
     "EndTime": "2026-10-16T00:00"
+  },
+  {
+    "Title": "Mentorship Pumpkin Painting",
+    "Description": "",
+    "Location": "EH 1372",
+    "Date": "October 15",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-10-15T18:00",
+    "EndTime": "2026-10-15T19:00"
+  },
+  {
+    "Title": "Mentorship Pairings Released",
+    "Description": "",
+    "Location": "",
+    "Date": "October 23",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-10-23T00:00",
+    "EndTime": "2026-10-24T00:00"
+  },
+  {
+    "Title": "Mentorship Halloween Mixer",
+    "Description": "",
+    "Location": "",
+    "Date": "October 30",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "10:00",
+    "AmPm": "PM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-10-30T19:00",
+    "EndTime": "2026-10-30T22:00"
+  },
+  {
+    "Title": "Mentorship Game Night",
+    "Description": "",
+    "Location": "",
+    "Date": "November 9",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2026-11-09T18:00",
+    "EndTime": "2026-11-09T20:00"
   }
 ];
 

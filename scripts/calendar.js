@@ -4,45 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Case Study and Second Round Interview Workshop",
-    "Description": "RSVP: <a href=\"https://forms.gle/qpQ9hmct3nfBqhbE7\"><u>https://forms.gle/qpQ9hmct3nfBqhbE7</u></a>",
-    "Location": "EH 4096",
-    "Date": "September 30",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-09-30T18:00",
-    "EndTime": "2026-09-30T19:00"
-  },
-  {
-    "Title": "Mentorship Program Interest Form Due",
-    "Description": "",
-    "Location": "",
-    "Date": "October 2",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-10-02T00:00",
-    "EndTime": "2026-10-03T00:00"
-  },
-  {
-    "Title": "SAM Fall Bonding",
-    "Description": "",
-    "Location": "EH 3096",
-    "Date": "October 2",
-    "StartTimeStr": "4:00",
-    "EndTimeStr": "6:00",
-    "AmPm": "PM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-10-02T16:00",
-    "EndTime": "2026-10-02T18:00"
-  },
-  {
     "Title": "Mentorship Mingling & Kickoff",
     "Description": "RSVP: <a href=\"https://forms.gle/Apb6ZU954t4nUqsY7\"><u>https://forms.gle/Apb6ZU954t4nUqsY7</u></a>",
-    "Location": "USB 1230",
+    "Location": "NUB 1552",
     "Date": "October 6",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:30",
@@ -86,6 +50,18 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2026-10-15T18:00",
     "EndTime": "2026-10-15T19:00"
+  },
+  {
+    "Title": "Coaching Actuaries Workshop",
+    "Description": "",
+    "Location": "EH 4096",
+    "Date": "October 22",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Thursday",
+    "StartTime": "2026-10-22T18:00",
+    "EndTime": "2026-10-22T19:00"
   },
   {
     "Title": "Mentorship Pairings Released",

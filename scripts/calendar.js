@@ -18,7 +18,7 @@ let SAMevents = [
   {
     "Title": "Mentorship Mixer 1",
     "Description": "RSVP: <a href=\"https://forms.gle/MSzQEkdhLyAGokeU9\"><u>https://forms.gle/MSzQEkdhLyAGokeU9</u></a>",
-    "Location": "",
+    "Location": "1110 White St",
     "Date": "October 9",
     "StartTimeStr": "8:00",
     "EndTimeStr": "12:00",

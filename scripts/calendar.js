@@ -31,7 +31,7 @@ let SAMevents = [
     "Title": "Mentorship Preference Forms Due",
     "Description": "",
     "Location": "",
-    "Date": "October 15",
+    "Date": "October 16",
     "StartTimeStr": "12:00",
     "EndTimeStr": "12:00",
     "AmPm": "AM",

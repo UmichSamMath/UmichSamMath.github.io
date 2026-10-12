@@ -569,12 +569,12 @@ function populateCompanies(){
 
   companies.forEach(c => {
     resultDiv.innerHTML += `
-    <div class="company" data-name="${c.name}">
-      <img src="/images/Company Logos/${c.name}.png"></img>
+    <div class="company sam-company" data-name="${c.name}">
+      <img src="/images/Company Logos/${c.name}.png" alt="${c.name} logo">
       <p class="highlight company-title" style="background-color: transparent">${c.name}</p>
-      <p class="highlight" style="background-color: transparent">${c.business}</p>
-      <p class="highlight" style="background-color: transparent; margin-bottom: 10px;">${c.typeOfWork}</p>
-      <p class="highlight" style="background-color: transparent">${c.contactName}</p>
+      <p class="highlight co-type" style="background-color: transparent">${c.business}</p>
+      <p class="highlight co-type" style="background-color: transparent; margin-bottom: 10px;">${c.typeOfWork}</p>
+      <p class="highlight co-contact" style="background-color: transparent">${c.contactName}</p>
       <a class="highlight" style="background-color: transparent" href = "mailto:${c.contactEmail}">${c.contactEmail}</a>
     </div>
     `

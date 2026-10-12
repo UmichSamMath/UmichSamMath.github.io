@@ -16,97 +16,77 @@
   <script src="https://cdn.tailwindcss.com"></script>
 
   <link rel="preload" as="image" href="images/mentorship_collage.jpg" fetchpriority="high">
-  
-  <style>
-    :root{
-      --um-blue:#00274C;
-      --um-blue-light:#2e6aa3;
-      --um-maize:#FFCB05;
-    }
-    .bg-um-blue       { background-color:var(--um-blue) }
-    .bg-um-blue-light { background-color:var(--um-blue-light) }
-    .text-um-maize    { color:var(--um-maize) }
 
-    .company-card  { @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center; }
-    .company-logo  { @apply h-24 w-auto object-contain mx-auto; }
-
-    .group:hover>.invisible,
-    .group:focus-within>.invisible{visibility:visible;opacity:1;}
-  </style>
-
+  <!-- ================== FONTS & THEME ================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sam.css">
 
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
 </head>
-<body class="font-[Jost] leading-relaxed text-gray-900">
+<body>
 
   <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
-  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
-    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+  <header id="navbar" class="sam-nav">
+    <div class="sam-nav-inner">
 
-      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
-        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      <a href="index.html" class="sam-brand">
+        <img src="images/logo-only.png" alt="SAM logo" class="sam-logo">
+        <span class="sam-brand-text">Student Actuaries at Michigan</span>
       </a>
 
       <!-- desktop links -->
-      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
-        <a href="index.html"       class="text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html"    class="text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html"         class="text-um-maize hover:text-white">New Members</a>
+      <nav class="sam-links">
+        <a href="index.html"       class="sam-link">Home</a>
+        <a href="calendar.html"    class="sam-link">Calendar</a>
+        <a href="new.html"         class="sam-link">New Members</a>
 
         <!-- Resources dropdown -->
-        <div id="resourcesBox" class="relative group">
-          <button id="resourcesBtn" type="button"
-                  class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+        <div id="resourcesBox" class="sam-drop">
+          <button id="resourcesBtn" type="button" class="sam-link">
             Resources
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                 viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M19 9l-7 7-7-7" />
             </svg>
           </button>
 
-          <div id="resourcesMenu"
-               class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
-            <a href="course.html"   class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
-            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
-            <a href="exam.html"     class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+          <div id="resourcesMenu" class="sam-menu">
+            <a href="course.html">Course Resources</a>
+            <a href="workshop.html">Workshops</a>
+            <a href="exam.html">Exam Resources</a>
           </div>
         </div>
 
-        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html"      class="text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html"   class="text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html"     class="text-um-maize hover:text-white">Contact</a>
+        <a href="scholarship.html" class="sam-link">Scholarships</a>
+        <a href="mentor.html"      class="sam-link is-active">Mentorship</a>
+        <a href="companies.html"   class="sam-link">Companies</a>
+        <a href="contact.html"     class="sam-link">Contact</a>
       </nav>
 
       <!-- mobile button -->
-      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
+      <button id="mobileBtn" aria-label="Menu" class="sam-burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
 
     <!-- mobile nav -->
-    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
-      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
-        <a href="index.html"       class="py-2 text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html"    class="py-2 text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html"         class="py-2 text-um-maize hover:text-white">New Members</a>
-        <a href="course.html"      class="py-2 text-um-maize hover:text-white">Course Resources</a>
-        <a href="workshop.html"    class="py-2 text-um-maize hover:text-white">Workshops</a>
-        <a href="exam.html"        class="py-2 text-um-maize hover:text-white">Exam Resources</a>
-        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html"      class="py-2 text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html"   class="py-2 text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html"     class="py-2 text-um-maize hover:text-white">Contact</a>
+    <div id="mobileMenu" class="sam-mobile hidden">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="new.html">New Members</a>
+        <a href="course.html">Course Resources</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="exam.html">Exam Resources</a>
+        <a href="scholarship.html">Scholarships</a>
+        <a href="mentor.html">Mentorship</a>
+        <a href="companies.html">Companies</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
 
@@ -118,54 +98,67 @@
 
       const btn  = document.getElementById('resourcesBtn');
       const menu = document.getElementById('resourcesMenu');
+      const drop = document.getElementById('resourcesBox');
 
       btn.addEventListener('click', e=>{
         e.preventDefault();
-        menu.classList.toggle('invisible');
-        menu.classList.toggle('opacity-0');
+        menu.classList.toggle('open');
+        drop.classList.toggle('is-open');
       });
       document.addEventListener('click', e=>{
         if(!menu.contains(e.target) && !btn.contains(e.target)){
-          menu.classList.add('invisible','opacity-0');
+          menu.classList.remove('open');
+          drop.classList.remove('is-open');
         }
       });
     </script>
   </header>
 
   <!-- ───── Intro ───── -->
-  <section class="py-20 bg-white">
-    <div class="mx-auto max-w-screen-lg px-6 space-y-8 text-center">
-      <h1 class="text-4xl font-bold text-um-blue">Mentorship!</h1>
-      <p class="text-xl">
-        Confused about <strong>where to start</strong> with the actuarial career? Looking to
-        <strong>give advice to others</strong> about the actuarial career that you wish you were given?
-        Consider <strong>SAM’s Mentorship Program</strong>! The Mentorship Program sets up every
+  <section class="sam-section sam-light">
+    <span class="deco -right-12 -bottom-24 w-[520px]" style="color:rgba(0,39,76,.08)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMidYMax meet">
+        <path d="M0 190 C 120 190 150 28 300 28 C 450 28 480 190 600 190" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M0 192 H600" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap relative z-10 sam-center">
+      <span class="sam-tick"></span>
+      <h1 class="sam-title">Mentorship!</h1>
+      <p class="sam-lead mx-auto max-w-3xl">
+        Confused about where to start with the actuarial career? Looking to
+        give advice to others about the actuarial career that you wish you were given?
+        Consider SAM’s Mentorship Program! The Mentorship Program sets up every
         prospective actuarial student with a mentor to help guide them through their actuarial journey
         with both professional and social events.
       </p>
 
-      <img id="collage_photo" class="mx-auto w-full max-w-4xl rounded-lg shadow" alt="Mentorship collage">
+      <div class="mt-10 mx-auto w-full max-w-4xl overflow-hidden rounded-2xl border border-[var(--line)] shadow-[var(--shadow-lift)]">
+        <img id="collage_photo" class="w-full" alt="Mentorship collage">
+      </div>
       <script src="scripts/mentor_collage.js"></script>
     </div>
   </section>
 
   <!-- ───── Roadmap ───── -->
-  <section class="py-20 bg-um-blue-light text-white">
-    <div class="mx-auto max-w-screen-xl px-6 text-center space-y-6">
+  <section class="sam-section sam-dark grid-paper-dark">
+    <div class="sam-wrap relative z-10 sam-center">
       <img src="/images/SAM Roadmaps.jpg" alt="Mentorship timeline"
-           class="mx-auto w-full max-w-5xl rounded-lg shadow-lg">
+           class="mx-auto w-full max-w-5xl rounded-2xl shadow-[var(--shadow-lift)] border border-white/10">
     </div>
   </section>
 
   <!-- ───── Sign-Up ───── -->
-  <section class="hidden py-20 bg-white">
-    <div class="mx-auto max-w-screen-md px-6 space-y-10 text-center">
-      <h2 class="text-3xl font-bold text-um-blue">Sign-Up</h2>
+  <section class="hidden sam-section sam-light">
+    <div class="sam-wrap-narrow sam-center">
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Sign-Up</h2>
 
-      <div class="grid gap-8 md:grid-cols-2">
-        <div class="space-y-4">
+      <div class="grid gap-8 md:grid-cols-2 text-left mt-8">
+        <div class="sam-card sam-card-pad sam-hover space-y-4">
           <a href="https://forms.gle/uZQhrxHA3ikEfP6P6" target="_blank"
-             class="inline-block bg-um-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-um-blue/80">
+             class="sam-btn w-full">
             Mentee Interest Form
           </a>
           <p class="text-sm">
@@ -174,9 +167,9 @@
           </p>
         </div>
 
-        <div class="space-y-4">
+        <div class="sam-card sam-card-pad sam-hover space-y-4">
           <a href="https://forms.gle/Kws5wu5J1ygsPUcKA" target="_blank"
-             class="inline-block bg-um-blue text-white px-6 py-3 rounded-lg font-semibold hover:bg-um-blue/80">
+             class="sam-btn w-full">
             Mentor Interest Form
           </a>
           <p class="text-sm">
@@ -189,21 +182,21 @@
   </section>
 
   <!-- ───── Leaderboard ───── -->
-  <section class="hidden py-20 bg-um-blue-light text-white">
-    <div class="mx-auto max-w-screen-lg px-6 text-center space-y-8">
-      <h2 class="text-3xl font-bold">Mentorship Leaderboard</h2>
+  <section class="hidden sam-section sam-dark grid-paper-dark">
+    <div class="sam-wrap-narrow sam-center">
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Mentorship Leaderboard</h2>
 
-      <div class="overflow-x-auto">
-        <table class="min-w-full text-left text-sm rounded-lg overflow-hidden shadow-lg bg-white text-gray-900">
-          <thead class="bg-um-blue text-white">
-            <tr><th class="px-4 py-2">Mentor</th><th class="px-4 py-2">Mentee</th><th class="px-4 py-2">Score</th></tr>
+      <div class="overflow-x-auto mt-6">
+        <table class="sam-table text-left">
+          <thead>
+            <tr><th>Mentor</th><th>Mentee</th><th>Score</th></tr>
           </thead>
           <tbody id="leaderboard"></tbody>
         </table>
       </div>
 
-      <button id="expandButton"
-              class="bg-um-maize text-gray-900 px-6 py-2 rounded-lg font-semibold hover:opacity-90">
+      <button id="expandButton" class="sam-btn sam-btn-maize mt-8">
         See More Teams!
       </button>
 
@@ -215,34 +208,31 @@
   </section>
 
   <!-- ───── Typical Events ───── -->
-  <section class="hidden py-20 bg-white">
-    <div class="mx-auto max-w-screen-md px-6 space-y-6 text-center">
-      <h2 class="text-3xl font-bold text-um-blue">Typical events held by the mentorship program</h2>
+  <section class="hidden sam-section sam-light">
+    <div class="sam-wrap-narrow sam-center">
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Typical events held by the mentorship program</h2>
 
-      <ul class="mx-auto grid gap-3 sm:grid-cols-2 text-lg">
-        <li>Speed Dating</li>
-        <li>Double Dates</li>
-        <li>Course / Exam Planning</li>
-        <li>Resume Reviews / Mock Interviews</li>
-        <li>Semesterly Euchre Tournament</li>
-        <li>Mixers</li>
-        <li>Movie Night + Trivia</li>
+      <ul class="mx-auto grid gap-3 sm:grid-cols-2 text-lg max-w-2xl text-left mt-6">
+        <li class="sam-chip">Speed Dating</li>
+        <li class="sam-chip">Double Dates</li>
+        <li class="sam-chip">Course / Exam Planning</li>
+        <li class="sam-chip">Resume Reviews / Mock Interviews</li>
+        <li class="sam-chip">Semesterly Euchre Tournament</li>
+        <li class="sam-chip">Mixers</li>
+        <li class="sam-chip">Movie Night + Trivia</li>
       </ul>
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="bg-gray-900 py-8 text-gray-200">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
-      <div>
-        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
-        
-
-      </div>
-      <div class="space-x-4">
-        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
-        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
-        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+  <footer class="sam-footer grid-paper-dark">
+    <div class="sam-footer-inner">
+      <div class="sam-copy">&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+      <div class="sam-footer-links">
+        <a href="https://www.instagram.com/umichsam/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank">LinkedIn</a>
       </div>
     </div>
 

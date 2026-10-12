@@ -28,18 +28,6 @@ let SAMevents = [
     "EndTime": "2026-10-10T00:00"
   },
   {
-    "Title": "Mentorship Preference Forms Due",
-    "Description": "",
-    "Location": "",
-    "Date": "October 16",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-10-15T00:00",
-    "EndTime": "2026-10-16T00:00"
-  },
-  {
     "Title": "Mentorship Pumpkin Painting",
     "Description": "",
     "Location": "EH 1372",
@@ -50,6 +38,18 @@ let SAMevents = [
     "DayofWeek": "Thursday",
     "StartTime": "2026-10-15T18:00",
     "EndTime": "2026-10-15T19:00"
+  },
+    {
+    "Title": "Mentorship Preference Forms Due",
+    "Description": "",
+    "Location": "",
+    "Date": "October 16",
+    "StartTimeStr": "12:00",
+    "EndTimeStr": "12:00",
+    "AmPm": "AM",
+    "DayofWeek": "Friday",
+    "StartTime": "2026-10-15T00:00",
+    "EndTime": "2026-10-16T00:00"
   },
   {
     "Title": "Coaching Actuaries Workshop",
@@ -122,28 +122,29 @@ function populateEvents() {
     if (!c.Location || c.Location.trim() === "") {
       c.Location = "Location To Be Determined";
     }
-    c.Description = sanitizeDescription(c.Description);
-
-    if (startShowDate <= currDate && currDate <= endShowDate) {
+    c.Description = sanitizeDescription(c.Description);    if (startShowDate <= currDate && currDate <= endShowDate) {
       resultDiv.innerHTML += `
-        <div class="bg-white rounded-lg shadow border p-6 flex flex-col justify-start space-y-3 text-center mt-8">
-          <div>
-            <h3 class="text-xl font-bold text-um-blue mb-2">${c.Title}</h3>
-            <p class="text-sm text-gray-600">${c.DayofWeek}, ${c.Date}</p>
-            <p class="text-sm text-gray-600">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
-            <p class="text-sm text-gray-700">${c.Location}</p>
+        <article class="sam-event">
+          <div class="sam-event-head">
+            <span class="sam-event-dow">${c.DayofWeek}</span>
+            <span>${c.Date}</span>
           </div>
-          <div class="mt-3 text-gray-700">
-            <p>${c.Description}</p>
-            ${
-              c.RSVP
-                ? `<a href="${c.RSVP}" target="_blank" class="mt-3 inline-block bg-um-gold text-white font-semibold rounded-md px-4 py-2 hover:bg-yellow-500 transition">
-                     RSVP <span class="text-um-blue font-bold underline">Here</span>
-                   </a>`
-                : ""
-            }
+          <div class="sam-event-body">
+            <h3 class="sam-event-title">${c.Title}</h3>
+            <p class="sam-event-meta">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
+            <p class="sam-event-meta">${c.Location}</p>
+            <div class="sam-event-desc">
+              <p>${c.Description}</p>
+              ${
+                c.RSVP
+                  ? `<a href="${c.RSVP}" target="_blank" class="sam-btn sam-btn-maize mt-3">
+                       RSVP <span class="underline">Here</span>
+                     </a>
+                     ` : ""
+              }
+            </div>
           </div>
-        </div>
+        </article>
       `;
     }
   });

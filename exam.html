@@ -16,113 +16,79 @@
 
   <script src="https://cdn.tailwindcss.com"></script>    
 
-  <style>     
-    :root {       
-      --um-blue: #00274C;       
-      --um-blue-light: #2e6aa3;       
-      --um-maize: #FFCB05;     
-    }      
+  <!-- ================== FONTS & THEME ================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sam.css">
 
-    .bg-um-blue {       
-      background-color: var(--um-blue)     
-    }      
-
-    .bg-um-blue-light {       
-      background-color: var(--um-blue-light)     
-    }      
-
-    .text-um-maize {       
-      color: var(--um-maize)     
-    }      
-
-    .company-card {       
-      @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center;     
-    }      
-
-    .company-logo {       
-      @apply h-24 w-auto object-contain mx-auto;     
-    }      
-
-    .group:hover>.invisible,     
-    .group:focus-within>.invisible {       
-      visibility: visible;       
-      opacity: 1;     
-    }   
-  </style>    
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">   
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">    
-
-  <script src="scripts/jquery.min.js"></script>   
+  <script src="scripts/jquery.min.js"></script>
   <script src="scripts/main.js"></script> 
 </head>  
 
-<body class="font-[Jost] leading-relaxed text-gray-900">    
+<body>    
 
   <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->   
-  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">     
-    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">        
+  <header id="navbar" class="sam-nav">   
+    <div class="sam-nav-inner">         
 
-      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">         
-        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">         
-        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>       
+      <a href="index.html" class="sam-brand">         
+        <img src="images/logo-only.png" alt="SAM logo" class="sam-logo">         
+        <span class="sam-brand-text">Student Actuaries at Michigan</span>       
       </a>        
 
-      <!-- desktop links -->       
-      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">         
-        <a href="index.html" class="text-um-maize hover:text-white">Home</a>         
-        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>         
-        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>          
+      <!-- desktop links -->         
+      <nav class="sam-links">           
+        <a href="index.html" class="sam-link">Home</a>         
+        <a href="calendar.html" class="sam-link">Calendar</a>         
+        <a href="new.html" class="sam-link">New Members</a>          
 
         <!-- Resources dropdown -->         
-        <div id="resourcesBox" class="relative group">           
-          <button id="resourcesBtn" type="button"
-            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">             
+        <div id="resourcesBox" class="sam-drop">           
+          <button id="resourcesBtn" type="button" class="sam-link">             
             Resources             
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
               stroke="currentColor">               
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />             
             </svg>           
           </button>            
 
-          <div id="resourcesMenu"
-            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">             
-            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>             
-            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>             
-            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>           
+          <div id="resourcesMenu" class="sam-menu">             
+            <a href="course.html">Course Resources</a>             
+            <a href="workshop.html">Workshops</a>             
+            <a href="exam.html" class="sam-menu-current">Exam Resources</a>           
           </div>         
         </div>          
 
-        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>         
-        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>         
-        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>         
-        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>       
+        <a href="scholarship.html" class="sam-link">Scholarships</a>         
+        <a href="mentor.html" class="sam-link">Mentorship</a>         
+        <a href="companies.html" class="sam-link">Companies</a>         
+        <a href="contact.html" class="sam-link">Contact</a>       
       </nav>        
 
-      <!-- mobile button -->       
-      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">         
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">           
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />         
-        </svg>       
+      <!-- mobile button -->         
+      <button id="mobileBtn" aria-label="Menu" class="sam-burger">           
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">             
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />           
+        </svg>         
       </button>     
     </div>      
 
     <!-- mobile nav -->     
-    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">       
-      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">         
-        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>         
-        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>         
-        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>         
-        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>         
-        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>         
-        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>         
-        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>         
-        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>         
-        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>         
-        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>       
+    <div id="mobileMenu" class="sam-mobile hidden">       
+      <nav>         
+        <a href="index.html">Home</a>         
+        <a href="calendar.html">Calendar</a>         
+        <a href="new.html">New Members</a>         
+        <a href="course.html">Course Resources</a>         
+        <a href="workshop.html">Workshops</a>         
+        <a href="exam.html">Exam Resources</a>         
+        <a href="scholarship.html">Scholarships</a>         
+        <a href="mentor.html">Mentorship</a>         
+        <a href="companies.html">Companies</a>         
+        <a href="contact.html">Contact</a>       
       </nav>     
-    </div>      
+    </div>     
 
     <!-- navbar helpers -->     
     <script>       
@@ -130,56 +96,77 @@
         .addEventListener('click', () =>
           document.getElementById('mobileMenu').classList.toggle('hidden'));        
 
-      const btn = document.getElementById('resourcesBtn');       
+      const btn  = document.getElementById('resourcesBtn');       
       const menu = document.getElementById('resourcesMenu');        
+      const drop = document.getElementById('resourcesBox');        
 
       btn.addEventListener('click', e => {         
         e.preventDefault();         
-        menu.classList.toggle('invisible');         
-        menu.classList.toggle('opacity-0');       
+        menu.classList.toggle('open');         
+        drop.classList.toggle('is-open');       
       });       
 
       document.addEventListener('click', e => {         
         if (!menu.contains(e.target) && !btn.contains(e.target)) {           
-          menu.classList.add('invisible', 'opacity-0');         
+          menu.classList.remove('open');           
+          drop.classList.remove('is-open');         
         }       
       });     
     </script>   
   </header>    
 
   <!-- ───────────── PAGE TITLE ───────────── -->   
-  <section class="py-20 bg-white">     
-    <div class="mx-auto max-w-screen-xl px-6 text-center space-y-6">       
-      <h1 class="text-4xl font-bold text-um-blue">Exam Resources</h1>       
-      <p class="text-xl">         
+  <section class="sam-section sam-light">     
+    <span class="deco -right-12 -bottom-24 w-[520px]" style="color:rgba(0,39,76,.08)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMidYMax meet">
+        <path d="M0 190 C 120 190 150 28 300 28 C 450 28 480 190 600 190" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M0 192 H600" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+        <path d="M300 28 V192" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap relative z-10 sam-center">       
+      <span class="sam-tick"></span>
+      <h1 class="sam-title">Exam Resources</h1>       
+      <p class="sam-lead">         
         For any questions regarding exams, please contact Ashni Kansara, Actuarial Exam Chair
-        (<a href="mailto:kansaraa@umich.edu" class="underline text-um-blue-light">kansaraa@umich.edu</a>).       
+        (<a href="mailto:kansaraa@umich.edu" class="text-[var(--um-blue-light)] underline font-semibold">kansaraa@umich.edu</a>).       
       </p>     
     </div>   
   </section>    
 
   <!-- ───────────── EXAM REIMBURSEMENT ───────────── -->   
-  <section class="py-20 bg-um-blue-light text-white">     
-    <div class="mx-auto max-w-screen-xl px-6 space-y-8">       
-      <h2 class="text-3xl font-bold text-center">Exam Reimbursement</h2>       
-      <p class="mx-auto max-w-3xl text-xl text-center">         
+  <section class="sam-section sam-dark grid-paper-dark">     
+    <span class="deco -left-16 top-0 w-[480px]" style="color:rgba(255,203,5,.12)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMinYMin meet">
+        <path d="M0 18 C 130 62 210 122 350 158 C 460 182 545 190 600 193" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M0 196 H600" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap relative z-10">       
+      <div class="sam-center mb-8">
+        <span class="sam-tick"></span>
+        <h2 class="sam-title">Exam Reimbursement</h2>       
+      </div>
+      <p class="mx-auto max-w-3xl sam-lead sam-center">         
         Congratulations on passing your exam! If you are a dues-paying member of SAM and have declared Actuarial
         Mathematics as your major, please see the following guidelines and complete this
         <a href="https://forms.gle/Bo3Nosr8ewqrUUV87" target="_blank" class="underline font-semibold">reimbursement form</a>.       
       </p>        
 
-      <div class="mx-auto max-w-3xl space-y-6 text-lg">         
+      <div class="mx-auto max-w-3xl mt-8 space-y-6 text-lg">         
         <p>To receive exam fee reimbursement, you will need to submit the following:</p>          
 
-        <ul class="list-disc pl-6 space-y-4">           
-          <li>             
+        <ul class="space-y-5">           
+          <li class="rounded-xl border border-white/15 bg-white/[.06] backdrop-blur p-5">             
             <span class="font-semibold">Proof of Passing</span> — If you took a computer-based exam (CBT),
             you should be able to print a Provisional Pass Certificate immediately after the exam if you pass.
             This certificate is sufficient documentation; you do not need to wait for the official
             numerical (6 - 10) grade report.           
           </li>          
 
-          <li>             
+          <li class="rounded-xl border border-white/15 bg-white/[.06] backdrop-blur p-5">             
             <span class="font-semibold">Proof of Exam Fee Payment</span> — When you register for an exam, the Society of Actuaries (SOA) sends you "Order Confirmation". This document has 2 pages. The simplest thing to do is to create a pdf document of this 2-page confirmation letter. The second page has all the info that we need to verify the method of payment. Another alternative is to create a pdf document of just the 2nd page of the confirmation letter. <strong>Many of you submit only a portion of the second page.</strong>
             The Math Department and Office of Finance <strong>want to see the entire 2nd page</strong>, especially the method of payment (mostly by credit card).           
           </li>         
@@ -189,72 +176,73 @@
   </section>    
 
   <!-- ───────────── EXAM DATES TABLE ───────────── -->   
-  <section class="py-20 bg-white">     
-    <div class="mx-auto max-w-screen-xl px-6">       
-      <h2 class="mb-8 text-3xl font-bold text-center">Exam Dates</h2>        
+  <section class="sam-section sam-light">     
+    <div class="sam-wrap">       
+      <div class="sam-center mb-8">         
+        <span class="sam-tick"></span>
+        <h2 class="sam-title">Exam Dates</h2>        
+      </div>        
 
       <div class="overflow-x-auto">         
-        <table class="w-full text-left text-lg bg-white text-gray-900 rounded-lg overflow-hidden">           
-          <thead class="bg-gray-200">             
-            <tr class="divide-x">               
-              <th class="px-4 py-3">Exam</th>               
-              <th class="px-4 py-3">CBT Dates</th>               
-              <th class="px-4 py-3">Registration&nbsp;Deadline</th>             
+        <table class="sam-table">           
+          <thead>             
+            <tr>               
+              <th>Exam</th>               
+              <th>CBT Dates</th>               
+              <th>Registration&nbsp;Deadline</th>             
             </tr>           
           </thead>           
-          <tbody class="divide-y">             
+          <tbody>             
             <!-- --- Exam P rows --- -->             
-            <tr class="divide-x">               
-              <td class="px-4 py-2">                 
-                <a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank"
-                  class="underline text-um-blue-light">                   
+            <tr>               
+              <td>                 
+                <a href="https://www.soa.org/education/exam-req/edu-exam-p-detail/" target="_blank">                   
                   Exam P, Probability                 
                 </a>               
               </td>               
-              <td class="px-4 py-2">Jan&nbsp;15 – 26, 2026</td>               
-              <td class="px-4 py-2">Closed</td>             
+              <td>Nov&nbsp;4 – 15, 2026</td>
+              <td>Closed</td>             
             </tr>             
-            <tr class="divide-x">               
-              <td class="px-4 py-2"></td>               
-              <td class="px-4 py-2">Mar&nbsp;9 – 20, 2026</td>               
-              <td class="px-4 py-2">Feb 11, 2026</td>             
+            <tr>               
+              <td></td>               
+              <td>Jan&nbsp;14 – 25, 2027</td>
+              <td>Dec 15, 2026</td>
             </tr>             
-            <tr class="divide-x">               
-              <td class="px-4 py-2"></td>               
-              <td class="px-4 py-2">May&nbsp;8 – 19, 2026</td>               
-              <td class="px-4 py-2">Aug 13, 2025</td>             
+            <tr>               
+              <td></td>               
+              <td>Mar&nbsp;1 – 12, 2027</td>
+              <td>Feb 2, 2027</td>
             </tr>             
-            <tr class="divide-x">               
-              <td class="px-4 py-2"></td>               
-              <td class="px-4 py-2">Jul&nbsp;8 – 19, 2026</td>               
-              <td class="px-4 py-2">Jun 10, 2026</td>             
+            <tr>               
+              <td></td>               
+              <td>May&nbsp;7 – 18, 2027</td>
+              <td>Apr 6, 2027</td>
             </tr>               
 
             <!-- --- Exam FM rows --- -->             
-            <tr class="divide-x bg-gray-50">               
-              <td class="px-4 py-2">                 
-                <a href="https://www.soa.org/education/exam-req/edu-exam-fm-detail/" target="_blank"
-                  class="underline text-um-blue-light">                   
+            <tr>               
+              <td>                 
+                <a href="https://www.soa.org/education/exam-req/edu-exam-fm-detail/" target="_blank">                   
                   Exam FM, Financial Mathematics                 
                 </a>               
               </td>               
-              <td class="px-4 py-2">Feb&nbsp;5 – 16, 2026</td>               
-              <td class="px-4 py-2">Closed</td>             
+              <td>Dec&nbsp;3 – 14, 2026</td>
+              <td>Nov 4, 2026</td>
             </tr>             
-            <tr class="divide-x bg-gray-50">               
-              <td class="px-4 py-2"></td>               
-              <td class="px-4 py-2">Apr&nbsp; 2 – 13, 2026</td>               
-              <td class="px-4 py-2">Mar 4, 2026</td>             
+            <tr>               
+              <td></td>               
+              <td>Feb&nbsp;4 – 15, 2027</td>
+              <td>Jan 5, 2027</td>
             </tr>             
-            <tr class="divide-x bg-gray-50">               
-              <td class="px-4 py-2"></td>               
-              <td class="px-4 py-2">Jun&nbsp; 11 – 22, 2026</td>               
-              <td class="px-4 py-2">May 6, 2026</td>             
+            <tr>               
+              <td></td>               
+              <td>Apr&nbsp;1 – 12, 2027</td>
+              <td>Mar 2, 2027</td>
             </tr>             
-            <tr class="divide-x bg-gray-50">               
-              <td class="px-4 py-2"></td>               
-              <td class="px-4 py-2">Aug&nbsp; 6 – 17, 2026</td>               
-              <td class="px-4 py-2">Jul 8, 2026</td>             
+            <tr>               
+              <td></td>               
+              <td>Jun&nbsp;10 – 21, 2027</td>
+              <td>May 11, 2027</td>
             </tr>           
           </tbody>         
         </table>       
@@ -263,206 +251,219 @@
   </section>    
 
   <!-- ───────────── SOA / CAS SECTIONS ───────────── -->   
-  <section class="py-20 bg-um-blue-light text-white">     
-    <div class="mx-auto grid max-w-screen-xl gap-10 px-6 lg:grid-cols-2">       
+  <section class="sam-section sam-dark grid-paper-dark">     
+    <div class="sam-wrap grid gap-10 lg:grid-cols-2 relative z-10">       
       <!-- SOA -->       
-      <div class="rounded-lg border shadow-sm bg-white text-gray-900">         
-        <div class="flex items-center gap-3 bg-gray-100 px-4 py-3">           
-          <img src="/images/SOA%20Logo.png" class="h-10" alt="SOA logo" />           
-          <h3 class="text-2xl font-bold">SOA Exams</h3>         
+      <div class="sam-panel soa">         
+        <div class="sam-panel-head">           
+          <img src="/images/SOA%20Logo.png" alt="SOA logo" />           
+          <h3>SOA Exams</h3>         
         </div>          
 
-        <div class="space-y-2 px-6 py-4">           
-          <a href="https://www.soa.org/education/exam-req/exam-day-info/exam-schedules/" target="_blank"
-            class="block underline text-um-blue-light">SOA Exam Schedule</a>           
-          <a href="https://pathways.soa.org/" target="_blank" class="block underline text-um-blue-light">SOA Pathways
+        <div class="sam-panel-links">           
+          <a href="https://www.soa.org/education/exam-req/exam-day-info/exam-schedules/" target="_blank">SOA Exam Schedule</a>           
+          <a href="https://pathways.soa.org/" target="_blank">SOA Pathways
             &amp; Microcredentials</a>         
         </div>          
 
-        <div class="overflow-x-auto px-4 pb-6">           
-          <table class="w-full text-left text-base">             
-            <thead class="bg-gray-200">               
-              <tr class="divide-x">                 
-                <th class="px-3 py-2">Exam</th>                 
-                <th class="px-3 py-2">CBT Dates</th>                 
-                <th class="px-3 py-2">Registration</th>               
+        <div class="sam-panel-table">           
+          <table class="sam-table is-compact">             
+            <thead>               
+              <tr>                 
+                <th>Exam</th>                 
+                <th>CBT Dates</th>                 
+                <th>Registration</th>               
               </tr>             
             </thead>             
-            <tbody class="divide-y">               
-              <tr class="divide-x">                 
-                <td class="px-3 py-1">                   
-                  <a href="https://www.soa.org/education/exam-req/edu-exam-pa-detail/" target="_blank"
-                    class="underline text-um-blue-light">Exam PA</a>                 
+            <tbody>               
+              <tr>                 
+                <td>                   
+                  <a href="https://www.soa.org/education/exam-req/edu-exam-pa-detail/" target="_blank">Exam PA</a>                 
                 </td>                 
-                <td class="px-3 py-1">Apr 14 – 17, 2026</td>                 
-                <td class="px-3 py-1">Mar 9, 2026</td>               
+                <td>Oct 13 – 16, 2026</td>
+                <td>Closed</td>
               </tr>               
-              <tr class="divide-x">                 
-                <td class="px-3 py-1"></td>                 
-                <td class="px-3 py-1">Oct 13 – 16, 2026</td>                 
-                <td class="px-3 py-1">Sept 7, 2025</td>               
+              <tr>                 
+                <td></td>                 
+                <td>Apr 13 – 16, 2027</td>
+                <td>Mar 16, 2027</td>
               </tr>               
-              <tr class="divide-x">                 
-                <td class="px-3 py-1">                   
-                  <a href="https://www.soa.org/education/exam-req/edu-exam-srm-detail/" target="_blank"
-                    class="underline text-um-blue-light">Exam SRM</a>                 
+              <tr>                 
+                <td>                   
+                  <a href="https://www.soa.org/education/exam-req/edu-exam-srm-detail/" target="_blank">Exam SRM</a>                 
                 </td>                 
-                <td class="px-3 py-1">May 22 – 28, 2026</td>                 
-                <td class="px-3 py-1">Apr 21, 2026</td>               
+                <td>Jan 5 – 11, 2027</td>
+                <td>Dec 8, 2026</td>
               </tr>               
-              <tr class="divide-x">                 
-                <td class="px-3 py-1"></td>                 
-                <td class="px-3 py-1">Sept 2 – 8, 2026</td>
-                <td class="px-3 py-1">Aug 5, 2026</td>
-              </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1">
-                  <a href="https://www.soa.org/education/exam-req/edu-exam-fam/" target="_blank"
-                    class="underline text-um-blue-light">Exam FAM</a>
-                </td>
-                <td class="px-3 py-1">Feb 24 – Mar 2, 2026</td>
-                <td class="px-3 py-1">Jan 27, 2026</td>
-              </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1"></td>
-                <td class="px-3 py-1">Jul 1 – 7, 2026 </td>
-                <td class="px-3 py-1">Jun 2, 2026</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
+              <tr>                 
+                <td></td>                 
+                <td>May 21 – 27, 2027</td>
+                <td>Apr 20, 2027</td>
+              </tr>               
+              <tr>                 
+                <td>                   
+                  <a href="https://www.soa.org/education/exam-req/edu-exam-fam/" target="_blank">Exam FAM</a>                 
+                </td>                 
+                <td>Oct 23 – 29, 2026</td>
+                <td>Closed</td>
+              </tr>               
+              <tr>                 
+                <td></td>                 
+                <td>Feb 18 – 24, 2027</td>
+                <td>Jan 19, 2027</td>
+              </tr>             
+            </tbody>           
+          </table>         
+        </div>       
+      </div>        
 
-      <!-- CAS -->
-      <div class="rounded-lg border shadow-sm bg-um-blue-light text-white">
-        <div class="flex items-center gap-3 bg-um-blue px-4 py-3">
-          <img src="/images/CAS%20Logo.png" class="h-10" alt="CAS logo" />
-          <h3 class="text-2xl font-bold">CAS Exams</h3>
-        </div>
+      <!-- CAS -->       
+      <div class="sam-panel cas">         
+        <div class="sam-panel-head">           
+          <img src="/images/CAS%20Logo.png" alt="CAS logo" />           
+          <h3>CAS Exams</h3>         
+        </div>        
 
-        <div class="space-y-2 px-6 py-4">
-          <a href="https://www.casact.org/sites/default/files/2025-01/2025_SOBE.pdf#page=11" target="_blank"
-            class="block underline">CAS Exam Schedule</a>
-          <a href="https://www.casact.org/credential-requirements" target="_blank" class="block underline">CAS
-            Pathways</a>
-        </div>
+        <div class="sam-panel-links">           
+          <a href="https://www.casact.org/sites/default/files/2025-01/2025_SOBE.pdf#page=11" target="_blank">CAS Exam Schedule</a>           
+          <a href="https://www.casact.org/credential-requirements" target="_blank">CAS
+            Pathways</a>         
+        </div>        
 
-        <div class="overflow-x-auto px-4 pb-6">
-          <table class="w-full text-left text-base">
-            <thead class="bg-um-blue text-white">
-              <tr class="divide-x">
-                <th class="px-3 py-2">Exam</th>
-                <th class="px-3 py-2">CBT Dates</th>
-                <th class="px-3 py-2">Registration</th>
+        <div class="sam-panel-table">           
+          <table class="sam-table is-compact">             
+            <thead>               
+              <tr>                 
+                <th>Exam</th>                 
+                <th>CBT Dates</th>                 
+                <th>Registration</th>               
+              </tr>             
+            </thead>             
+            <tbody>               
+              <tr>                 
+                <td>                   
+                  <a href="https://www.casact.org/exam/exam-mas-i-modern-actuarial-statistics-i" target="_blank">Exam MAS-I</a>                 
+                </td>                 
+                <td>Oct 28 – Nov 5, 2026</td>
+                <td>Closed</td>
+              </tr>               
+              <tr>
+                <td></td>
+                <td>Jan 27 – Feb 2, 2027</td>
+                <td>TBA</td>
               </tr>
-            </thead>
-            <tbody class="divide-y divide-gray-300">
-              <tr class="divide-x">
-                <td class="px-3 py-1">
-                  <a href="https://www.casact.org/exam/exam-mas-i-modern-actuarial-statistics-i" target="_blank"
-                    class="underline">Exam MAS-I</a>
-                </td>
-                <td class="px-3 py-1">April 22 – May 1, 2026</td>
-                <td class="px-3 py-1">Mar 25, 2026</td>
+              <tr>                 
+                <td>                   
+                  <a href="https://www.casact.org/exam/exam-mas-ii-modern-actuarial-statistics-ii" target="_blank">Exam MAS-II</a>                 
+                </td>                 
+                <td>Oct 28 – Nov 5, 2026</td>
+                <td>Closed</td>
+              </tr>               
+              <tr>
+                <td></td>
+                <td>Jan 27 – Feb 2, 2027</td>
+                <td>TBA</td>
               </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1">
-                  <a href="https://www.casact.org/exam/exam-mas-ii-modern-actuarial-statistics-ii" target="_blank"
-                    class="underline">Exam MAS-II</a>
-                </td>
-                <td class="px-3 py-1">April 22 – May 1, 2026</td>
-                <td class="px-3 py-1">Mar 25, 2026</td>
-              </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1">
+              <tr>                 
+                <td>                   
                   <a href="https://www.casact.org/exam/exam-5-basic-ratemaking-and-est-claim-liabilities"
-                    target="_blank" class="underline">Exam 5</a>
-                </td>
-                <td class="px-3 py-1">April 14 – 21, 2026</td>
-                <td class="px-3 py-1">Mar 25, 2026</td>
+                    target="_blank">Exam 5</a>                 
+                </td>                 
+                <td>Oct 19 – 27, 2026</td>
+                <td>Closed</td>
+              </tr>               
+              <tr>
+                <td></td>
+                <td>Apr 13 – 20, 2027</td>
+                <td>TBA</td>
               </tr>
-              <tr class="divide-x">
-                <td class="px-3 py-1">
-                  <a href="https://www.casact.org/exam/exam-6u-regulation-and-financial-reporting-us" target="_blank"
-                    class="underline">Exam 6-US</a>
-                </td>
-                <td class="px-3 py-1">April 14 – 21, 2026</td>
-                <td class="px-3 py-1">Mar 25, 2026</td>
+              <tr>                 
+                <td>                   
+                  <a href="https://www.casact.org/exam/exam-6u-regulation-and-financial-reporting-us" target="_blank">Exam 6-US</a>                 
+                </td>                 
+                <td>Oct 19 – 27, 2026</td>
+                <td>Closed</td>
+              </tr>             
+              <tr>
+                <td></td>
+                <td>Apr 13 – 20, 2027</td>
+                <td>TBA</td>
               </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </section>
+            </tbody>           
+          </table>         
+        </div>       
+      </div>     
+    </div>   
+  </section>    
 
-  <!-- ───────────── CHECKLIST & OTHER SECTIONS ───────────── -->
-  <section class="py-20 bg-white">     
-    <div class="mx-auto max-w-screen-xl px-6 space-y-6 text-center">
-      <h2 class="text-3xl font-bold">Exam Prep Checklist</h2>
-      <p class="text-xl">
+  <!-- ───────────── CHECKLIST & OTHER SECTIONS ───────────── -->   
+  <section class="sam-section sam-light">     
+    <div class="sam-wrap sam-center">       
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Exam Prep Checklist</h2>       
+      <p class="sam-lead mx-auto max-w-3xl">         
         New to the exam-taking process? Check out this comprehensive
-        <a href="/Resources/SOA Exam Prep Checklist.pdf" target="_blank" class="underline font-semibold">exam prep
+        <a href="/Resources/SOA Exam Prep Checklist.pdf" target="_blank" class="text-[var(--um-blue-light)] underline font-semibold">exam prep
           checklist (SOA)</a>
         and
         <a href="https://docs.google.com/document/d/1tZ_DTU5zXIBjGGsjPAHBeFlrrTQExpIzioA0C91Q3RY/edit" target="_blank"
-          class="underline font-semibold">exam prep checklist (CAS)</a>!
-      </p>
-    </div>
-  </section>
+          class="text-[var(--um-blue-light)] underline font-semibold">exam prep checklist (CAS)</a>!       
+      </p>     
+    </div>   
+  </section>    
 
-  <section class="py-20 bg-um-blue-light text-white">
-    <div class="mx-auto max-w-screen-xl px-6 space-y-8 text-center">
-      <h2 class="text-3xl font-bold">Exam Manual Checkout</h2>
-      <p class="text-xl">
+  <section class="sam-section sam-dark grid-paper-dark">     
+    <div class="sam-wrap sam-center">       
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Exam Manual Checkout</h2>       
+      <p class="sam-lead mx-auto max-w-3xl">         
         <strong>Step 1:</strong> Check
         <a href="https://docs.google.com/spreadsheets/d/1oHuqpwzFMlEXsMQ1TVzcH1OwIYzBjwj4VplIwN-GAeI/edit?gid=0#gid=0"
-          target="_blank" class="underline font-semibold">this database</a> for exam-manual availability.<br><br>
-        <strong>Step 2:</strong> Fill out the form below to request a manual. <br><br>
-        <strong>Step 3:</strong> Exam Chair, Ashni Kansara, will reach out to coordinate a pick-up time.
-      </p>
+          target="_blank" class="underline font-semibold">this database</a> for exam-manual availability.<br><br>         
+        <strong>Step 2:</strong> Fill out the form below to request a manual. <br><br>         
+        <strong>Step 3:</strong> Exam Chair, Ashni Kansara, will reach out to coordinate a pick-up time.       
+      </p>        
 
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfRc_dgUOgKMqt0iHvoDvAfFSUawquuVlqLLz5sxUakF0bRDg/viewform?embedded=true"
-        width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0"
-        class="mx-auto max-w-4xl rounded-lg border-0 shadow-lg">
-      </iframe>
-    </div>
-  </section>
+      <div class="sam-frame mx-auto max-w-4xl mt-8">       
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfRc_dgUOgKMqt0iHvoDvAfFSUawquuVlqLLz5sxUakF0bRDg/viewform?embedded=true"
+          width="100%" height="1500" frameborder="0" marginheight="0" marginwidth="0"
+          title="Exam manual request form">
+        </iframe>
+      </div>
+    </div>   
+  </section>    
 
-  <section class="py-20 bg-white">
-    <div class="mx-auto max-w-screen-xl px-6 space-y-6">
-      <h2 class="text-3xl font-bold text-um-blue text-center">Coaching Actuaries Discounts</h2>
-      <p class="mx-auto max-w-4xl text-xl text-center">
-        <a href="https://www.coachingactuaries.com/" target="_blank" class="underline text-um-blue-light">Coaching
+  <section class="sam-section sam-light">     
+    <div class="sam-wrap-narrow sam-center">       
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Coaching Actuaries Discounts</h2>       
+      <p class="sam-lead">         
+        <a href="https://www.coachingactuaries.com/" target="_blank" class="text-[var(--um-blue-light)] underline font-semibold">Coaching
           Actuaries</a> can help you take your exam prep to the next level by saving time and studying efficiently—be
-        sure to check them out!<br><br>
+        sure to check them out!<br><br>         
         For Coaching Actuaries discount codes, contact the SAM President, Raegan Gothard
-        (<a href="mailto:rgothard@umich.edu" class="underline">rgothard@umich.edu</a>).<br>
-        Please note that you must be a dues-paying member of SAM to receive our discount code.<br>
+        (<a href="mailto:rgothard@umich.edu" class="underline font-semibold">rgothard@umich.edu</a>).<br>         
+        Please note that you must be a dues-paying member of SAM to receive our discount code.<br>         
         Not a member yet? <a href="https://www.umichsam.com/new.html" target="_blank"
-          class="underline text-um-blue-light">Click here</a> for info on how to join!<br><br>
-      </p>
-    </div>
-  </section>
+          class="text-[var(--um-blue-light)] underline font-semibold">Click here</a> for info on how to join!<br><br>       
+      </p>     
+    </div>   
+  </section>    
 
-  <!-- ============ FOOTER ============ -->
-  <footer class="bg-gray-900 py-8 text-gray-200">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
-      <div>
-        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+  <!-- ============ FOOTER ============ -->   
+  <footer class="sam-footer grid-paper-dark">     
+    <div class="sam-footer-inner">       
+      <div class="sam-copy">&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>       
+      <div class="sam-footer-links">         
+        <a href="https://www.instagram.com/umichsam/" target="_blank">Instagram</a>         
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank">Facebook</a>         
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank">LinkedIn</a>       
+      </div>     
+    </div>     
 
-
-      </div>
-      <div class="space-x-4">
-        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
-        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
-        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
-      </div>
-    </div>
-
-    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-  </footer>
-</body>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>   
+  </footer> 
+</body>  
 
 </html>

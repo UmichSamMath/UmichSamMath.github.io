@@ -11,7 +11,7 @@
 
   gtag('config', 'G-26VXYCX5HE');
 </script>
-  
+
   <meta charset="utf-8">
   <title>Course Resources</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -19,144 +19,119 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Theme colours -->
-  <style>
-    :root {
-      --um-blue: #00274C;
-      --um-blue-light: #2e6aa3;
-      --um-maize: #FFCB05;
-    }
-
-    .bg-um-blue {
-      background-color: var(--um-blue)
-    }
-
-    .bg-um-blue-light {
-      background-color: var(--um-blue-light)
-    }
-
-    .text-um-maize {
-      color: var(--um-maize)
-    }
-
-    .company-card {
-      @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center;
-    }
-
-    .company-logo {
-      @apply h-24 w-auto object-contain mx-auto;
-    }
-
-    .group:hover>.invisible,
-    .group:focus-within>.invisible {
-      visibility: visible;
-      opacity: 1;
-    }
-  </style>
-
+  <!-- ================== FONTS & THEME ================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sam.css">
 
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
 </head>
 
-<body class="font-[Jost] leading-relaxed text-gray-900">
+<body>
 
   <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
-  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
-    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+  <header id="navbar" class="sam-nav">
+    <div class="sam-nav-inner">
 
-      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
-        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      <a href="index.html" class="sam-brand">
+        <img src="images/logo-only.png" alt="SAM logo" class="sam-logo">
+        <span class="sam-brand-text">Student Actuaries at Michigan</span>
       </a>
 
       <!-- desktop links -->
-      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
-        <a href="index.html" class="text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html" class="text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html" class="text-um-maize hover:text-white">New Members</a>
+      <nav class="sam-links">
+        <a href="index.html"       class="sam-link">Home</a>
+        <a href="calendar.html"    class="sam-link">Calendar</a>
+        <a href="new.html"         class="sam-link">New Members</a>
 
         <!-- Resources dropdown -->
-        <div id="resourcesBox" class="relative group">
-          <button id="resourcesBtn" type="button"
-            class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+        <div id="resourcesBox" class="sam-drop">
+          <button id="resourcesBtn" type="button" class="sam-link">
             Resources
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
             </svg>
           </button>
 
-          <div id="resourcesMenu"
-            class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
-            <a href="course.html" class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
-            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
-            <a href="exam.html" class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+          <div id="resourcesMenu" class="sam-menu">
+            <a href="course.html" class="sam-menu-current">Course Resources</a>
+            <a href="workshop.html">Workshops</a>
+            <a href="exam.html">Exam Resources</a>
           </div>
         </div>
 
-        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html" class="text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html" class="text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html" class="text-um-maize hover:text-white">Contact</a>
+        <a href="scholarship.html" class="sam-link">Scholarships</a>
+        <a href="mentor.html"      class="sam-link">Mentorship</a>
+        <a href="companies.html"   class="sam-link">Companies</a>
+        <a href="contact.html"     class="sam-link">Contact</a>
       </nav>
 
       <!-- mobile button -->
-      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <button id="mobileBtn" aria-label="Menu" class="sam-burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
 
     <!-- mobile nav -->
-    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
-      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
-        <a href="index.html" class="py-2 text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html" class="py-2 text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html" class="py-2 text-um-maize hover:text-white">New Members</a>
-        <a href="course.html" class="py-2 text-um-maize hover:text-white">Course Resources</a>
-        <a href="workshop.html" class="py-2 text-um-maize hover:text-white">Workshops</a>
-        <a href="exam.html" class="py-2 text-um-maize hover:text-white">Exam Resources</a>
-        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html" class="py-2 text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html" class="py-2 text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html" class="py-2 text-um-maize hover:text-white">Contact</a>
+    <div id="mobileMenu" class="sam-mobile hidden">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="new.html">New Members</a>
+        <a href="course.html">Course Resources</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="exam.html">Exam Resources</a>
+        <a href="scholarship.html">Scholarships</a>
+        <a href="mentor.html">Mentorship</a>
+        <a href="companies.html">Companies</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
 
     <!-- navbar helpers -->
     <script>
       document.getElementById('mobileBtn')
-        .addEventListener('click', () =>
-          document.getElementById('mobileMenu').classList.toggle('hidden'));
+              .addEventListener('click', () =>
+                document.getElementById('mobileMenu').classList.toggle('hidden'));
 
-      const btn = document.getElementById('resourcesBtn');
+      const btn  = document.getElementById('resourcesBtn');
       const menu = document.getElementById('resourcesMenu');
+      const drop = document.getElementById('resourcesBox');
 
-      btn.addEventListener('click', e => {
+      btn.addEventListener('click', e=>{
         e.preventDefault();
-        menu.classList.toggle('invisible');
-        menu.classList.toggle('opacity-0');
+        menu.classList.toggle('open');
+        drop.classList.toggle('is-open');
       });
-      document.addEventListener('click', e => {
-        if (!menu.contains(e.target) && !btn.contains(e.target)) {
-          menu.classList.add('invisible', 'opacity-0');
+      document.addEventListener('click', e=>{
+        if(!menu.contains(e.target) && !btn.contains(e.target)){
+          menu.classList.remove('open');
+          drop.classList.remove('is-open');
         }
       });
     </script>
   </header>
 
   <!-- ============ Course-planning workshop ============ -->
-  <section class="py-20 bg-um-blue-light text-white">
-    <div class="mx-auto max-w-screen-md px-6 space-y-6 text-center">
-      <h1 class="text-4xl font-bold">Course Planning Workshop</h1>
-      <p class="text-lg">
+  <section class="sam-section sam-dark grid-paper-dark">
+    <span class="deco -right-14 -bottom-20 w-[520px]" style="color:rgba(255,203,5,.12)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMidYMax meet">
+        <path d="M0 190 C 120 190 150 28 300 28 C 450 28 480 190 600 190" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M0 192 H600" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap-narrow relative z-10 sam-center">
+      <span class="sam-tick"></span>
+      <h1 class="sam-title">Course Planning Workshop</h1>
+      <p class="sam-lead">
         If you are an underclassman, we highly recommend checking out the
-        <a href="/workshops/CoursePlanningF23.pdf" target="_blank" class="underline text-um-maize hover:opacity-90">
+        <a href="/workshops/CoursePlanningF23.pdf" target="_blank" class="underline font-semibold">
           Course Planning Workshop
         </a>!
         Plan out your 4&nbsp;years at college and get tips on when to take actuarial exams.
@@ -166,43 +141,44 @@
   </section>
 
   <!-- ============ LSA Pass/Fail ============ -->
-  <section class="py-20 bg-white">
-    <div class="mx-auto max-w-screen-md px-6 space-y-6">
-      <h1 class="text-4xl font-bold text-um-blue text-center">LSA Pass/Fail Policy</h1>
-      <p class="text-lg">
-        Find the LSA Pass/Fail policy
-        <a href="https://lsa.umich.edu/lsa/academics/lsa-academic-policies/your-academic-record/grading-issues/pass-fail.html"
-          target="_blank" class="underline text-um-blue-light">here</a>.
-        Reach out to the appropriate office below, if you have elected a major or minor requirement pass/fail and need
-        the grading basis modified to graded:
-      </p>
-      <div class="space-y-4 text-lg">
-        <p>For LSA mainstream students (Newnan and CSP) —
-          <a href="mailto:academic.standards@umich.edu"
-            class="underline text-um-blue-light">academic.standards@umich.edu</a>
+  <section class="sam-section sam-light">
+    <div class="sam-wrap-narrow">
+      <div class="sam-center mb-8">
+        <span class="sam-tick"></span>
+        <h1 class="sam-title">LSA Pass/Fail Policy</h1>
+      </div>
+
+      <div class="sam-card sam-card-pad space-y-6 text-lg">
+        <p>Find the LSA Pass/Fail policy
+          <a href="https://lsa.umich.edu/lsa/academics/lsa-academic-policies/your-academic-record/grading-issues/pass-fail.html"
+            target="_blank" class="text-[var(--um-blue-light)] underline font-semibold">here</a>.
+          Reach out to the appropriate office below, if you have elected a major or minor requirement pass/fail and need
+          the grading basis modified to graded:
         </p>
-        <p>For LSA Honors students —
-          <a href="mailto:honors.auditor@umich.edu" class="underline text-um-blue-light">honors.auditor@umich.edu</a>
-        </p>
-        <p>For Residential College students —
-          <a href="mailto:clmurph@umich.edu" class="underline text-um-blue-light">clmurph@umich.edu</a>
-        </p>
+        <div class="space-y-4">
+          <p>For LSA mainstream students (Newnan and CSP) —
+            <a href="mailto:academic.standards@umich.edu"
+              class="text-[var(--um-blue-light)] underline">academic.standards@umich.edu</a>
+          </p>
+          <p>For LSA Honors students —
+            <a href="mailto:honors.auditor@umich.edu" class="text-[var(--um-blue-light)] underline">honors.auditor@umich.edu</a>
+          </p>
+          <p>For Residential College students —
+            <a href="mailto:clmurph@umich.edu" class="text-[var(--um-blue-light)] underline">clmurph@umich.edu</a>
+          </p>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="bg-gray-900 py-8 text-gray-200">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
-      <div>
-        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
-
-
-      </div>
-      <div class="space-x-4">
-        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
-        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
-        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+  <footer class="sam-footer grid-paper-dark">
+    <div class="sam-footer-inner">
+      <div class="sam-copy">&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+      <div class="sam-footer-links">
+        <a href="https://www.instagram.com/umichsam/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank">LinkedIn</a>
       </div>
     </div>
 

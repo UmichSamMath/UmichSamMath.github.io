@@ -26,107 +26,76 @@
   <link rel="preload" as="image" href="images/LinkedIn.png">
   <link rel="preload" as="image" href="/images/Roadmap.png">
 
-  <!-- Optional: Preconnect for remote resources -->
+  <!-- ================== FONTS & THEME ================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --um-blue:#00274C;
-      --um-blue-light:#2e6aa3;
-      --um-maize:#FFCB05;
-    }
-    .bg-um-blue       { background-color:var(--um-blue) }
-    .bg-um-blue-light { background-color:var(--um-blue-light) }
-    .text-um-maize    { color:var(--um-maize) }
-
-    .company-card  { @apply bg-white rounded-xl shadow p-6 flex flex-col items-center gap-3 text-center; }
-    .company-logo  { @apply h-24 w-auto object-contain mx-auto; }
-
-    .hidden-text {
-      display: none;
-    }
-    .collapsible.active + .hidden-text {
-      display: block;
-    }
-
-    .group:hover>.invisible,
-    .group:focus-within>.invisible{visibility:visible;opacity:1;}
-  </style>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sam.css">
 
   <script src="scripts/jquery.min.js"></script>
   <script src="scripts/main.js"></script>
 </head>
-<body class="font-[Jost] leading-relaxed text-gray-900">
+<body>
 
   <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
-  <header id="navbar" class="bg-um-blue sticky top-0 z-50 text-white shadow">
-    <div class="mx-auto flex max-w-screen-xl items-center justify-between px-4 py-4 md:py-5">
+  <header id="navbar" class="sam-nav">
+    <div class="sam-nav-inner">
 
-      <a href="index.html" class="flex items-center gap-3 font-semibold tracking-wide">
-        <img src="images/logo-only.png" alt="SAM logo" class="h-20 w-20 object-contain">
-        <span class="title-text text-xl md:text-2xl">Student Actuaries at Michigan</span>
+      <a href="index.html" class="sam-brand">
+        <img src="images/logo-only.png" alt="SAM logo" class="sam-logo">
+        <span class="sam-brand-text">Student Actuaries at Michigan</span>
       </a>
 
       <!-- desktop links -->
-      <nav class="hidden md:flex items-center gap-8 text-base font-semibold">
-        <a href="index.html"       class="text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html"    class="text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html"         class="text-um-maize hover:text-white">New Members</a>
+      <nav class="sam-links">
+        <a href="index.html"       class="sam-link">Home</a>
+        <a href="calendar.html"    class="sam-link">Calendar</a>
+        <a href="new.html"         class="sam-link">New Members</a>
 
         <!-- Resources dropdown -->
-        <div id="resourcesBox" class="relative group">
-          <button id="resourcesBtn" type="button"
-                  class="flex items-center gap-1 text-um-maize hover:text-white focus:outline-none">
+        <div id="resourcesBox" class="sam-drop">
+          <button id="resourcesBtn" type="button" class="sam-link">
             Resources
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
-                 viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                     d="M19 9l-7 7-7-7" />
             </svg>
           </button>
 
-          <div id="resourcesMenu"
-               class="invisible opacity-0 absolute left-0 mt-2 w-56 rounded-lg bg-white text-gray-900 shadow-lg transition">
-            <a href="course.html"   class="block px-4 py-2 hover:bg-gray-50">Course Resources</a>
-            <a href="workshop.html" class="block px-4 py-2 hover:bg-gray-50">Workshops</a>
-            <a href="exam.html"     class="block px-4 py-2 hover:bg-gray-50">Exam Resources</a>
+          <div id="resourcesMenu" class="sam-menu">
+            <a href="course.html">Course Resources</a>
+            <a href="workshop.html">Workshops</a>
+            <a href="exam.html">Exam Resources</a>
           </div>
         </div>
 
-        <a href="scholarship.html" class="text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html"      class="text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html"   class="text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html"     class="text-um-maize hover:text-white">Contact</a>
+        <a href="scholarship.html" class="sam-link">Scholarships</a>
+        <a href="mentor.html"      class="sam-link">Mentorship</a>
+        <a href="companies.html"   class="sam-link">Companies</a>
+        <a href="contact.html"     class="sam-link">Contact</a>
       </nav>
 
       <!-- mobile button -->
-      <button id="mobileBtn" aria-label="Menu" class="md:hidden focus:outline-none">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-             viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M4 6h16M4 12h16M4 18h16" />
+      <button id="mobileBtn" aria-label="Menu" class="sam-burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </button>
     </div>
 
     <!-- mobile nav -->
-    <div id="mobileMenu" class="hidden bg-um-blue/95 backdrop-blur md:hidden border-t text-white">
-      <nav class="flex flex-col gap-1 p-4 text-base font-semibold">
-        <a href="index.html"       class="py-2 text-um-maize hover:text-white">Home</a>
-        <a href="calendar.html"    class="py-2 text-um-maize hover:text-white">Calendar</a>
-        <a href="new.html"         class="py-2 text-um-maize hover:text-white">New Members</a>
-        <a href="course.html"      class="py-2 text-um-maize hover:text-white">Course Resources</a>
-        <a href="workshop.html"    class="py-2 text-um-maize hover:text-white">Workshops</a>
-        <a href="exam.html"        class="py-2 text-um-maize hover:text-white">Exam Resources</a>
-        <a href="scholarship.html" class="py-2 text-um-maize hover:text-white">Scholarships</a>
-        <a href="mentor.html"      class="py-2 text-um-maize hover:text-white">Mentorship</a>
-        <a href="companies.html"   class="py-2 text-um-maize hover:text-white">Companies</a>
-        <a href="contact.html"     class="py-2 text-um-maize hover:text-white">Contact</a>
+    <div id="mobileMenu" class="sam-mobile hidden">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="new.html">New Members</a>
+        <a href="course.html">Course Resources</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="exam.html">Exam Resources</a>
+        <a href="scholarship.html">Scholarships</a>
+        <a href="mentor.html">Mentorship</a>
+        <a href="companies.html">Companies</a>
+        <a href="contact.html">Contact</a>
       </nav>
     </div>
 
@@ -139,69 +108,98 @@
       /* Resources menu toggle for click/tap */
       const btn  = document.getElementById('resourcesBtn');
       const menu = document.getElementById('resourcesMenu');
+      const drop = document.getElementById('resourcesBox');
 
       btn.addEventListener('click', e=>{
         e.preventDefault();
-        menu.classList.toggle('invisible');
-        menu.classList.toggle('opacity-0');
+        menu.classList.toggle('open');
+        drop.classList.toggle('is-open');
       });
       document.addEventListener('click', e=>{
         if(!menu.contains(e.target) && !btn.contains(e.target)){
-          menu.classList.add('invisible','opacity-0');
+          menu.classList.remove('open');
+          drop.classList.remove('is-open');
         }
       });
     </script>
   </header>
 
   <!-- =============================== HERO ============================ -->
-  <section class="bg-white py-24 text-um-blue">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-10 px-6">
-      <div class="flex flex-col items-center gap-10 md:flex-row md:justify-center">
-        <img src="images/welcome.png" alt="Welcome to SAM banner" class="w-full max-w-xl md:w-[30rem] lg:w-[34rem]">
-        <img id="dynCycle" src="" alt="SAM Cycle" class="w-full max-w-xl md:w-[30rem] lg:w-[34rem]">
+  <section class="sam-hero">
+    <!-- decorative normal-distribution curve -->
+    <span class="deco -right-12 -bottom-20 w-[560px] text-[#00274C]" style="color:rgba(0,39,76,.10)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMidYMax meet">
+        <path d="M0 190 C 120 190 150 28 300 28 C 450 28 480 190 600 190" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M0 192 H600" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+        <path d="M300 28 V192" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap relative z-10">
+      <div class="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-10">
+        <div class="w-full max-w-xl md:w-[30rem] lg:w-[34rem] overflow-hidden rounded-2xl shadow-[var(--shadow-lift)] border border-[var(--line)] bg-white">
+          <img src="images/welcome.png" alt="Welcome to SAM banner" class="w-full">
+        </div>
+        <div class="w-full max-w-xl md:w-[30rem] lg:w-[34rem] overflow-hidden rounded-2xl shadow-[var(--shadow-lift)] border border-[var(--line)] bg-white">
+          <img id="dynCycle" src="" alt="SAM Cycle" class="w-full">
+        </div>
       </div>
       <script src="scripts/cycle.js"></script>
     </div>
   </section>
+
   <!--  INFO  -->
-  <section class="py-20 bg-um-blue-light text-white">
-    <div class="max-w-screen-xl mx-auto px-6">
-      <div class="flex flex-col lg:flex-row lg:gap-12 items-center">
+  <section class="sam-section sam-dark grid-paper-dark">
+    <!-- decorative mortality-style curve -->
+    <span class="deco -left-16 top-6 w-[520px]" style="color:rgba(255,203,5,.12)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMinYMin meet">
+        <path d="M0 18 C 130 62 210 122 350 158 C 460 182 545 190 600 193" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M0 196 H600" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap relative z-10">
+      <div class="flex flex-col lg:flex-row lg:gap-14 items-center">
         <div class="lg:w-2/3">
-          <p class="text-lg italic leading-relaxed text-xl">Are you interested in <strong>business, computer science,
-              consulting, data science, economics, mathematics, and/or statistics</strong>? Student Actuaries at
+          <span class="sam-tick is-left"></span>
+          <p class="sam-lead">Are you interested in business, computer science,
+              consulting, data science, economics, mathematics, and/or statistics? Student Actuaries at
             Michigan is an organization for undergraduates and graduates interested in pursuing careers in the actuarial
             industry and other related fields.<br><br>We have built a collaborative, welcoming community of like‑minded
             students focused on helping each other to leverage our strengths to further develop our skills and make an
             impact. Our resources and connections support the professional development of our members through
-            <strong>recruiting and networking events, exam support, mentorship, and more</strong>! We can't wait to see
+            recruiting and networking events, exam support, mentorship, and more! We can't wait to see
             you at our next event!</p>
         </div>
-        <div class="lg:w-1/3 mt-10 lg:mt-0 space-y-3">
-          <ul class="ml-5 list-disc text-lg">
-            <li>Advisor: <a href="mailto:rogernat@umich.edu" class="underline text-um-maize hover:opacity-90">Roger
-                Natarajan</a></li>
-            <li>President: <a href="mailto:rgothard@umich.edu" class="underline text-um-maize hover:opacity-90">Raegan Gothard</a></li>
-            <li>SAM Board: <a href="mailto:samboardum@umich.edu"
-                class="underline text-um-maize hover:opacity-90">samboardum@umich.edu</a></li>
-          </ul>
-          <div class="flex items-center gap-2"><a href="https://www.instagram.com/umichsam/" target="_blank"><img
-                src="images/Instagram.png" class="h-6 w-6" alt="Instagram"></a><span>@umichsam</span></div>
-          <div class="flex items-center gap-2"><a href="https://www.facebook.com/groups/SAMUM/" target="_blank"><img
-                src="images/Facebook.png" class="h-6 w-6" alt="Facebook"></a><span>Student Actuaries at Michigan</span>
+        <div class="lg:w-1/3 mt-10 lg:mt-0 w-full">
+          <div class="rounded-2xl border border-white/15 bg-white/[.06] backdrop-blur p-6 space-y-5">
+            <ul class="sam-contactlist">
+              <li><span class="label">Advisor</span><a href="mailto:rogernat@umich.edu">Roger
+                  Natarajan</a></li>
+              <li><span class="label">President</span><a href="mailto:rgothard@umich.edu">Raegan Gothard</a></li>
+              <li><span class="label">SAM Board</span><a href="mailto:samboardum@umich.edu">samboardum@umich.edu</a></li>
+            </ul>
+            <div class="sam-socials pt-1 border-t border-white/15">
+              <a class="sam-social" href="https://www.instagram.com/umichsam/" target="_blank"><img
+                    src="images/Instagram.png" alt="Instagram"><span>@umichsam</span></a>
+              <a class="sam-social" href="https://www.facebook.com/groups/SAMUM/" target="_blank"><img
+                    src="images/Facebook.png" alt="Facebook"><span>Student Actuaries at Michigan</span></a>
+              <a class="sam-social" href="https://www.linkedin.com/groups/2486220" target="_blank"><img
+                    src="images/LinkedIn.png" alt="LinkedIn"><span>University of Michigan Actuaries</span></a>
+            </div>
           </div>
-          <div class="flex items-center gap-2"><a href="https://www.linkedin.com/groups/2486220" target="_blank"><img
-                src="images/LinkedIn.png" class="h-6 w-6" alt="LinkedIn"></a><span>University of Michigan
-              Actuaries</span></div>
         </div>
       </div>
     </div>
   </section>
 
   <!--  UPCOMING EVENTS (white)  -->
-  <section id="events" class="py-20 bg-white">
-    <div class="max-w-screen-xl mx-auto px-6">
-      <h2 class="mb-8 text-center text-4xl font-black text-um-blue">Upcoming Events</h2>
+  <section id="events" class="sam-section sam-light">
+    <div class="sam-wrap">
+      <div class="sam-center mb-10">
+        <span class="sam-tick"></span>
+        <h2 class="sam-title">Upcoming Events</h2>
+      </div>
       <div id="calendar" class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
     </div>
     <script src="scripts/calendar.js"></script>
@@ -209,54 +207,56 @@
   </section>
 
   <!--  QUICK LINKS  -->
-  <section class="py-20 bg-um-blue-light text-white">
-    <div class="max-w-screen-xl mx-auto px-6">
-      <h2 class="mb-10 text-center text-4xl font-black">Quick Links</h2>
-      <div class="flex flex-col gap-10 event-container lg:flex-row lg:justify-center">
+  <section class="sam-section sam-dark grid-paper-dark">
+    <div class="sam-wrap">
+      <div class="sam-center mb-10">
+        <span class="sam-tick"></span>
+        <h2 class="sam-title">Quick Links</h2>
+      </div>
+      <div class="flex flex-col gap-8 lg:flex-row lg:justify-center lg:items-stretch">
         <!-- University links -->
-        <div class="item-links mx-auto max-w-lg flex-1 rounded-lg bg-white p-6 text-gray-900">
-          <p class="mb-4 text-center font-semibold text-2xl">University of Michigan Links</p>
-          <ul class="list-disc space-y-2 pl-6 text-lg">
-            <li><a href="workshops/MassMeetingF25.pdf" target="_blank" class="underline hover:text-um-blue">Mass Meeting
+        <div class="sam-card sam-card-pad sam-hover flex-1 max-w-lg mx-auto w-full">
+          <p class="mb-5 text-center font-bold text-xl text-[var(--um-blue)]">University of Michigan Links</p>
+          <ul class="sam-linklist">
+            <li><a href="workshops/MassMeetingF25.pdf" target="_blank">Mass Meeting
                 Slides</a></li>
-            <li><a href="/Resources/CEILF23.xlsx" download class="underline hover:text-um-blue">CEIL Template</a></li>
+            <li><a href="/Resources/CEILF23.xlsx" download>CEIL Template</a></li>
             <li><a href="https://lsa.umich.edu/math/undergraduates/major-and-minor-programs/actuarial-mathematics.html"
-                target="_blank" class="underline hover:text-um-blue">Actuarial Math Course Requirements</a></li>
-            <li><a href="workshops/CoursePlanningF23.pdf" target="_blank" class="underline hover:text-um-blue">Course
+                target="_blank">Actuarial Math Course Requirements</a></li>
+            <li><a href="workshops/CoursePlanningF23.pdf" target="_blank">Course
                 Planning Workshop</a></li>
             <li><a
                 href="https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&id=95a6838a3f&e=0404e5f259"
-                target="_blank" class="underline hover:text-um-blue">Exam Reimbursement Form</a></li>
-            <li><a href="https://www.lsa.umich.edu/cg/" target="_blank" class="underline hover:text-um-blue">LSA Course
+                target="_blank">Exam Reimbursement Form</a></li>
+            <li><a href="https://www.lsa.umich.edu/cg/" target="_blank">LSA Course
                 Guide</a></li>
           </ul>
         </div>
         <!-- Society links -->
-        <div class="item-links mx-auto max-w-lg flex-1 rounded-lg bg-white p-6 text-gray-900">
-          <p class="mb-4 text-center font-semibold text-2xl">Actuarial Societies Links</p>
-          <ul class="list-disc space-y-2 pl-6 text-lg">
-            <li><a href="https://www.soa.org/education/exam-req/registration/edu-registration/" target="_blank"
-                class="underline hover:text-um-blue">SOA Website</a></li>
-            <li><a href="https://www.soa.org/education/exam-schedule/" target="_blank"
-                class="underline hover:text-um-blue">Upcoming SOA Exams</a></li>
-            <li><a href="https://www.prometric.com/soa" target="_blank" class="underline hover:text-um-blue">Prometric
+        <div class="sam-card sam-card-pad sam-hover flex-1 max-w-lg mx-auto w-full">
+          <p class="mb-5 text-center font-bold text-xl text-[var(--um-blue)]">Actuarial Societies Links</p>
+          <ul class="sam-linklist">
+            <li><a href="https://www.soa.org/education/exam-req/registration/edu-registration/" target="_blank">SOA
+                Website</a></li>
+            <li><a href="https://www.soa.org/education/exam-schedule/" target="_blank">Upcoming SOA Exams</a></li>
+            <li><a href="https://www.prometric.com/soa" target="_blank">Prometric
                 Registration (SOA)</a></li>
-            <li><a href="https://www.casact.org/" target="_blank" class="underline hover:text-um-blue">CAS Website</a>
+            <li><a href="https://www.casact.org/">CAS Website</a>
             </li>
-            <li><a href="https://www.casact.org/exams-admissions/pearson-vue/exam-registration" target="_blank"
-                class="underline hover:text-um-blue">Upcoming CAS Exams</a></li>
-            <li><a href="https://home.pearsonvue.com/cas" target="_blank" class="underline hover:text-um-blue">Pearson
+            <li><a href="https://www.casact.org/exams-admissions/pearson-vue/exam-registration" target="_blank">Upcoming
+                CAS Exams</a></li>
+            <li><a href="https://home.pearsonvue.com/cas" target="_blank">Pearson
                 VUE Registration (CAS)</a></li>
           </ul>
         </div>
         <!-- GroupMe links -->
-        <div class="item-links mx-auto max-w-lg flex-1 rounded-lg bg-white p-6 text-gray-900">
-          <p class="mb-4 text-center font-semibold text-2xl">GroupMe Links</p>
-          <ul class="list-disc space-y-2 pl-6 text-lg">
-            <li><a href="https://groupme.com/join_group/116611577/NXPE10rc" target="_blank" rel="noopener"
-                class="underline hover:text-um-blue">2025 – 2026 GroupMe</a></li>
-            <li><a href="https://groupme.com/join_group/116580082/zyxtvduI" target="_blank" rel="noopener"
-                class="underline hover:text-um-blue">International Students GroupMe</a></li>
+        <div class="sam-card sam-card-pad sam-hover flex-1 max-w-lg mx-auto w-full">
+          <p class="mb-5 text-center font-bold text-xl text-[var(--um-blue)]">GroupMe Links</p>
+          <ul class="sam-linklist">
+            <li><a href="https://groupme.com/join_group/116611577/NXPE10rc" target="_blank" rel="noopener">2026 – 2027
+                GroupMe</a></li>
+            <li><a href="https://groupme.com/join_group/116580082/zyxtvduI" target="_blank" rel="noopener">International
+                Students GroupMe</a></li>
           </ul>
         </div>
       </div>
@@ -264,44 +264,55 @@
   </section>
 
   <!--  CAREER FAIR INFO  -->
-  <section class="hidden py-20 bg-white text-um-blue">
-    <div class="max-w-screen-lg mx-auto px-6 space-y-6 text-center text-xl">
-      <h2 class="text-4xl font-bold">Career Fair Information</h2>
-      <p>Our Actuarial Career Expo will be on <strong>Thursday, September 18</strong> from 
-         <strong>12:00 – 3:00 pm in the Michigan League (Hussey & Vandenburg)</strong>. 
+  <section class="hidden sam-section sam-light">
+    <div class="sam-wrap-narrow sam-center space-y-6">
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Career Fair Information</h2>
+      <p class="text-lg">Our Actuarial Career Expo will be on <strong>Thursday, September 18</strong> from
+         <strong>12:00 – 3:00 pm in the Michigan League (Hussey &amp; Vandenburg)</strong>.
          Come talk to ~30 employers!<br>
-         Please note that resumes are due to the 
+         Please note that resumes are due to the
          <a href="https://docs.google.com/forms/d/e/1FAIpQLScWP-zTJSxQRokLYTUzkTmIw02DmNAFIJqCrg_YjvGI_-sSxw/viewform?usp=dialog"
-            target="_blank" class="font-bold text-red-600 underline">resume book</a> 
+            target="_blank" class="font-bold text-red-600 underline">resume book</a>
          by <strong>Wednesday, Sep 10 @ 11:59 pm.</strong></p>
-      <p>Not sure where to start? Take a look at our 
+      <p>Not sure where to start? Take a look at our
          <a href="/Resources/CareerExpoRoadmap.pdf" target="_blank"
-            class="underline text-um-blue-light">Actuarial Career Expo Preparation Roadmap</a>!</p>
-      <img src="/images/Roadmap.png" alt="Career Expo Preparation Roadmap" class="mx-auto w-full max-w-3xl">
+            class="text-[var(--um-blue-light)] underline">Actuarial Career Expo Preparation Roadmap</a>!</p>
+      <img src="/images/Roadmap.png" alt="Career Expo Preparation Roadmap" class="mx-auto w-full max-w-3xl rounded-2xl shadow-[var(--shadow-soft)]">
     </div>
   </section>
 
   <!--  JOIN SAM  -->
-  <section class="py-20 bg-white text-um-blue">
-    <div class="max-w-screen-xl mx-auto px-6 text-center space-y-8">
-      <h2 class="text-4xl font-black">Interested in Joining?</h2>
-      <p class="text-2xl">Please fill out <a href="https://forms.gle/wjehfsURTbkPAMDG7" target="_blank"
-          class="underline text-um-blue-light">this form</a> to be added to our email list.</p>
-      <p class="mx-auto max-w-4xl">Paying dues is required to receive exam reimbursements, join our mentorship program,
-        and get a SAM t-shirt! If you have not yet paid annual dues, please send <strong>$40</strong> via Venmo to
-        @UmichSAM or drop off a check or cash in a sealed envelope to Professor Natarajan's office at East Hall 2855.
-        For both methods, please include your full first name, last name, uniqname, and UMID number.</p>
+  <section class="sam-section sam-light">
+    <div class="sam-wrap-narrow sam-center space-y-7">
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Interested in Joining?</h2>
+      <p class="text-xl">Please fill out <a href="https://forms.gle/wjehfsURTbkPAMDG7" target="_blank"
+          class="text-[var(--um-blue-light)] underline">this form</a> to be added to our email list.</p>
+      <div class="sam-card sam-card-pad text-left mx-auto max-w-3xl">
+        <p class="text-base leading-relaxed">Paying dues is required to receive exam reimbursements, join our mentorship program,
+          and get a SAM t-shirt! If you have not yet paid annual dues, please send <strong>$40</strong> via Venmo to
+          @UmichSAM or drop off a check or cash in a sealed envelope to Professor Natarajan's office at East Hall 2855.
+          For both methods, please include your full first name, last name, uniqname, and UMID number.</p>
+      </div>
     </div>
   </section>
 
   <!--  CONGRATULATIONS  -->
-  <section class="py-20 bg-um-blue-light text-white">
-    <div class="max-w-screen-xl mx-auto px-6 text-center">
-      <h2 class="mb-8 text-4xl font-bold">Congratulations!</h2>
-      <p id="congrats-title" class="mb-4 text-xl">Congratulations to:</p>
-      <div id="congrats" class="mx-auto mb-8 max-w-xl text-center"></div>
+  <section class="sam-section sam-dark grid-paper-dark">
+    <span class="deco right-0 top-0 w-[420px]" style="color:rgba(255,203,5,.10)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMaxYMin meet">
+        <path d="M0 190 C 120 190 150 28 300 28 C 450 28 480 190 600 190" stroke="currentColor" stroke-width="2.5"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap relative z-10 sam-center">
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Congratulations!</h2>
+      <p id="congrats-title" class="mb-5 text-lg font-semibold text-[var(--um-maize)]">Congratulations to:</p>
+      <div id="congrats" class="sam-congrats mb-8"></div>
       <p class="mx-auto max-w-2xl">Want to be celebrated? Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0dX9mS8nnZ56LD43wM5HJZEfmpkOVxLeSFencugs8tw9oWg/viewform?usp=dialog"
-          target="_blank" class="underline text-um-maize">this survey</a> to let the SAM club know of your recent
+          target="_blank" class="underline">this survey</a> to let the SAM club know of your recent
         accomplishments! We will announce the club's accomplishments (job acceptances, internships, exam passings, etc.)
         on the website, and we would love to announce yours!</p>
       <script src="scripts/congrats.js"></script>
@@ -310,29 +321,29 @@
 
 
   <!--  FEEDBACK  -->
-  <section class="py-20 bg-white text-um-blue">
-    <div class="mx-auto max-w-screen-xl px-6 text-center space-y-6">
-      <h2 class="text-3xl font-bold">Have feedback on the website?</h2>
+  <section class="sam-section sam-light">
+    <div class="sam-wrap sam-center space-y-5">
+      <span class="sam-tick"></span>
+      <h2 class="sam-title">Have feedback on the website?</h2>
       <p class="text-lg">Please let Janae Shao, SAM Webmaster, know by filling out <a
-          href="https://forms.gle/489NRSSjzGgixkVb9" target="_blank" class="underline text-um-blue-light">this form</a>!
+          href="https://forms.gle/489NRSSjzGgixkVb9" target="_blank" class="text-[var(--um-blue-light)] underline">this form</a>!
         Please submit one piece of feedback per form.</p>
     </div>
   </section>
 
   <!-- ============ FOOTER ============ -->
-  <footer class="bg-gray-900 py-8 text-gray-200">
-    <div class="mx-auto flex max-w-screen-xl flex-col items-center gap-4 px-6 text-base md:flex-row md:justify-between">
+  <footer class="sam-footer grid-paper-dark">
+    <div class="sam-footer-inner">
       <div>
-        <div>&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
-        <p class="mt-auto text-sm text-gray-400 text-align:center;">
+        <div class="sam-copy">&copy; <span id="year"></span> Student Actuaries at Michigan. All rights reserved.</div>
+        <p class="sam-credit">
           Original website by Katherine Bednarz (UMich '25), Webmaster 2023–2025.
         </p>
-
       </div>
-      <div class="space-x-4">
-        <a href="https://www.instagram.com/umichsam/" target="_blank" class="hover:text-um-maize">Instagram</a>
-        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" class="hover:text-um-maize">Facebook</a>
-        <a href="https://www.linkedin.com/groups/2486220" target="_blank" class="hover:text-um-maize">LinkedIn</a>
+      <div class="sam-footer-links">
+        <a href="https://www.instagram.com/umichsam/" target="_blank">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank">LinkedIn</a>
       </div>
     </div>
 

@@ -34,9 +34,9 @@ function populateCongrats() {
 
     if (currDate <= endShowDate) {
       resultDiv.innerHTML += `
-        <li style="font-size: 20px; margin-top: 20px;">
+        <div class="sam-congrats-item">
           ${c.name} on ${c.congratsEvent}!
-        </li>
+        </div>
       `;
       numMessagesShown += 1;
     }

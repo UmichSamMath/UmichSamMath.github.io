@@ -4,30 +4,6 @@
 
 let SAMevents = [
   {
-    "Title": "Mentorship Mingling & Kickoff",
-    "Description": "RSVP: <a href=\"https://forms.gle/Apb6ZU954t4nUqsY7\"><u>https://forms.gle/Apb6ZU954t4nUqsY7</u></a>",
-    "Location": "NUB 1552",
-    "Date": "October 6",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "8:30",
-    "AmPm": "PM",
-    "DayofWeek": "Tuesday",
-    "StartTime": "2026-10-06T19:00",
-    "EndTime": "2026-10-06T20:30"
-  },
-  {
-    "Title": "Mentorship Mixer 1",
-    "Description": "RSVP: <a href=\"https://forms.gle/MSzQEkdhLyAGokeU9\"><u>https://forms.gle/MSzQEkdhLyAGokeU9</u></a>",
-    "Location": "1110 White St",
-    "Date": "October 9",
-    "StartTimeStr": "8:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-10-09T20:00",
-    "EndTime": "2026-10-10T00:00"
-  },
-  {
     "Title": "Mentorship Pumpkin Painting",
     "Description": "",
     "Location": "EH 1372",
@@ -39,29 +15,41 @@ let SAMevents = [
     "StartTime": "2026-10-15T18:00",
     "EndTime": "2026-10-15T19:00"
   },
-    {
+  {
     "Title": "Mentorship Preference Forms Due",
-    "Description": "",
+    "Description": "<strong><a href=\"https://us.list-manage.com/J87LPgHrfdP?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>Form for Mentors to Fill Out</u></a></strong><br><strong><a href=\"https://us.list-manage.com/14gP4Qa0Gyx?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>Form for Mentees to Fill Out</u></a></strong>",
     "Location": "",
     "Date": "October 16",
     "StartTimeStr": "12:00",
     "EndTimeStr": "12:00",
     "AmPm": "AM",
     "DayofWeek": "Friday",
-    "StartTime": "2026-10-15T00:00",
-    "EndTime": "2026-10-16T00:00"
+    "StartTime": "2026-10-16T00:00",
+    "EndTime": "2026-10-17T00:00"
   },
   {
     "Title": "Coaching Actuaries Workshop",
     "Description": "",
     "Location": "EH 4096",
-    "Date": "October 22",
+    "Date": "October 21",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
     "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-10-21T18:00",
+    "EndTime": "2026-10-21T19:00"
+  },
+  {
+    "Title": "Goldman Sachs Speaker Event",
+    "Description": "Meet Jared Dickow, CIO (Chief Investment Officer) at Goldman Sachs and a UMich Actuarial Math Alum. He will be speaking about his non-traditional path as an actuary and potential internship opportunities with Goldman Sachs. Food will be provided!<br><br>RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd65G8Qr1umI8WwVXrk30IN1otyeA2w8OTB7Ir61YPuKwucvA/viewform\" target=\"_blank\">here</a>!",
+    "Location": "",
+    "Date": "October 22",
+    "StartTimeStr": "5:45",
+    "EndTimeStr": "6:45",
+    "AmPm": "PM",
     "DayofWeek": "Thursday",
-    "StartTime": "2026-10-22T18:00",
-    "EndTime": "2026-10-22T19:00"
+    "StartTime": "2026-10-22T17:45",
+    "EndTime": "2026-10-22T18:45"
   },
   {
     "Title": "Mentorship Pairings Released",

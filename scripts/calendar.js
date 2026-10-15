@@ -41,7 +41,7 @@ let SAMevents = [
   },
   {
     "Title": "Goldman Sachs Speaker Event",
-    "Description": "Meet Jared Dickow, CIO (Chief Investment Officer) at Goldman Sachs and a UMich Actuarial Math Alum. He will be speaking about his non-traditional path as an actuary and potential internship opportunities with Goldman Sachs. Food will be provided!<br><br>RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd65G8Qr1umI8WwVXrk30IN1otyeA2w8OTB7Ir61YPuKwucvA/viewform\" target=\"_blank\">here</a>!",
+    "Description": "Meet Jared Dickow, OCIO (Outsourced Chief Investment Officer) at Goldman Sachs and a UMich Actuarial Math Alum. He will be speaking about his non-traditional path as an actuary and potential internship opportunities with Goldman Sachs. Food will be provided!<br><br>RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd65G8Qr1umI8WwVXrk30IN1otyeA2w8OTB7Ir61YPuKwucvA/viewform\" target=\"_blank\">here</a>!",
     "Location": "",
     "Date": "October 22",
     "StartTimeStr": "5:45",
@@ -91,7 +91,7 @@ let SAMevents = [
 
 // Sanitize description strings
 function sanitizeDescription(desc) {
-  if (!desc) return "More information coming soon!";
+  if (!desc) return "";
   desc = desc.replace(/target=_blank/gi, 'target="_blank"');
   desc = desc.replace(/javascript:/gi, '');
   return desc;
@@ -107,10 +107,9 @@ function populateEvents() {
     startShowDate.setDate(startShowDate.getDate() - 7);
     const endShowDate = new Date(c.EndTime);
 
-    if (!c.Location || c.Location.trim() === "") {
-      c.Location = "Location To Be Determined";
-    }
-    c.Description = sanitizeDescription(c.Description);    if (startShowDate <= currDate && currDate <= endShowDate) {
+    c.Description = sanitizeDescription(c.Description);
+
+    if (startShowDate <= currDate && currDate <= endShowDate) {
       resultDiv.innerHTML += `
         <article class="sam-event">
           <div class="sam-event-head">
@@ -120,17 +119,22 @@ function populateEvents() {
           <div class="sam-event-body">
             <h3 class="sam-event-title">${c.Title}</h3>
             <p class="sam-event-meta">${c.StartTimeStr} – ${c.EndTimeStr} ${c.AmPm}</p>
-            <p class="sam-event-meta">${c.Location}</p>
-            <div class="sam-event-desc">
-              <p>${c.Description}</p>
-              ${
-                c.RSVP
-                  ? `<a href="${c.RSVP}" target="_blank" class="sam-btn sam-btn-maize mt-3">
-                       RSVP <span class="underline">Here</span>
-                     </a>
-                     ` : ""
-              }
-            </div>
+            ${
+              c.Location && c.Location.trim() !== ""
+                ? `<p class="sam-event-meta">${c.Location}</p>` : ""
+            }
+            ${
+              c.Description || c.RSVP
+                ? `<div class="sam-event-desc">
+                     ${c.Description ? `<p>${c.Description}</p>` : ""}
+                     ${
+                       c.RSVP
+                         ? `<a href="${c.RSVP}" target="_blank" class="sam-btn sam-btn-maize mt-3">
+                              RSVP <span class="underline">Here</span>
+                            </a>` : ""
+                     }
+                   </div>` : ""
+            }
           </div>
         </article>
       `;

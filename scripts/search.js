@@ -74,6 +74,7 @@ let companies = [
     "contactEmail": "mia.coates@aon.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
+  /* 
   {
     "name": "Aon",
     "business": "Property and Casualty",
@@ -82,6 +83,7 @@ let companies = [
     "contactEmail": "kane.zwolinski@aon.com",
     "keywords": ["Chicago", "IL", "Illinois"]
   },
+  */
   {
     "name": "Auto-Owners",
     "business": "Property and Casualty",

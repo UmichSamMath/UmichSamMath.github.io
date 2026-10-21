@@ -42,7 +42,7 @@ let SAMevents = [
   {
     "Title": "Goldman Sachs Speaker Event",
     "Description": "Meet Jared Dickow, OCIO (Outsourced Chief Investment Officer) at Goldman Sachs and a UMich Actuarial Math Alum. He will be speaking about his non-traditional path as an actuary and potential internship opportunities with Goldman Sachs. Food will be provided!<br><br>RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd65G8Qr1umI8WwVXrk30IN1otyeA2w8OTB7Ir61YPuKwucvA/viewform\" target=\"_blank\">here</a>!",
-    "Location": "",
+    "Location": "West Hall 120",
     "Date": "October 22",
     "StartTimeStr": "5:45",
     "EndTimeStr": "6:45",

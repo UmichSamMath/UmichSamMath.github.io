@@ -4,69 +4,21 @@
 
 let SAMevents = [
   {
-    "Title": "Mentorship Pumpkin Painting",
-    "Description": "",
-    "Location": "EH 1372",
-    "Date": "October 15",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-10-15T18:00",
-    "EndTime": "2026-10-15T19:00"
-  },
-  {
-    "Title": "Mentorship Preference Forms Due",
-    "Description": "<strong><a href=\"https://us.list-manage.com/J87LPgHrfdP?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>Form for Mentors to Fill Out</u></a></strong><br><strong><a href=\"https://us.list-manage.com/14gP4Qa0Gyx?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>Form for Mentees to Fill Out</u></a></strong>",
-    "Location": "",
-    "Date": "October 16",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-10-16T00:00",
-    "EndTime": "2026-10-17T00:00"
-  },
-  {
-    "Title": "Coaching Actuaries Workshop",
+    "Title": "Everything Actuarial Workshop",
     "Description": "",
     "Location": "EH 4096",
-    "Date": "October 21",
+    "Date": "October 26",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
     "AmPm": "PM",
-    "DayofWeek": "Wednesday",
-    "StartTime": "2026-10-21T18:00",
-    "EndTime": "2026-10-21T19:00"
-  },
-  {
-    "Title": "Goldman Sachs Speaker Event",
-    "Description": "Meet Jared Dickow, OCIO (Outsourced Chief Investment Officer) at Goldman Sachs and a UMich Actuarial Math Alum. He will be speaking about his non-traditional path as an actuary and potential internship opportunities with Goldman Sachs. Food will be provided!<br><br>RSVP <a href=\"https://docs.google.com/forms/d/e/1FAIpQLSd65G8Qr1umI8WwVXrk30IN1otyeA2w8OTB7Ir61YPuKwucvA/viewform\" target=\"_blank\">here</a>!",
-    "Location": "West Hall 120",
-    "Date": "October 22",
-    "StartTimeStr": "5:45",
-    "EndTimeStr": "6:45",
-    "AmPm": "PM",
-    "DayofWeek": "Thursday",
-    "StartTime": "2026-10-22T17:45",
-    "EndTime": "2026-10-22T18:45"
-  },
-  {
-    "Title": "Mentorship Pairings Released",
-    "Description": "",
-    "Location": "",
-    "Date": "October 23",
-    "StartTimeStr": "12:00",
-    "EndTimeStr": "12:00",
-    "AmPm": "AM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-10-23T00:00",
-    "EndTime": "2026-10-24T00:00"
+    "DayofWeek": "Monday",
+    "StartTime": "2026-10-26T18:00",
+    "EndTime": "2026-10-26T19:00"
   },
   {
     "Title": "Mentorship Halloween Mixer",
     "Description": "",
-    "Location": "",
+    "Location": "1110 White St",
     "Date": "October 30",
     "StartTimeStr": "7:00",
     "EndTimeStr": "10:00",
@@ -74,6 +26,30 @@ let SAMevents = [
     "DayofWeek": "Friday",
     "StartTime": "2026-10-30T19:00",
     "EndTime": "2026-10-30T22:00"
+  },
+  {
+    "Title": "Intro to the CAS Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "November 2",
+    "StartTimeStr": "6:00",
+    "EndTimeStr": "7:00",
+    "AmPm": "PM",
+    "DayofWeek": "Monday",
+    "StartTime": "2026-11-02T18:00",
+    "EndTime": "2026-11-02T19:00"
+  },
+  {
+    "Title": "Course Planning Workshop",
+    "Description": "",
+    "Location": "",
+    "Date": "November 4",
+    "StartTimeStr": "7:00",
+    "EndTimeStr": "8:00",
+    "AmPm": "PM",
+    "DayofWeek": "Wednesday",
+    "StartTime": "2026-11-04T19:00",
+    "EndTime": "2026-11-04T20:00"
   },
   {
     "Title": "Mentorship Game Night",

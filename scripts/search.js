@@ -1,3 +1,4 @@
+// NOTE: The Companies page is currently hidden for privacy reasons (company rep contact info). This script is no longer loaded by companies.html.
 // Creates a search bar for the Companies page that will only show relevant companies when keywords are typed in
 // Terms that appear in that company's box will be highlighted (Ex. name, business, type of work), while hidden terms (keywords) will make that company appear, but will NOT highlight anything.
 

@@ -4,33 +4,9 @@
 
 let SAMevents = [
   {
-    "Title": "Everything Actuarial Workshop",
-    "Description": "",
-    "Location": "EH 4096",
-    "Date": "October 26",
-    "StartTimeStr": "6:00",
-    "EndTimeStr": "7:00",
-    "AmPm": "PM",
-    "DayofWeek": "Monday",
-    "StartTime": "2026-10-26T18:00",
-    "EndTime": "2026-10-26T19:00"
-  },
-  {
-    "Title": "Mentorship Halloween Mixer",
-    "Description": "",
-    "Location": "1110 White St",
-    "Date": "October 30",
-    "StartTimeStr": "7:00",
-    "EndTimeStr": "10:00",
-    "AmPm": "PM",
-    "DayofWeek": "Friday",
-    "StartTime": "2026-10-30T19:00",
-    "EndTime": "2026-10-30T22:00"
-  },
-  {
     "Title": "Intro to the CAS Workshop",
     "Description": "",
-    "Location": "",
+    "Location": "EH 1068",
     "Date": "November 2",
     "StartTimeStr": "6:00",
     "EndTimeStr": "7:00",
@@ -41,8 +17,8 @@ let SAMevents = [
   },
   {
     "Title": "Course Planning Workshop",
-    "Description": "",
-    "Location": "",
+    "Description": "<a href=\"https://us.list-manage.com/163PuhA35Gs?e=63c96118a3&amp;c2id=f36db868bb9ec1f3997f0fa5e3d17169\" target=\"_blank\"><u>RSVP HERE</u></a>",
+    "Location": "EH 1068",
     "Date": "November 4",
     "StartTimeStr": "7:00",
     "EndTimeStr": "8:00",
@@ -54,7 +30,7 @@ let SAMevents = [
   {
     "Title": "Mentorship Game Night",
     "Description": "",
-    "Location": "",
+    "Location": "USB 1230",
     "Date": "November 9",
     "StartTimeStr": "6:00",
     "EndTimeStr": "8:00",

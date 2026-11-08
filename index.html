@@ -11,29 +11,27 @@
   gtag('config', 'G-26VXYCX5HE');
 </script>
   <meta charset="utf-8">
-  <title>Home</title>
+  <title>Student Actuaries at Michigan | Home</title>
+  <meta name="description" content="Student Actuaries at Michigan (SAM) helps University of Michigan students pursue actuarial careers through recruiting events, exam support, mentorship, and more.">
+  <meta property="og:title" content="Student Actuaries at Michigan">
+  <meta property="og:description" content="Recruiting events, exam support, mentorship, and community for actuarial students at the University of Michigan.">
+  <meta property="og:image" content="https://www.umichsam.com/images/welcome.png">
+  <meta property="og:url" content="https://www.umichsam.com/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <script src="https://cdn.tailwindcss.com"></script>
 
   <!-- ================== IMAGE PRELOADS ================== -->
   <!-- Critical hero / layout images get high priority -->
-  <link rel="preload" as="image" href="images/logo-only.png" fetchpriority="high">
-  <link rel="preload" as="image" href="images/welcome.png"    fetchpriority="high">
-
-  <link rel="preload" as="image" href="images/Instagram.png">
-  <link rel="preload" as="image" href="images/Facebook.png">
-  <link rel="preload" as="image" href="images/LinkedIn.png">
-  <link rel="preload" as="image" href="/images/Roadmap.png">
+  <link rel="preload" as="image" href="images/logo-only.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="images/welcome.webp"    fetchpriority="high">
 
   <!-- ================== FONTS & THEME ================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/sam.css">
+  <link rel="stylesheet" href="css/tailwind.css">
 
-  <script src="scripts/jquery.min.js"></script>
-  <script src="scripts/main.js"></script>
 </head>
 <body>
 
@@ -42,7 +40,7 @@
     <div class="sam-nav-inner">
 
       <a href="index.html" class="sam-brand">
-        <img src="images/logo-only.png" alt="SAM logo" class="sam-logo">
+        <img src="images/logo-only.webp" alt="SAM logo" class="sam-logo" width="54" height="54">
         <span class="sam-brand-text">Student Actuaries at Michigan</span>
       </a>
 
@@ -54,7 +52,7 @@
 
         <!-- Resources dropdown -->
         <div id="resourcesBox" class="sam-drop">
-          <button id="resourcesBtn" type="button" class="sam-link">
+          <button id="resourcesBtn" type="button" class="sam-link" aria-expanded="false" aria-controls="resourcesMenu">
             Resources
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -76,7 +74,7 @@
       </nav>
 
       <!-- mobile button -->
-      <button id="mobileBtn" aria-label="Menu" class="sam-burger">
+      <button id="mobileBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu" class="sam-burger">
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
@@ -101,9 +99,11 @@
 
     <!-- navbar helpers -->
     <script>
-      document.getElementById('mobileBtn')
-              .addEventListener('click', () =>
-                document.getElementById('mobileMenu').classList.toggle('hidden'));
+      const mobileBtn = document.getElementById('mobileBtn');
+      mobileBtn.addEventListener('click', () => {
+        const hidden = document.getElementById('mobileMenu').classList.toggle('hidden');
+        mobileBtn.setAttribute('aria-expanded', String(!hidden));
+      });
 
       /* Resources menu toggle for click/tap */
       const btn  = document.getElementById('resourcesBtn');
@@ -112,14 +112,18 @@
 
       btn.addEventListener('click', e=>{
         e.preventDefault();
-        menu.classList.toggle('open');
-        drop.classList.toggle('is-open');
+        const open = menu.classList.toggle('open');
+        drop.classList.toggle('is-open', open);
+        btn.setAttribute('aria-expanded', String(open));
       });
+      const closeMenu = () => {
+        menu.classList.remove('open');
+        drop.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      };
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
       document.addEventListener('click', e=>{
-        if(!menu.contains(e.target) && !btn.contains(e.target)){
-          menu.classList.remove('open');
-          drop.classList.remove('is-open');
-        }
+        if(!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
       });
     </script>
   </header>
@@ -138,10 +142,10 @@
     <div class="sam-wrap relative z-10">
       <div class="flex flex-col items-center gap-8 md:flex-row md:justify-center md:gap-10">
         <div class="w-full max-w-xl md:w-[30rem] lg:w-[34rem] overflow-hidden rounded-2xl shadow-[var(--shadow-lift)] border border-[var(--line)] bg-white">
-          <img src="images/welcome.png" alt="Welcome to SAM banner" class="w-full">
+          <img src="images/welcome.webp" alt="Welcome to SAM banner" class="w-full" width="2298" height="1498">
         </div>
         <div class="w-full max-w-xl md:w-[30rem] lg:w-[34rem] overflow-hidden rounded-2xl shadow-[var(--shadow-lift)] border border-[var(--line)] bg-white">
-          <img id="dynCycle" src="" alt="SAM Cycle" class="w-full">
+          <img id="dynCycle" alt="SAM's yearly cycle of events for the current part of the year" class="w-full">
         </div>
       </div>
       <script src="scripts/cycle.js"></script>
@@ -180,11 +184,11 @@
               <li><span class="label">SAM Board</span><a href="mailto:samboardum@umich.edu">samboardum@umich.edu</a></li>
             </ul>
             <div class="sam-socials pt-1 border-t border-white/15">
-              <a class="sam-social" href="https://www.instagram.com/umichsam/" target="_blank"><img
+              <a class="sam-social" href="https://www.instagram.com/umichsam/" target="_blank" rel="noopener"><img
                     src="images/Instagram.png" alt="Instagram"><span>@umichsam</span></a>
-              <a class="sam-social" href="https://www.facebook.com/groups/SAMUM/" target="_blank"><img
+              <a class="sam-social" href="https://www.facebook.com/groups/SAMUM/" target="_blank" rel="noopener"><img
                     src="images/Facebook.png" alt="Facebook"><span>Student Actuaries at Michigan</span></a>
-              <a class="sam-social" href="https://www.linkedin.com/groups/2486220" target="_blank"><img
+              <a class="sam-social" href="https://www.linkedin.com/groups/2486220" target="_blank" rel="noopener"><img
                     src="images/LinkedIn.png" alt="LinkedIn"><span>University of Michigan Actuaries</span></a>
             </div>
           </div>
@@ -218,17 +222,17 @@
         <div class="sam-card sam-card-pad sam-hover flex-1 max-w-lg mx-auto w-full">
           <p class="mb-5 text-center font-bold text-xl text-[var(--um-blue)]">University of Michigan Links</p>
           <ul class="sam-linklist">
-            <li><a href="workshops/MassMeetingF25.pdf" target="_blank">Mass Meeting
+            <li><a href="workshops/MassMeetingF26.pdf" target="_blank" rel="noopener">Mass Meeting
                 Slides</a></li>
             <li><a href="/Resources/CEILF23.xlsx" download>CEIL Template</a></li>
             <li><a href="https://lsa.umich.edu/math/undergraduates/major-and-minor-programs/actuarial-mathematics.html"
-                target="_blank">Actuarial Math Course Requirements</a></li>
-            <li><a href="workshops/CoursePlanningF23.pdf" target="_blank">Course
+                target="_blank" rel="noopener">Actuarial Math Course Requirements</a></li>
+            <li><a href="workshops/CoursePlanningF23.pdf" target="_blank" rel="noopener">Course
                 Planning Workshop</a></li>
             <li><a
                 href="https://umich.us20.list-manage.com/track/click?u=60f792596b0f2eaf62728bf12&id=95a6838a3f&e=0404e5f259"
-                target="_blank">Exam Reimbursement Form</a></li>
-            <li><a href="https://www.lsa.umich.edu/cg/" target="_blank">LSA Course
+                target="_blank" rel="noopener">Exam Reimbursement Form</a></li>
+            <li><a href="https://www.lsa.umich.edu/cg/" target="_blank" rel="noopener">LSA Course
                 Guide</a></li>
           </ul>
         </div>
@@ -236,16 +240,16 @@
         <div class="sam-card sam-card-pad sam-hover flex-1 max-w-lg mx-auto w-full">
           <p class="mb-5 text-center font-bold text-xl text-[var(--um-blue)]">Actuarial Societies Links</p>
           <ul class="sam-linklist">
-            <li><a href="https://www.soa.org/education/exam-req/registration/edu-registration/" target="_blank">SOA
+            <li><a href="https://www.soa.org/education/exam-req/registration/edu-registration/" target="_blank" rel="noopener">SOA
                 Website</a></li>
-            <li><a href="https://www.soa.org/education/exam-schedule/" target="_blank">Upcoming SOA Exams</a></li>
-            <li><a href="https://www.prometric.com/soa" target="_blank">Prometric
+            <li><a href="https://www.soa.org/education/exam-schedule/" target="_blank" rel="noopener">Upcoming SOA Exams</a></li>
+            <li><a href="https://www.prometric.com/soa" target="_blank" rel="noopener">Prometric
                 Registration (SOA)</a></li>
-            <li><a href="https://www.casact.org/">CAS Website</a>
+            <li><a href="https://www.casact.org/" target="_blank" rel="noopener">CAS Website</a>
             </li>
-            <li><a href="https://www.casact.org/exams-admissions/pearson-vue/exam-registration" target="_blank">Upcoming
+            <li><a href="https://www.casact.org/exams-admissions/pearson-vue/exam-registration" target="_blank" rel="noopener">Upcoming
                 CAS Exams</a></li>
-            <li><a href="https://home.pearsonvue.com/cas" target="_blank">Pearson
+            <li><a href="https://home.pearsonvue.com/cas" target="_blank" rel="noopener">Pearson
                 VUE Registration (CAS)</a></li>
           </ul>
         </div>
@@ -273,10 +277,10 @@
          Come talk to ~30 employers!<br>
          Please note that resumes are due to the
          <a href="https://docs.google.com/forms/d/e/1FAIpQLScWP-zTJSxQRokLYTUzkTmIw02DmNAFIJqCrg_YjvGI_-sSxw/viewform?usp=dialog"
-            target="_blank" class="font-bold text-red-600 underline">resume book</a>
+            target="_blank" rel="noopener" class="font-bold text-red-600 underline">resume book</a>
          by <strong>Wednesday, Sep 10 @ 11:59 pm.</strong></p>
       <p>Not sure where to start? Take a look at our
-         <a href="/Resources/CareerExpoRoadmap.pdf" target="_blank"
+         <a href="/Resources/CareerExpoRoadmap.pdf" target="_blank" rel="noopener"
             class="text-[var(--um-blue-light)] underline">Actuarial Career Expo Preparation Roadmap</a>!</p>
       <img src="/images/Roadmap.png" alt="Career Expo Preparation Roadmap" class="mx-auto w-full max-w-3xl rounded-2xl shadow-[var(--shadow-soft)]">
     </div>
@@ -287,7 +291,7 @@
     <div class="sam-wrap-narrow sam-center space-y-7">
       <span class="sam-tick"></span>
       <h2 class="sam-title">Interested in Joining?</h2>
-      <p class="text-xl">Please fill out <a href="https://forms.gle/wjehfsURTbkPAMDG7" target="_blank"
+      <p class="text-xl">Please fill out <a href="https://forms.gle/wjehfsURTbkPAMDG7" target="_blank" rel="noopener"
           class="text-[var(--um-blue-light)] underline">this form</a> to be added to our email list.</p>
       <div class="sam-card sam-card-pad text-left mx-auto max-w-3xl">
         <p class="text-base leading-relaxed">Paying dues is required to receive exam reimbursements, join our mentorship program,
@@ -312,7 +316,7 @@
       <p id="congrats-title" class="mb-5 text-lg font-semibold text-[var(--um-maize)]">Congratulations to:</p>
       <div id="congrats" class="sam-congrats mb-8"></div>
       <p class="mx-auto max-w-2xl">Want to be celebrated? Fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0dX9mS8nnZ56LD43wM5HJZEfmpkOVxLeSFencugs8tw9oWg/viewform?usp=dialog"
-          target="_blank" class="underline">this survey</a> to let the SAM club know of your recent
+          target="_blank" rel="noopener" class="underline">this survey</a> to let the SAM club know of your recent
         accomplishments! We will announce the club's accomplishments (job acceptances, internships, exam passings, etc.)
         on the website, and we would love to announce yours!</p>
       <script src="scripts/congrats.js"></script>
@@ -326,7 +330,7 @@
       <span class="sam-tick"></span>
       <h2 class="sam-title">Have feedback on the website?</h2>
       <p class="text-lg">Please let Janae Shao, SAM Webmaster, know by filling out <a
-          href="https://forms.gle/489NRSSjzGgixkVb9" target="_blank" class="text-[var(--um-blue-light)] underline">this form</a>!
+          href="https://forms.gle/489NRSSjzGgixkVb9" target="_blank" rel="noopener" class="text-[var(--um-blue-light)] underline">this form</a>!
         Please submit one piece of feedback per form.</p>
     </div>
   </section>
@@ -341,9 +345,9 @@
         </p>
       </div>
       <div class="sam-footer-links">
-        <a href="https://www.instagram.com/umichsam/" target="_blank">Instagram</a>
-        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank">Facebook</a>
-        <a href="https://www.linkedin.com/groups/2486220" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/umichsam/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </div>
 

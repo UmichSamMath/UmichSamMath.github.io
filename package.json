@@ -1,5 +1,13 @@
 {
   "dependencies": {
     "http-server": "^14.1.1"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i css/tailwind.input.css -o css/tailwind.css --minify",
+    "watch:css": "tailwindcss -i css/tailwind.input.css -o css/tailwind.css --watch",
+    "start": "http-server ."
+  },
+  "devDependencies": {
+    "tailwindcss": "3.4.17"
   }
 }

@@ -92,6 +92,13 @@ function populateEvents() {
       `;
     }
   });
+
+  if (resultDiv.children.length === 0) {
+    resultDiv.innerHTML = `
+      <p class="sm:col-span-2 lg:col-span-3 text-center text-lg text-[var(--slate)]">
+        No events in the next week. Check the <a href="calendar.html" class="text-[var(--um-blue-light)] underline font-semibold">full calendar</a> for what's coming up!
+      </p>`;
+  }
 }
 
 populateEvents();

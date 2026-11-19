@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-26VXYCX5HE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-26VXYCX5HE');
+</script>
+  <meta charset="utf-8">
+  <title>Podcast</title>
+  <meta name="description" content="SAMPod, the official podcast of Student Actuaries at Michigan: advice on internships, exam prep, and networking, plus conversations with students, alumni, and industry leaders.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- ================== FONTS & THEME ================== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/sam.css">
+  <link rel="stylesheet" href="css/tailwind.css">
+
+</head>
+<body>
+
+  <!-- ─── NAVBAR ───────────────────────────────────────────────────────────── -->
+  <header id="navbar" class="sam-nav">
+    <div class="sam-nav-inner">
+
+      <a href="index.html" class="sam-brand">
+        <img src="images/logo-only.webp" alt="SAM logo" class="sam-logo" width="54" height="54">
+        <span class="sam-brand-text">Student Actuaries at Michigan</span>
+      </a>
+
+      <!-- desktop links -->
+      <nav class="sam-links">
+        <a href="index.html"       class="sam-link">Home</a>
+        <a href="calendar.html"    class="sam-link">Calendar</a>
+        <a href="new.html"         class="sam-link">New Members</a>
+
+        <!-- Resources dropdown -->
+        <div id="resourcesBox" class="sam-drop">
+          <button id="resourcesBtn" type="button" class="sam-link" aria-expanded="false" aria-controls="resourcesMenu">
+            Resources
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+
+          <div id="resourcesMenu" class="sam-menu">
+            <a href="course.html">Course Resources</a>
+            <a href="workshop.html">Workshops</a>
+            <a href="exam.html">Exam Resources</a>
+            <a href="podcast.html" class="sam-menu-current">Podcast</a>
+          </div>
+        </div>
+
+        <a href="scholarship.html" class="sam-link">Scholarships</a>
+        <a href="mentor.html"      class="sam-link">Mentorship</a>
+        <!-- Companies page hidden for privacy reasons (company rep contact info). Uncomment to restore: <a href="companies.html"   class="sam-link">Companies</a> -->
+        <a href="contact.html"     class="sam-link">Contact</a>
+      </nav>
+
+      <!-- mobile button -->
+      <button id="mobileBtn" type="button" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu" class="sam-burger">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- mobile nav -->
+    <div id="mobileMenu" class="sam-mobile hidden">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="new.html">New Members</a>
+        <a href="course.html">Course Resources</a>
+        <a href="workshop.html">Workshops</a>
+        <a href="exam.html">Exam Resources</a>
+        <a href="podcast.html">Podcast</a>
+        <a href="scholarship.html">Scholarships</a>
+        <a href="mentor.html">Mentorship</a>
+        <!-- Companies page hidden for privacy reasons (company rep contact info). Uncomment to restore: <a href="companies.html">Companies</a> -->
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <!-- navbar helpers -->
+    <script>
+      const mobileBtn = document.getElementById('mobileBtn');
+      mobileBtn.addEventListener('click', () => {
+        const hidden = document.getElementById('mobileMenu').classList.toggle('hidden');
+        mobileBtn.setAttribute('aria-expanded', String(!hidden));
+      });
+
+      /* Resources menu toggle for click/tap */
+      const btn  = document.getElementById('resourcesBtn');
+      const menu = document.getElementById('resourcesMenu');
+      const drop = document.getElementById('resourcesBox');
+
+      btn.addEventListener('click', e=>{
+        e.preventDefault();
+        const open = menu.classList.toggle('open');
+        drop.classList.toggle('is-open', open);
+        btn.setAttribute('aria-expanded', String(open));
+      });
+      const closeMenu = () => {
+        menu.classList.remove('open');
+        drop.classList.remove('is-open');
+        btn.setAttribute('aria-expanded', 'false');
+      };
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
+      document.addEventListener('click', e=>{
+        if(!menu.contains(e.target) && !btn.contains(e.target)) closeMenu();
+      });
+    </script>
+  </header>
+
+  <!-- ============ INTRO ============ -->
+  <section class="sam-section sam-dark grid-paper-dark">
+    <span class="deco -right-14 -bottom-20 w-[520px]" style="color:rgba(255,203,5,.12)" aria-hidden="true">
+      <svg viewBox="0 0 600 200" fill="none" preserveAspectRatio="xMidYMax meet">
+        <path d="M0 190 C 120 190 150 28 300 28 C 450 28 480 190 600 190" stroke="currentColor" stroke-width="2.5"/>
+        <path d="M0 192 H600" stroke="currentColor" stroke-width="1" stroke-dasharray="4 7"/>
+      </svg>
+    </span>
+
+    <div class="sam-wrap-narrow relative z-10 sam-center">
+      <span class="sam-tick"></span>
+      <h1 class="sam-title">Podcast</h1>
+      <p class="sam-lead">
+        Welcome to SAMPod, the official podcast of Student Actuaries at Michigan! We support UMich students
+        navigating actuarial science and math-focused career paths by bridging the gap between academics and
+        industry. Tune in for actionable advice on internships, exam prep, and networking, deep dives into
+        insurance trends, and conversations with students, alumni, and industry leaders.
+      </p>
+    </div>
+  </section>
+
+  <!-- ============ SPOTIFY PLAYER ============ -->
+  <section class="sam-section sam-light">
+    <div class="sam-wrap-narrow sam-center">
+      <div class="sam-center mb-10">
+        <span class="sam-tick"></span>
+        <h2 class="sam-title">Listen Now</h2>
+      </div>
+
+      <div class="sam-frame mx-auto w-full max-w-4xl">
+        <iframe
+          src="https://open.spotify.com/embed/show/37raqvasa1qq1MTh3UnuL5?utm_source=generator"
+          style="border:0" width="100%" height="352"
+          allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+          loading="lazy" title="SAMPod on Spotify"></iframe>
+      </div>
+
+      <a href="https://open.spotify.com/show/37raqvasa1qq1MTh3UnuL5" target="_blank" rel="noopener"
+         class="sam-btn mt-8">
+        Open in Spotify
+      </a>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="sam-footer grid-paper-dark">
+    <div class="sam-footer-inner">
+      <div class="sam-copy">Student Actuaries at Michigan</div>
+      <div class="sam-footer-links">
+        <a href="https://www.instagram.com/umichsam/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.facebook.com/groups/SAMUM/" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.linkedin.com/groups/2486220" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

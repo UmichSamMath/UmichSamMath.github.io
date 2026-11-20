@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /node_modules/
+Disallow: /scripts/
+Disallow: /*.csv$
+Disallow: /*.json$
+
+Sitemap: https://www.umichsam.com/sitemap.xml
